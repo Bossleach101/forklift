@@ -21,7 +21,7 @@ class InferenceDataset:
     def __init__(self, data, compilers_keys=None):
         self.data = data
         self.asm_adder = AsmAdder(also_do_real=True, compilers_keys=compilers_keys)
-
+        
     def __iter__(self):
         for instance in self.data:
             func_def = instance['func_def']

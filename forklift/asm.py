@@ -85,11 +85,11 @@ class GASCompiler(ABC, Compiler):
     def _asm_replace_constants_with_literals(self, all_asm, func_asm):
         all_asm = all_asm.decode("utf-8")
         asm_to_add = []
-        for symbol in set(re.compile('\.LC[0-9]*').findall(func_asm)):  # TODO: move, compile once
-            for e in re.findall(f'\.{symbol.replace(".", "")}:[\r\n]+([^\r\n]+)', all_asm):
+        for symbol in set(re.compile(r'\.LC[0-9]*').findall(func_asm)):  # TODO: move, compile once
+            for e in re.findall(rf'\.{symbol.replace(".", "")}:[\r\n]+([^\r\n]+)', all_asm):
                 asm_to_add.append(symbol + ': ' + e)
                 break
-        for symbol in set(re.compile('a\.[0-9]*').findall(func_asm)):  # TODO: move, compile once
+        for symbol in set(re.compile(r'a\.[0-9]*').findall(func_asm)):  # TODO: move, compile once
             for e in re.findall(f'{symbol}:[\r\n]+([^\r\n]+)', all_asm):
                 asm_to_add.append(symbol + ': ' + e)
                 break
@@ -327,7 +327,7 @@ class Clang(GASCompiler):
     def _asm_replace_constants_with_literals(self, all_asm, func_asm):
         if not isinstance(all_asm, str):
             all_asm = all_asm.decode("utf-8")
-        symbols = set(re.compile('\.LC[0-9A-Z_]*').findall(func_asm)) | set(re.compile('\.L\.[a-z0-9]*').findall(func_asm))
+        symbols = set(re.compile(r'\.LC[0-9A-Z_]*').findall(func_asm)) | set(re.compile(r'\.L\.[a-z0-9]*').findall(func_asm))
         asm_to_add = []
         for symbol in symbols:
             for e in re.findall(f'{symbol}:[\r\n]+([^\r\n]+)', all_asm):
@@ -481,7 +481,6 @@ class AsmAdder:
                 else:
                     asm_to_add[f'real_{compiler}'] = None
                     n_ok[f'real_{compiler}'] = 0
-
         return asm_to_add
 
     def add_asm(self, fd_dataclass: FuncDataclass):
