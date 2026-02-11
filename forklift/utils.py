@@ -1,5 +1,5 @@
 import re
-from .asm import AsmAdder, FuncDataclass
+
 
 def normalize_structs(llvm_ir):
     if not llvm_ir:
@@ -19,6 +19,8 @@ def normalize_structs(llvm_ir):
 
 class InferenceDataset:
     def __init__(self, data, compilers_keys=None):
+        from .asm import AsmAdder, FuncDataclass
+        self._FuncDataclass = FuncDataclass
         self.data = data
         self.asm_adder = AsmAdder(also_do_real=True, compilers_keys=compilers_keys)
         
@@ -27,7 +29,7 @@ class InferenceDataset:
             func_def = instance['func_def']
             deps = instance['deps']
             fname = instance['fname']
-            e = FuncDataclass(func_def=func_def, fname=fname, func_head_types=func_def.split('{')[0], path='',
+            e = self._FuncDataclass(func_def=func_def, fname=fname, func_head_types=func_def.split('{')[0], path='',
                               func_head=None, signature=None,
                               real_deps=deps)
             self.asm_adder.add_asm(e)
