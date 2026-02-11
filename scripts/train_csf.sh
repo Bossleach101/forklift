@@ -1,10 +1,10 @@
 #!/bin/bash
 #SBATCH --job-name=forklift-arm-ir
-#SBATCH --partition=gpu
-#SBATCH --gres=gpu:1
+#SBATCH -p gpuL
+#SBATCH -G 1
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=32G
-#SBATCH --time=48:00:00
+#SBATCH -t 1-0
 #SBATCH --output=logs/train_%j.out
 #SBATCH --error=logs/train_%j.err
 
