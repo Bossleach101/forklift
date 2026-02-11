@@ -2,9 +2,9 @@
 #SBATCH --job-name=forklift-arm-ir
 #SBATCH -p gpuL
 #SBATCH -G 1
-#SBATCH --cpus-per-task=4
-#SBATCH --mem=32G
-#SBATCH -t 1-0
+#SBATCH --cpus-per-task=12
+#SBATCH --mem=128G
+#SBATCH -t 2-0
 #SBATCH --output=logs/train_%j.out
 #SBATCH --error=logs/train_%j.err
 
@@ -43,8 +43,8 @@ python -m neurel_deob.training.finetune \
     --model_path "jordiae/clang_opt3_ir_optz-ir_optz-2024-01-15-0959-e1bf-bc2b" \
     --pair "arm_ir-ir" \
     --max_steps 100000 \
-    --batch_size 4 \
-    --gradient_accumulation_steps 8 \
+    --batch_size 8 \
+    --gradient_accumulation_steps 4 \
     --lr 5e-5 \
     --warmup_steps 500 \
     --fp16 \
