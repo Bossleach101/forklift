@@ -1,0 +1,8 @@
+# Development dependencies
+pytest>=7.0
+pytest-timeout>=2.0
+sacrebleu>=2.0
+
+# Already in requirements.txt but listed here for clarity:
+# editdistance
+# bleu
