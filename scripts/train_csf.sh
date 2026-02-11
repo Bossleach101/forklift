@@ -29,7 +29,7 @@ echo "================================================"
 
 # ── Environment ──────────────────────────────────────────────
 # Adjust this path to wherever your venv lives on CSF
-PROJECT_DIR="$HOME/Project/Forklift/forklift"
+PROJECT_DIR="$HOME/scratch/forklift"
 VENV_DIR="${PROJECT_DIR}/env"
 
 cd "$PROJECT_DIR"
