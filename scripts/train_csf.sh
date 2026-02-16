@@ -3,7 +3,7 @@
 #SBATCH -p gpuL
 #SBATCH -G 1
 #SBATCH --cpus-per-task=12
-#SBATCH --mem=128G
+#SBATCH --mem=125G
 #SBATCH -t 2-0
 #SBATCH --output=logs/train_%j.out
 #SBATCH --error=logs/train_%j.err
