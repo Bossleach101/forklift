@@ -36,6 +36,7 @@ from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import IterableDataset
 
 from forklift.par_data import DP
+from neurel_deob.obfuscation.pipeline import ObfuscationConfig, ObfuscationPipeline
 
 logger = logging.getLogger(__name__)
 
@@ -259,6 +260,116 @@ class ExeBenchDataset(IterableDataset):
 # ------------------------------------------------------------------
 # Collation — pads variable-length sequences into a batch
 # ------------------------------------------------------------------
+
+
+class ObfuscatedExeBenchDataset(ExeBenchDataset):
+    """
+    Streaming dataset that applies assembly-level obfuscation to the
+    *source* (AArch64 assembly) while keeping the *target* (clean LLVM IR)
+    unchanged.
+
+    This produces ``(obfuscated_arm_asm, clean_ir)`` training pairs for
+    neural deobfuscation training.  The obfuscation is applied on-the-fly
+    so every epoch sees different obfuscation patterns (data augmentation).
+
+    Parameters
+    ----------
+    tokenizer : Tokenizer
+        The Forklift tokenizer.
+    config : DataConfig
+        Data loading configuration (inherits all ExeBenchDataset settings).
+    obfu_config : ObfuscationConfig
+        Which obfuscation techniques to use and at what intensity.
+    seed : int
+        Base seed for reproducible obfuscation.
+    """
+
+    def __init__(
+        self,
+        tokenizer: Tokenizer,
+        config: Optional[DataConfig] = None,
+        obfu_config: Optional[ObfuscationConfig] = None,
+        seed: int = 42,
+        *,
+        split: Optional[str] = None,
+        pair: Optional[str] = None,
+    ):
+        super().__init__(tokenizer, config, split=split, pair=pair)
+        self.obfu_config = obfu_config or ObfuscationConfig()
+        self.obfu_pipeline = ObfuscationPipeline(self.obfu_config, seed=seed)
+
+    def _process_row(self, row: dict) -> Optional[dict]:
+        """
+        Process a row with obfuscation applied to the source assembly.
+
+        1. Extract clean source asm and target IR
+        2. Apply obfuscation transforms to the source asm
+        3. Inject the obfuscated source back into the row
+        4. Delegate to parent for tokenization
+        """
+        # Fast-path check: are the required asm targets present?
+        targets = row.get("asm", {}).get("target", [])
+        if self.source_key not in targets or self.target_key not in targets:
+            return None
+
+        codes = row["asm"]["code"]
+        src_idx = targets.index(self.source_key)
+        tgt_idx = targets.index(self.target_key)
+        source_text = codes[src_idx]
+        target_text = codes[tgt_idx]
+        if not source_text or not target_text:
+            return None
+
+        # ── Apply obfuscation to source assembly ────────────────────
+        try:
+            obfuscated_source = self.obfu_pipeline(source_text)
+        except Exception as exc:
+            logger.debug("Obfuscation failed, skipping row: %s", exc)
+            return None
+
+        # ── Inject obfuscated source back into the row ──────────────
+        codes = list(codes)  # copy
+        codes[src_idx] = obfuscated_source
+        row = dict(row)
+        row["asm"] = dict(row["asm"])
+        row["asm"]["code"] = codes
+
+        # ── Clean IR target before tokenization ─────────────────────
+        if self.config.strip_ir_declares and "ir" in self.config.pair:
+            target_text = strip_ir_noise(target_text)
+            if not target_text.strip():
+                return None
+            codes = list(row["asm"]["code"])
+            codes[tgt_idx] = target_text
+            row["asm"]["code"] = codes
+
+        # ── Delegate to DP for tokenization ─────────────────────────
+        try:
+            _src, _tgt, tok_src, tok_tgt = self.dp.get_par_data(
+                row,
+                pair=self.config.pair,
+                asm_key=self.config.asm_key,
+                fPIC=False,
+                tokenize_ids=True,
+                do_normalize_ir_structs=self.config.normalize_ir_structs,
+            )
+        except (ValueError, KeyError, IndexError) as exc:
+            logger.debug("Skipping row due to error: %s", exc)
+            return None
+
+        if tok_src is None or tok_tgt is None:
+            return None
+
+        # Length filter (obfuscated source is longer than clean)
+        if len(tok_src) > self.config.max_source_len:
+            return None
+        if len(tok_tgt) > self.config.max_target_len:
+            return None
+
+        return {
+            "input_ids": torch.tensor(tok_src, dtype=torch.long),
+            "labels": torch.tensor(tok_tgt, dtype=torch.long),
+        }
 
 
 def collate_fn(
