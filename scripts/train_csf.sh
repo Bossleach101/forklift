@@ -1,15 +1,21 @@
 #!/bin/bash
-#SBATCH --job-name=forklift-arm-ir
+#SBATCH --job-name=forklift-arm-v2
 #SBATCH -p gpuL
 #SBATCH -G 1
 #SBATCH --cpus-per-task=12
 #SBATCH --mem=125G
-#SBATCH -t 2-0
+#SBATCH -t 4-0
 #SBATCH --output=logs/train_%j.out
 #SBATCH --error=logs/train_%j.err
 
 # ──────────────────────────────────────────────────────────────
-# SLURM launcher for Forklift AArch64 → LLVM IR fine-tuning
+# SLURM launcher for Forklift AArch64 → LLVM IR fine-tuning (v2)
+#
+# v2 changes vs v1:
+#   - strip_ir_declares=True  (removes declare/attrs/metadata
+#     from IR targets to prevent degenerate repetitive output)
+#   - cosine LR schedule (better convergence than linear)
+#   - separate checkpoint/tensorboard dirs for v2
 #
 # Usage:
 #   sbatch scripts/train_csf.sh                    # default config
@@ -46,14 +52,16 @@ python -m neurel_deob.training.finetune \
     --batch_size 8 \
     --gradient_accumulation_steps 4 \
     --lr 5e-5 \
+    --lr_scheduler cosine \
     --warmup_steps 500 \
     --fp16 \
+    --strip_ir_declares \
     --eval_steps 2000 \
     --save_steps 2000 \
     --max_source_len 1024 \
     --max_target_len 1024 \
-    --checkpoint_dir "checkpoints/arm_ir_ir" \
-    --tensorboard_dir "runs/arm_ir_ir" \
+    --checkpoint_dir "checkpoints/arm_ir_ir_v2" \
+    --tensorboard_dir "runs/arm_ir_ir_v2" \
     "$@"
 
 echo "Training finished at $(date)"

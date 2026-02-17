@@ -64,6 +64,8 @@ class PipelineConfig:
     early_stopping: bool = True
     length_penalty: float = 1.0
     min_length: int = 1
+    repetition_penalty: float = 1.0     # >1.0 penalises repeated tokens
+    no_repeat_ngram_size: int = 0       # >0 forbids repeating N-grams
     device: str = 'cpu'  # 'cpu', 'cuda', 'cuda:0', etc.
 
 
@@ -218,6 +220,8 @@ class Pipeline:
                 early_stopping=self.config.early_stopping,
                 length_penalty=self.config.length_penalty,
                 min_length=self.config.min_length,
+                repetition_penalty=self.config.repetition_penalty,
+                no_repeat_ngram_size=self.config.no_repeat_ngram_size,
             )
 
         # Detokenize
@@ -305,6 +309,8 @@ class Pipeline:
                     early_stopping=self.config.early_stopping,
                     length_penalty=self.config.length_penalty,
                     min_length=self.config.min_length,
+                    repetition_penalty=self.config.repetition_penalty,
+                    no_repeat_ngram_size=self.config.no_repeat_ngram_size,
                 )
 
             output = output.view(len(tokenized), self.config.nbest, -1).cpu()

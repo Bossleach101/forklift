@@ -138,6 +138,7 @@ def evaluate(
         max_source_len=config.max_source_len,
         max_target_len=config.max_target_len,
         normalize_ir_structs=config.normalize_ir_structs,
+        strip_ir_declares=config.strip_ir_declares,
         streaming=config.streaming,
     )
 
@@ -176,6 +177,8 @@ def evaluate(
             max_new_tokens=config.eval_max_new_tokens,
             num_beams=config.eval_beam,
             early_stopping=True,
+            repetition_penalty=config.repetition_penalty,
+            no_repeat_ngram_size=config.no_repeat_ngram_size,
         )
         for gen, lab in zip(generated, batch["labels"]):
             pred_text = dp.detokenize(gen.cpu().tolist())
@@ -287,8 +290,23 @@ def train(config: TrainConfig):
     pad_id = tokenizer.get_vocab()["<pad>"]
 
     # ── Load model ───────────────────────────────────────────────────
-    logger.info("Loading model from %s", config.model_path)
-    model = BartForConditionalGeneration.from_pretrained(config.model_path)
+    # When resuming, load model weights from the checkpoint directory
+    # (which contains model.safetensors from save_pretrained()), not
+    # from the original base model.
+    model_load_path = config.model_path
+    if config.resume_from:
+        ckpt = Path(config.resume_from)
+        if (ckpt / "model.safetensors").exists() or (ckpt / "pytorch_model.bin").exists():
+            model_load_path = str(ckpt)
+            logger.info("Will load model weights from checkpoint: %s", model_load_path)
+        else:
+            logger.warning(
+                "Checkpoint %s has no model weights — falling back to %s",
+                ckpt, config.model_path,
+            )
+
+    logger.info("Loading model from %s", model_load_path)
+    model = BartForConditionalGeneration.from_pretrained(model_load_path)
     model.to(device)
     model.train()
     logger.info("Model parameters: %s (%.1fM trainable)", 
@@ -339,7 +357,10 @@ def train(config: TrainConfig):
         if scaler and state.get("scaler"):
             scaler.load_state_dict(state["scaler"])
         global_step = state["step"]
-        logger.info("Resumed at step %d", global_step)
+        # Advance LR scheduler to the correct position
+        for _ in range(global_step):
+            scheduler.step()
+        logger.info("Resumed at step %d (lr=%.2e)", global_step, scheduler.get_last_lr()[0])
 
     # ── Data ─────────────────────────────────────────────────────────
     data_cfg = DataConfig(
@@ -351,6 +372,7 @@ def train(config: TrainConfig):
         max_source_len=config.max_source_len,
         max_target_len=config.max_target_len,
         normalize_ir_structs=config.normalize_ir_structs,
+        strip_ir_declares=config.strip_ir_declares,
         streaming=config.streaming,
     )
     train_ds = ExeBenchDataset(tokenizer, data_cfg)
@@ -494,10 +516,19 @@ def parse_args() -> TrainConfig:
             continue
         arg_type = type(default) if default is not None else str
         if arg_type is bool:
-            parser.add_argument(
+            # For booleans, create --flag / --no-flag pairs so both
+            # directions work regardless of the default value.
+            group = parser.add_mutually_exclusive_group()
+            group.add_argument(
                 f"--{name}",
+                dest=name,
+                action="store_true",
                 default=default,
-                action="store_true" if not default else "store_false",
+            )
+            group.add_argument(
+                f"--no_{name}",
+                dest=name,
+                action="store_false",
             )
         else:
             parser.add_argument(f"--{name}", type=arg_type, default=default)

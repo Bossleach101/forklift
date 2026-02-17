@@ -17,6 +17,41 @@ def normalize_structs(llvm_ir):
         normalized_ir += normalized_line + "\n"
     return normalized_ir
 
+
+def truncate_ir_output(ir_text: str) -> str:
+    """Truncate generated LLVM IR after the function body closes.
+
+    The model sometimes enters a degenerate repetitive loop after the
+    closing ``}`` of the function definition, emitting endless
+    ``declare`` lines or other garbage.  This utility keeps everything
+    up to and including the *first* ``}`` that appears on a line by
+    itself (the standard closing brace of a ``define`` block).
+
+    Preamble lines before ``define`` (struct definitions, globals) are
+    preserved.
+    """
+    if not ir_text:
+        return ir_text
+
+    lines = ir_text.split("\n")
+    result: list[str] = []
+    in_function = False
+
+    for line in lines:
+        stripped = line.strip()
+
+        # Detect function start
+        if stripped.startswith("define "):
+            in_function = True
+
+        result.append(line)
+
+        # Detect function end: a lone "}" on its own line
+        if in_function and stripped == "}":
+            break
+
+    return "\n".join(result)
+
 class InferenceDataset:
     def __init__(self, data, compilers_keys=None):
         from .asm import AsmAdder, FuncDataclass

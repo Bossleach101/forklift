@@ -25,6 +25,7 @@ Usage
 from __future__ import annotations
 
 import logging
+import re
 from dataclasses import dataclass, field
 from typing import Iterator, List, Optional, Tuple
 
@@ -37,6 +38,49 @@ from torch.utils.data import IterableDataset
 from forklift.par_data import DP
 
 logger = logging.getLogger(__name__)
+
+
+# ──────────────────────────────────────────────────────────────────────
+# IR target cleaning
+# ──────────────────────────────────────────────────────────────────────
+
+def strip_ir_noise(ir_text: str) -> str:
+    """Remove noise from LLVM IR targets that causes repetitive generation.
+
+    Strips:
+    * ``declare`` forward-declarations  – the model learns to repeat
+      these endlessly after the closing ``}``.
+    * ``attributes #N = { … }`` blocks – target-specific metadata that
+      adds no semantic value for lifting.
+    * ``!N = …`` metadata lines – debug/loop metadata.
+
+    Keeps:
+    * ``%struct.*`` / ``%union.*`` type definitions (used in the body).
+    * ``@.str*`` / ``@.*`` global constant declarations (used by the body).
+    * The ``define … { … }`` function body itself.
+    """
+    if not ir_text:
+        return ir_text
+
+    kept: list[str] = []
+    for line in ir_text.split("\n"):
+        stripped = line.strip()
+        # Skip declare forward-declarations
+        if stripped.startswith("declare "):
+            continue
+        # Skip attribute groups
+        if stripped.startswith("attributes "):
+            continue
+        # Skip LLVM metadata
+        if re.match(r"^!\d+\s*=", stripped):
+            continue
+        kept.append(line)
+
+    # Remove trailing blank lines
+    while kept and not kept[-1].strip():
+        kept.pop()
+
+    return "\n".join(kept)
 
 
 @dataclass
@@ -52,6 +96,7 @@ class DataConfig:
     max_target_len: int = 1024
     normalize_ir_structs: bool = True
     streaming: bool = True
+    strip_ir_declares: bool = True  # Remove declare/attributes/metadata from targets
 
 
 class ExeBenchDataset(IterableDataset):
@@ -167,6 +212,20 @@ class ExeBenchDataset(IterableDataset):
         target_text = codes[tgt_idx]
         if not source_text or not target_text:
             return None
+
+        # ── Clean IR target before tokenization ──────────────────────
+        if self.config.strip_ir_declares and "ir" in self.config.pair:
+            target_text = strip_ir_noise(target_text)
+            if not target_text.strip():
+                return None
+            # We need to inject the cleaned target back into the row so
+            # that get_par_data picks it up.  Make a shallow copy to
+            # avoid mutating the original streaming row.
+            codes = list(codes)  # copy
+            codes[tgt_idx] = target_text
+            row = dict(row)
+            row["asm"] = dict(row["asm"])
+            row["asm"]["code"] = codes
 
         # Delegate to DP.get_par_data for proper tokenization
         try:

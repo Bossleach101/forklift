@@ -28,6 +28,7 @@ class TrainConfig:
     max_source_len: int = 1024
     max_target_len: int = 1024
     normalize_ir_structs: bool = True
+    strip_ir_declares: bool = True   # Remove declare/attributes/metadata from IR targets
     streaming: bool = True
 
     # ── Optimiser ────────────────────────────────────────────────────
@@ -61,6 +62,8 @@ class TrainConfig:
     # ── Inference at eval time ───────────────────────────────────────
     eval_beam: int = 5
     eval_max_new_tokens: int = 2048
+    repetition_penalty: float = 1.2      # Penalise repeated tokens during generation
+    no_repeat_ngram_size: int = 6        # Forbid repeating any 6-gram
 
     # ── Hardware ─────────────────────────────────────────────────────
     device: str = "auto"                 # "auto", "cpu", "cuda", "cuda:0"
