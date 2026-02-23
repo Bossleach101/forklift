@@ -1,0 +1,1554 @@
+2026-02-17 10:09:43 [INFO] __main__: Device: cuda
+2026-02-17 10:09:43 [INFO] __main__: Loading model from jordiae/clang_opt3_ir_optz-ir_optz-2024-01-15-0959-e1bf-bc2b
+2026-02-17 10:09:57 [INFO] __main__: Model parameters: 197059584 (197.1M trainable)
+2026-02-17 10:09:57 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+2026-02-17 10:10:03 [INFO] __main__: TensorBoard logging to runs/arm_ir_ir_v2
+2026-02-17 10:10:03 [INFO] __main__: Starting training: max_steps=100000  eff_batch=32  lr=5.00e-05
+2026-02-17 10:10:03 [INFO] __main__: Starting epoch 1 (streaming) at step 0
+Downloading builder script: 0.00B [00:00, ?B/s]Downloading builder script: 11.7kB [00:00, 41.2MB/s]
+Downloading readme: 0.00B [00:00, ?B/s]Downloading readme: 4.80kB [00:00, 25.2MB/s]
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-17 10:10:05 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-17 10:11:43 [INFO] __main__: step=50  loss=3.7647  lr=5.00e-06  steps/s=0.50
+2026-02-17 10:12:57 [INFO] __main__: step=100  loss=1.5491  lr=1.00e-05  steps/s=0.57
+2026-02-17 10:14:07 [INFO] __main__: step=150  loss=1.1237  lr=1.50e-05  steps/s=0.61
+2026-02-17 10:15:09 [INFO] __main__: step=200  loss=0.8825  lr=2.00e-05  steps/s=0.65
+2026-02-17 10:16:15 [INFO] __main__: step=250  loss=0.7263  lr=2.50e-05  steps/s=0.67
+2026-02-17 10:17:25 [INFO] __main__: step=300  loss=0.6222  lr=3.00e-05  steps/s=0.68
+2026-02-17 10:17:41 [INFO] neurel_deob.training.data: Yielded 10000 samples (skipped 11115)
+2026-02-17 10:18:31 [INFO] __main__: step=350  loss=0.5417  lr=3.50e-05  steps/s=0.69
+2026-02-17 10:19:35 [INFO] __main__: step=400  loss=0.5070  lr=4.00e-05  steps/s=0.70
+2026-02-17 10:20:39 [INFO] __main__: step=450  loss=0.4768  lr=4.50e-05  steps/s=0.71
+2026-02-17 10:21:47 [INFO] __main__: step=500  loss=0.4300  lr=5.00e-05  steps/s=0.71
+2026-02-17 10:22:57 [INFO] __main__: step=550  loss=0.4013  lr=5.00e-05  steps/s=0.71
+2026-02-17 10:24:04 [INFO] __main__: step=600  loss=0.3760  lr=5.00e-05  steps/s=0.71
+2026-02-17 10:24:38 [INFO] neurel_deob.training.data: Yielded 20000 samples (skipped 22041)
+2026-02-17 10:25:15 [INFO] __main__: step=650  loss=0.3542  lr=5.00e-05  steps/s=0.71
+2026-02-17 10:26:21 [INFO] __main__: step=700  loss=0.3313  lr=5.00e-05  steps/s=0.72
+2026-02-17 10:27:29 [INFO] __main__: step=750  loss=0.3493  lr=5.00e-05  steps/s=0.72
+2026-02-17 10:28:40 [INFO] __main__: step=800  loss=0.3399  lr=5.00e-05  steps/s=0.72
+2026-02-17 10:29:47 [INFO] __main__: step=850  loss=0.2867  lr=5.00e-05  steps/s=0.72
+2026-02-17 10:30:53 [INFO] __main__: step=900  loss=0.3033  lr=5.00e-05  steps/s=0.72
+2026-02-17 10:31:49 [INFO] neurel_deob.training.data: Yielded 30000 samples (skipped 33168)
+2026-02-17 10:32:05 [INFO] __main__: step=950  loss=0.2923  lr=5.00e-05  steps/s=0.72
+2026-02-17 10:33:13 [INFO] __main__: step=1000  loss=0.2966  lr=5.00e-05  steps/s=0.72
+2026-02-17 10:34:15 [INFO] __main__: step=1050  loss=0.3069  lr=5.00e-05  steps/s=0.72
+2026-02-17 10:35:19 [INFO] __main__: step=1100  loss=0.2973  lr=5.00e-05  steps/s=0.73
+2026-02-17 10:36:28 [INFO] __main__: step=1150  loss=0.2846  lr=5.00e-05  steps/s=0.73
+2026-02-17 10:37:32 [INFO] __main__: step=1200  loss=0.2649  lr=5.00e-05  steps/s=0.73
+2026-02-17 10:38:43 [INFO] neurel_deob.training.data: Yielded 40000 samples (skipped 44323)
+2026-02-17 10:38:43 [INFO] __main__: step=1250  loss=0.2926  lr=5.00e-05  steps/s=0.73
+2026-02-17 10:39:51 [INFO] __main__: step=1300  loss=0.2723  lr=5.00e-05  steps/s=0.73
+2026-02-17 10:41:00 [INFO] __main__: step=1350  loss=0.2781  lr=5.00e-05  steps/s=0.73
+2026-02-17 10:42:24 [INFO] __main__: step=1400  loss=0.2668  lr=5.00e-05  steps/s=0.72
+2026-02-17 10:43:30 [INFO] __main__: step=1450  loss=0.2561  lr=5.00e-05  steps/s=0.72
+2026-02-17 10:44:46 [INFO] __main__: step=1500  loss=0.2582  lr=5.00e-05  steps/s=0.72
+2026-02-17 10:45:51 [INFO] __main__: step=1550  loss=0.2440  lr=5.00e-05  steps/s=0.72
+2026-02-17 10:46:08 [INFO] neurel_deob.training.data: Yielded 50000 samples (skipped 55338)
+2026-02-17 10:47:03 [INFO] __main__: step=1600  loss=0.2336  lr=5.00e-05  steps/s=0.72
+2026-02-17 10:48:07 [INFO] __main__: step=1650  loss=0.2465  lr=5.00e-05  steps/s=0.72
+2026-02-17 10:49:16 [INFO] __main__: step=1700  loss=0.2399  lr=5.00e-05  steps/s=0.72
+2026-02-17 10:50:22 [INFO] __main__: step=1750  loss=0.2357  lr=5.00e-05  steps/s=0.72
+2026-02-17 10:51:24 [INFO] __main__: step=1800  loss=0.2374  lr=5.00e-05  steps/s=0.73
+2026-02-17 10:52:31 [INFO] __main__: step=1850  loss=0.2403  lr=5.00e-05  steps/s=0.73
+2026-02-17 10:53:03 [INFO] neurel_deob.training.data: Yielded 60000 samples (skipped 66157)
+2026-02-17 10:53:37 [INFO] __main__: step=1900  loss=0.2425  lr=5.00e-05  steps/s=0.73
+2026-02-17 10:54:43 [INFO] __main__: step=1950  loss=0.2444  lr=5.00e-05  steps/s=0.73
+2026-02-17 10:55:51 [INFO] __main__: step=2000  loss=0.2245  lr=5.00e-05  steps/s=0.73
+2026-02-17 10:55:51 [INFO] __main__: Running evaluation at step 2000 …
+2026-02-17 10:55:51 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-17 10:55:53 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-17 11:59:45 [INFO] __main__: EVAL step=2000  val_loss=0.0169  BLEU=33.61  NED=0.6449  (n=504)
+/net/scratch/n28265ll/forklift/env/lib64/python3.9/site-packages/transformers/modeling_utils.py:3918: UserWarning: Moving the following attributes in the config to the generation config: {'early_stopping': True, 'num_beams': 5, 'forced_bos_token_id': 0}. You are seeing this warning because you've set generation parameters in the model config, as opposed to in the generation config.
+  warnings.warn(
+2026-02-17 11:59:49 [INFO] __main__: Saved checkpoint at step 2000 → checkpoints/arm_ir_ir_v2/step_2000
+2026-02-17 12:01:16 [INFO] __main__: step=2050  loss=0.2245  lr=5.00e-05  steps/s=0.31
+2026-02-17 12:02:28 [INFO] __main__: step=2100  loss=0.2268  lr=5.00e-05  steps/s=0.31
+2026-02-17 12:03:35 [INFO] __main__: step=2150  loss=0.2173  lr=5.00e-05  steps/s=0.32
+2026-02-17 12:04:28 [INFO] neurel_deob.training.data: Yielded 70000 samples (skipped 77358)
+2026-02-17 12:04:53 [INFO] __main__: step=2200  loss=0.2258  lr=5.00e-05  steps/s=0.32
+2026-02-17 12:05:56 [INFO] __main__: step=2250  loss=0.2316  lr=5.00e-05  steps/s=0.32
+2026-02-17 12:07:01 [INFO] __main__: step=2300  loss=0.2258  lr=5.00e-05  steps/s=0.33
+2026-02-17 12:08:08 [INFO] __main__: step=2350  loss=0.2279  lr=5.00e-05  steps/s=0.33
+2026-02-17 12:09:37 [INFO] __main__: step=2400  loss=0.2287  lr=5.00e-05  steps/s=0.33
+2026-02-17 12:10:41 [INFO] __main__: step=2450  loss=0.2203  lr=5.00e-05  steps/s=0.34
+2026-02-17 12:11:50 [INFO] neurel_deob.training.data: Yielded 80000 samples (skipped 88116)
+2026-02-17 12:11:50 [INFO] __main__: step=2500  loss=0.2386  lr=5.00e-05  steps/s=0.34
+2026-02-17 12:12:54 [INFO] __main__: step=2550  loss=0.2312  lr=4.99e-05  steps/s=0.35
+2026-02-17 12:14:01 [INFO] __main__: step=2600  loss=0.2401  lr=4.99e-05  steps/s=0.35
+2026-02-17 12:15:16 [INFO] __main__: step=2650  loss=0.2442  lr=4.99e-05  steps/s=0.35
+2026-02-17 12:16:28 [INFO] __main__: step=2700  loss=0.2130  lr=4.99e-05  steps/s=0.36
+2026-02-17 12:17:34 [INFO] __main__: step=2750  loss=0.2121  lr=4.99e-05  steps/s=0.36
+2026-02-17 12:18:40 [INFO] __main__: step=2800  loss=0.2154  lr=4.99e-05  steps/s=0.36
+2026-02-17 12:19:01 [INFO] neurel_deob.training.data: Yielded 90000 samples (skipped 98919)
+2026-02-17 12:19:55 [INFO] __main__: step=2850  loss=0.2140  lr=4.99e-05  steps/s=0.37
+2026-02-17 12:21:19 [INFO] __main__: step=2900  loss=0.2075  lr=4.99e-05  steps/s=0.37
+2026-02-17 12:22:25 [INFO] __main__: step=2950  loss=0.2250  lr=4.99e-05  steps/s=0.37
+2026-02-17 12:23:38 [INFO] __main__: step=3000  loss=0.2232  lr=4.99e-05  steps/s=0.37
+2026-02-17 12:24:41 [INFO] __main__: step=3050  loss=0.2178  lr=4.99e-05  steps/s=0.38
+2026-02-17 12:25:46 [INFO] __main__: step=3100  loss=0.2073  lr=4.99e-05  steps/s=0.38
+2026-02-17 12:26:18 [INFO] neurel_deob.training.data: Yielded 100000 samples (skipped 110200)
+2026-02-17 12:26:51 [INFO] __main__: step=3150  loss=0.2180  lr=4.99e-05  steps/s=0.38
+2026-02-17 12:28:00 [INFO] __main__: step=3200  loss=0.2324  lr=4.99e-05  steps/s=0.39
+2026-02-17 12:29:07 [INFO] __main__: step=3250  loss=0.2068  lr=4.99e-05  steps/s=0.39
+2026-02-17 12:30:13 [INFO] __main__: step=3300  loss=0.2108  lr=4.99e-05  steps/s=0.39
+2026-02-17 12:31:17 [INFO] __main__: step=3350  loss=0.2072  lr=4.99e-05  steps/s=0.40
+2026-02-17 12:32:22 [INFO] __main__: step=3400  loss=0.2063  lr=4.99e-05  steps/s=0.40
+2026-02-17 12:33:12 [INFO] neurel_deob.training.data: Yielded 110000 samples (skipped 121332)
+2026-02-17 12:33:29 [INFO] __main__: step=3450  loss=0.1862  lr=4.99e-05  steps/s=0.40
+2026-02-17 12:34:40 [INFO] __main__: step=3500  loss=0.2172  lr=4.99e-05  steps/s=0.40
+2026-02-17 12:35:48 [INFO] __main__: step=3550  loss=0.2125  lr=4.99e-05  steps/s=0.41
+2026-02-17 12:36:59 [INFO] __main__: step=3600  loss=0.2080  lr=4.99e-05  steps/s=0.41
+2026-02-17 12:38:19 [INFO] __main__: step=3650  loss=0.1978  lr=4.99e-05  steps/s=0.41
+2026-02-17 12:39:31 [INFO] __main__: step=3700  loss=0.2147  lr=4.99e-05  steps/s=0.41
+2026-02-17 12:40:37 [INFO] neurel_deob.training.data: Yielded 120000 samples (skipped 132498)
+2026-02-17 12:40:37 [INFO] __main__: step=3750  loss=0.2125  lr=4.99e-05  steps/s=0.42
+2026-02-17 12:41:48 [INFO] __main__: step=3800  loss=0.1906  lr=4.99e-05  steps/s=0.42
+2026-02-17 12:42:56 [INFO] __main__: step=3850  loss=0.2184  lr=4.99e-05  steps/s=0.42
+2026-02-17 12:44:00 [INFO] __main__: step=3900  loss=0.2025  lr=4.99e-05  steps/s=0.42
+2026-02-17 12:45:24 [INFO] __main__: step=3950  loss=0.1961  lr=4.99e-05  steps/s=0.42
+2026-02-17 12:46:34 [INFO] __main__: step=4000  loss=0.1948  lr=4.98e-05  steps/s=0.43
+2026-02-17 12:46:34 [INFO] __main__: Running evaluation at step 4000 …
+2026-02-17 12:46:34 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-17 12:46:35 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-17 14:49:02 [INFO] __main__: EVAL step=4000  val_loss=0.0146  BLEU=31.77  NED=0.6384  (n=504)
+2026-02-17 14:49:05 [INFO] __main__: Saved checkpoint at step 4000 → checkpoints/arm_ir_ir_v2/step_4000
+2026-02-17 14:50:14 [INFO] __main__: step=4050  loss=0.1932  lr=4.98e-05  steps/s=0.24
+2026-02-17 14:50:31 [INFO] neurel_deob.training.data: Yielded 130000 samples (skipped 143484)
+2026-02-17 14:51:21 [INFO] __main__: step=4100  loss=0.1965  lr=4.98e-05  steps/s=0.24
+2026-02-17 14:52:31 [INFO] __main__: step=4150  loss=0.1983  lr=4.98e-05  steps/s=0.24
+2026-02-17 14:53:42 [INFO] __main__: step=4200  loss=0.1985  lr=4.98e-05  steps/s=0.25
+2026-02-17 14:54:47 [INFO] __main__: step=4250  loss=0.2064  lr=4.98e-05  steps/s=0.25
+2026-02-17 14:55:58 [INFO] __main__: step=4300  loss=0.2147  lr=4.98e-05  steps/s=0.25
+2026-02-17 14:56:57 [INFO] __main__: step=4350  loss=0.2064  lr=4.98e-05  steps/s=0.25
+2026-02-17 14:57:28 [INFO] neurel_deob.training.data: Yielded 140000 samples (skipped 154340)
+2026-02-17 14:57:59 [INFO] __main__: step=4400  loss=0.1977  lr=4.98e-05  steps/s=0.25
+2026-02-17 14:59:06 [INFO] __main__: step=4450  loss=0.2021  lr=4.98e-05  steps/s=0.26
+2026-02-17 15:00:11 [INFO] __main__: step=4500  loss=0.2061  lr=4.98e-05  steps/s=0.26
+2026-02-17 15:01:15 [INFO] __main__: step=4550  loss=0.1874  lr=4.98e-05  steps/s=0.26
+2026-02-17 15:02:18 [INFO] __main__: step=4600  loss=0.2011  lr=4.98e-05  steps/s=0.26
+2026-02-17 15:03:21 [INFO] __main__: step=4650  loss=0.1993  lr=4.98e-05  steps/s=0.26
+2026-02-17 15:04:14 [INFO] neurel_deob.training.data: Yielded 150000 samples (skipped 165252)
+2026-02-17 15:04:28 [INFO] __main__: step=4700  loss=0.1998  lr=4.98e-05  steps/s=0.27
+2026-02-17 15:05:35 [INFO] __main__: step=4750  loss=0.1840  lr=4.98e-05  steps/s=0.27
+2026-02-17 15:06:43 [INFO] __main__: step=4800  loss=0.1966  lr=4.98e-05  steps/s=0.27
+2026-02-17 15:07:49 [INFO] __main__: step=4850  loss=0.1967  lr=4.98e-05  steps/s=0.27
+2026-02-17 15:08:53 [INFO] __main__: step=4900  loss=0.1986  lr=4.98e-05  steps/s=0.27
+2026-02-17 15:10:08 [INFO] __main__: step=4950  loss=0.1658  lr=4.98e-05  steps/s=0.27
+2026-02-17 15:11:20 [INFO] neurel_deob.training.data: Yielded 160000 samples (skipped 176185)
+2026-02-17 15:11:21 [INFO] __main__: step=5000  loss=0.1935  lr=4.97e-05  steps/s=0.28
+2026-02-17 15:12:26 [INFO] __main__: step=5050  loss=0.1958  lr=4.97e-05  steps/s=0.28
+2026-02-17 15:13:32 [INFO] __main__: step=5100  loss=0.2083  lr=4.97e-05  steps/s=0.28
+2026-02-17 15:14:41 [INFO] __main__: step=5150  loss=0.2002  lr=4.97e-05  steps/s=0.28
+2026-02-17 15:15:45 [INFO] __main__: step=5200  loss=0.1849  lr=4.97e-05  steps/s=0.28
+2026-02-17 15:16:53 [INFO] __main__: step=5250  loss=0.1851  lr=4.97e-05  steps/s=0.29
+2026-02-17 15:18:01 [INFO] __main__: step=5300  loss=0.1994  lr=4.97e-05  steps/s=0.29
+2026-02-17 15:18:18 [INFO] neurel_deob.training.data: Yielded 170000 samples (skipped 187194)
+2026-02-17 15:19:06 [INFO] __main__: step=5350  loss=0.1975  lr=4.97e-05  steps/s=0.29
+2026-02-17 15:20:23 [INFO] __main__: step=5400  loss=0.2053  lr=4.97e-05  steps/s=0.29
+2026-02-17 15:21:30 [INFO] __main__: step=5450  loss=0.1965  lr=4.97e-05  steps/s=0.29
+2026-02-17 15:22:44 [INFO] __main__: step=5500  loss=0.2000  lr=4.97e-05  steps/s=0.29
+2026-02-17 15:23:54 [INFO] __main__: step=5550  loss=0.1829  lr=4.97e-05  steps/s=0.29
+2026-02-17 15:24:59 [INFO] __main__: step=5600  loss=0.1777  lr=4.97e-05  steps/s=0.30
+2026-02-17 15:25:34 [INFO] neurel_deob.training.data: Yielded 180000 samples (skipped 198002)
+2026-02-17 15:26:08 [INFO] __main__: step=5650  loss=0.2002  lr=4.97e-05  steps/s=0.30
+2026-02-17 15:27:14 [INFO] __main__: step=5700  loss=0.2075  lr=4.97e-05  steps/s=0.30
+2026-02-17 15:28:18 [INFO] __main__: step=5750  loss=0.1946  lr=4.97e-05  steps/s=0.30
+2026-02-17 15:29:22 [INFO] __main__: step=5800  loss=0.2000  lr=4.97e-05  steps/s=0.30
+2026-02-17 15:30:31 [INFO] __main__: step=5850  loss=0.1918  lr=4.96e-05  steps/s=0.30
+2026-02-17 15:31:38 [INFO] __main__: step=5900  loss=0.2050  lr=4.96e-05  steps/s=0.31
+2026-02-17 15:32:28 [INFO] neurel_deob.training.data: Yielded 190000 samples (skipped 209001)
+2026-02-17 15:32:50 [INFO] __main__: step=5950  loss=0.2015  lr=4.96e-05  steps/s=0.31
+2026-02-17 15:34:12 [INFO] __main__: step=6000  loss=0.2108  lr=4.96e-05  steps/s=0.31
+2026-02-17 15:34:12 [INFO] __main__: Running evaluation at step 6000 …
+2026-02-17 15:34:12 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-17 15:34:13 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-17 17:32:32 [INFO] __main__: EVAL step=6000  val_loss=0.0128  BLEU=26.39  NED=0.6503  (n=504)
+2026-02-17 17:32:35 [INFO] __main__: Saved checkpoint at step 6000 → checkpoints/arm_ir_ir_v2/step_6000
+2026-02-17 17:33:55 [INFO] __main__: step=6050  loss=0.1865  lr=4.96e-05  steps/s=0.23
+2026-02-17 17:35:04 [INFO] __main__: step=6100  loss=0.1723  lr=4.96e-05  steps/s=0.23
+2026-02-17 17:36:14 [INFO] __main__: step=6150  loss=0.1903  lr=4.96e-05  steps/s=0.23
+2026-02-17 17:37:29 [INFO] __main__: step=6200  loss=0.1982  lr=4.96e-05  steps/s=0.23
+2026-02-17 17:38:36 [INFO] neurel_deob.training.data: Yielded 200000 samples (skipped 219975)
+2026-02-17 17:38:36 [INFO] __main__: step=6250  loss=0.1888  lr=4.96e-05  steps/s=0.23
+2026-02-17 17:40:01 [INFO] __main__: step=6300  loss=0.1831  lr=4.96e-05  steps/s=0.23
+2026-02-17 17:41:11 [INFO] __main__: step=6350  loss=0.1769  lr=4.96e-05  steps/s=0.23
+2026-02-17 17:42:11 [INFO] __main__: step=6400  loss=0.1827  lr=4.96e-05  steps/s=0.24
+2026-02-17 17:43:23 [INFO] __main__: step=6450  loss=0.1966  lr=4.96e-05  steps/s=0.24
+2026-02-17 17:44:28 [INFO] __main__: step=6500  loss=0.1808  lr=4.96e-05  steps/s=0.24
+2026-02-17 17:45:34 [INFO] __main__: step=6550  loss=0.1905  lr=4.95e-05  steps/s=0.24
+2026-02-17 17:45:52 [INFO] neurel_deob.training.data: Yielded 210000 samples (skipped 230948)
+2026-02-17 17:46:54 [INFO] __main__: step=6600  loss=0.1892  lr=4.95e-05  steps/s=0.24
+2026-02-17 17:48:14 [INFO] __main__: step=6650  loss=0.1789  lr=4.95e-05  steps/s=0.24
+2026-02-17 17:49:22 [INFO] __main__: step=6700  loss=0.1798  lr=4.95e-05  steps/s=0.24
+2026-02-17 17:50:26 [INFO] __main__: step=6750  loss=0.1789  lr=4.95e-05  steps/s=0.24
+2026-02-17 17:51:30 [INFO] __main__: step=6800  loss=0.1784  lr=4.95e-05  steps/s=0.25
+2026-02-17 17:52:43 [INFO] __main__: step=6850  loss=0.1708  lr=4.95e-05  steps/s=0.25
+2026-02-17 17:53:14 [INFO] neurel_deob.training.data: Yielded 220000 samples (skipped 242091)
+2026-02-17 17:53:48 [INFO] __main__: step=6900  loss=0.1949  lr=4.95e-05  steps/s=0.25
+2026-02-17 17:55:10 [INFO] __main__: step=6950  loss=0.1915  lr=4.95e-05  steps/s=0.25
+2026-02-17 17:56:19 [INFO] __main__: step=7000  loss=0.1966  lr=4.95e-05  steps/s=0.25
+2026-02-17 17:57:26 [INFO] __main__: step=7050  loss=0.1856  lr=4.95e-05  steps/s=0.25
+2026-02-17 17:58:28 [INFO] __main__: step=7100  loss=0.1844  lr=4.95e-05  steps/s=0.25
+2026-02-17 17:59:36 [INFO] __main__: step=7150  loss=0.1985  lr=4.95e-05  steps/s=0.25
+2026-02-17 18:00:32 [INFO] neurel_deob.training.data: Yielded 230000 samples (skipped 253088)
+2026-02-17 18:00:49 [INFO] __main__: step=7200  loss=0.1801  lr=4.94e-05  steps/s=0.25
+2026-02-17 18:02:04 [INFO] __main__: step=7250  loss=0.1685  lr=4.94e-05  steps/s=0.26
+2026-02-17 18:03:08 [INFO] __main__: step=7300  loss=0.1798  lr=4.94e-05  steps/s=0.26
+2026-02-17 18:04:13 [INFO] __main__: step=7350  loss=0.2015  lr=4.94e-05  steps/s=0.26
+2026-02-17 18:05:16 [INFO] __main__: step=7400  loss=0.1755  lr=4.94e-05  steps/s=0.26
+2026-02-17 18:06:32 [INFO] __main__: step=7450  loss=0.1908  lr=4.94e-05  steps/s=0.26
+2026-02-17 18:07:43 [INFO] neurel_deob.training.data: Yielded 240000 samples (skipped 263911)
+2026-02-17 18:07:43 [INFO] __main__: step=7500  loss=0.1747  lr=4.94e-05  steps/s=0.26
+2026-02-17 18:08:49 [INFO] __main__: step=7550  loss=0.2031  lr=4.94e-05  steps/s=0.26
+2026-02-17 18:09:54 [INFO] __main__: step=7600  loss=0.1574  lr=4.94e-05  steps/s=0.26
+2026-02-17 18:10:57 [INFO] __main__: step=7650  loss=0.1747  lr=4.94e-05  steps/s=0.27
+2026-02-17 18:12:04 [INFO] __main__: step=7700  loss=0.1804  lr=4.94e-05  steps/s=0.27
+2026-02-17 18:13:18 [INFO] __main__: step=7750  loss=0.1796  lr=4.93e-05  steps/s=0.27
+2026-02-17 18:14:27 [INFO] __main__: step=7800  loss=0.2121  lr=4.93e-05  steps/s=0.27
+2026-02-17 18:14:44 [INFO] neurel_deob.training.data: Yielded 250000 samples (skipped 274680)
+2026-02-17 18:15:38 [INFO] __main__: step=7850  loss=0.1930  lr=4.93e-05  steps/s=0.27
+2026-02-17 18:16:46 [INFO] __main__: step=7900  loss=0.1715  lr=4.93e-05  steps/s=0.27
+2026-02-17 18:17:54 [INFO] __main__: step=7950  loss=0.1763  lr=4.93e-05  steps/s=0.27
+2026-02-17 18:19:03 [INFO] __main__: step=8000  loss=0.1685  lr=4.93e-05  steps/s=0.27
+2026-02-17 18:19:03 [INFO] __main__: Running evaluation at step 8000 …
+2026-02-17 18:19:03 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-17 18:19:05 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-17 20:27:35 [INFO] __main__: EVAL step=8000  val_loss=0.0117  BLEU=35.82  NED=0.6280  (n=504)
+2026-02-17 20:27:39 [INFO] __main__: Saved checkpoint at step 8000 → checkpoints/arm_ir_ir_v2/step_8000
+2026-02-17 20:28:56 [INFO] __main__: step=8050  loss=0.1781  lr=4.93e-05  steps/s=0.22
+2026-02-17 20:30:02 [INFO] __main__: step=8100  loss=0.1670  lr=4.93e-05  steps/s=0.22
+2026-02-17 20:30:34 [INFO] neurel_deob.training.data: Yielded 260000 samples (skipped 285811)
+2026-02-17 20:31:14 [INFO] __main__: step=8150  loss=0.1626  lr=4.93e-05  steps/s=0.22
+2026-02-17 20:32:22 [INFO] __main__: step=8200  loss=0.1827  lr=4.93e-05  steps/s=0.22
+2026-02-17 20:33:35 [INFO] __main__: step=8250  loss=0.1616  lr=4.93e-05  steps/s=0.22
+2026-02-17 20:34:39 [INFO] __main__: step=8300  loss=0.1729  lr=4.92e-05  steps/s=0.22
+2026-02-17 20:35:56 [INFO] __main__: step=8350  loss=0.1664  lr=4.92e-05  steps/s=0.22
+2026-02-17 20:37:03 [INFO] __main__: step=8400  loss=0.1832  lr=4.92e-05  steps/s=0.22
+2026-02-17 20:37:51 [INFO] neurel_deob.training.data: Yielded 270000 samples (skipped 296841)
+2026-02-17 20:38:06 [INFO] __main__: step=8450  loss=0.1734  lr=4.92e-05  steps/s=0.22
+2026-02-17 20:39:16 [INFO] __main__: step=8500  loss=0.1636  lr=4.92e-05  steps/s=0.23
+2026-02-17 20:40:25 [INFO] __main__: step=8550  loss=0.1897  lr=4.92e-05  steps/s=0.23
+2026-02-17 20:41:29 [INFO] __main__: step=8600  loss=0.1639  lr=4.92e-05  steps/s=0.23
+2026-02-17 20:42:32 [INFO] __main__: step=8650  loss=0.1595  lr=4.92e-05  steps/s=0.23
+2026-02-17 20:43:39 [INFO] __main__: step=8700  loss=0.1563  lr=4.92e-05  steps/s=0.23
+2026-02-17 20:44:42 [INFO] neurel_deob.training.data: Yielded 280000 samples (skipped 307867)
+2026-02-17 20:44:42 [INFO] __main__: step=8750  loss=0.1711  lr=4.92e-05  steps/s=0.23
+2026-02-17 20:45:52 [INFO] __main__: step=8800  loss=0.1676  lr=4.91e-05  steps/s=0.23
+2026-02-17 20:46:58 [INFO] __main__: step=8850  loss=0.1762  lr=4.91e-05  steps/s=0.23
+2026-02-17 20:48:07 [INFO] __main__: step=8900  loss=0.1721  lr=4.91e-05  steps/s=0.23
+2026-02-17 20:49:12 [INFO] __main__: step=8950  loss=0.1778  lr=4.91e-05  steps/s=0.23
+2026-02-17 20:50:21 [INFO] __main__: step=9000  loss=0.1605  lr=4.91e-05  steps/s=0.23
+2026-02-17 20:51:28 [INFO] __main__: step=9050  loss=0.1713  lr=4.91e-05  steps/s=0.24
+2026-02-17 20:51:47 [INFO] neurel_deob.training.data: Yielded 290000 samples (skipped 318932)
+2026-02-17 20:52:37 [INFO] __main__: step=9100  loss=0.1565  lr=4.91e-05  steps/s=0.24
+2026-02-17 20:53:44 [INFO] __main__: step=9150  loss=0.1606  lr=4.91e-05  steps/s=0.24
+2026-02-17 20:54:56 [INFO] __main__: step=9200  loss=0.1683  lr=4.91e-05  steps/s=0.24
+2026-02-17 20:56:04 [INFO] __main__: step=9250  loss=0.1628  lr=4.91e-05  steps/s=0.24
+2026-02-17 20:57:11 [INFO] __main__: step=9300  loss=0.1649  lr=4.90e-05  steps/s=0.24
+2026-02-17 20:58:17 [INFO] __main__: step=9350  loss=0.1609  lr=4.90e-05  steps/s=0.24
+2026-02-17 20:58:50 [INFO] neurel_deob.training.data: Yielded 300000 samples (skipped 329938)
+2026-02-17 20:59:26 [INFO] __main__: step=9400  loss=0.1730  lr=4.90e-05  steps/s=0.24
+2026-02-17 21:00:37 [INFO] __main__: step=9450  loss=0.1555  lr=4.90e-05  steps/s=0.24
+2026-02-17 21:01:48 [INFO] __main__: step=9500  loss=0.1769  lr=4.90e-05  steps/s=0.24
+2026-02-17 21:02:57 [INFO] __main__: step=9550  loss=0.1693  lr=4.90e-05  steps/s=0.24
+2026-02-17 21:04:03 [INFO] __main__: step=9600  loss=0.1853  lr=4.90e-05  steps/s=0.24
+2026-02-17 21:05:19 [INFO] __main__: step=9650  loss=0.1678  lr=4.90e-05  steps/s=0.25
+2026-02-17 21:06:08 [INFO] neurel_deob.training.data: Yielded 310000 samples (skipped 340859)
+2026-02-17 21:06:27 [INFO] __main__: step=9700  loss=0.1651  lr=4.90e-05  steps/s=0.25
+2026-02-17 21:07:39 [INFO] __main__: step=9750  loss=0.1742  lr=4.89e-05  steps/s=0.25
+2026-02-17 21:08:51 [INFO] __main__: step=9800  loss=0.1731  lr=4.89e-05  steps/s=0.25
+2026-02-17 21:09:59 [INFO] __main__: step=9850  loss=0.1694  lr=4.89e-05  steps/s=0.25
+2026-02-17 21:11:04 [INFO] __main__: step=9900  loss=0.1780  lr=4.89e-05  steps/s=0.25
+2026-02-17 21:12:23 [INFO] __main__: step=9950  loss=0.1636  lr=4.89e-05  steps/s=0.25
+2026-02-17 21:13:26 [INFO] neurel_deob.training.data: Yielded 320000 samples (skipped 351854)
+2026-02-17 21:13:26 [INFO] __main__: step=10000  loss=0.1780  lr=4.89e-05  steps/s=0.25
+2026-02-17 21:13:26 [INFO] __main__: Running evaluation at step 10000 …
+2026-02-17 21:13:26 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-17 21:13:27 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-17 22:45:38 [INFO] __main__: EVAL step=10000  val_loss=0.0109  BLEU=29.64  NED=0.6401  (n=504)
+2026-02-17 22:45:41 [INFO] __main__: Saved checkpoint at step 10000 → checkpoints/arm_ir_ir_v2/step_10000
+2026-02-17 22:47:00 [INFO] __main__: step=10050  loss=0.1581  lr=4.89e-05  steps/s=0.22
+2026-02-17 22:48:06 [INFO] __main__: step=10100  loss=0.1532  lr=4.89e-05  steps/s=0.22
+2026-02-17 22:49:11 [INFO] __main__: step=10150  loss=0.1681  lr=4.88e-05  steps/s=0.22
+2026-02-17 22:50:25 [INFO] __main__: step=10200  loss=0.1804  lr=4.88e-05  steps/s=0.22
+2026-02-17 22:51:43 [INFO] __main__: step=10250  loss=0.1657  lr=4.88e-05  steps/s=0.22
+2026-02-17 22:52:55 [INFO] __main__: step=10300  loss=0.1739  lr=4.88e-05  steps/s=0.23
+2026-02-17 22:53:10 [INFO] neurel_deob.training.data: Yielded 330000 samples (skipped 362889)
+2026-02-17 22:54:01 [INFO] __main__: step=10350  loss=0.1592  lr=4.88e-05  steps/s=0.23
+2026-02-17 22:55:09 [INFO] __main__: step=10400  loss=0.1681  lr=4.88e-05  steps/s=0.23
+2026-02-17 22:56:20 [INFO] __main__: step=10450  loss=0.1716  lr=4.88e-05  steps/s=0.23
+2026-02-17 22:57:28 [INFO] __main__: step=10500  loss=0.1631  lr=4.88e-05  steps/s=0.23
+2026-02-17 22:58:45 [INFO] __main__: step=10550  loss=0.1630  lr=4.88e-05  steps/s=0.23
+2026-02-17 22:59:53 [INFO] __main__: step=10600  loss=0.1795  lr=4.87e-05  steps/s=0.23
+2026-02-17 23:00:27 [INFO] neurel_deob.training.data: Yielded 340000 samples (skipped 373950)
+2026-02-17 23:00:59 [INFO] __main__: step=10650  loss=0.1880  lr=4.87e-05  steps/s=0.23
+2026-02-17 23:02:09 [INFO] __main__: step=10700  loss=0.1844  lr=4.87e-05  steps/s=0.23
+2026-02-17 23:03:18 [INFO] __main__: step=10750  loss=0.1951  lr=4.87e-05  steps/s=0.23
+2026-02-17 23:04:29 [INFO] __main__: step=10800  loss=0.1622  lr=4.87e-05  steps/s=0.23
+2026-02-17 23:05:38 [INFO] __main__: step=10850  loss=0.1663  lr=4.87e-05  steps/s=0.23
+2026-02-17 23:06:48 [INFO] __main__: step=10900  loss=0.1755  lr=4.87e-05  steps/s=0.23
+2026-02-17 23:07:39 [INFO] neurel_deob.training.data: Yielded 350000 samples (skipped 384995)
+2026-02-17 23:07:53 [INFO] __main__: step=10950  loss=0.1683  lr=4.87e-05  steps/s=0.23
+2026-02-17 23:08:57 [INFO] __main__: step=11000  loss=0.1702  lr=4.86e-05  steps/s=0.24
+2026-02-17 23:10:00 [INFO] __main__: step=11050  loss=0.1652  lr=4.86e-05  steps/s=0.24
+2026-02-17 23:11:09 [INFO] __main__: step=11100  loss=0.1537  lr=4.86e-05  steps/s=0.24
+2026-02-17 23:12:17 [INFO] __main__: step=11150  loss=0.1522  lr=4.86e-05  steps/s=0.24
+2026-02-17 23:13:24 [INFO] __main__: step=11200  loss=0.1720  lr=4.86e-05  steps/s=0.24
+2026-02-17 23:14:34 [INFO] neurel_deob.training.data: Yielded 360000 samples (skipped 395866)
+2026-02-17 23:14:34 [INFO] __main__: step=11250  loss=0.1708  lr=4.86e-05  steps/s=0.24
+2026-02-17 23:15:42 [INFO] __main__: step=11300  loss=0.1655  lr=4.86e-05  steps/s=0.24
+2026-02-17 23:16:47 [INFO] __main__: step=11350  loss=0.1574  lr=4.85e-05  steps/s=0.24
+2026-02-17 23:17:56 [INFO] __main__: step=11400  loss=0.1675  lr=4.85e-05  steps/s=0.24
+2026-02-17 23:18:58 [INFO] __main__: step=11450  loss=0.1566  lr=4.85e-05  steps/s=0.24
+2026-02-17 23:20:02 [INFO] __main__: step=11500  loss=0.1639  lr=4.85e-05  steps/s=0.24
+2026-02-17 23:21:10 [INFO] __main__: step=11550  loss=0.1625  lr=4.85e-05  steps/s=0.24
+2026-02-17 23:21:26 [INFO] neurel_deob.training.data: Yielded 370000 samples (skipped 406771)
+2026-02-17 23:22:12 [INFO] __main__: step=11600  loss=0.1634  lr=4.85e-05  steps/s=0.24
+2026-02-17 23:23:25 [INFO] __main__: step=11650  loss=0.1547  lr=4.85e-05  steps/s=0.24
+2026-02-17 23:24:49 [INFO] __main__: step=11700  loss=0.1497  lr=4.85e-05  steps/s=0.25
+2026-02-17 23:25:53 [INFO] __main__: step=11750  loss=0.1613  lr=4.84e-05  steps/s=0.25
+2026-02-17 23:27:03 [INFO] __main__: step=11800  loss=0.1518  lr=4.84e-05  steps/s=0.25
+2026-02-17 23:28:13 [INFO] __main__: step=11850  loss=0.1673  lr=4.84e-05  steps/s=0.25
+2026-02-17 23:28:46 [INFO] neurel_deob.training.data: Yielded 380000 samples (skipped 417958)
+2026-02-17 23:29:18 [INFO] __main__: step=11900  loss=0.1545  lr=4.84e-05  steps/s=0.25
+2026-02-17 23:30:30 [INFO] __main__: step=11950  loss=0.1661  lr=4.84e-05  steps/s=0.25
+2026-02-17 23:31:36 [INFO] __main__: step=12000  loss=0.1527  lr=4.84e-05  steps/s=0.25
+2026-02-17 23:31:36 [INFO] __main__: Running evaluation at step 12000 …
+2026-02-17 23:31:36 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-17 23:31:38 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-18 02:37:26 [INFO] __main__: EVAL step=12000  val_loss=0.0105  BLEU=23.04  NED=0.6671  (n=504)
+2026-02-18 02:37:31 [INFO] __main__: Saved checkpoint at step 12000 → checkpoints/arm_ir_ir_v2/step_12000
+2026-02-18 02:37:31 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_2000
+2026-02-18 02:38:43 [INFO] __main__: step=12050  loss=0.1677  lr=4.84e-05  steps/s=0.20
+2026-02-18 02:39:45 [INFO] __main__: step=12100  loss=0.1692  lr=4.83e-05  steps/s=0.20
+2026-02-18 02:40:56 [INFO] __main__: step=12150  loss=0.1589  lr=4.83e-05  steps/s=0.20
+2026-02-18 02:41:43 [INFO] neurel_deob.training.data: Yielded 390000 samples (skipped 429042)
+2026-02-18 02:41:59 [INFO] __main__: step=12200  loss=0.1545  lr=4.83e-05  steps/s=0.20
+2026-02-18 02:43:12 [INFO] __main__: step=12250  loss=0.1479  lr=4.83e-05  steps/s=0.21
+2026-02-18 02:44:27 [INFO] __main__: step=12300  loss=0.1760  lr=4.83e-05  steps/s=0.21
+2026-02-18 02:45:33 [INFO] __main__: step=12350  loss=0.1581  lr=4.83e-05  steps/s=0.21
+2026-02-18 02:46:40 [INFO] __main__: step=12400  loss=0.1703  lr=4.83e-05  steps/s=0.21
+2026-02-18 02:47:41 [INFO] __main__: step=12450  loss=0.1639  lr=4.82e-05  steps/s=0.21
+2026-02-18 02:48:53 [INFO] neurel_deob.training.data: Yielded 400000 samples (skipped 440112)
+2026-02-18 02:48:53 [INFO] __main__: step=12500  loss=0.1654  lr=4.82e-05  steps/s=0.21
+2026-02-18 02:50:01 [INFO] __main__: step=12550  loss=0.1574  lr=4.82e-05  steps/s=0.21
+2026-02-18 02:51:06 [INFO] __main__: step=12600  loss=0.1470  lr=4.82e-05  steps/s=0.21
+2026-02-18 02:52:12 [INFO] __main__: step=12650  loss=0.1482  lr=4.82e-05  steps/s=0.21
+2026-02-18 02:53:16 [INFO] __main__: step=12700  loss=0.1548  lr=4.82e-05  steps/s=0.21
+2026-02-18 02:54:30 [INFO] __main__: step=12750  loss=0.1540  lr=4.82e-05  steps/s=0.21
+2026-02-18 02:55:45 [INFO] __main__: step=12800  loss=0.1630  lr=4.81e-05  steps/s=0.21
+2026-02-18 02:56:03 [INFO] neurel_deob.training.data: Yielded 410000 samples (skipped 451062)
+2026-02-18 02:56:55 [INFO] __main__: step=12850  loss=0.1639  lr=4.81e-05  steps/s=0.21
+2026-02-18 02:58:10 [INFO] __main__: step=12900  loss=0.1599  lr=4.81e-05  steps/s=0.21
+2026-02-18 02:59:25 [INFO] __main__: step=12950  loss=0.1438  lr=4.81e-05  steps/s=0.21
+2026-02-18 03:00:33 [INFO] __main__: step=13000  loss=0.1587  lr=4.81e-05  steps/s=0.21
+2026-02-18 03:01:42 [INFO] __main__: step=13050  loss=0.1574  lr=4.81e-05  steps/s=0.21
+2026-02-18 03:02:45 [INFO] __main__: step=13100  loss=0.1557  lr=4.80e-05  steps/s=0.22
+2026-02-18 03:03:18 [INFO] neurel_deob.training.data: Yielded 420000 samples (skipped 462028)
+2026-02-18 03:03:53 [INFO] __main__: step=13150  loss=0.1705  lr=4.80e-05  steps/s=0.22
+2026-02-18 03:05:00 [INFO] __main__: step=13200  loss=0.1577  lr=4.80e-05  steps/s=0.22
+2026-02-18 03:06:07 [INFO] __main__: step=13250  loss=0.1563  lr=4.80e-05  steps/s=0.22
+2026-02-18 03:07:24 [INFO] __main__: step=13300  loss=0.1587  lr=4.80e-05  steps/s=0.22
+2026-02-18 03:08:34 [INFO] __main__: step=13350  loss=0.1673  lr=4.80e-05  steps/s=0.22
+2026-02-18 03:09:49 [INFO] __main__: step=13400  loss=0.1522  lr=4.80e-05  steps/s=0.22
+2026-02-18 03:10:43 [INFO] neurel_deob.training.data: Yielded 430000 samples (skipped 473009)
+2026-02-18 03:10:59 [INFO] __main__: step=13450  loss=0.1594  lr=4.79e-05  steps/s=0.22
+2026-02-18 03:12:06 [INFO] __main__: step=13500  loss=0.1617  lr=4.79e-05  steps/s=0.22
+2026-02-18 03:13:15 [INFO] __main__: step=13550  loss=0.1890  lr=4.79e-05  steps/s=0.22
+2026-02-18 03:14:21 [INFO] __main__: step=13600  loss=0.1517  lr=4.79e-05  steps/s=0.22
+2026-02-18 03:15:30 [INFO] __main__: step=13650  loss=0.1688  lr=4.79e-05  steps/s=0.22
+2026-02-18 03:16:39 [INFO] __main__: step=13700  loss=0.1536  lr=4.79e-05  steps/s=0.22
+2026-02-18 03:17:44 [INFO] neurel_deob.training.data: Yielded 440000 samples (skipped 483953)
+2026-02-18 03:17:44 [INFO] __main__: step=13750  loss=0.1484  lr=4.78e-05  steps/s=0.22
+2026-02-18 03:18:44 [INFO] __main__: step=13800  loss=0.1472  lr=4.78e-05  steps/s=0.22
+2026-02-18 03:19:56 [INFO] __main__: step=13850  loss=0.1490  lr=4.78e-05  steps/s=0.22
+2026-02-18 03:21:03 [INFO] __main__: step=13900  loss=0.1688  lr=4.78e-05  steps/s=0.22
+2026-02-18 03:22:14 [INFO] __main__: step=13950  loss=0.1632  lr=4.78e-05  steps/s=0.23
+2026-02-18 03:23:19 [INFO] __main__: step=14000  loss=0.1471  lr=4.78e-05  steps/s=0.23
+2026-02-18 03:23:19 [INFO] __main__: Running evaluation at step 14000 …
+2026-02-18 03:23:19 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-18 03:23:21 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-18 06:30:15 [INFO] __main__: EVAL step=14000  val_loss=0.0099  BLEU=15.65  NED=0.7516  (n=504)
+2026-02-18 06:30:19 [INFO] __main__: Saved checkpoint at step 14000 → checkpoints/arm_ir_ir_v2/step_14000
+2026-02-18 06:30:19 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_4000
+2026-02-18 06:31:35 [INFO] __main__: step=14050  loss=0.1469  lr=4.77e-05  steps/s=0.19
+2026-02-18 06:31:56 [INFO] neurel_deob.training.data: Yielded 450000 samples (skipped 494788)
+2026-02-18 06:32:46 [INFO] __main__: step=14100  loss=0.1745  lr=4.77e-05  steps/s=0.19
+2026-02-18 06:33:57 [INFO] __main__: step=14150  loss=0.1545  lr=4.77e-05  steps/s=0.19
+2026-02-18 06:35:05 [INFO] __main__: step=14200  loss=0.1536  lr=4.77e-05  steps/s=0.19
+2026-02-18 06:36:21 [INFO] __main__: step=14250  loss=0.1634  lr=4.77e-05  steps/s=0.19
+2026-02-18 06:37:26 [INFO] __main__: step=14300  loss=0.1651  lr=4.77e-05  steps/s=0.19
+2026-02-18 06:38:36 [INFO] __main__: step=14350  loss=0.1698  lr=4.76e-05  steps/s=0.19
+2026-02-18 06:39:10 [INFO] neurel_deob.training.data: Yielded 460000 samples (skipped 505989)
+2026-02-18 06:39:42 [INFO] __main__: step=14400  loss=0.1505  lr=4.76e-05  steps/s=0.20
+2026-02-18 06:40:45 [INFO] __main__: step=14450  loss=0.1457  lr=4.76e-05  steps/s=0.20
+2026-02-18 06:41:49 [INFO] __main__: step=14500  loss=0.1488  lr=4.76e-05  steps/s=0.20
+2026-02-18 06:42:54 [INFO] __main__: step=14550  loss=0.1396  lr=4.76e-05  steps/s=0.20
+2026-02-18 06:44:02 [INFO] __main__: step=14600  loss=0.1583  lr=4.76e-05  steps/s=0.20
+2026-02-18 06:45:12 [INFO] __main__: step=14650  loss=0.1499  lr=4.75e-05  steps/s=0.20
+2026-02-18 06:46:02 [INFO] neurel_deob.training.data: Yielded 470000 samples (skipped 516954)
+2026-02-18 06:46:17 [INFO] __main__: step=14700  loss=0.1412  lr=4.75e-05  steps/s=0.20
+2026-02-18 06:47:21 [INFO] __main__: step=14750  loss=0.1485  lr=4.75e-05  steps/s=0.20
+2026-02-18 06:48:34 [INFO] __main__: step=14800  loss=0.1484  lr=4.75e-05  steps/s=0.20
+2026-02-18 06:49:41 [INFO] __main__: step=14850  loss=0.1432  lr=4.75e-05  steps/s=0.20
+2026-02-18 06:50:54 [INFO] __main__: step=14900  loss=0.1610  lr=4.75e-05  steps/s=0.20
+2026-02-18 06:52:04 [INFO] __main__: step=14950  loss=0.1439  lr=4.74e-05  steps/s=0.20
+2026-02-18 06:53:12 [INFO] neurel_deob.training.data: Yielded 480000 samples (skipped 527909)
+2026-02-18 06:53:12 [INFO] __main__: step=15000  loss=0.1481  lr=4.74e-05  steps/s=0.20
+2026-02-18 06:54:18 [INFO] __main__: step=15050  loss=0.1677  lr=4.74e-05  steps/s=0.20
+2026-02-18 06:55:28 [INFO] __main__: step=15100  loss=0.1532  lr=4.74e-05  steps/s=0.20
+2026-02-18 06:56:28 [INFO] __main__: step=15150  loss=0.1557  lr=4.74e-05  steps/s=0.20
+2026-02-18 06:57:38 [INFO] __main__: step=15200  loss=0.1432  lr=4.74e-05  steps/s=0.20
+2026-02-18 06:58:46 [INFO] __main__: step=15250  loss=0.1548  lr=4.73e-05  steps/s=0.20
+2026-02-18 06:59:54 [INFO] __main__: step=15300  loss=0.1632  lr=4.73e-05  steps/s=0.20
+2026-02-18 07:00:09 [INFO] neurel_deob.training.data: Yielded 490000 samples (skipped 538571)
+2026-02-18 07:01:03 [INFO] __main__: step=15350  loss=0.1480  lr=4.73e-05  steps/s=0.20
+2026-02-18 07:02:10 [INFO] __main__: step=15400  loss=0.1517  lr=4.73e-05  steps/s=0.20
+2026-02-18 07:03:26 [INFO] __main__: step=15450  loss=0.1321  lr=4.73e-05  steps/s=0.21
+2026-02-18 07:04:33 [INFO] __main__: step=15500  loss=0.1473  lr=4.72e-05  steps/s=0.21
+2026-02-18 07:05:41 [INFO] __main__: step=15550  loss=0.1439  lr=4.72e-05  steps/s=0.21
+2026-02-18 07:06:48 [INFO] __main__: step=15600  loss=0.1598  lr=4.72e-05  steps/s=0.21
+2026-02-18 07:07:21 [INFO] neurel_deob.training.data: Yielded 500000 samples (skipped 549566)
+2026-02-18 07:07:55 [INFO] __main__: step=15650  loss=0.1539  lr=4.72e-05  steps/s=0.21
+2026-02-18 07:08:59 [INFO] __main__: step=15700  loss=0.1778  lr=4.72e-05  steps/s=0.21
+2026-02-18 07:10:07 [INFO] __main__: step=15750  loss=0.1517  lr=4.72e-05  steps/s=0.21
+2026-02-18 07:11:16 [INFO] __main__: step=15800  loss=0.1569  lr=4.71e-05  steps/s=0.21
+2026-02-18 07:12:21 [INFO] __main__: step=15850  loss=0.1513  lr=4.71e-05  steps/s=0.21
+2026-02-18 07:13:37 [INFO] __main__: step=15900  loss=0.1359  lr=4.71e-05  steps/s=0.21
+2026-02-18 07:14:25 [INFO] neurel_deob.training.data: Yielded 510000 samples (skipped 560616)
+2026-02-18 07:14:43 [INFO] __main__: step=15950  loss=0.1484  lr=4.71e-05  steps/s=0.21
+2026-02-18 07:15:59 [INFO] __main__: step=16000  loss=0.1428  lr=4.71e-05  steps/s=0.21
+2026-02-18 07:15:59 [INFO] __main__: Running evaluation at step 16000 …
+2026-02-18 07:15:59 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-18 07:16:01 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-18 09:40:11 [INFO] __main__: EVAL step=16000  val_loss=0.0100  BLEU=27.57  NED=0.6473  (n=504)
+2026-02-18 09:40:17 [INFO] __main__: Saved checkpoint at step 16000 → checkpoints/arm_ir_ir_v2/step_16000
+2026-02-18 09:40:17 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_6000
+2026-02-18 09:41:33 [INFO] __main__: step=16050  loss=0.1572  lr=4.70e-05  steps/s=0.19
+2026-02-18 09:42:43 [INFO] __main__: step=16100  loss=0.1416  lr=4.70e-05  steps/s=0.19
+2026-02-18 09:43:56 [INFO] __main__: step=16150  loss=0.1566  lr=4.70e-05  steps/s=0.19
+2026-02-18 09:45:00 [INFO] __main__: step=16200  loss=0.1500  lr=4.70e-05  steps/s=0.19
+2026-02-18 09:46:07 [INFO] neurel_deob.training.data: Yielded 520000 samples (skipped 571753)
+2026-02-18 09:46:07 [INFO] __main__: step=16250  loss=0.1542  lr=4.70e-05  steps/s=0.19
+2026-02-18 09:47:15 [INFO] __main__: step=16300  loss=0.1283  lr=4.70e-05  steps/s=0.19
+2026-02-18 09:48:22 [INFO] __main__: step=16350  loss=0.1581  lr=4.69e-05  steps/s=0.19
+2026-02-18 09:49:24 [INFO] __main__: step=16400  loss=0.1422  lr=4.69e-05  steps/s=0.19
+2026-02-18 09:50:32 [INFO] __main__: step=16450  loss=0.1478  lr=4.69e-05  steps/s=0.19
+2026-02-18 09:51:43 [INFO] __main__: step=16500  loss=0.1450  lr=4.69e-05  steps/s=0.19
+2026-02-18 09:52:57 [INFO] __main__: step=16550  loss=0.1400  lr=4.69e-05  steps/s=0.19
+2026-02-18 09:53:20 [INFO] neurel_deob.training.data: Yielded 530000 samples (skipped 582681)
+2026-02-18 09:54:12 [INFO] __main__: step=16600  loss=0.1547  lr=4.68e-05  steps/s=0.19
+2026-02-18 09:55:16 [INFO] __main__: step=16650  loss=0.1532  lr=4.68e-05  steps/s=0.19
+2026-02-18 09:56:24 [INFO] __main__: step=16700  loss=0.1414  lr=4.68e-05  steps/s=0.20
+2026-02-18 09:57:32 [INFO] __main__: step=16750  loss=0.1489  lr=4.68e-05  steps/s=0.20
+2026-02-18 09:58:41 [INFO] __main__: step=16800  loss=0.1441  lr=4.68e-05  steps/s=0.20
+2026-02-18 09:59:48 [INFO] __main__: step=16850  loss=0.1514  lr=4.67e-05  steps/s=0.20
+2026-02-18 10:00:29 [INFO] neurel_deob.training.data: Yielded 540000 samples (skipped 593466)
+2026-02-18 10:01:10 [INFO] __main__: step=16900  loss=0.1433  lr=4.67e-05  steps/s=0.20
+2026-02-18 10:02:16 [INFO] __main__: step=16950  loss=0.1418  lr=4.67e-05  steps/s=0.20
+2026-02-18 10:03:24 [INFO] __main__: step=17000  loss=0.1514  lr=4.67e-05  steps/s=0.20
+2026-02-18 10:04:30 [INFO] __main__: step=17050  loss=0.1466  lr=4.67e-05  steps/s=0.20
+2026-02-18 10:05:30 [INFO] __main__: step=17100  loss=0.1662  lr=4.66e-05  steps/s=0.20
+2026-02-18 10:06:42 [INFO] __main__: step=17150  loss=0.1584  lr=4.66e-05  steps/s=0.20
+2026-02-18 10:07:35 [INFO] neurel_deob.training.data: Yielded 550000 samples (skipped 604499)
+2026-02-18 10:07:53 [INFO] __main__: step=17200  loss=0.1511  lr=4.66e-05  steps/s=0.20
+2026-02-18 10:09:07 [INFO] __main__: step=17250  loss=0.1355  lr=4.66e-05  steps/s=0.20
+2026-02-18 10:10:17 [INFO] __main__: step=17300  loss=0.1464  lr=4.66e-05  steps/s=0.20
+2026-02-18 10:11:27 [INFO] __main__: step=17350  loss=0.1408  lr=4.65e-05  steps/s=0.20
+2026-02-18 10:12:30 [INFO] __main__: step=17400  loss=0.1371  lr=4.65e-05  steps/s=0.20
+2026-02-18 10:13:34 [INFO] __main__: step=17450  loss=0.1431  lr=4.65e-05  steps/s=0.20
+2026-02-18 10:14:35 [INFO] neurel_deob.training.data: Yielded 560000 samples (skipped 615559)
+2026-02-18 10:14:35 [INFO] __main__: step=17500  loss=0.1390  lr=4.65e-05  steps/s=0.20
+2026-02-18 10:15:46 [INFO] __main__: step=17550  loss=0.1384  lr=4.65e-05  steps/s=0.20
+2026-02-18 10:16:53 [INFO] __main__: step=17600  loss=0.1449  lr=4.64e-05  steps/s=0.20
+2026-02-18 10:18:01 [INFO] __main__: step=17650  loss=0.1529  lr=4.64e-05  steps/s=0.20
+2026-02-18 10:19:04 [INFO] __main__: step=17700  loss=0.1368  lr=4.64e-05  steps/s=0.20
+2026-02-18 10:20:21 [INFO] __main__: step=17750  loss=0.1437  lr=4.64e-05  steps/s=0.20
+2026-02-18 10:21:34 [INFO] __main__: step=17800  loss=0.1490  lr=4.64e-05  steps/s=0.20
+2026-02-18 10:21:50 [INFO] neurel_deob.training.data: Yielded 570000 samples (skipped 626772)
+2026-02-18 10:22:42 [INFO] __main__: step=17850  loss=0.1485  lr=4.63e-05  steps/s=0.20
+2026-02-18 10:23:50 [INFO] __main__: step=17900  loss=0.1575  lr=4.63e-05  steps/s=0.21
+2026-02-18 10:25:09 [INFO] __main__: step=17950  loss=0.1384  lr=4.63e-05  steps/s=0.21
+2026-02-18 10:26:20 [INFO] __main__: step=18000  loss=0.1527  lr=4.63e-05  steps/s=0.21
+2026-02-18 10:26:20 [INFO] __main__: Running evaluation at step 18000 …
+2026-02-18 10:26:21 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-18 10:26:22 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-18 13:35:12 [INFO] __main__: EVAL step=18000  val_loss=0.0092  BLEU=15.66  NED=0.7494  (n=504)
+2026-02-18 13:35:16 [INFO] __main__: Saved checkpoint at step 18000 → checkpoints/arm_ir_ir_v2/step_18000
+2026-02-18 13:35:16 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_8000
+2026-02-18 13:36:25 [INFO] __main__: step=18050  loss=0.1347  lr=4.63e-05  steps/s=0.18
+2026-02-18 13:37:33 [INFO] __main__: step=18100  loss=0.1448  lr=4.62e-05  steps/s=0.18
+2026-02-18 13:38:03 [INFO] neurel_deob.training.data: Yielded 580000 samples (skipped 637716)
+2026-02-18 13:38:37 [INFO] __main__: step=18150  loss=0.1385  lr=4.62e-05  steps/s=0.18
+2026-02-18 13:39:39 [INFO] __main__: step=18200  loss=0.1447  lr=4.62e-05  steps/s=0.18
+2026-02-18 13:40:45 [INFO] __main__: step=18250  loss=0.1422  lr=4.62e-05  steps/s=0.18
+2026-02-18 13:41:54 [INFO] __main__: step=18300  loss=0.1579  lr=4.62e-05  steps/s=0.18
+2026-02-18 13:42:57 [INFO] __main__: step=18350  loss=0.1409  lr=4.61e-05  steps/s=0.19
+2026-02-18 13:44:07 [INFO] __main__: step=18400  loss=0.1346  lr=4.61e-05  steps/s=0.19
+2026-02-18 13:44:56 [INFO] neurel_deob.training.data: Yielded 590000 samples (skipped 648372)
+2026-02-18 13:45:13 [INFO] __main__: step=18450  loss=0.1501  lr=4.61e-05  steps/s=0.19
+2026-02-18 13:46:17 [INFO] __main__: step=18500  loss=0.1301  lr=4.61e-05  steps/s=0.19
+2026-02-18 13:47:29 [INFO] __main__: step=18550  loss=0.1431  lr=4.60e-05  steps/s=0.19
+2026-02-18 13:48:37 [INFO] __main__: step=18600  loss=0.1404  lr=4.60e-05  steps/s=0.19
+2026-02-18 13:49:44 [INFO] __main__: step=18650  loss=0.1400  lr=4.60e-05  steps/s=0.19
+2026-02-18 13:50:51 [INFO] __main__: step=18700  loss=0.1483  lr=4.60e-05  steps/s=0.19
+2026-02-18 13:51:57 [INFO] neurel_deob.training.data: Yielded 600000 samples (skipped 659398)
+2026-02-18 13:51:57 [INFO] __main__: step=18750  loss=0.1435  lr=4.60e-05  steps/s=0.19
+2026-02-18 13:53:01 [INFO] __main__: step=18800  loss=0.1379  lr=4.59e-05  steps/s=0.19
+2026-02-18 13:54:08 [INFO] __main__: step=18850  loss=0.1451  lr=4.59e-05  steps/s=0.19
+2026-02-18 13:55:23 [INFO] __main__: step=18900  loss=0.1373  lr=4.59e-05  steps/s=0.19
+2026-02-18 13:57:12 [INFO] __main__: step=18950  loss=0.1367  lr=4.59e-05  steps/s=0.19
+2026-02-18 13:58:18 [INFO] __main__: step=19000  loss=0.1455  lr=4.59e-05  steps/s=0.19
+2026-02-18 13:59:28 [INFO] __main__: step=19050  loss=0.1448  lr=4.58e-05  steps/s=0.19
+2026-02-18 13:59:44 [INFO] neurel_deob.training.data: Yielded 610000 samples (skipped 670425)
+2026-02-18 14:00:36 [INFO] __main__: step=19100  loss=0.1469  lr=4.58e-05  steps/s=0.19
+2026-02-18 14:01:39 [INFO] __main__: step=19150  loss=0.1454  lr=4.58e-05  steps/s=0.19
+2026-02-18 14:02:53 [INFO] __main__: step=19200  loss=0.1475  lr=4.58e-05  steps/s=0.19
+2026-02-18 14:04:00 [INFO] __main__: step=19250  loss=0.1413  lr=4.57e-05  steps/s=0.19
+2026-02-18 14:05:05 [INFO] __main__: step=19300  loss=0.1498  lr=4.57e-05  steps/s=0.19
+2026-02-18 14:06:09 [INFO] __main__: step=19350  loss=0.1391  lr=4.57e-05  steps/s=0.19
+2026-02-18 14:06:43 [INFO] neurel_deob.training.data: Yielded 620000 samples (skipped 681598)
+2026-02-18 14:07:16 [INFO] __main__: step=19400  loss=0.1490  lr=4.57e-05  steps/s=0.19
+2026-02-18 14:08:25 [INFO] __main__: step=19450  loss=0.1504  lr=4.57e-05  steps/s=0.19
+2026-02-18 14:09:32 [INFO] __main__: step=19500  loss=0.1489  lr=4.56e-05  steps/s=0.19
+2026-02-18 14:10:47 [INFO] __main__: step=19550  loss=0.1287  lr=4.56e-05  steps/s=0.19
+2026-02-18 14:11:59 [INFO] __main__: step=19600  loss=0.1402  lr=4.56e-05  steps/s=0.19
+2026-02-18 14:13:14 [INFO] __main__: step=19650  loss=0.1471  lr=4.56e-05  steps/s=0.19
+2026-02-18 14:14:03 [INFO] neurel_deob.training.data: Yielded 630000 samples (skipped 692898)
+2026-02-18 14:14:19 [INFO] __main__: step=19700  loss=0.1316  lr=4.55e-05  steps/s=0.19
+2026-02-18 14:15:31 [INFO] __main__: step=19750  loss=0.1384  lr=4.55e-05  steps/s=0.20
+2026-02-18 14:16:41 [INFO] __main__: step=19800  loss=0.1387  lr=4.55e-05  steps/s=0.20
+2026-02-18 14:17:43 [INFO] __main__: step=19850  loss=0.1406  lr=4.55e-05  steps/s=0.20
+2026-02-18 14:18:53 [INFO] __main__: step=19900  loss=0.1349  lr=4.55e-05  steps/s=0.20
+2026-02-18 14:19:55 [INFO] __main__: step=19950  loss=0.1420  lr=4.54e-05  steps/s=0.20
+2026-02-18 14:21:15 [INFO] neurel_deob.training.data: Yielded 640000 samples (skipped 703623)
+2026-02-18 14:21:15 [INFO] __main__: step=20000  loss=0.1472  lr=4.54e-05  steps/s=0.20
+2026-02-18 14:21:15 [INFO] __main__: Running evaluation at step 20000 …
+2026-02-18 14:21:15 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-18 14:21:17 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-18 17:28:56 [INFO] __main__: EVAL step=20000  val_loss=0.0087  BLEU=16.11  NED=0.7048  (n=504)
+2026-02-18 17:29:00 [INFO] __main__: Saved checkpoint at step 20000 → checkpoints/arm_ir_ir_v2/step_20000
+2026-02-18 17:29:00 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_10000
+2026-02-18 17:30:12 [INFO] __main__: step=20050  loss=0.1424  lr=4.54e-05  steps/s=0.18
+2026-02-18 17:31:21 [INFO] __main__: step=20100  loss=0.1500  lr=4.54e-05  steps/s=0.18
+2026-02-18 17:32:31 [INFO] __main__: step=20150  loss=0.1558  lr=4.53e-05  steps/s=0.18
+2026-02-18 17:33:46 [INFO] __main__: step=20200  loss=0.1397  lr=4.53e-05  steps/s=0.18
+2026-02-18 17:34:49 [INFO] __main__: step=20250  loss=0.1416  lr=4.53e-05  steps/s=0.18
+2026-02-18 17:35:58 [INFO] __main__: step=20300  loss=0.1383  lr=4.53e-05  steps/s=0.18
+2026-02-18 17:36:16 [INFO] neurel_deob.training.data: Yielded 650000 samples (skipped 714545)
+2026-02-18 17:37:08 [INFO] __main__: step=20350  loss=0.1621  lr=4.52e-05  steps/s=0.18
+2026-02-18 17:38:17 [INFO] __main__: step=20400  loss=0.1366  lr=4.52e-05  steps/s=0.18
+2026-02-18 17:39:28 [INFO] __main__: step=20450  loss=0.1392  lr=4.52e-05  steps/s=0.18
+2026-02-18 17:40:35 [INFO] __main__: step=20500  loss=0.1435  lr=4.52e-05  steps/s=0.18
+2026-02-18 17:41:45 [INFO] __main__: step=20550  loss=0.1300  lr=4.52e-05  steps/s=0.18
+2026-02-18 17:43:07 [INFO] __main__: step=20600  loss=0.1418  lr=4.51e-05  steps/s=0.18
+2026-02-18 17:43:41 [INFO] neurel_deob.training.data: Yielded 660000 samples (skipped 725617)
+2026-02-18 17:44:16 [INFO] __main__: step=20650  loss=0.1342  lr=4.51e-05  steps/s=0.18
+2026-02-18 17:45:26 [INFO] __main__: step=20700  loss=0.1319  lr=4.51e-05  steps/s=0.18
+2026-02-18 17:46:34 [INFO] __main__: step=20750  loss=0.1262  lr=4.51e-05  steps/s=0.18
+2026-02-18 17:47:45 [INFO] __main__: step=20800  loss=0.1427  lr=4.50e-05  steps/s=0.18
+2026-02-18 17:48:53 [INFO] __main__: step=20850  loss=0.1335  lr=4.50e-05  steps/s=0.18
+2026-02-18 17:50:04 [INFO] __main__: step=20900  loss=0.1368  lr=4.50e-05  steps/s=0.18
+2026-02-18 17:50:55 [INFO] neurel_deob.training.data: Yielded 670000 samples (skipped 736779)
+2026-02-18 17:51:15 [INFO] __main__: step=20950  loss=0.1403  lr=4.50e-05  steps/s=0.18
+2026-02-18 17:52:27 [INFO] __main__: step=21000  loss=0.1375  lr=4.49e-05  steps/s=0.18
+2026-02-18 17:53:31 [INFO] __main__: step=21050  loss=0.1406  lr=4.49e-05  steps/s=0.18
+2026-02-18 17:54:43 [INFO] __main__: step=21100  loss=0.1431  lr=4.49e-05  steps/s=0.18
+2026-02-18 17:55:47 [INFO] __main__: step=21150  loss=0.1349  lr=4.49e-05  steps/s=0.18
+2026-02-18 17:56:56 [INFO] __main__: step=21200  loss=0.1329  lr=4.48e-05  steps/s=0.19
+2026-02-18 17:58:06 [INFO] neurel_deob.training.data: Yielded 680000 samples (skipped 747680)
+2026-02-18 17:58:06 [INFO] __main__: step=21250  loss=0.1340  lr=4.48e-05  steps/s=0.19
+2026-02-18 17:59:11 [INFO] __main__: step=21300  loss=0.1410  lr=4.48e-05  steps/s=0.19
+2026-02-18 18:00:22 [INFO] __main__: step=21350  loss=0.1326  lr=4.48e-05  steps/s=0.19
+2026-02-18 18:01:38 [INFO] __main__: step=21400  loss=0.1401  lr=4.48e-05  steps/s=0.19
+2026-02-18 18:02:43 [INFO] __main__: step=21450  loss=0.1483  lr=4.47e-05  steps/s=0.19
+2026-02-18 18:03:48 [INFO] __main__: step=21500  loss=0.1434  lr=4.47e-05  steps/s=0.19
+2026-02-18 18:05:15 [INFO] __main__: step=21550  loss=0.1335  lr=4.47e-05  steps/s=0.19
+2026-02-18 18:05:33 [INFO] neurel_deob.training.data: Yielded 690000 samples (skipped 758472)
+2026-02-18 18:06:23 [INFO] __main__: step=21600  loss=0.1469  lr=4.47e-05  steps/s=0.19
+2026-02-18 18:07:22 [INFO] __main__: step=21650  loss=0.1271  lr=4.46e-05  steps/s=0.19
+2026-02-18 18:08:26 [INFO] __main__: step=21700  loss=0.1455  lr=4.46e-05  steps/s=0.19
+2026-02-18 18:09:41 [INFO] __main__: step=21750  loss=0.1298  lr=4.46e-05  steps/s=0.19
+2026-02-18 18:10:51 [INFO] __main__: step=21800  loss=0.1246  lr=4.46e-05  steps/s=0.19
+2026-02-18 18:11:58 [INFO] __main__: step=21850  loss=0.1337  lr=4.45e-05  steps/s=0.19
+2026-02-18 18:12:28 [INFO] neurel_deob.training.data: Yielded 700000 samples (skipped 769461)
+2026-02-18 18:13:01 [INFO] __main__: step=21900  loss=0.1372  lr=4.45e-05  steps/s=0.19
+2026-02-18 18:14:12 [INFO] __main__: step=21950  loss=0.1451  lr=4.45e-05  steps/s=0.19
+2026-02-18 18:15:27 [INFO] __main__: step=22000  loss=0.1486  lr=4.45e-05  steps/s=0.19
+2026-02-18 18:15:27 [INFO] __main__: Running evaluation at step 22000 …
+2026-02-18 18:15:27 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-18 18:15:30 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-18 21:23:27 [INFO] __main__: EVAL step=22000  val_loss=0.0090  BLEU=13.76  NED=0.7831  (n=504)
+2026-02-18 21:23:31 [INFO] __main__: Saved checkpoint at step 22000 → checkpoints/arm_ir_ir_v2/step_22000
+2026-02-18 21:23:31 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_12000
+2026-02-18 21:24:42 [INFO] __main__: step=22050  loss=0.1388  lr=4.44e-05  steps/s=0.17
+2026-02-18 21:26:00 [INFO] __main__: step=22100  loss=0.1387  lr=4.44e-05  steps/s=0.17
+2026-02-18 21:27:10 [INFO] __main__: step=22150  loss=0.1374  lr=4.44e-05  steps/s=0.17
+2026-02-18 21:27:54 [INFO] neurel_deob.training.data: Yielded 710000 samples (skipped 780448)
+2026-02-18 21:28:11 [INFO] __main__: step=22200  loss=0.1246  lr=4.44e-05  steps/s=0.17
+2026-02-18 21:29:25 [INFO] __main__: step=22250  loss=0.1345  lr=4.43e-05  steps/s=0.17
+2026-02-18 21:30:37 [INFO] __main__: step=22300  loss=0.1250  lr=4.43e-05  steps/s=0.18
+2026-02-18 21:31:41 [INFO] __main__: step=22350  loss=0.1433  lr=4.43e-05  steps/s=0.18
+2026-02-18 21:32:50 [INFO] __main__: step=22400  loss=0.1453  lr=4.43e-05  steps/s=0.18
+2026-02-18 21:33:59 [INFO] __main__: step=22450  loss=0.1407  lr=4.42e-05  steps/s=0.18
+2026-02-18 21:35:02 [INFO] neurel_deob.training.data: Yielded 720000 samples (skipped 791375)
+2026-02-18 21:35:02 [INFO] __main__: step=22500  loss=0.1346  lr=4.42e-05  steps/s=0.18
+2026-02-18 21:36:06 [INFO] __main__: step=22550  loss=0.1259  lr=4.42e-05  steps/s=0.18
+2026-02-18 21:37:13 [INFO] __main__: step=22600  loss=0.1453  lr=4.42e-05  steps/s=0.18
+2026-02-18 21:38:22 [INFO] __main__: step=22650  loss=0.1358  lr=4.41e-05  steps/s=0.18
+2026-02-18 21:39:46 [INFO] __main__: step=22700  loss=0.1345  lr=4.41e-05  steps/s=0.18
+2026-02-18 21:40:52 [INFO] __main__: step=22750  loss=0.1345  lr=4.41e-05  steps/s=0.18
+2026-02-18 21:42:00 [INFO] __main__: step=22800  loss=0.1547  lr=4.41e-05  steps/s=0.18
+2026-02-18 21:42:15 [INFO] neurel_deob.training.data: Yielded 730000 samples (skipped 802337)
+2026-02-18 21:43:10 [INFO] __main__: step=22850  loss=0.1407  lr=4.40e-05  steps/s=0.18
+2026-02-18 21:44:19 [INFO] __main__: step=22900  loss=0.1454  lr=4.40e-05  steps/s=0.18
+2026-02-18 21:45:24 [INFO] __main__: step=22950  loss=0.1332  lr=4.40e-05  steps/s=0.18
+2026-02-18 21:46:35 [INFO] __main__: step=23000  loss=0.1439  lr=4.40e-05  steps/s=0.18
+2026-02-18 21:47:39 [INFO] __main__: step=23050  loss=0.1407  lr=4.39e-05  steps/s=0.18
+2026-02-18 21:48:43 [INFO] __main__: step=23100  loss=0.1347  lr=4.39e-05  steps/s=0.18
+2026-02-18 21:49:18 [INFO] neurel_deob.training.data: Yielded 740000 samples (skipped 813322)
+2026-02-18 21:49:50 [INFO] __main__: step=23150  loss=0.1349  lr=4.39e-05  steps/s=0.18
+2026-02-18 21:50:57 [INFO] __main__: step=23200  loss=0.1291  lr=4.38e-05  steps/s=0.18
+2026-02-18 21:52:03 [INFO] __main__: step=23250  loss=0.1329  lr=4.38e-05  steps/s=0.18
+2026-02-18 21:53:13 [INFO] __main__: step=23300  loss=0.1271  lr=4.38e-05  steps/s=0.18
+2026-02-18 21:54:17 [INFO] __main__: step=23350  loss=0.1382  lr=4.38e-05  steps/s=0.18
+2026-02-18 21:55:28 [INFO] __main__: step=23400  loss=0.1377  lr=4.37e-05  steps/s=0.18
+2026-02-18 21:56:17 [INFO] neurel_deob.training.data: Yielded 750000 samples (skipped 824143)
+2026-02-18 21:56:36 [INFO] __main__: step=23450  loss=0.1312  lr=4.37e-05  steps/s=0.18
+2026-02-18 21:57:55 [INFO] __main__: step=23500  loss=0.1422  lr=4.37e-05  steps/s=0.18
+2026-02-18 21:59:01 [INFO] __main__: step=23550  loss=0.1299  lr=4.37e-05  steps/s=0.18
+2026-02-18 22:00:09 [INFO] __main__: step=23600  loss=0.1304  lr=4.36e-05  steps/s=0.18
+2026-02-18 22:01:37 [INFO] __main__: step=23650  loss=0.1175  lr=4.36e-05  steps/s=0.18
+2026-02-18 22:02:43 [INFO] __main__: step=23700  loss=0.1398  lr=4.36e-05  steps/s=0.18
+2026-02-18 22:03:51 [INFO] neurel_deob.training.data: Yielded 760000 samples (skipped 834973)
+2026-02-18 22:03:51 [INFO] __main__: step=23750  loss=0.1340  lr=4.36e-05  steps/s=0.18
+2026-02-18 22:05:00 [INFO] __main__: step=23800  loss=0.1296  lr=4.35e-05  steps/s=0.18
+2026-02-18 22:06:05 [INFO] __main__: step=23850  loss=0.1257  lr=4.35e-05  steps/s=0.18
+2026-02-18 22:07:14 [INFO] __main__: step=23900  loss=0.1309  lr=4.35e-05  steps/s=0.18
+2026-02-18 22:08:18 [INFO] __main__: step=23950  loss=0.1297  lr=4.35e-05  steps/s=0.18
+2026-02-18 22:09:26 [INFO] __main__: step=24000  loss=0.1258  lr=4.34e-05  steps/s=0.19
+2026-02-18 22:09:26 [INFO] __main__: Running evaluation at step 24000 …
+2026-02-18 22:09:26 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-18 22:09:28 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-19 01:19:01 [INFO] __main__: EVAL step=24000  val_loss=0.0083  BLEU=14.62  NED=0.7765  (n=504)
+2026-02-19 01:19:04 [INFO] __main__: Saved checkpoint at step 24000 → checkpoints/arm_ir_ir_v2/step_24000
+2026-02-19 01:19:04 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_14000
+2026-02-19 01:20:21 [INFO] __main__: step=24050  loss=0.1231  lr=4.34e-05  steps/s=0.17
+2026-02-19 01:20:38 [INFO] neurel_deob.training.data: Yielded 770000 samples (skipped 845889)
+2026-02-19 01:21:28 [INFO] __main__: step=24100  loss=0.1208  lr=4.34e-05  steps/s=0.17
+2026-02-19 01:22:37 [INFO] __main__: step=24150  loss=0.1180  lr=4.33e-05  steps/s=0.17
+2026-02-19 01:23:44 [INFO] __main__: step=24200  loss=0.1283  lr=4.33e-05  steps/s=0.17
+2026-02-19 01:24:47 [INFO] __main__: step=24250  loss=0.1434  lr=4.33e-05  steps/s=0.17
+2026-02-19 01:25:50 [INFO] __main__: step=24300  loss=0.1390  lr=4.33e-05  steps/s=0.17
+2026-02-19 01:27:00 [INFO] __main__: step=24350  loss=0.1252  lr=4.32e-05  steps/s=0.17
+2026-02-19 01:27:32 [INFO] neurel_deob.training.data: Yielded 780000 samples (skipped 856774)
+2026-02-19 01:28:05 [INFO] __main__: step=24400  loss=0.1322  lr=4.32e-05  steps/s=0.17
+2026-02-19 01:29:11 [INFO] __main__: step=24450  loss=0.1391  lr=4.32e-05  steps/s=0.17
+2026-02-19 01:30:18 [INFO] __main__: step=24500  loss=0.1288  lr=4.32e-05  steps/s=0.17
+2026-02-19 01:31:24 [INFO] __main__: step=24550  loss=0.1421  lr=4.31e-05  steps/s=0.17
+2026-02-19 01:32:32 [INFO] __main__: step=24600  loss=0.1280  lr=4.31e-05  steps/s=0.17
+2026-02-19 01:33:40 [INFO] __main__: step=24650  loss=0.1319  lr=4.31e-05  steps/s=0.17
+2026-02-19 01:34:32 [INFO] neurel_deob.training.data: Yielded 790000 samples (skipped 867649)
+2026-02-19 01:34:53 [INFO] __main__: step=24700  loss=0.1208  lr=4.31e-05  steps/s=0.17
+2026-02-19 01:35:56 [INFO] __main__: step=24750  loss=0.1389  lr=4.30e-05  steps/s=0.17
+2026-02-19 01:37:05 [INFO] __main__: step=24800  loss=0.1358  lr=4.30e-05  steps/s=0.17
+2026-02-19 01:38:11 [INFO] __main__: step=24850  loss=0.1467  lr=4.30e-05  steps/s=0.17
+2026-02-19 01:39:17 [INFO] __main__: step=24900  loss=0.1164  lr=4.29e-05  steps/s=0.18
+2026-02-19 01:40:27 [INFO] __main__: step=24950  loss=0.1208  lr=4.29e-05  steps/s=0.18
+2026-02-19 01:41:35 [INFO] neurel_deob.training.data: Yielded 800000 samples (skipped 878509)
+2026-02-19 01:41:35 [INFO] __main__: step=25000  loss=0.1339  lr=4.29e-05  steps/s=0.18
+2026-02-19 01:42:44 [INFO] __main__: step=25050  loss=0.1375  lr=4.29e-05  steps/s=0.18
+2026-02-19 01:43:53 [INFO] __main__: step=25100  loss=0.1228  lr=4.28e-05  steps/s=0.18
+2026-02-19 01:45:07 [INFO] __main__: step=25150  loss=0.1544  lr=4.28e-05  steps/s=0.18
+2026-02-19 01:46:15 [INFO] __main__: step=25200  loss=0.1271  lr=4.28e-05  steps/s=0.18
+2026-02-19 01:47:23 [INFO] __main__: step=25250  loss=0.1368  lr=4.27e-05  steps/s=0.18
+2026-02-19 01:48:28 [INFO] __main__: step=25300  loss=0.1342  lr=4.27e-05  steps/s=0.18
+2026-02-19 01:48:47 [INFO] neurel_deob.training.data: Yielded 810000 samples (skipped 889611)
+2026-02-19 01:49:40 [INFO] __main__: step=25350  loss=0.1272  lr=4.27e-05  steps/s=0.18
+2026-02-19 01:50:49 [INFO] __main__: step=25400  loss=0.1392  lr=4.27e-05  steps/s=0.18
+2026-02-19 01:52:03 [INFO] __main__: step=25450  loss=0.1335  lr=4.26e-05  steps/s=0.18
+2026-02-19 01:53:19 [INFO] __main__: step=25500  loss=0.1306  lr=4.26e-05  steps/s=0.18
+2026-02-19 01:54:27 [INFO] __main__: step=25550  loss=0.1361  lr=4.26e-05  steps/s=0.18
+2026-02-19 01:55:38 [INFO] __main__: step=25600  loss=0.1376  lr=4.26e-05  steps/s=0.18
+2026-02-19 01:56:05 [INFO] neurel_deob.training.data: Yielded 820000 samples (skipped 900871)
+2026-02-19 01:56:41 [INFO] __main__: step=25650  loss=0.1321  lr=4.25e-05  steps/s=0.18
+2026-02-19 01:57:49 [INFO] __main__: step=25700  loss=0.1315  lr=4.25e-05  steps/s=0.18
+2026-02-19 01:59:04 [INFO] __main__: step=25750  loss=0.1253  lr=4.25e-05  steps/s=0.18
+2026-02-19 02:00:11 [INFO] __main__: step=25800  loss=0.1203  lr=4.24e-05  steps/s=0.18
+2026-02-19 02:01:27 [INFO] __main__: step=25850  loss=0.1369  lr=4.24e-05  steps/s=0.18
+2026-02-19 02:02:37 [INFO] __main__: step=25900  loss=0.1200  lr=4.24e-05  steps/s=0.18
+2026-02-19 02:03:35 [INFO] neurel_deob.training.data: Yielded 830000 samples (skipped 912019)
+2026-02-19 02:03:50 [INFO] __main__: step=25950  loss=0.1273  lr=4.24e-05  steps/s=0.18
+2026-02-19 02:05:03 [INFO] __main__: step=26000  loss=0.1349  lr=4.23e-05  steps/s=0.18
+2026-02-19 02:05:03 [INFO] __main__: Running evaluation at step 26000 …
+2026-02-19 02:05:03 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-19 02:05:05 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-19 05:14:03 [INFO] __main__: EVAL step=26000  val_loss=0.0081  BLEU=14.83  NED=0.7691  (n=504)
+2026-02-19 05:14:07 [INFO] __main__: Saved checkpoint at step 26000 → checkpoints/arm_ir_ir_v2/step_26000
+2026-02-19 05:14:07 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_16000
+2026-02-19 05:15:24 [INFO] __main__: step=26050  loss=0.1284  lr=4.23e-05  steps/s=0.17
+2026-02-19 05:16:26 [INFO] __main__: step=26100  loss=0.1325  lr=4.23e-05  steps/s=0.17
+2026-02-19 05:17:39 [INFO] __main__: step=26150  loss=0.1268  lr=4.22e-05  steps/s=0.17
+2026-02-19 05:18:53 [INFO] __main__: step=26200  loss=0.1378  lr=4.22e-05  steps/s=0.17
+2026-02-19 05:20:03 [INFO] neurel_deob.training.data: Yielded 840000 samples (skipped 922943)
+2026-02-19 05:20:03 [INFO] __main__: step=26250  loss=0.1170  lr=4.22e-05  steps/s=0.17
+2026-02-19 05:21:10 [INFO] __main__: step=26300  loss=0.1257  lr=4.22e-05  steps/s=0.17
+2026-02-19 05:22:15 [INFO] __main__: step=26350  loss=0.1401  lr=4.21e-05  steps/s=0.17
+2026-02-19 05:23:28 [INFO] __main__: step=26400  loss=0.1230  lr=4.21e-05  steps/s=0.17
+2026-02-19 05:24:35 [INFO] __main__: step=26450  loss=0.1322  lr=4.21e-05  steps/s=0.17
+2026-02-19 05:25:45 [INFO] __main__: step=26500  loss=0.1319  lr=4.20e-05  steps/s=0.17
+2026-02-19 05:26:53 [INFO] __main__: step=26550  loss=0.1264  lr=4.20e-05  steps/s=0.17
+2026-02-19 05:27:08 [INFO] neurel_deob.training.data: Yielded 850000 samples (skipped 933889)
+2026-02-19 05:28:17 [INFO] __main__: step=26600  loss=0.1234  lr=4.20e-05  steps/s=0.17
+2026-02-19 05:29:25 [INFO] __main__: step=26650  loss=0.1279  lr=4.20e-05  steps/s=0.17
+2026-02-19 05:30:29 [INFO] __main__: step=26700  loss=0.1236  lr=4.19e-05  steps/s=0.17
+2026-02-19 05:31:41 [INFO] __main__: step=26750  loss=0.1220  lr=4.19e-05  steps/s=0.17
+2026-02-19 05:32:55 [INFO] __main__: step=26800  loss=0.1268  lr=4.19e-05  steps/s=0.17
+2026-02-19 05:34:03 [INFO] __main__: step=26850  loss=0.1446  lr=4.18e-05  steps/s=0.17
+2026-02-19 05:34:38 [INFO] neurel_deob.training.data: Yielded 860000 samples (skipped 945028)
+2026-02-19 05:35:10 [INFO] __main__: step=26900  loss=0.1360  lr=4.18e-05  steps/s=0.17
+2026-02-19 05:36:26 [INFO] __main__: step=26950  loss=0.1261  lr=4.18e-05  steps/s=0.17
+2026-02-19 05:37:37 [INFO] __main__: step=27000  loss=0.1405  lr=4.17e-05  steps/s=0.17
+2026-02-19 05:38:42 [INFO] __main__: step=27050  loss=0.1216  lr=4.17e-05  steps/s=0.17
+2026-02-19 05:39:57 [INFO] __main__: step=27100  loss=0.1352  lr=4.17e-05  steps/s=0.17
+2026-02-19 05:41:04 [INFO] __main__: step=27150  loss=0.1292  lr=4.17e-05  steps/s=0.17
+2026-02-19 05:42:00 [INFO] neurel_deob.training.data: Yielded 870000 samples (skipped 955994)
+2026-02-19 05:42:16 [INFO] __main__: step=27200  loss=0.1186  lr=4.16e-05  steps/s=0.17
+2026-02-19 05:43:21 [INFO] __main__: step=27250  loss=0.1385  lr=4.16e-05  steps/s=0.17
+2026-02-19 05:44:30 [INFO] __main__: step=27300  loss=0.1298  lr=4.16e-05  steps/s=0.17
+2026-02-19 05:45:35 [INFO] __main__: step=27350  loss=0.1211  lr=4.15e-05  steps/s=0.17
+2026-02-19 05:46:38 [INFO] __main__: step=27400  loss=0.1244  lr=4.15e-05  steps/s=0.17
+2026-02-19 05:47:43 [INFO] __main__: step=27450  loss=0.1172  lr=4.15e-05  steps/s=0.17
+2026-02-19 05:48:56 [INFO] neurel_deob.training.data: Yielded 880000 samples (skipped 966807)
+2026-02-19 05:48:56 [INFO] __main__: step=27500  loss=0.1352  lr=4.15e-05  steps/s=0.18
+2026-02-19 05:50:11 [INFO] __main__: step=27550  loss=0.1385  lr=4.14e-05  steps/s=0.18
+2026-02-19 05:51:18 [INFO] __main__: step=27600  loss=0.1167  lr=4.14e-05  steps/s=0.18
+2026-02-19 05:52:23 [INFO] __main__: step=27650  loss=0.1276  lr=4.14e-05  steps/s=0.18
+2026-02-19 05:53:33 [INFO] __main__: step=27700  loss=0.1234  lr=4.13e-05  steps/s=0.18
+2026-02-19 05:54:44 [INFO] __main__: step=27750  loss=0.1206  lr=4.13e-05  steps/s=0.18
+2026-02-19 05:55:49 [INFO] __main__: step=27800  loss=0.1239  lr=4.13e-05  steps/s=0.18
+2026-02-19 05:56:07 [INFO] neurel_deob.training.data: Yielded 890000 samples (skipped 977794)
+2026-02-19 05:56:56 [INFO] __main__: step=27850  loss=0.1210  lr=4.12e-05  steps/s=0.18
+2026-02-19 05:58:05 [INFO] __main__: step=27900  loss=0.1188  lr=4.12e-05  steps/s=0.18
+2026-02-19 05:59:15 [INFO] __main__: step=27950  loss=0.1259  lr=4.12e-05  steps/s=0.18
+2026-02-19 06:00:20 [INFO] __main__: step=28000  loss=0.1356  lr=4.12e-05  steps/s=0.18
+2026-02-19 06:00:20 [INFO] __main__: Running evaluation at step 28000 …
+2026-02-19 06:00:20 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-19 06:00:22 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-19 09:09:57 [INFO] __main__: EVAL step=28000  val_loss=0.0076  BLEU=13.86  NED=0.7806  (n=504)
+2026-02-19 09:10:00 [INFO] __main__: Saved checkpoint at step 28000 → checkpoints/arm_ir_ir_v2/step_28000
+2026-02-19 09:10:00 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_18000
+2026-02-19 09:11:11 [INFO] __main__: step=28050  loss=0.1266  lr=4.11e-05  steps/s=0.17
+2026-02-19 09:12:21 [INFO] __main__: step=28100  loss=0.1362  lr=4.11e-05  steps/s=0.17
+2026-02-19 09:12:58 [INFO] neurel_deob.training.data: Yielded 900000 samples (skipped 988863)
+2026-02-19 09:13:31 [INFO] __main__: step=28150  loss=0.1227  lr=4.11e-05  steps/s=0.17
+2026-02-19 09:14:41 [INFO] __main__: step=28200  loss=0.1216  lr=4.10e-05  steps/s=0.17
+2026-02-19 09:15:52 [INFO] __main__: step=28250  loss=0.1347  lr=4.10e-05  steps/s=0.17
+2026-02-19 09:17:03 [INFO] __main__: step=28300  loss=0.1202  lr=4.10e-05  steps/s=0.17
+2026-02-19 09:18:06 [INFO] __main__: step=28350  loss=0.1452  lr=4.09e-05  steps/s=0.17
+2026-02-19 09:19:17 [INFO] __main__: step=28400  loss=0.1225  lr=4.09e-05  steps/s=0.17
+2026-02-19 09:20:06 [INFO] neurel_deob.training.data: Yielded 910000 samples (skipped 999685)
+2026-02-19 09:20:23 [INFO] __main__: step=28450  loss=0.1235  lr=4.09e-05  steps/s=0.17
+2026-02-19 09:21:27 [INFO] __main__: step=28500  loss=0.1316  lr=4.09e-05  steps/s=0.17
+2026-02-19 09:22:38 [INFO] __main__: step=28550  loss=0.1309  lr=4.08e-05  steps/s=0.17
+2026-02-19 09:23:41 [INFO] __main__: step=28600  loss=0.1256  lr=4.08e-05  steps/s=0.17
+2026-02-19 09:24:47 [INFO] __main__: step=28650  loss=0.1208  lr=4.08e-05  steps/s=0.17
+2026-02-19 09:26:00 [INFO] __main__: step=28700  loss=0.1225  lr=4.07e-05  steps/s=0.17
+2026-02-19 09:27:41 [INFO] neurel_deob.training.data: Yielded 920000 samples (skipped 1010562)
+2026-02-19 09:27:41 [INFO] __main__: step=28750  loss=0.1214  lr=4.07e-05  steps/s=0.17
+2026-02-19 09:28:47 [INFO] __main__: step=28800  loss=0.1164  lr=4.07e-05  steps/s=0.17
+2026-02-19 09:30:00 [INFO] __main__: step=28850  loss=0.1336  lr=4.06e-05  steps/s=0.17
+2026-02-19 09:31:12 [INFO] __main__: step=28900  loss=0.1210  lr=4.06e-05  steps/s=0.17
+2026-02-19 09:32:24 [INFO] __main__: step=28950  loss=0.1149  lr=4.06e-05  steps/s=0.17
+2026-02-19 09:33:33 [INFO] __main__: step=29000  loss=0.1161  lr=4.05e-05  steps/s=0.17
+2026-02-19 09:34:40 [INFO] __main__: step=29050  loss=0.1294  lr=4.05e-05  steps/s=0.17
+2026-02-19 09:34:57 [INFO] neurel_deob.training.data: Yielded 930000 samples (skipped 1021353)
+2026-02-19 09:35:51 [INFO] __main__: step=29100  loss=0.1405  lr=4.05e-05  steps/s=0.17
+2026-02-19 09:36:59 [INFO] __main__: step=29150  loss=0.1208  lr=4.05e-05  steps/s=0.17
+2026-02-19 09:38:04 [INFO] __main__: step=29200  loss=0.1185  lr=4.04e-05  steps/s=0.17
+2026-02-19 09:39:09 [INFO] __main__: step=29250  loss=0.1276  lr=4.04e-05  steps/s=0.17
+2026-02-19 09:40:23 [INFO] __main__: step=29300  loss=0.1333  lr=4.04e-05  steps/s=0.17
+2026-02-19 09:41:29 [INFO] __main__: step=29350  loss=0.1295  lr=4.03e-05  steps/s=0.17
+2026-02-19 09:42:05 [INFO] neurel_deob.training.data: Yielded 940000 samples (skipped 1032266)
+2026-02-19 09:42:39 [INFO] __main__: step=29400  loss=0.1245  lr=4.03e-05  steps/s=0.17
+2026-02-19 09:43:36 [INFO] __main__: step=29450  loss=0.1272  lr=4.03e-05  steps/s=0.17
+2026-02-19 09:44:44 [INFO] __main__: step=29500  loss=0.1260  lr=4.02e-05  steps/s=0.17
+2026-02-19 09:46:02 [INFO] __main__: step=29550  loss=0.1208  lr=4.02e-05  steps/s=0.17
+2026-02-19 09:47:09 [INFO] __main__: step=29600  loss=0.1302  lr=4.02e-05  steps/s=0.17
+2026-02-19 09:48:21 [INFO] __main__: step=29650  loss=0.1158  lr=4.01e-05  steps/s=0.17
+2026-02-19 09:49:12 [INFO] neurel_deob.training.data: Yielded 950000 samples (skipped 1043075)
+2026-02-19 09:49:28 [INFO] __main__: step=29700  loss=0.1156  lr=4.01e-05  steps/s=0.17
+2026-02-19 09:50:39 [INFO] __main__: step=29750  loss=0.1230  lr=4.01e-05  steps/s=0.17
+2026-02-19 09:51:44 [INFO] __main__: step=29800  loss=0.1128  lr=4.00e-05  steps/s=0.17
+2026-02-19 09:52:57 [INFO] __main__: step=29850  loss=0.1272  lr=4.00e-05  steps/s=0.17
+2026-02-19 09:54:06 [INFO] __main__: step=29900  loss=0.1162  lr=4.00e-05  steps/s=0.17
+2026-02-19 09:55:15 [INFO] __main__: step=29950  loss=0.1221  lr=3.99e-05  steps/s=0.17
+2026-02-19 09:56:25 [INFO] neurel_deob.training.data: Yielded 960000 samples (skipped 1054064)
+2026-02-19 09:56:26 [INFO] __main__: step=30000  loss=0.1085  lr=3.99e-05  steps/s=0.17
+2026-02-19 09:56:26 [INFO] __main__: Running evaluation at step 30000 …
+2026-02-19 09:56:26 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-19 09:56:27 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-19 13:05:59 [INFO] __main__: EVAL step=30000  val_loss=0.0073  BLEU=14.21  NED=0.7440  (n=504)
+2026-02-19 13:06:04 [INFO] __main__: Saved checkpoint at step 30000 → checkpoints/arm_ir_ir_v2/step_30000
+2026-02-19 13:06:04 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_20000
+2026-02-19 13:07:18 [INFO] __main__: step=30050  loss=0.1138  lr=3.99e-05  steps/s=0.16
+2026-02-19 13:08:25 [INFO] __main__: step=30100  loss=0.1192  lr=3.99e-05  steps/s=0.16
+2026-02-19 13:09:35 [INFO] __main__: step=30150  loss=0.1259  lr=3.98e-05  steps/s=0.16
+2026-02-19 13:10:50 [INFO] __main__: step=30200  loss=0.1261  lr=3.98e-05  steps/s=0.16
+2026-02-19 13:12:05 [INFO] __main__: step=30250  loss=0.1142  lr=3.98e-05  steps/s=0.16
+2026-02-19 13:13:17 [INFO] __main__: step=30300  loss=0.1177  lr=3.97e-05  steps/s=0.16
+2026-02-19 13:13:33 [INFO] neurel_deob.training.data: Yielded 970000 samples (skipped 1064961)
+2026-02-19 13:14:24 [INFO] __main__: step=30350  loss=0.1178  lr=3.97e-05  steps/s=0.17
+2026-02-19 13:15:50 [INFO] __main__: step=30400  loss=0.1289  lr=3.97e-05  steps/s=0.17
+2026-02-19 13:17:05 [INFO] __main__: step=30450  loss=0.1244  lr=3.96e-05  steps/s=0.17
+2026-02-19 13:18:11 [INFO] __main__: step=30500  loss=0.1263  lr=3.96e-05  steps/s=0.17
+2026-02-19 13:19:19 [INFO] __main__: step=30550  loss=0.1257  lr=3.96e-05  steps/s=0.17
+2026-02-19 13:20:35 [INFO] __main__: step=30600  loss=0.1205  lr=3.95e-05  steps/s=0.17
+2026-02-19 13:21:09 [INFO] neurel_deob.training.data: Yielded 980000 samples (skipped 1075935)
+2026-02-19 13:21:43 [INFO] __main__: step=30650  loss=0.1270  lr=3.95e-05  steps/s=0.17
+2026-02-19 13:22:51 [INFO] __main__: step=30700  loss=0.1141  lr=3.95e-05  steps/s=0.17
+2026-02-19 13:24:03 [INFO] __main__: step=30750  loss=0.1258  lr=3.94e-05  steps/s=0.17
+2026-02-19 13:25:11 [INFO] __main__: step=30800  loss=0.1379  lr=3.94e-05  steps/s=0.17
+2026-02-19 13:26:23 [INFO] __main__: step=30850  loss=0.1198  lr=3.94e-05  steps/s=0.17
+2026-02-19 13:27:31 [INFO] __main__: step=30900  loss=0.1293  lr=3.93e-05  steps/s=0.17
+2026-02-19 13:28:25 [INFO] neurel_deob.training.data: Yielded 990000 samples (skipped 1086980)
+2026-02-19 13:28:42 [INFO] __main__: step=30950  loss=0.1197  lr=3.93e-05  steps/s=0.17
+2026-02-19 13:29:49 [INFO] __main__: step=31000  loss=0.1211  lr=3.93e-05  steps/s=0.17
+2026-02-19 13:31:00 [INFO] __main__: step=31050  loss=0.1272  lr=3.92e-05  steps/s=0.17
+2026-02-19 13:32:17 [INFO] __main__: step=31100  loss=0.1183  lr=3.92e-05  steps/s=0.17
+2026-02-19 13:33:24 [INFO] __main__: step=31150  loss=0.1162  lr=3.92e-05  steps/s=0.17
+2026-02-19 13:34:34 [INFO] __main__: step=31200  loss=0.1322  lr=3.91e-05  steps/s=0.17
+2026-02-19 13:35:38 [INFO] neurel_deob.training.data: Yielded 1000000 samples (skipped 1097933)
+2026-02-19 13:35:38 [INFO] __main__: step=31250  loss=0.1112  lr=3.91e-05  steps/s=0.17
+2026-02-19 13:37:01 [INFO] __main__: step=31300  loss=0.1081  lr=3.91e-05  steps/s=0.17
+2026-02-19 13:38:15 [INFO] __main__: step=31350  loss=0.1121  lr=3.90e-05  steps/s=0.17
+2026-02-19 13:39:18 [INFO] __main__: step=31400  loss=0.1202  lr=3.90e-05  steps/s=0.17
+2026-02-19 13:40:36 [INFO] __main__: step=31450  loss=0.1330  lr=3.90e-05  steps/s=0.17
+2026-02-19 13:41:54 [INFO] __main__: step=31500  loss=0.1127  lr=3.90e-05  steps/s=0.17
+2026-02-19 13:43:10 [INFO] __main__: step=31550  loss=0.1170  lr=3.89e-05  steps/s=0.17
+2026-02-19 13:43:29 [INFO] neurel_deob.training.data: Yielded 1010000 samples (skipped 1109105)
+2026-02-19 13:44:24 [INFO] __main__: step=31600  loss=0.1191  lr=3.89e-05  steps/s=0.17
+2026-02-19 13:45:48 [INFO] __main__: step=31650  loss=0.1179  lr=3.89e-05  steps/s=0.17
+2026-02-19 13:46:56 [INFO] __main__: step=31700  loss=0.1147  lr=3.88e-05  steps/s=0.17
+2026-02-19 13:48:11 [INFO] __main__: step=31750  loss=0.1206  lr=3.88e-05  steps/s=0.17
+2026-02-19 13:49:22 [INFO] __main__: step=31800  loss=0.1280  lr=3.88e-05  steps/s=0.17
+2026-02-19 13:50:28 [INFO] __main__: step=31850  loss=0.1249  lr=3.87e-05  steps/s=0.17
+2026-02-19 13:51:01 [INFO] neurel_deob.training.data: Yielded 1020000 samples (skipped 1120205)
+2026-02-19 13:51:37 [INFO] __main__: step=31900  loss=0.1143  lr=3.87e-05  steps/s=0.17
+2026-02-19 13:52:48 [INFO] __main__: step=31950  loss=0.1209  lr=3.87e-05  steps/s=0.17
+2026-02-19 13:54:07 [INFO] __main__: step=32000  loss=0.1233  lr=3.86e-05  steps/s=0.17
+2026-02-19 13:54:07 [INFO] __main__: Running evaluation at step 32000 …
+2026-02-19 13:54:07 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-19 13:54:09 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-19 16:31:50 [INFO] __main__: EVAL step=32000  val_loss=0.0077  BLEU=13.45  NED=0.7932  (n=504)
+2026-02-19 16:31:54 [INFO] __main__: Saved checkpoint at step 32000 → checkpoints/arm_ir_ir_v2/step_32000
+2026-02-19 16:31:54 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_22000
+2026-02-19 16:33:02 [INFO] __main__: step=32050  loss=0.1184  lr=3.86e-05  steps/s=0.16
+2026-02-19 16:34:19 [INFO] __main__: step=32100  loss=0.1298  lr=3.86e-05  steps/s=0.16
+2026-02-19 16:35:20 [INFO] __main__: step=32150  loss=0.1181  lr=3.85e-05  steps/s=0.16
+2026-02-19 16:36:12 [INFO] neurel_deob.training.data: Yielded 1030000 samples (skipped 1131108)
+2026-02-19 16:36:31 [INFO] __main__: step=32200  loss=0.1185  lr=3.85e-05  steps/s=0.16
+2026-02-19 16:37:49 [INFO] __main__: step=32250  loss=0.1202  lr=3.85e-05  steps/s=0.16
+2026-02-19 16:38:57 [INFO] __main__: step=32300  loss=0.1266  lr=3.84e-05  steps/s=0.16
+2026-02-19 16:40:09 [INFO] __main__: step=32350  loss=0.1185  lr=3.84e-05  steps/s=0.16
+2026-02-19 16:41:20 [INFO] __main__: step=32400  loss=0.1256  lr=3.84e-05  steps/s=0.17
+2026-02-19 16:42:26 [INFO] __main__: step=32450  loss=0.1293  lr=3.83e-05  steps/s=0.17
+2026-02-19 16:43:27 [INFO] neurel_deob.training.data: Yielded 1040000 samples (skipped 1141989)
+2026-02-19 16:43:27 [INFO] __main__: step=32500  loss=0.1108  lr=3.83e-05  steps/s=0.17
+2026-02-19 16:44:31 [INFO] __main__: step=32550  loss=0.1241  lr=3.83e-05  steps/s=0.17
+2026-02-19 16:45:40 [INFO] __main__: step=32600  loss=0.1256  lr=3.82e-05  steps/s=0.17
+2026-02-19 16:46:45 [INFO] __main__: step=32650  loss=0.1230  lr=3.82e-05  steps/s=0.17
+2026-02-19 16:47:46 [INFO] __main__: step=32700  loss=0.1139  lr=3.82e-05  steps/s=0.17
+2026-02-19 16:48:48 [INFO] __main__: step=32750  loss=0.1256  lr=3.81e-05  steps/s=0.17
+2026-02-19 16:49:56 [INFO] __main__: step=32800  loss=0.1143  lr=3.81e-05  steps/s=0.17
+2026-02-19 16:50:13 [INFO] neurel_deob.training.data: Yielded 1050000 samples (skipped 1152911)
+2026-02-19 16:51:02 [INFO] __main__: step=32850  loss=0.1188  lr=3.81e-05  steps/s=0.17
+2026-02-19 16:52:08 [INFO] __main__: step=32900  loss=0.1360  lr=3.80e-05  steps/s=0.17
+2026-02-19 16:53:14 [INFO] __main__: step=32950  loss=0.1240  lr=3.80e-05  steps/s=0.17
+2026-02-19 16:54:22 [INFO] __main__: step=33000  loss=0.1156  lr=3.80e-05  steps/s=0.17
+2026-02-19 16:55:30 [INFO] __main__: step=33050  loss=0.1266  lr=3.79e-05  steps/s=0.17
+2026-02-19 16:56:41 [INFO] __main__: step=33100  loss=0.1155  lr=3.79e-05  steps/s=0.17
+2026-02-19 16:57:12 [INFO] neurel_deob.training.data: Yielded 1060000 samples (skipped 1163880)
+2026-02-19 16:57:41 [INFO] __main__: step=33150  loss=0.1177  lr=3.79e-05  steps/s=0.17
+2026-02-19 16:58:43 [INFO] __main__: step=33200  loss=0.1212  lr=3.78e-05  steps/s=0.17
+2026-02-19 16:59:51 [INFO] __main__: step=33250  loss=0.1177  lr=3.78e-05  steps/s=0.17
+2026-02-19 17:00:53 [INFO] __main__: step=33300  loss=0.1109  lr=3.77e-05  steps/s=0.17
+2026-02-19 17:01:58 [INFO] __main__: step=33350  loss=0.1135  lr=3.77e-05  steps/s=0.17
+2026-02-19 17:03:05 [INFO] __main__: step=33400  loss=0.1196  lr=3.77e-05  steps/s=0.17
+2026-02-19 17:03:55 [INFO] neurel_deob.training.data: Yielded 1070000 samples (skipped 1174805)
+2026-02-19 17:04:09 [INFO] __main__: step=33450  loss=0.1217  lr=3.76e-05  steps/s=0.17
+2026-02-19 17:05:20 [INFO] __main__: step=33500  loss=0.1262  lr=3.76e-05  steps/s=0.17
+2026-02-19 17:06:38 [INFO] __main__: step=33550  loss=0.1146  lr=3.76e-05  steps/s=0.17
+2026-02-19 17:07:56 [INFO] __main__: step=33600  loss=0.1152  lr=3.75e-05  steps/s=0.17
+2026-02-19 17:09:07 [INFO] __main__: step=33650  loss=0.1151  lr=3.75e-05  steps/s=0.17
+2026-02-19 17:10:18 [INFO] __main__: step=33700  loss=0.1194  lr=3.75e-05  steps/s=0.17
+2026-02-19 17:11:24 [INFO] neurel_deob.training.data: Yielded 1080000 samples (skipped 1185959)
+2026-02-19 17:11:24 [INFO] __main__: step=33750  loss=0.1225  lr=3.74e-05  steps/s=0.17
+2026-02-19 17:12:24 [INFO] __main__: step=33800  loss=0.1155  lr=3.74e-05  steps/s=0.17
+2026-02-19 17:13:25 [INFO] __main__: step=33850  loss=0.1115  lr=3.74e-05  steps/s=0.17
+2026-02-19 17:14:30 [INFO] __main__: step=33900  loss=0.1193  lr=3.73e-05  steps/s=0.17
+2026-02-19 17:15:29 [INFO] __main__: step=33950  loss=0.1151  lr=3.73e-05  steps/s=0.17
+2026-02-19 17:16:44 [INFO] __main__: step=34000  loss=0.1159  lr=3.73e-05  steps/s=0.17
+2026-02-19 17:16:44 [INFO] __main__: Running evaluation at step 34000 …
+2026-02-19 17:16:44 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-19 17:16:45 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-19 19:47:45 [INFO] __main__: EVAL step=34000  val_loss=0.0077  BLEU=10.81  NED=0.7901  (n=504)
+2026-02-19 19:47:49 [INFO] __main__: Saved checkpoint at step 34000 → checkpoints/arm_ir_ir_v2/step_34000
+2026-02-19 19:47:49 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_24000
+2026-02-19 19:49:00 [INFO] __main__: step=34050  loss=0.1286  lr=3.72e-05  steps/s=0.16
+2026-02-19 19:49:19 [INFO] neurel_deob.training.data: Yielded 1090000 samples (skipped 1196998)
+2026-02-19 19:50:06 [INFO] __main__: step=34100  loss=0.1062  lr=3.72e-05  steps/s=0.16
+2026-02-19 19:51:12 [INFO] __main__: step=34150  loss=0.1149  lr=3.72e-05  steps/s=0.16
+2026-02-19 19:52:20 [INFO] __main__: step=34200  loss=0.1274  lr=3.71e-05  steps/s=0.16
+2026-02-19 19:53:20 [INFO] __main__: step=34250  loss=0.1155  lr=3.71e-05  steps/s=0.16
+2026-02-19 19:54:27 [INFO] __main__: step=34300  loss=0.1157  lr=3.71e-05  steps/s=0.17
+2026-02-19 19:55:34 [INFO] __main__: step=34350  loss=0.1055  lr=3.70e-05  steps/s=0.17
+2026-02-19 19:56:04 [INFO] neurel_deob.training.data: Yielded 1100000 samples (skipped 1208155)
+2026-02-19 19:56:35 [INFO] __main__: step=34400  loss=0.1144  lr=3.70e-05  steps/s=0.17
+2026-02-19 19:57:38 [INFO] __main__: step=34450  loss=0.1168  lr=3.70e-05  steps/s=0.17
+2026-02-19 19:58:41 [INFO] __main__: step=34500  loss=0.1156  lr=3.69e-05  steps/s=0.17
+2026-02-19 19:59:42 [INFO] __main__: step=34550  loss=0.1212  lr=3.69e-05  steps/s=0.17
+2026-02-19 20:00:49 [INFO] __main__: step=34600  loss=0.1086  lr=3.69e-05  steps/s=0.17
+2026-02-19 20:01:56 [INFO] __main__: step=34650  loss=0.1129  lr=3.68e-05  steps/s=0.17
+2026-02-19 20:02:49 [INFO] neurel_deob.training.data: Yielded 1110000 samples (skipped 1219313)
+2026-02-19 20:03:06 [INFO] __main__: step=34700  loss=0.1161  lr=3.68e-05  steps/s=0.17
+2026-02-19 20:04:14 [INFO] __main__: step=34750  loss=0.1111  lr=3.68e-05  steps/s=0.17
+2026-02-19 20:05:27 [INFO] __main__: step=34800  loss=0.1167  lr=3.67e-05  steps/s=0.17
+2026-02-19 20:06:30 [INFO] __main__: step=34850  loss=0.1146  lr=3.67e-05  steps/s=0.17
+2026-02-19 20:07:32 [INFO] __main__: step=34900  loss=0.1158  lr=3.66e-05  steps/s=0.17
+2026-02-19 20:08:39 [INFO] __main__: step=34950  loss=0.1059  lr=3.66e-05  steps/s=0.17
+2026-02-19 20:09:47 [INFO] neurel_deob.training.data: Yielded 1120000 samples (skipped 1230290)
+2026-02-19 20:09:47 [INFO] __main__: step=35000  loss=0.1280  lr=3.66e-05  steps/s=0.17
+2026-02-19 20:10:59 [INFO] __main__: step=35050  loss=0.1081  lr=3.65e-05  steps/s=0.17
+2026-02-19 20:12:06 [INFO] __main__: step=35100  loss=0.1138  lr=3.65e-05  steps/s=0.17
+2026-02-19 20:13:08 [INFO] __main__: step=35150  loss=0.1107  lr=3.65e-05  steps/s=0.17
+2026-02-19 20:14:13 [INFO] __main__: step=35200  loss=0.1141  lr=3.64e-05  steps/s=0.17
+2026-02-19 20:15:20 [INFO] __main__: step=35250  loss=0.1139  lr=3.64e-05  steps/s=0.17
+2026-02-19 20:16:24 [INFO] __main__: step=35300  loss=0.1091  lr=3.64e-05  steps/s=0.17
+2026-02-19 20:16:38 [INFO] neurel_deob.training.data: Yielded 1130000 samples (skipped 1241327)
+2026-02-19 20:17:32 [INFO] __main__: step=35350  loss=0.1095  lr=3.63e-05  steps/s=0.17
+2026-02-19 20:18:40 [INFO] __main__: step=35400  loss=0.1124  lr=3.63e-05  steps/s=0.17
+2026-02-19 20:19:47 [INFO] __main__: step=35450  loss=0.1177  lr=3.63e-05  steps/s=0.17
+2026-02-19 20:20:57 [INFO] __main__: step=35500  loss=0.1178  lr=3.62e-05  steps/s=0.17
+2026-02-19 20:22:09 [INFO] __main__: step=35550  loss=0.1156  lr=3.62e-05  steps/s=0.17
+2026-02-19 20:23:15 [INFO] __main__: step=35600  loss=0.1225  lr=3.62e-05  steps/s=0.17
+2026-02-19 20:23:47 [INFO] neurel_deob.training.data: Yielded 1140000 samples (skipped 1252255)
+2026-02-19 20:24:19 [INFO] __main__: step=35650  loss=0.1030  lr=3.61e-05  steps/s=0.17
+2026-02-19 20:25:26 [INFO] __main__: step=35700  loss=0.1144  lr=3.61e-05  steps/s=0.17
+2026-02-19 20:26:33 [INFO] __main__: step=35750  loss=0.1143  lr=3.60e-05  steps/s=0.17
+2026-02-19 20:27:41 [INFO] __main__: step=35800  loss=0.1140  lr=3.60e-05  steps/s=0.17
+2026-02-19 20:28:45 [INFO] __main__: step=35850  loss=0.1077  lr=3.60e-05  steps/s=0.17
+2026-02-19 20:29:49 [INFO] __main__: step=35900  loss=0.1142  lr=3.59e-05  steps/s=0.17
+2026-02-19 20:30:36 [INFO] neurel_deob.training.data: Yielded 1150000 samples (skipped 1262986)
+2026-02-19 20:30:51 [INFO] __main__: step=35950  loss=0.1164  lr=3.59e-05  steps/s=0.17
+2026-02-19 20:31:58 [INFO] __main__: step=36000  loss=0.1078  lr=3.59e-05  steps/s=0.17
+2026-02-19 20:31:58 [INFO] __main__: Running evaluation at step 36000 …
+2026-02-19 20:31:58 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-19 20:32:00 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-19 23:00:49 [INFO] __main__: EVAL step=36000  val_loss=0.0074  BLEU=16.39  NED=0.7278  (n=504)
+2026-02-19 23:00:53 [INFO] __main__: Saved checkpoint at step 36000 → checkpoints/arm_ir_ir_v2/step_36000
+2026-02-19 23:00:53 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_26000
+2026-02-19 23:02:01 [INFO] __main__: step=36050  loss=0.1072  lr=3.58e-05  steps/s=0.16
+2026-02-19 23:03:02 [INFO] __main__: step=36100  loss=0.1070  lr=3.58e-05  steps/s=0.16
+2026-02-19 23:04:09 [INFO] __main__: step=36150  loss=0.1120  lr=3.58e-05  steps/s=0.16
+2026-02-19 23:05:17 [INFO] __main__: step=36200  loss=0.1095  lr=3.57e-05  steps/s=0.17
+2026-02-19 23:06:24 [INFO] neurel_deob.training.data: Yielded 1160000 samples (skipped 1274021)
+2026-02-19 23:06:24 [INFO] __main__: step=36250  loss=0.1137  lr=3.57e-05  steps/s=0.17
+2026-02-19 23:07:33 [INFO] __main__: step=36300  loss=0.1145  lr=3.57e-05  steps/s=0.17
+2026-02-19 23:08:39 [INFO] __main__: step=36350  loss=0.1031  lr=3.56e-05  steps/s=0.17
+2026-02-19 23:09:40 [INFO] __main__: step=36400  loss=0.1147  lr=3.56e-05  steps/s=0.17
+2026-02-19 23:10:50 [INFO] __main__: step=36450  loss=0.1118  lr=3.56e-05  steps/s=0.17
+2026-02-19 23:11:55 [INFO] __main__: step=36500  loss=0.1106  lr=3.55e-05  steps/s=0.17
+2026-02-19 23:13:00 [INFO] __main__: step=36550  loss=0.1165  lr=3.55e-05  steps/s=0.17
+2026-02-19 23:13:15 [INFO] neurel_deob.training.data: Yielded 1170000 samples (skipped 1284750)
+2026-02-19 23:14:06 [INFO] __main__: step=36600  loss=0.1095  lr=3.54e-05  steps/s=0.17
+2026-02-19 23:15:16 [INFO] __main__: step=36650  loss=0.1231  lr=3.54e-05  steps/s=0.17
+2026-02-19 23:16:20 [INFO] __main__: step=36700  loss=0.1190  lr=3.54e-05  steps/s=0.17
+2026-02-19 23:17:27 [INFO] __main__: step=36750  loss=0.1048  lr=3.53e-05  steps/s=0.17
+2026-02-19 23:18:35 [INFO] __main__: step=36800  loss=0.1087  lr=3.53e-05  steps/s=0.17
+2026-02-19 23:19:36 [INFO] __main__: step=36850  loss=0.1165  lr=3.53e-05  steps/s=0.17
+2026-02-19 23:20:10 [INFO] neurel_deob.training.data: Yielded 1180000 samples (skipped 1295825)
+2026-02-19 23:20:41 [INFO] __main__: step=36900  loss=0.1034  lr=3.52e-05  steps/s=0.17
+2026-02-19 23:21:42 [INFO] __main__: step=36950  loss=0.1143  lr=3.52e-05  steps/s=0.17
+2026-02-19 23:23:02 [INFO] __main__: step=37000  loss=0.1050  lr=3.52e-05  steps/s=0.17
+2026-02-19 23:24:10 [INFO] __main__: step=37050  loss=0.1132  lr=3.51e-05  steps/s=0.17
+2026-02-19 23:25:15 [INFO] __main__: step=37100  loss=0.1172  lr=3.51e-05  steps/s=0.17
+2026-02-19 23:26:22 [INFO] __main__: step=37150  loss=0.1175  lr=3.50e-05  steps/s=0.17
+2026-02-19 23:27:10 [INFO] neurel_deob.training.data: Yielded 1190000 samples (skipped 1306750)
+2026-02-19 23:27:25 [INFO] __main__: step=37200  loss=0.1096  lr=3.50e-05  steps/s=0.17
+2026-02-19 23:28:29 [INFO] __main__: step=37250  loss=0.1052  lr=3.50e-05  steps/s=0.17
+2026-02-19 23:29:32 [INFO] __main__: step=37300  loss=0.1181  lr=3.49e-05  steps/s=0.17
+2026-02-19 23:30:43 [INFO] __main__: step=37350  loss=0.1081  lr=3.49e-05  steps/s=0.17
+2026-02-19 23:31:45 [INFO] __main__: step=37400  loss=0.1133  lr=3.49e-05  steps/s=0.17
+2026-02-19 23:32:58 [INFO] __main__: step=37450  loss=0.1110  lr=3.48e-05  steps/s=0.17
+2026-02-19 23:34:03 [INFO] neurel_deob.training.data: Yielded 1200000 samples (skipped 1317642)
+2026-02-19 23:34:04 [INFO] __main__: step=37500  loss=0.1102  lr=3.48e-05  steps/s=0.17
+2026-02-19 23:35:19 [INFO] __main__: step=37550  loss=0.1084  lr=3.48e-05  steps/s=0.17
+2026-02-19 23:36:25 [INFO] __main__: step=37600  loss=0.1070  lr=3.47e-05  steps/s=0.17
+2026-02-19 23:37:24 [INFO] __main__: step=37650  loss=0.1096  lr=3.47e-05  steps/s=0.17
+2026-02-19 23:38:28 [INFO] __main__: step=37700  loss=0.1117  lr=3.46e-05  steps/s=0.17
+2026-02-19 23:39:39 [INFO] __main__: step=37750  loss=0.1118  lr=3.46e-05  steps/s=0.17
+2026-02-19 23:40:42 [INFO] __main__: step=37800  loss=0.1069  lr=3.46e-05  steps/s=0.17
+2026-02-19 23:40:55 [INFO] neurel_deob.training.data: Yielded 1210000 samples (skipped 1328606)
+2026-02-19 23:41:42 [INFO] __main__: step=37850  loss=0.1106  lr=3.45e-05  steps/s=0.17
+2026-02-19 23:42:44 [INFO] __main__: step=37900  loss=0.1123  lr=3.45e-05  steps/s=0.17
+2026-02-19 23:43:53 [INFO] __main__: step=37950  loss=0.1072  lr=3.45e-05  steps/s=0.17
+2026-02-19 23:45:04 [INFO] __main__: step=38000  loss=0.1043  lr=3.44e-05  steps/s=0.17
+2026-02-19 23:45:04 [INFO] __main__: Running evaluation at step 38000 …
+2026-02-19 23:45:04 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-19 23:45:06 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-20 02:13:58 [INFO] __main__: EVAL step=38000  val_loss=0.0068  BLEU=15.05  NED=0.7475  (n=504)
+2026-02-20 02:14:02 [INFO] __main__: Saved checkpoint at step 38000 → checkpoints/arm_ir_ir_v2/step_38000
+2026-02-20 02:14:02 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_28000
+2026-02-20 02:15:11 [INFO] __main__: step=38050  loss=0.1071  lr=3.44e-05  steps/s=0.16
+2026-02-20 02:16:14 [INFO] __main__: step=38100  loss=0.1087  lr=3.44e-05  steps/s=0.17
+2026-02-20 02:16:47 [INFO] neurel_deob.training.data: Yielded 1220000 samples (skipped 1339452)
+2026-02-20 02:17:18 [INFO] __main__: step=38150  loss=0.1137  lr=3.43e-05  steps/s=0.17
+2026-02-20 02:18:27 [INFO] __main__: step=38200  loss=0.1154  lr=3.43e-05  steps/s=0.17
+2026-02-20 02:19:32 [INFO] __main__: step=38250  loss=0.1104  lr=3.42e-05  steps/s=0.17
+2026-02-20 02:20:50 [INFO] __main__: step=38300  loss=0.1071  lr=3.42e-05  steps/s=0.17
+2026-02-20 02:21:52 [INFO] __main__: step=38350  loss=0.1036  lr=3.42e-05  steps/s=0.17
+2026-02-20 02:23:01 [INFO] __main__: step=38400  loss=0.1255  lr=3.41e-05  steps/s=0.17
+2026-02-20 02:23:51 [INFO] neurel_deob.training.data: Yielded 1230000 samples (skipped 1350496)
+2026-02-20 02:24:06 [INFO] __main__: step=38450  loss=0.1126  lr=3.41e-05  steps/s=0.17
+2026-02-20 02:25:13 [INFO] __main__: step=38500  loss=0.1159  lr=3.41e-05  steps/s=0.17
+2026-02-20 02:26:18 [INFO] __main__: step=38550  loss=0.1034  lr=3.40e-05  steps/s=0.17
+2026-02-20 02:27:26 [INFO] __main__: step=38600  loss=0.1030  lr=3.40e-05  steps/s=0.17
+2026-02-20 02:28:31 [INFO] __main__: step=38650  loss=0.1046  lr=3.40e-05  steps/s=0.17
+2026-02-20 02:29:34 [INFO] __main__: step=38700  loss=0.1115  lr=3.39e-05  steps/s=0.17
+2026-02-20 02:30:46 [INFO] neurel_deob.training.data: Yielded 1240000 samples (skipped 1361464)
+2026-02-20 02:30:46 [INFO] __main__: step=38750  loss=0.1123  lr=3.39e-05  steps/s=0.17
+2026-02-20 02:31:48 [INFO] __main__: step=38800  loss=0.1109  lr=3.38e-05  steps/s=0.17
+2026-02-20 02:32:58 [INFO] __main__: step=38850  loss=0.1153  lr=3.38e-05  steps/s=0.17
+2026-02-20 02:34:02 [INFO] __main__: step=38900  loss=0.1143  lr=3.38e-05  steps/s=0.17
+2026-02-20 02:35:11 [INFO] __main__: step=38950  loss=0.1173  lr=3.37e-05  steps/s=0.17
+2026-02-20 02:36:24 [INFO] __main__: step=39000  loss=0.1146  lr=3.37e-05  steps/s=0.17
+2026-02-20 02:37:36 [INFO] __main__: step=39050  loss=0.1055  lr=3.37e-05  steps/s=0.17
+2026-02-20 02:37:52 [INFO] neurel_deob.training.data: Yielded 1250000 samples (skipped 1372614)
+2026-02-20 02:38:50 [INFO] __main__: step=39100  loss=0.1081  lr=3.36e-05  steps/s=0.17
+2026-02-20 02:40:00 [INFO] __main__: step=39150  loss=0.1155  lr=3.36e-05  steps/s=0.17
+2026-02-20 02:41:06 [INFO] __main__: step=39200  loss=0.1131  lr=3.35e-05  steps/s=0.17
+2026-02-20 02:42:11 [INFO] __main__: step=39250  loss=0.1121  lr=3.35e-05  steps/s=0.17
+2026-02-20 02:43:10 [INFO] __main__: step=39300  loss=0.1240  lr=3.35e-05  steps/s=0.17
+2026-02-20 02:44:17 [INFO] __main__: step=39350  loss=0.1087  lr=3.34e-05  steps/s=0.17
+2026-02-20 02:44:50 [INFO] neurel_deob.training.data: Yielded 1260000 samples (skipped 1383734)
+2026-02-20 02:45:18 [INFO] __main__: step=39400  loss=0.1142  lr=3.34e-05  steps/s=0.17
+2026-02-20 02:46:21 [INFO] __main__: step=39450  loss=0.1094  lr=3.34e-05  steps/s=0.17
+2026-02-20 02:47:31 [INFO] __main__: step=39500  loss=0.1065  lr=3.33e-05  steps/s=0.17
+2026-02-20 02:48:43 [INFO] __main__: step=39550  loss=0.1080  lr=3.33e-05  steps/s=0.17
+2026-02-20 02:49:53 [INFO] __main__: step=39600  loss=0.1109  lr=3.32e-05  steps/s=0.17
+2026-02-20 02:50:59 [INFO] __main__: step=39650  loss=0.1057  lr=3.32e-05  steps/s=0.17
+2026-02-20 02:51:48 [INFO] neurel_deob.training.data: Yielded 1270000 samples (skipped 1394744)
+2026-02-20 02:52:03 [INFO] __main__: step=39700  loss=0.1095  lr=3.32e-05  steps/s=0.17
+2026-02-20 02:53:07 [INFO] __main__: step=39750  loss=0.1052  lr=3.31e-05  steps/s=0.17
+2026-02-20 02:54:38 [INFO] __main__: step=39800  loss=0.1080  lr=3.31e-05  steps/s=0.17
+2026-02-20 02:55:44 [INFO] __main__: step=39850  loss=0.1172  lr=3.31e-05  steps/s=0.17
+2026-02-20 02:56:47 [INFO] __main__: step=39900  loss=0.1038  lr=3.30e-05  steps/s=0.17
+2026-02-20 02:57:55 [INFO] __main__: step=39950  loss=0.1041  lr=3.30e-05  steps/s=0.17
+2026-02-20 02:59:02 [INFO] neurel_deob.training.data: Yielded 1280000 samples (skipped 1405539)
+2026-02-20 02:59:02 [INFO] __main__: step=40000  loss=0.1069  lr=3.30e-05  steps/s=0.17
+2026-02-20 02:59:02 [INFO] __main__: Running evaluation at step 40000 …
+2026-02-20 02:59:02 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-20 02:59:03 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-20 05:28:04 [INFO] __main__: EVAL step=40000  val_loss=0.0065  BLEU=13.62  NED=0.7807  (n=504)
+2026-02-20 05:28:08 [INFO] __main__: Saved checkpoint at step 40000 → checkpoints/arm_ir_ir_v2/step_40000
+2026-02-20 05:28:08 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_30000
+2026-02-20 05:29:19 [INFO] __main__: step=40050  loss=0.1066  lr=3.29e-05  steps/s=0.17
+2026-02-20 05:30:27 [INFO] __main__: step=40100  loss=0.1053  lr=3.29e-05  steps/s=0.17
+2026-02-20 05:31:35 [INFO] __main__: step=40150  loss=0.1149  lr=3.28e-05  steps/s=0.17
+2026-02-20 05:32:44 [INFO] __main__: step=40200  loss=0.1083  lr=3.28e-05  steps/s=0.17
+2026-02-20 05:33:47 [INFO] __main__: step=40250  loss=0.1111  lr=3.28e-05  steps/s=0.17
+2026-02-20 05:34:49 [INFO] __main__: step=40300  loss=0.1071  lr=3.27e-05  steps/s=0.17
+2026-02-20 05:35:07 [INFO] neurel_deob.training.data: Yielded 1290000 samples (skipped 1416512)
+2026-02-20 05:35:55 [INFO] __main__: step=40350  loss=0.1059  lr=3.27e-05  steps/s=0.17
+2026-02-20 05:36:58 [INFO] __main__: step=40400  loss=0.1066  lr=3.27e-05  steps/s=0.17
+2026-02-20 05:38:01 [INFO] __main__: step=40450  loss=0.1041  lr=3.26e-05  steps/s=0.17
+2026-02-20 05:39:07 [INFO] __main__: step=40500  loss=0.1081  lr=3.26e-05  steps/s=0.17
+2026-02-20 05:40:12 [INFO] __main__: step=40550  loss=0.1075  lr=3.25e-05  steps/s=0.17
+2026-02-20 05:41:18 [INFO] __main__: step=40600  loss=0.0996  lr=3.25e-05  steps/s=0.17
+2026-02-20 05:41:49 [INFO] neurel_deob.training.data: Yielded 1300000 samples (skipped 1427141)
+2026-02-20 05:42:21 [INFO] __main__: step=40650  loss=0.1086  lr=3.25e-05  steps/s=0.17
+2026-02-20 05:43:34 [INFO] __main__: step=40700  loss=0.1043  lr=3.24e-05  steps/s=0.17
+2026-02-20 05:44:41 [INFO] __main__: step=40750  loss=0.1130  lr=3.24e-05  steps/s=0.17
+2026-02-20 05:45:43 [INFO] __main__: step=40800  loss=0.1066  lr=3.23e-05  steps/s=0.17
+2026-02-20 05:46:45 [INFO] __main__: step=40850  loss=0.0984  lr=3.23e-05  steps/s=0.17
+2026-02-20 05:47:54 [INFO] __main__: step=40900  loss=0.1168  lr=3.23e-05  steps/s=0.17
+2026-02-20 05:48:42 [INFO] neurel_deob.training.data: Yielded 1310000 samples (skipped 1437975)
+2026-02-20 05:48:57 [INFO] __main__: step=40950  loss=0.0968  lr=3.22e-05  steps/s=0.17
+2026-02-20 05:50:12 [INFO] __main__: step=41000  loss=0.0925  lr=3.22e-05  steps/s=0.17
+2026-02-20 05:51:09 [INFO] __main__: step=41050  loss=0.0954  lr=3.22e-05  steps/s=0.17
+2026-02-20 05:52:13 [INFO] __main__: step=41100  loss=0.1088  lr=3.21e-05  steps/s=0.17
+2026-02-20 05:53:12 [INFO] __main__: step=41150  loss=0.1014  lr=3.21e-05  steps/s=0.17
+2026-02-20 05:54:14 [INFO] __main__: step=41200  loss=0.0987  lr=3.20e-05  steps/s=0.17
+2026-02-20 05:55:17 [INFO] neurel_deob.training.data: Yielded 1320000 samples (skipped 1448708)
+2026-02-20 05:55:17 [INFO] __main__: step=41250  loss=0.1091  lr=3.20e-05  steps/s=0.17
+2026-02-20 05:56:33 [INFO] __main__: step=41300  loss=0.1120  lr=3.20e-05  steps/s=0.17
+2026-02-20 05:57:46 [INFO] __main__: step=41350  loss=0.1076  lr=3.19e-05  steps/s=0.17
+2026-02-20 05:58:46 [INFO] __main__: step=41400  loss=0.1050  lr=3.19e-05  steps/s=0.17
+2026-02-20 05:59:47 [INFO] __main__: step=41450  loss=0.1111  lr=3.19e-05  steps/s=0.17
+2026-02-20 06:00:49 [INFO] __main__: step=41500  loss=0.0998  lr=3.18e-05  steps/s=0.17
+2026-02-20 06:01:48 [INFO] __main__: step=41550  loss=0.1113  lr=3.18e-05  steps/s=0.17
+2026-02-20 06:02:07 [INFO] neurel_deob.training.data: Yielded 1330000 samples (skipped 1459718)
+2026-02-20 06:02:54 [INFO] __main__: step=41600  loss=0.1041  lr=3.17e-05  steps/s=0.17
+2026-02-20 06:04:02 [INFO] __main__: step=41650  loss=0.1062  lr=3.17e-05  steps/s=0.17
+2026-02-20 06:05:09 [INFO] __main__: step=41700  loss=0.1026  lr=3.17e-05  steps/s=0.17
+2026-02-20 06:06:12 [INFO] __main__: step=41750  loss=0.1049  lr=3.16e-05  steps/s=0.17
+2026-02-20 06:07:15 [INFO] __main__: step=41800  loss=0.1000  lr=3.16e-05  steps/s=0.17
+2026-02-20 06:08:36 [INFO] __main__: step=41850  loss=0.0980  lr=3.16e-05  steps/s=0.17
+2026-02-20 06:09:11 [INFO] neurel_deob.training.data: Yielded 1340000 samples (skipped 1470791)
+2026-02-20 06:09:42 [INFO] __main__: step=41900  loss=0.1024  lr=3.15e-05  steps/s=0.17
+2026-02-20 06:10:43 [INFO] __main__: step=41950  loss=0.1012  lr=3.15e-05  steps/s=0.17
+2026-02-20 06:11:49 [INFO] __main__: step=42000  loss=0.0980  lr=3.14e-05  steps/s=0.17
+2026-02-20 06:11:49 [INFO] __main__: Running evaluation at step 42000 …
+2026-02-20 06:11:49 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-20 06:11:50 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-20 08:38:06 [INFO] __main__: EVAL step=42000  val_loss=0.0065  BLEU=13.91  NED=0.7551  (n=504)
+2026-02-20 08:38:10 [INFO] __main__: Saved checkpoint at step 42000 → checkpoints/arm_ir_ir_v2/step_42000
+2026-02-20 08:38:10 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_32000
+2026-02-20 08:39:20 [INFO] __main__: step=42050  loss=0.1068  lr=3.14e-05  steps/s=0.17
+2026-02-20 08:40:23 [INFO] __main__: step=42100  loss=0.1090  lr=3.14e-05  steps/s=0.17
+2026-02-20 08:41:29 [INFO] __main__: step=42150  loss=0.1140  lr=3.13e-05  steps/s=0.17
+2026-02-20 08:42:21 [INFO] neurel_deob.training.data: Yielded 1350000 samples (skipped 1481927)
+2026-02-20 08:42:37 [INFO] __main__: step=42200  loss=0.0939  lr=3.13e-05  steps/s=0.17
+2026-02-20 08:43:35 [INFO] __main__: step=42250  loss=0.1090  lr=3.12e-05  steps/s=0.17
+2026-02-20 08:44:42 [INFO] __main__: step=42300  loss=0.1058  lr=3.12e-05  steps/s=0.17
+2026-02-20 08:45:48 [INFO] __main__: step=42350  loss=0.1010  lr=3.12e-05  steps/s=0.17
+2026-02-20 08:46:48 [INFO] __main__: step=42400  loss=0.1074  lr=3.11e-05  steps/s=0.17
+2026-02-20 08:47:59 [INFO] __main__: step=42450  loss=0.1014  lr=3.11e-05  steps/s=0.17
+2026-02-20 08:49:10 [INFO] neurel_deob.training.data: Yielded 1360000 samples (skipped 1493164)
+2026-02-20 08:49:10 [INFO] __main__: step=42500  loss=0.0990  lr=3.11e-05  steps/s=0.17
+2026-02-20 08:50:19 [INFO] __main__: step=42550  loss=0.1105  lr=3.10e-05  steps/s=0.17
+2026-02-20 08:51:26 [INFO] __main__: step=42600  loss=0.1059  lr=3.10e-05  steps/s=0.17
+2026-02-20 08:52:33 [INFO] __main__: step=42650  loss=0.1357  lr=3.09e-05  steps/s=0.17
+2026-02-20 08:53:37 [INFO] __main__: step=42700  loss=0.1027  lr=3.09e-05  steps/s=0.17
+2026-02-20 08:54:43 [INFO] __main__: step=42750  loss=0.1038  lr=3.09e-05  steps/s=0.17
+2026-02-20 08:55:52 [INFO] __main__: step=42800  loss=0.1067  lr=3.08e-05  steps/s=0.17
+2026-02-20 08:56:10 [INFO] neurel_deob.training.data: Yielded 1370000 samples (skipped 1504244)
+2026-02-20 08:56:55 [INFO] __main__: step=42850  loss=0.1054  lr=3.08e-05  steps/s=0.17
+2026-02-20 08:58:07 [INFO] __main__: step=42900  loss=0.1145  lr=3.07e-05  steps/s=0.17
+2026-02-20 08:59:15 [INFO] __main__: step=42950  loss=0.1123  lr=3.07e-05  steps/s=0.17
+2026-02-20 09:00:17 [INFO] __main__: step=43000  loss=0.1023  lr=3.07e-05  steps/s=0.17
+2026-02-20 09:01:19 [INFO] __main__: step=43050  loss=0.1052  lr=3.06e-05  steps/s=0.17
+2026-02-20 09:02:30 [INFO] __main__: step=43100  loss=0.1026  lr=3.06e-05  steps/s=0.17
+2026-02-20 09:03:08 [INFO] neurel_deob.training.data: Yielded 1380000 samples (skipped 1515311)
+2026-02-20 09:03:52 [INFO] __main__: step=43150  loss=0.1017  lr=3.06e-05  steps/s=0.17
+2026-02-20 09:05:09 [INFO] __main__: step=43200  loss=0.0957  lr=3.05e-05  steps/s=0.17
+2026-02-20 09:06:14 [INFO] __main__: step=43250  loss=0.1059  lr=3.05e-05  steps/s=0.17
+2026-02-20 09:07:34 [INFO] __main__: step=43300  loss=0.0988  lr=3.04e-05  steps/s=0.17
+2026-02-20 09:08:35 [INFO] __main__: step=43350  loss=0.1073  lr=3.04e-05  steps/s=0.17
+2026-02-20 09:09:35 [INFO] __main__: step=43400  loss=0.1118  lr=3.04e-05  steps/s=0.17
+2026-02-20 09:10:24 [INFO] neurel_deob.training.data: Yielded 1390000 samples (skipped 1526163)
+2026-02-20 09:10:41 [INFO] __main__: step=43450  loss=0.0972  lr=3.03e-05  steps/s=0.17
+2026-02-20 09:11:40 [INFO] __main__: step=43500  loss=0.1029  lr=3.03e-05  steps/s=0.17
+2026-02-20 09:12:46 [INFO] __main__: step=43550  loss=0.0966  lr=3.02e-05  steps/s=0.17
+2026-02-20 09:13:51 [INFO] __main__: step=43600  loss=0.1006  lr=3.02e-05  steps/s=0.17
+2026-02-20 09:14:58 [INFO] __main__: step=43650  loss=0.1093  lr=3.02e-05  steps/s=0.17
+2026-02-20 09:16:06 [INFO] __main__: step=43700  loss=0.1071  lr=3.01e-05  steps/s=0.17
+2026-02-20 09:17:14 [INFO] neurel_deob.training.data: Yielded 1400000 samples (skipped 1537198)
+2026-02-20 09:17:14 [INFO] __main__: step=43750  loss=0.1030  lr=3.01e-05  steps/s=0.17
+2026-02-20 09:18:22 [INFO] __main__: step=43800  loss=0.1004  lr=3.01e-05  steps/s=0.17
+2026-02-20 09:19:26 [INFO] __main__: step=43850  loss=0.1080  lr=3.00e-05  steps/s=0.17
+2026-02-20 09:20:36 [INFO] __main__: step=43900  loss=0.1172  lr=3.00e-05  steps/s=0.17
+2026-02-20 09:21:42 [INFO] __main__: step=43950  loss=0.1031  lr=2.99e-05  steps/s=0.17
+2026-02-20 09:22:48 [INFO] __main__: step=44000  loss=0.1059  lr=2.99e-05  steps/s=0.17
+2026-02-20 09:22:48 [INFO] __main__: Running evaluation at step 44000 …
+2026-02-20 09:22:48 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-20 09:22:50 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-20 11:49:25 [INFO] __main__: EVAL step=44000  val_loss=0.0063  BLEU=11.38  NED=0.7963  (n=504)
+2026-02-20 11:49:29 [INFO] __main__: Saved checkpoint at step 44000 → checkpoints/arm_ir_ir_v2/step_44000
+2026-02-20 11:49:29 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_34000
+2026-02-20 11:50:39 [INFO] __main__: step=44050  loss=0.1057  lr=2.99e-05  steps/s=0.17
+2026-02-20 11:50:54 [INFO] neurel_deob.training.data: Yielded 1410000 samples (skipped 1548008)
+2026-02-20 11:51:40 [INFO] __main__: step=44100  loss=0.0974  lr=2.98e-05  steps/s=0.17
+2026-02-20 11:52:48 [INFO] __main__: step=44150  loss=0.0987  lr=2.98e-05  steps/s=0.17
+2026-02-20 11:53:50 [INFO] __main__: step=44200  loss=0.1043  lr=2.97e-05  steps/s=0.17
+2026-02-20 11:54:52 [INFO] __main__: step=44250  loss=0.1013  lr=2.97e-05  steps/s=0.17
+2026-02-20 11:55:57 [INFO] __main__: step=44300  loss=0.1078  lr=2.97e-05  steps/s=0.17
+2026-02-20 11:57:03 [INFO] __main__: step=44350  loss=0.1034  lr=2.96e-05  steps/s=0.17
+2026-02-20 11:57:36 [INFO] neurel_deob.training.data: Yielded 1420000 samples (skipped 1558804)
+2026-02-20 11:58:07 [INFO] __main__: step=44400  loss=0.1056  lr=2.96e-05  steps/s=0.17
+2026-02-20 11:59:08 [INFO] __main__: step=44450  loss=0.1049  lr=2.96e-05  steps/s=0.17
+2026-02-20 12:00:11 [INFO] __main__: step=44500  loss=0.0962  lr=2.95e-05  steps/s=0.17
+2026-02-20 12:01:25 [INFO] __main__: step=44550  loss=0.1004  lr=2.95e-05  steps/s=0.17
+2026-02-20 12:02:28 [INFO] __main__: step=44600  loss=0.0990  lr=2.94e-05  steps/s=0.17
+2026-02-20 12:03:42 [INFO] __main__: step=44650  loss=0.1019  lr=2.94e-05  steps/s=0.17
+2026-02-20 12:04:38 [INFO] neurel_deob.training.data: Yielded 1430000 samples (skipped 1569787)
+2026-02-20 12:05:01 [INFO] __main__: step=44700  loss=0.1058  lr=2.94e-05  steps/s=0.17
+2026-02-20 12:06:00 [INFO] __main__: step=44750  loss=0.0953  lr=2.93e-05  steps/s=0.17
+2026-02-20 12:07:01 [INFO] __main__: step=44800  loss=0.1024  lr=2.93e-05  steps/s=0.17
+2026-02-20 12:08:15 [INFO] __main__: step=44850  loss=0.1034  lr=2.92e-05  steps/s=0.17
+2026-02-20 12:09:19 [INFO] __main__: step=44900  loss=0.1013  lr=2.92e-05  steps/s=0.17
+2026-02-20 12:10:28 [INFO] __main__: step=44950  loss=0.1019  lr=2.92e-05  steps/s=0.17
+2026-02-20 12:11:30 [INFO] neurel_deob.training.data: Yielded 1440000 samples (skipped 1580926)
+2026-02-20 12:11:30 [INFO] __main__: step=45000  loss=0.1041  lr=2.91e-05  steps/s=0.17
+2026-02-20 12:12:35 [INFO] __main__: step=45050  loss=0.1029  lr=2.91e-05  steps/s=0.17
+2026-02-20 12:13:43 [INFO] __main__: step=45100  loss=0.0952  lr=2.90e-05  steps/s=0.17
+2026-02-20 12:14:40 [INFO] __main__: step=45150  loss=0.1043  lr=2.90e-05  steps/s=0.17
+2026-02-20 12:15:50 [INFO] __main__: step=45200  loss=0.1029  lr=2.90e-05  steps/s=0.17
+2026-02-20 12:16:57 [INFO] __main__: step=45250  loss=0.1060  lr=2.89e-05  steps/s=0.17
+2026-02-20 12:18:07 [INFO] __main__: step=45300  loss=0.1046  lr=2.89e-05  steps/s=0.17
+2026-02-20 12:18:20 [INFO] neurel_deob.training.data: Yielded 1450000 samples (skipped 1591879)
+2026-02-20 12:19:06 [INFO] __main__: step=45350  loss=0.1090  lr=2.89e-05  steps/s=0.17
+2026-02-20 12:20:04 [INFO] __main__: step=45400  loss=0.0972  lr=2.88e-05  steps/s=0.17
+2026-02-20 12:21:11 [INFO] __main__: step=45450  loss=0.1136  lr=2.88e-05  steps/s=0.17
+2026-02-20 12:22:15 [INFO] __main__: step=45500  loss=0.0912  lr=2.87e-05  steps/s=0.17
+2026-02-20 12:23:18 [INFO] __main__: step=45550  loss=0.0913  lr=2.87e-05  steps/s=0.17
+2026-02-20 12:24:28 [INFO] __main__: step=45600  loss=0.0915  lr=2.87e-05  steps/s=0.17
+2026-02-20 12:25:01 [INFO] neurel_deob.training.data: Yielded 1460000 samples (skipped 1602687)
+2026-02-20 12:25:36 [INFO] __main__: step=45650  loss=0.0900  lr=2.86e-05  steps/s=0.17
+2026-02-20 12:26:46 [INFO] __main__: step=45700  loss=0.0989  lr=2.86e-05  steps/s=0.17
+2026-02-20 12:27:51 [INFO] __main__: step=45750  loss=0.1082  lr=2.85e-05  steps/s=0.17
+2026-02-20 12:28:59 [INFO] __main__: step=45800  loss=0.0985  lr=2.85e-05  steps/s=0.17
+2026-02-20 12:30:21 [INFO] __main__: step=45850  loss=0.0963  lr=2.85e-05  steps/s=0.17
+2026-02-20 12:31:23 [INFO] __main__: step=45900  loss=0.0951  lr=2.84e-05  steps/s=0.17
+2026-02-20 12:32:19 [INFO] neurel_deob.training.data: Yielded 1470000 samples (skipped 1613689)
+2026-02-20 12:32:36 [INFO] __main__: step=45950  loss=0.0968  lr=2.84e-05  steps/s=0.17
+2026-02-20 12:33:40 [INFO] __main__: step=46000  loss=0.1004  lr=2.83e-05  steps/s=0.17
+2026-02-20 12:33:40 [INFO] __main__: Running evaluation at step 46000 …
+2026-02-20 12:33:40 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-20 12:33:42 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-20 15:01:12 [INFO] __main__: EVAL step=46000  val_loss=0.0061  BLEU=13.34  NED=0.7991  (n=504)
+2026-02-20 15:01:16 [INFO] __main__: Saved checkpoint at step 46000 → checkpoints/arm_ir_ir_v2/step_46000
+2026-02-20 15:01:16 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_36000
+2026-02-20 15:02:19 [INFO] __main__: step=46050  loss=0.0960  lr=2.83e-05  steps/s=0.17
+2026-02-20 15:03:26 [INFO] __main__: step=46100  loss=0.1122  lr=2.83e-05  steps/s=0.17
+2026-02-20 15:04:35 [INFO] __main__: step=46150  loss=0.0895  lr=2.82e-05  steps/s=0.17
+2026-02-20 15:05:35 [INFO] __main__: step=46200  loss=0.1033  lr=2.82e-05  steps/s=0.17
+2026-02-20 15:06:39 [INFO] neurel_deob.training.data: Yielded 1480000 samples (skipped 1624836)
+2026-02-20 15:06:39 [INFO] __main__: step=46250  loss=0.1050  lr=2.81e-05  steps/s=0.17
+2026-02-20 15:07:48 [INFO] __main__: step=46300  loss=0.1031  lr=2.81e-05  steps/s=0.17
+2026-02-20 15:08:53 [INFO] __main__: step=46350  loss=0.0922  lr=2.81e-05  steps/s=0.17
+2026-02-20 15:10:04 [INFO] __main__: step=46400  loss=0.1301  lr=2.80e-05  steps/s=0.17
+2026-02-20 15:11:06 [INFO] __main__: step=46450  loss=0.0938  lr=2.80e-05  steps/s=0.17
+2026-02-20 15:12:12 [INFO] __main__: step=46500  loss=0.0992  lr=2.80e-05  steps/s=0.17
+2026-02-20 15:13:23 [INFO] __main__: step=46550  loss=0.0923  lr=2.79e-05  steps/s=0.17
+2026-02-20 15:13:37 [INFO] neurel_deob.training.data: Yielded 1490000 samples (skipped 1635844)
+2026-02-20 15:14:27 [INFO] __main__: step=46600  loss=0.0991  lr=2.79e-05  steps/s=0.17
+2026-02-20 15:15:27 [INFO] __main__: step=46650  loss=0.1075  lr=2.78e-05  steps/s=0.17
+2026-02-20 15:16:27 [INFO] __main__: step=46700  loss=0.1009  lr=2.78e-05  steps/s=0.17
+2026-02-20 15:17:30 [INFO] __main__: step=46750  loss=0.1037  lr=2.78e-05  steps/s=0.17
+2026-02-20 15:18:37 [INFO] __main__: step=46800  loss=0.1048  lr=2.77e-05  steps/s=0.17
+2026-02-20 15:19:45 [INFO] __main__: step=46850  loss=0.0910  lr=2.77e-05  steps/s=0.17
+2026-02-20 15:20:15 [INFO] neurel_deob.training.data: Yielded 1500000 samples (skipped 1646861)
+2026-02-20 15:20:46 [INFO] __main__: step=46900  loss=0.0907  lr=2.76e-05  steps/s=0.17
+2026-02-20 15:21:47 [INFO] __main__: step=46950  loss=0.1000  lr=2.76e-05  steps/s=0.17
+2026-02-20 15:23:02 [INFO] __main__: step=47000  loss=0.0972  lr=2.76e-05  steps/s=0.17
+2026-02-20 15:24:04 [INFO] __main__: step=47050  loss=0.1017  lr=2.75e-05  steps/s=0.17
+2026-02-20 15:25:33 [INFO] __main__: step=47100  loss=0.0963  lr=2.75e-05  steps/s=0.17
+2026-02-20 15:26:35 [INFO] __main__: step=47150  loss=0.0994  lr=2.74e-05  steps/s=0.17
+2026-02-20 15:27:25 [INFO] neurel_deob.training.data: Yielded 1510000 samples (skipped 1657839)
+2026-02-20 15:27:41 [INFO] __main__: step=47200  loss=0.0982  lr=2.74e-05  steps/s=0.17
+2026-02-20 15:28:44 [INFO] __main__: step=47250  loss=0.0924  lr=2.74e-05  steps/s=0.17
+2026-02-20 15:29:47 [INFO] __main__: step=47300  loss=0.0950  lr=2.73e-05  steps/s=0.17
+2026-02-20 15:30:54 [INFO] __main__: step=47350  loss=0.0960  lr=2.73e-05  steps/s=0.17
+2026-02-20 15:31:58 [INFO] __main__: step=47400  loss=0.0964  lr=2.72e-05  steps/s=0.17
+2026-02-20 15:33:01 [INFO] __main__: step=47450  loss=0.0985  lr=2.72e-05  steps/s=0.17
+2026-02-20 15:33:58 [INFO] neurel_deob.training.data: Yielded 1520000 samples (skipped 1668814)
+2026-02-20 15:33:58 [INFO] __main__: step=47500  loss=0.1035  lr=2.72e-05  steps/s=0.17
+2026-02-20 15:35:04 [INFO] __main__: step=47550  loss=0.1024  lr=2.71e-05  steps/s=0.17
+2026-02-20 15:36:11 [INFO] __main__: step=47600  loss=0.0996  lr=2.71e-05  steps/s=0.17
+2026-02-20 15:37:14 [INFO] __main__: step=47650  loss=0.0969  lr=2.70e-05  steps/s=0.17
+2026-02-20 15:38:20 [INFO] __main__: step=47700  loss=0.0956  lr=2.70e-05  steps/s=0.17
+2026-02-20 15:39:28 [INFO] __main__: step=47750  loss=0.0924  lr=2.70e-05  steps/s=0.17
+2026-02-20 15:40:33 [INFO] __main__: step=47800  loss=0.0942  lr=2.69e-05  steps/s=0.17
+2026-02-20 15:40:50 [INFO] neurel_deob.training.data: Yielded 1530000 samples (skipped 1679673)
+2026-02-20 15:41:44 [INFO] __main__: step=47850  loss=0.0923  lr=2.69e-05  steps/s=0.17
+2026-02-20 15:42:50 [INFO] __main__: step=47900  loss=0.0975  lr=2.69e-05  steps/s=0.17
+2026-02-20 15:43:56 [INFO] __main__: step=47950  loss=0.0969  lr=2.68e-05  steps/s=0.17
+2026-02-20 15:45:03 [INFO] __main__: step=48000  loss=0.1003  lr=2.68e-05  steps/s=0.17
+2026-02-20 15:45:03 [INFO] __main__: Running evaluation at step 48000 …
+2026-02-20 15:45:03 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-20 15:45:09 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-20 18:14:14 [INFO] __main__: EVAL step=48000  val_loss=0.0058  BLEU=12.71  NED=0.8024  (n=504)
+2026-02-20 18:14:18 [INFO] __main__: Saved checkpoint at step 48000 → checkpoints/arm_ir_ir_v2/step_48000
+2026-02-20 18:14:18 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_38000
+2026-02-20 18:15:30 [INFO] __main__: step=48050  loss=0.0949  lr=2.67e-05  steps/s=0.17
+2026-02-20 18:16:36 [INFO] __main__: step=48100  loss=0.0924  lr=2.67e-05  steps/s=0.17
+2026-02-20 18:17:16 [INFO] neurel_deob.training.data: Yielded 1540000 samples (skipped 1690773)
+2026-02-20 18:17:47 [INFO] __main__: step=48150  loss=0.1029  lr=2.67e-05  steps/s=0.17
+2026-02-20 18:18:58 [INFO] __main__: step=48200  loss=0.1057  lr=2.66e-05  steps/s=0.17
+2026-02-20 18:20:03 [INFO] __main__: step=48250  loss=0.1047  lr=2.66e-05  steps/s=0.17
+2026-02-20 18:21:08 [INFO] __main__: step=48300  loss=0.0901  lr=2.65e-05  steps/s=0.17
+2026-02-20 18:22:16 [INFO] __main__: step=48350  loss=0.0923  lr=2.65e-05  steps/s=0.17
+2026-02-20 18:23:27 [INFO] __main__: step=48400  loss=0.0963  lr=2.65e-05  steps/s=0.17
+2026-02-20 18:24:10 [INFO] neurel_deob.training.data: Yielded 1550000 samples (skipped 1701817)
+2026-02-20 18:24:27 [INFO] __main__: step=48450  loss=0.1001  lr=2.64e-05  steps/s=0.17
+2026-02-20 18:25:29 [INFO] __main__: step=48500  loss=0.0933  lr=2.64e-05  steps/s=0.17
+2026-02-20 18:26:29 [INFO] __main__: step=48550  loss=0.1024  lr=2.63e-05  steps/s=0.17
+2026-02-20 18:27:37 [INFO] __main__: step=48600  loss=0.0999  lr=2.63e-05  steps/s=0.17
+2026-02-20 18:28:40 [INFO] __main__: step=48650  loss=0.1019  lr=2.63e-05  steps/s=0.17
+2026-02-20 18:29:38 [INFO] __main__: step=48700  loss=0.0962  lr=2.62e-05  steps/s=0.17
+2026-02-20 18:30:45 [INFO] neurel_deob.training.data: Yielded 1560000 samples (skipped 1712666)
+2026-02-20 18:30:45 [INFO] __main__: step=48750  loss=0.0917  lr=2.62e-05  steps/s=0.17
+2026-02-20 18:32:07 [INFO] __main__: step=48800  loss=0.0923  lr=2.61e-05  steps/s=0.17
+2026-02-20 18:33:16 [INFO] __main__: step=48850  loss=0.0934  lr=2.61e-05  steps/s=0.17
+2026-02-20 18:34:17 [INFO] __main__: step=48900  loss=0.0939  lr=2.61e-05  steps/s=0.17
+2026-02-20 18:35:23 [INFO] __main__: step=48950  loss=0.1056  lr=2.60e-05  steps/s=0.17
+2026-02-20 18:36:31 [INFO] __main__: step=49000  loss=0.0948  lr=2.60e-05  steps/s=0.17
+2026-02-20 18:37:37 [INFO] __main__: step=49050  loss=0.0965  lr=2.59e-05  steps/s=0.17
+2026-02-20 18:37:58 [INFO] neurel_deob.training.data: Yielded 1570000 samples (skipped 1723859)
+2026-02-20 18:38:49 [INFO] __main__: step=49100  loss=0.0954  lr=2.59e-05  steps/s=0.17
+2026-02-20 18:40:00 [INFO] __main__: step=49150  loss=0.0923  lr=2.59e-05  steps/s=0.17
+2026-02-20 18:41:09 [INFO] __main__: step=49200  loss=0.0982  lr=2.58e-05  steps/s=0.17
+2026-02-20 18:42:22 [INFO] __main__: step=49250  loss=0.0915  lr=2.58e-05  steps/s=0.17
+2026-02-20 18:43:24 [INFO] __main__: step=49300  loss=0.1083  lr=2.57e-05  steps/s=0.17
+2026-02-20 18:44:32 [INFO] __main__: step=49350  loss=0.0928  lr=2.57e-05  steps/s=0.17
+2026-02-20 18:45:05 [INFO] neurel_deob.training.data: Yielded 1580000 samples (skipped 1734815)
+2026-02-20 18:45:37 [INFO] __main__: step=49400  loss=0.0953  lr=2.57e-05  steps/s=0.17
+2026-02-20 18:46:46 [INFO] __main__: step=49450  loss=0.0949  lr=2.56e-05  steps/s=0.17
+2026-02-20 18:47:50 [INFO] __main__: step=49500  loss=0.0961  lr=2.56e-05  steps/s=0.17
+2026-02-20 18:48:54 [INFO] __main__: step=49550  loss=0.0928  lr=2.56e-05  steps/s=0.17
+2026-02-20 18:49:56 [INFO] __main__: step=49600  loss=0.0871  lr=2.55e-05  steps/s=0.17
+2026-02-20 18:50:59 [INFO] __main__: step=49650  loss=0.0864  lr=2.55e-05  steps/s=0.17
+2026-02-20 18:51:47 [INFO] neurel_deob.training.data: Yielded 1590000 samples (skipped 1745790)
+2026-02-20 18:52:01 [INFO] __main__: step=49700  loss=0.0943  lr=2.54e-05  steps/s=0.17
+2026-02-20 18:53:08 [INFO] __main__: step=49750  loss=0.0951  lr=2.54e-05  steps/s=0.17
+2026-02-20 18:54:10 [INFO] __main__: step=49800  loss=0.0907  lr=2.54e-05  steps/s=0.17
+2026-02-20 18:55:13 [INFO] __main__: step=49850  loss=0.1095  lr=2.53e-05  steps/s=0.17
+2026-02-20 18:56:14 [INFO] __main__: step=49900  loss=0.0951  lr=2.53e-05  steps/s=0.17
+2026-02-20 18:57:17 [INFO] __main__: step=49950  loss=0.0941  lr=2.52e-05  steps/s=0.17
+2026-02-20 18:58:25 [INFO] neurel_deob.training.data: Yielded 1600000 samples (skipped 1756459)
+2026-02-20 18:58:25 [INFO] __main__: step=50000  loss=0.0874  lr=2.52e-05  steps/s=0.17
+2026-02-20 18:58:25 [INFO] __main__: Running evaluation at step 50000 …
+2026-02-20 18:58:25 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-20 18:58:31 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-20 21:27:58 [INFO] __main__: EVAL step=50000  val_loss=0.0058  BLEU=12.59  NED=0.8157  (n=504)
+2026-02-20 21:28:03 [INFO] __main__: Saved checkpoint at step 50000 → checkpoints/arm_ir_ir_v2/step_50000
+2026-02-20 21:28:03 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_40000
+2026-02-20 21:29:24 [INFO] __main__: step=50050  loss=0.1010  lr=2.52e-05  steps/s=0.17
+2026-02-20 21:30:34 [INFO] __main__: step=50100  loss=0.1034  lr=2.51e-05  steps/s=0.17
+2026-02-20 21:31:46 [INFO] __main__: step=50150  loss=0.0979  lr=2.51e-05  steps/s=0.17
+2026-02-20 21:32:54 [INFO] __main__: step=50200  loss=0.0991  lr=2.50e-05  steps/s=0.17
+2026-02-20 21:34:05 [INFO] __main__: step=50250  loss=0.0964  lr=2.50e-05  steps/s=0.17
+2026-02-20 21:35:57 [INFO] __main__: step=50300  loss=0.0899  lr=2.50e-05  steps/s=0.17
+2026-02-20 21:36:16 [INFO] neurel_deob.training.data: Yielded 1610000 samples (skipped 1767258)
+2026-02-20 21:37:07 [INFO] __main__: step=50350  loss=0.0861  lr=2.49e-05  steps/s=0.17
+2026-02-20 21:38:15 [INFO] __main__: step=50400  loss=0.0849  lr=2.49e-05  steps/s=0.17
+2026-02-20 21:39:23 [INFO] __main__: step=50450  loss=0.1018  lr=2.48e-05  steps/s=0.17
+2026-02-20 21:40:29 [INFO] __main__: step=50500  loss=0.0882  lr=2.48e-05  steps/s=0.17
+2026-02-20 21:41:42 [INFO] __main__: step=50550  loss=0.0906  lr=2.48e-05  steps/s=0.17
+2026-02-20 21:42:50 [INFO] __main__: step=50600  loss=0.0838  lr=2.47e-05  steps/s=0.17
+2026-02-20 21:43:24 [INFO] neurel_deob.training.data: Yielded 1620000 samples (skipped 1778319)
+2026-02-20 21:44:02 [INFO] __main__: step=50650  loss=0.0928  lr=2.47e-05  steps/s=0.17
+2026-02-20 21:45:13 [INFO] __main__: step=50700  loss=0.0918  lr=2.46e-05  steps/s=0.17
+2026-02-20 21:46:18 [INFO] __main__: step=50750  loss=0.0945  lr=2.46e-05  steps/s=0.17
+2026-02-20 21:47:26 [INFO] __main__: step=50800  loss=0.1002  lr=2.46e-05  steps/s=0.17
+2026-02-20 21:48:36 [INFO] __main__: step=50850  loss=0.0992  lr=2.45e-05  steps/s=0.17
+2026-02-20 21:49:47 [INFO] __main__: step=50900  loss=0.1028  lr=2.45e-05  steps/s=0.17
+2026-02-20 21:50:41 [INFO] neurel_deob.training.data: Yielded 1630000 samples (skipped 1788899)
+2026-02-20 21:50:57 [INFO] __main__: step=50950  loss=0.0931  lr=2.44e-05  steps/s=0.17
+2026-02-20 21:52:12 [INFO] __main__: step=51000  loss=0.0957  lr=2.44e-05  steps/s=0.17
+2026-02-20 21:53:18 [INFO] __main__: step=51050  loss=0.1100  lr=2.44e-05  steps/s=0.17
+2026-02-20 21:54:23 [INFO] __main__: step=51100  loss=0.0881  lr=2.43e-05  steps/s=0.17
+2026-02-20 21:55:33 [INFO] __main__: step=51150  loss=0.0975  lr=2.43e-05  steps/s=0.17
+2026-02-20 21:56:46 [INFO] __main__: step=51200  loss=0.0884  lr=2.43e-05  steps/s=0.17
+2026-02-20 21:57:54 [INFO] neurel_deob.training.data: Yielded 1640000 samples (skipped 1799646)
+2026-02-20 21:57:55 [INFO] __main__: step=51250  loss=0.0947  lr=2.42e-05  steps/s=0.17
+2026-02-20 21:59:07 [INFO] __main__: step=51300  loss=0.0911  lr=2.42e-05  steps/s=0.17
+2026-02-20 22:00:16 [INFO] __main__: step=51350  loss=0.0947  lr=2.41e-05  steps/s=0.17
+2026-02-20 22:01:35 [INFO] __main__: step=51400  loss=0.0898  lr=2.41e-05  steps/s=0.17
+2026-02-20 22:02:44 [INFO] __main__: step=51450  loss=0.0890  lr=2.41e-05  steps/s=0.17
+2026-02-20 22:03:52 [INFO] __main__: step=51500  loss=0.0905  lr=2.40e-05  steps/s=0.17
+2026-02-20 22:04:59 [INFO] __main__: step=51550  loss=0.0943  lr=2.40e-05  steps/s=0.17
+2026-02-20 22:05:18 [INFO] neurel_deob.training.data: Yielded 1650000 samples (skipped 1810677)
+2026-02-20 22:06:11 [INFO] __main__: step=51600  loss=0.0952  lr=2.39e-05  steps/s=0.17
+2026-02-20 22:07:13 [INFO] __main__: step=51650  loss=0.0945  lr=2.39e-05  steps/s=0.17
+2026-02-20 22:08:14 [INFO] __main__: step=51700  loss=0.0880  lr=2.39e-05  steps/s=0.17
+2026-02-20 22:09:20 [INFO] __main__: step=51750  loss=0.0820  lr=2.38e-05  steps/s=0.17
+2026-02-20 22:10:28 [INFO] __main__: step=51800  loss=0.0884  lr=2.38e-05  steps/s=0.17
+2026-02-20 22:11:38 [INFO] __main__: step=51850  loss=0.0925  lr=2.37e-05  steps/s=0.17
+2026-02-20 22:12:19 [INFO] neurel_deob.training.data: Yielded 1660000 samples (skipped 1821551)
+2026-02-20 22:12:51 [INFO] __main__: step=51900  loss=0.0950  lr=2.37e-05  steps/s=0.17
+2026-02-20 22:13:55 [INFO] __main__: step=51950  loss=0.0889  lr=2.37e-05  steps/s=0.17
+2026-02-20 22:14:56 [INFO] __main__: step=52000  loss=0.0903  lr=2.36e-05  steps/s=0.17
+2026-02-20 22:14:56 [INFO] __main__: Running evaluation at step 52000 …
+2026-02-20 22:14:56 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-20 22:14:57 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-21 00:42:59 [INFO] __main__: EVAL step=52000  val_loss=0.0059  BLEU=12.80  NED=0.8182  (n=504)
+2026-02-21 00:43:04 [INFO] __main__: Saved checkpoint at step 52000 → checkpoints/arm_ir_ir_v2/step_52000
+2026-02-21 00:43:04 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_42000
+2026-02-21 00:44:11 [INFO] __main__: step=52050  loss=0.1005  lr=2.36e-05  steps/s=0.17
+2026-02-21 00:45:23 [INFO] __main__: step=52100  loss=0.0956  lr=2.35e-05  steps/s=0.17
+2026-02-21 00:46:25 [INFO] __main__: step=52150  loss=0.0972  lr=2.35e-05  steps/s=0.17
+2026-02-21 00:47:16 [INFO] neurel_deob.training.data: Yielded 1670000 samples (skipped 1832434)
+2026-02-21 00:47:31 [INFO] __main__: step=52200  loss=0.0829  lr=2.35e-05  steps/s=0.17
+2026-02-21 00:48:37 [INFO] __main__: step=52250  loss=0.0908  lr=2.34e-05  steps/s=0.17
+2026-02-21 00:49:46 [INFO] __main__: step=52300  loss=0.0857  lr=2.34e-05  steps/s=0.17
+2026-02-21 00:50:49 [INFO] __main__: step=52350  loss=0.0877  lr=2.33e-05  steps/s=0.17
+2026-02-21 00:51:55 [INFO] __main__: step=52400  loss=0.0924  lr=2.33e-05  steps/s=0.17
+2026-02-21 00:53:08 [INFO] __main__: step=52450  loss=0.0945  lr=2.33e-05  steps/s=0.17
+2026-02-21 00:54:13 [INFO] neurel_deob.training.data: Yielded 1680000 samples (skipped 1843333)
+2026-02-21 00:54:13 [INFO] __main__: step=52500  loss=0.1059  lr=2.32e-05  steps/s=0.17
+2026-02-21 00:55:15 [INFO] __main__: step=52550  loss=0.1005  lr=2.32e-05  steps/s=0.17
+2026-02-21 00:56:17 [INFO] __main__: step=52600  loss=0.0882  lr=2.31e-05  steps/s=0.17
+2026-02-21 00:57:25 [INFO] __main__: step=52650  loss=0.0963  lr=2.31e-05  steps/s=0.17
+2026-02-21 00:58:28 [INFO] __main__: step=52700  loss=0.0842  lr=2.31e-05  steps/s=0.17
+2026-02-21 00:59:35 [INFO] __main__: step=52750  loss=0.1029  lr=2.30e-05  steps/s=0.17
+2026-02-21 01:00:45 [INFO] __main__: step=52800  loss=0.0882  lr=2.30e-05  steps/s=0.17
+2026-02-21 01:01:01 [INFO] neurel_deob.training.data: Yielded 1690000 samples (skipped 1854245)
+2026-02-21 01:01:46 [INFO] __main__: step=52850  loss=0.0859  lr=2.30e-05  steps/s=0.17
+2026-02-21 01:02:49 [INFO] __main__: step=52900  loss=0.0949  lr=2.29e-05  steps/s=0.17
+2026-02-21 01:03:51 [INFO] __main__: step=52950  loss=0.0960  lr=2.29e-05  steps/s=0.17
+2026-02-21 01:04:53 [INFO] __main__: step=53000  loss=0.0938  lr=2.28e-05  steps/s=0.17
+2026-02-21 01:05:59 [INFO] __main__: step=53050  loss=0.0903  lr=2.28e-05  steps/s=0.17
+2026-02-21 01:07:03 [INFO] __main__: step=53100  loss=0.0872  lr=2.28e-05  steps/s=0.17
+2026-02-21 01:07:49 [INFO] neurel_deob.training.data: Yielded 1700000 samples (skipped 1865189)
+2026-02-21 01:08:26 [INFO] __main__: step=53150  loss=0.0841  lr=2.27e-05  steps/s=0.17
+2026-02-21 01:09:34 [INFO] __main__: step=53200  loss=0.0837  lr=2.27e-05  steps/s=0.17
+2026-02-21 01:10:44 [INFO] __main__: step=53250  loss=0.0860  lr=2.26e-05  steps/s=0.17
+2026-02-21 01:11:51 [INFO] __main__: step=53300  loss=0.1035  lr=2.26e-05  steps/s=0.17
+2026-02-21 01:12:58 [INFO] __main__: step=53350  loss=0.0838  lr=2.26e-05  steps/s=0.17
+2026-02-21 01:14:02 [INFO] __main__: step=53400  loss=0.0858  lr=2.25e-05  steps/s=0.17
+2026-02-21 01:14:53 [INFO] neurel_deob.training.data: Yielded 1710000 samples (skipped 1876458)
+2026-02-21 01:15:09 [INFO] __main__: step=53450  loss=0.0875  lr=2.25e-05  steps/s=0.17
+2026-02-21 01:16:13 [INFO] __main__: step=53500  loss=0.1101  lr=2.24e-05  steps/s=0.17
+2026-02-21 01:17:17 [INFO] __main__: step=53550  loss=0.0953  lr=2.24e-05  steps/s=0.17
+2026-02-21 01:18:21 [INFO] __main__: step=53600  loss=0.0821  lr=2.24e-05  steps/s=0.17
+2026-02-21 01:19:24 [INFO] __main__: step=53650  loss=0.0890  lr=2.23e-05  steps/s=0.17
+2026-02-21 01:20:28 [INFO] __main__: step=53700  loss=0.0983  lr=2.23e-05  steps/s=0.17
+2026-02-21 01:21:34 [INFO] neurel_deob.training.data: Yielded 1720000 samples (skipped 1887284)
+2026-02-21 01:21:34 [INFO] __main__: step=53750  loss=0.0856  lr=2.22e-05  steps/s=0.17
+2026-02-21 01:22:40 [INFO] __main__: step=53800  loss=0.0883  lr=2.22e-05  steps/s=0.17
+2026-02-21 01:23:45 [INFO] __main__: step=53850  loss=0.0880  lr=2.22e-05  steps/s=0.17
+2026-02-21 01:24:45 [INFO] __main__: step=53900  loss=0.0920  lr=2.21e-05  steps/s=0.17
+2026-02-21 01:25:48 [INFO] __main__: step=53950  loss=0.0996  lr=2.21e-05  steps/s=0.17
+2026-02-21 01:26:46 [INFO] __main__: step=54000  loss=0.0875  lr=2.20e-05  steps/s=0.17
+2026-02-21 01:26:46 [INFO] __main__: Running evaluation at step 54000 …
+2026-02-21 01:26:46 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-21 01:26:48 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-21 03:54:53 [INFO] __main__: EVAL step=54000  val_loss=0.0055  BLEU=13.43  NED=0.7970  (n=504)
+2026-02-21 03:54:57 [INFO] __main__: Saved checkpoint at step 54000 → checkpoints/arm_ir_ir_v2/step_54000
+2026-02-21 03:54:57 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_44000
+2026-02-21 03:56:17 [INFO] __main__: step=54050  loss=0.0858  lr=2.20e-05  steps/s=0.17
+2026-02-21 03:56:29 [INFO] neurel_deob.training.data: Yielded 1730000 samples (skipped 1897904)
+2026-02-21 03:57:24 [INFO] __main__: step=54100  loss=0.0916  lr=2.20e-05  steps/s=0.17
+2026-02-21 03:58:32 [INFO] __main__: step=54150  loss=0.0962  lr=2.19e-05  steps/s=0.17
+2026-02-21 03:59:39 [INFO] __main__: step=54200  loss=0.0913  lr=2.19e-05  steps/s=0.17
+2026-02-21 04:00:40 [INFO] __main__: step=54250  loss=0.0966  lr=2.19e-05  steps/s=0.17
+2026-02-21 04:01:47 [INFO] __main__: step=54300  loss=0.0971  lr=2.18e-05  steps/s=0.17
+2026-02-21 04:02:48 [INFO] __main__: step=54350  loss=0.0918  lr=2.18e-05  steps/s=0.17
+2026-02-21 04:03:19 [INFO] neurel_deob.training.data: Yielded 1740000 samples (skipped 1909043)
+2026-02-21 04:03:53 [INFO] __main__: step=54400  loss=0.0881  lr=2.17e-05  steps/s=0.17
+2026-02-21 04:04:58 [INFO] __main__: step=54450  loss=0.0986  lr=2.17e-05  steps/s=0.17
+2026-02-21 04:06:03 [INFO] __main__: step=54500  loss=0.0871  lr=2.17e-05  steps/s=0.17
+2026-02-21 04:07:07 [INFO] __main__: step=54550  loss=0.0929  lr=2.16e-05  steps/s=0.17
+2026-02-21 04:08:07 [INFO] __main__: step=54600  loss=0.0870  lr=2.16e-05  steps/s=0.17
+2026-02-21 04:09:14 [INFO] __main__: step=54650  loss=0.0931  lr=2.15e-05  steps/s=0.17
+2026-02-21 04:10:01 [INFO] neurel_deob.training.data: Yielded 1750000 samples (skipped 1920042)
+2026-02-21 04:10:18 [INFO] __main__: step=54700  loss=0.0895  lr=2.15e-05  steps/s=0.17
+2026-02-21 04:11:21 [INFO] __main__: step=54750  loss=0.0767  lr=2.15e-05  steps/s=0.17
+2026-02-21 04:12:33 [INFO] __main__: step=54800  loss=0.1001  lr=2.14e-05  steps/s=0.17
+2026-02-21 04:13:45 [INFO] __main__: step=54850  loss=0.0833  lr=2.14e-05  steps/s=0.17
+2026-02-21 04:14:51 [INFO] __main__: step=54900  loss=0.0888  lr=2.13e-05  steps/s=0.17
+2026-02-21 04:15:57 [INFO] __main__: step=54950  loss=0.0869  lr=2.13e-05  steps/s=0.17
+2026-02-21 04:16:59 [INFO] neurel_deob.training.data: Yielded 1760000 samples (skipped 1930996)
+2026-02-21 04:16:59 [INFO] __main__: step=55000  loss=0.0968  lr=2.13e-05  steps/s=0.17
+2026-02-21 04:18:15 [INFO] __main__: step=55050  loss=0.0909  lr=2.12e-05  steps/s=0.17
+2026-02-21 04:19:20 [INFO] __main__: step=55100  loss=0.0888  lr=2.12e-05  steps/s=0.17
+2026-02-21 04:20:30 [INFO] __main__: step=55150  loss=0.0863  lr=2.11e-05  steps/s=0.17
+2026-02-21 04:21:33 [INFO] __main__: step=55200  loss=0.0935  lr=2.11e-05  steps/s=0.17
+2026-02-21 04:22:45 [INFO] __main__: step=55250  loss=0.0974  lr=2.11e-05  steps/s=0.17
+2026-02-21 04:24:06 [INFO] __main__: step=55300  loss=0.0859  lr=2.10e-05  steps/s=0.17
+2026-02-21 04:24:25 [INFO] neurel_deob.training.data: Yielded 1770000 samples (skipped 1942264)
+2026-02-21 04:25:08 [INFO] __main__: step=55350  loss=0.0829  lr=2.10e-05  steps/s=0.17
+2026-02-21 04:26:14 [INFO] __main__: step=55400  loss=0.0920  lr=2.10e-05  steps/s=0.17
+2026-02-21 04:27:21 [INFO] __main__: step=55450  loss=0.0930  lr=2.09e-05  steps/s=0.17
+2026-02-21 04:28:26 [INFO] __main__: step=55500  loss=0.1027  lr=2.09e-05  steps/s=0.17
+2026-02-21 04:29:29 [INFO] __main__: step=55550  loss=0.0949  lr=2.08e-05  steps/s=0.17
+2026-02-21 04:30:36 [INFO] __main__: step=55600  loss=0.0920  lr=2.08e-05  steps/s=0.17
+2026-02-21 04:31:14 [INFO] neurel_deob.training.data: Yielded 1780000 samples (skipped 1953346)
+2026-02-21 04:31:45 [INFO] __main__: step=55650  loss=0.1029  lr=2.08e-05  steps/s=0.17
+2026-02-21 04:32:48 [INFO] __main__: step=55700  loss=0.0866  lr=2.07e-05  steps/s=0.17
+2026-02-21 04:34:06 [INFO] __main__: step=55750  loss=0.0818  lr=2.07e-05  steps/s=0.17
+2026-02-21 04:35:13 [INFO] __main__: step=55800  loss=0.0821  lr=2.06e-05  steps/s=0.17
+2026-02-21 04:36:13 [INFO] __main__: step=55850  loss=0.0790  lr=2.06e-05  steps/s=0.17
+2026-02-21 04:37:23 [INFO] __main__: step=55900  loss=0.0890  lr=2.06e-05  steps/s=0.17
+2026-02-21 04:38:09 [INFO] neurel_deob.training.data: Yielded 1790000 samples (skipped 1964180)
+2026-02-21 04:38:22 [INFO] __main__: step=55950  loss=0.0847  lr=2.05e-05  steps/s=0.17
+2026-02-21 04:39:23 [INFO] __main__: step=56000  loss=0.0870  lr=2.05e-05  steps/s=0.17
+2026-02-21 04:39:23 [INFO] __main__: Running evaluation at step 56000 …
+2026-02-21 04:39:23 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-21 04:39:24 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+2026-02-21 07:09:55 [INFO] __main__: EVAL step=56000  val_loss=0.0054  BLEU=12.88  NED=0.8145  (n=504)
+2026-02-21 07:10:01 [INFO] __main__: Saved checkpoint at step 56000 → checkpoints/arm_ir_ir_v2/step_56000
+2026-02-21 07:10:01 [INFO] __main__: Pruning old checkpoint checkpoints/arm_ir_ir_v2/step_46000
+2026-02-21 07:11:13 [INFO] __main__: step=56050  loss=0.0869  lr=2.04e-05  steps/s=0.17
+2026-02-21 07:13:03 [INFO] __main__: step=56100  loss=0.0798  lr=2.04e-05  steps/s=0.17
+2026-02-21 07:14:15 [INFO] __main__: step=56150  loss=0.0825  lr=2.04e-05  steps/s=0.17
+2026-02-21 07:15:19 [INFO] __main__: step=56200  loss=0.0887  lr=2.03e-05  steps/s=0.17
+2026-02-21 07:16:21 [INFO] neurel_deob.training.data: Yielded 1800000 samples (skipped 1975162)
+2026-02-21 07:16:21 [INFO] __main__: step=56250  loss=0.0855  lr=2.03e-05  steps/s=0.17
+2026-02-21 07:17:20 [INFO] __main__: step=56300  loss=0.0839  lr=2.03e-05  steps/s=0.17
+2026-02-21 07:18:25 [INFO] __main__: step=56350  loss=0.0894  lr=2.02e-05  steps/s=0.17
+2026-02-21 07:19:35 [INFO] __main__: step=56400  loss=0.0897  lr=2.02e-05  steps/s=0.17
+2026-02-21 07:20:38 [INFO] __main__: step=56450  loss=0.0848  lr=2.01e-05  steps/s=0.17
+2026-02-21 07:21:44 [INFO] __main__: step=56500  loss=0.0891  lr=2.01e-05  steps/s=0.17
+2026-02-21 07:22:56 [INFO] __main__: step=56550  loss=0.0866  lr=2.01e-05  steps/s=0.17
+2026-02-21 07:23:15 [INFO] neurel_deob.training.data: Yielded 1810000 samples (skipped 1985978)
+2026-02-21 07:24:05 [INFO] __main__: step=56600  loss=0.0881  lr=2.00e-05  steps/s=0.17
+2026-02-21 07:25:07 [INFO] __main__: step=56650  loss=0.0935  lr=2.00e-05  steps/s=0.17
+2026-02-21 07:26:14 [INFO] __main__: step=56700  loss=0.0845  lr=1.99e-05  steps/s=0.17
+2026-02-21 07:27:19 [INFO] __main__: step=56750  loss=0.0848  lr=1.99e-05  steps/s=0.17
+2026-02-21 07:28:38 [INFO] __main__: step=56800  loss=0.0825  lr=1.99e-05  steps/s=0.17
+2026-02-21 07:29:39 [INFO] __main__: step=56850  loss=0.0912  lr=1.98e-05  steps/s=0.17
+2026-02-21 07:30:09 [INFO] neurel_deob.training.data: Yielded 1820000 samples (skipped 1997276)
+2026-02-21 07:30:40 [INFO] __main__: step=56900  loss=0.0891  lr=1.98e-05  steps/s=0.17
+2026-02-21 07:31:44 [INFO] __main__: step=56950  loss=0.0895  lr=1.98e-05  steps/s=0.17
+2026-02-21 07:32:47 [INFO] __main__: step=57000  loss=0.0805  lr=1.97e-05  steps/s=0.17
+2026-02-21 07:33:48 [INFO] __main__: step=57050  loss=0.0884  lr=1.97e-05  steps/s=0.17
+2026-02-21 07:35:06 [INFO] __main__: step=57100  loss=0.0830  lr=1.96e-05  steps/s=0.17
+2026-02-21 07:36:25 [INFO] __main__: step=57150  loss=0.0927  lr=1.96e-05  steps/s=0.17
+2026-02-21 07:37:16 [INFO] neurel_deob.training.data: Yielded 1830000 samples (skipped 2008436)
+2026-02-21 07:37:35 [INFO] __main__: step=57200  loss=0.0888  lr=1.96e-05  steps/s=0.17
+2026-02-21 07:38:39 [INFO] __main__: step=57250  loss=0.0842  lr=1.95e-05  steps/s=0.17
+2026-02-21 07:39:41 [INFO] __main__: step=57300  loss=0.0856  lr=1.95e-05  steps/s=0.17
+2026-02-21 07:40:47 [INFO] __main__: step=57350  loss=0.0918  lr=1.94e-05  steps/s=0.17
+2026-02-21 07:41:53 [INFO] __main__: step=57400  loss=0.0876  lr=1.94e-05  steps/s=0.17
+2026-02-21 07:42:57 [INFO] __main__: step=57450  loss=0.0814  lr=1.94e-05  steps/s=0.17
+2026-02-21 07:43:56 [INFO] neurel_deob.training.data: Yielded 1840000 samples (skipped 2019435)
+2026-02-21 07:43:56 [INFO] __main__: step=57500  loss=0.0903  lr=1.93e-05  steps/s=0.17
+2026-02-21 07:44:55 [INFO] __main__: step=57550  loss=0.0875  lr=1.93e-05  steps/s=0.17
+2026-02-21 07:46:11 [INFO] __main__: step=57600  loss=0.0944  lr=1.93e-05  steps/s=0.17
+2026-02-21 07:47:16 [INFO] __main__: step=57650  loss=0.0924  lr=1.92e-05  steps/s=0.17
+2026-02-21 07:48:24 [INFO] __main__: step=57700  loss=0.0857  lr=1.92e-05  steps/s=0.17
+2026-02-21 07:49:31 [INFO] __main__: step=57750  loss=0.1034  lr=1.91e-05  steps/s=0.17
+2026-02-21 07:50:38 [INFO] __main__: step=57800  loss=0.0889  lr=1.91e-05  steps/s=0.17
+2026-02-21 07:50:53 [INFO] neurel_deob.training.data: Yielded 1850000 samples (skipped 2030390)
+2026-02-21 07:51:44 [INFO] __main__: step=57850  loss=0.0901  lr=1.91e-05  steps/s=0.17
+2026-02-21 07:52:51 [INFO] __main__: step=57900  loss=0.0831  lr=1.90e-05  steps/s=0.17
+2026-02-21 07:53:51 [INFO] __main__: step=57950  loss=0.0925  lr=1.90e-05  steps/s=0.17
+2026-02-21 07:54:52 [INFO] __main__: step=58000  loss=0.0815  lr=1.89e-05  steps/s=0.17
+2026-02-21 07:54:52 [INFO] __main__: Running evaluation at step 58000 …
+2026-02-21 07:54:52 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-02-21 07:54:54 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+[2026-02-21T10:06:36.032] error: *** JOB 11508801 ON node876 CANCELLED AT 2026-02-21T10:06:36 DUE TO TIME LIMIT ***
