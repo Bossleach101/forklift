@@ -1,6 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=obfu-dataset
-#SBATCH -p serial
+#SBATCH -p multicore
+#SBATCH -G 1
 #SBATCH --cpus-per-task=12
 #SBATCH --mem=32G
 #SBATCH -t 2-0
