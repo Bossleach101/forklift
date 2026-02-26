@@ -1,7 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=obfu-dataset
 #SBATCH -p multicore
-#SBATCH -G 1
 #SBATCH --cpus-per-task=12
 #SBATCH --mem=32G
 #SBATCH -t 2-0
@@ -85,9 +84,11 @@ echo "================================================"
 # ── Environment ──────────────────────────────────────────────
 cd "$PROJECT_DIR"
 source "${VENV_DIR}/bin/activate"
+export PYTHONPATH="${PROJECT_DIR}:${PYTHONPATH:-}"
+export PYTHONPATH="${PROJECT_DIR}:${PYTHONPATH:-}"
 
 # Tigress
-export TIGRESS_HOME="${TIGRESS_HOME:-/usr/local/bin/tigresspkg/4.0.11}"
+export TIGRESS_HOME="${TIGRESS_HOME:-$HOME/scratch/tigress-4.0.11}"
 
 # Create directories
 mkdir -p logs "$CHUNK_OUTPUT"
