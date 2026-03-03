@@ -52,7 +52,8 @@ from transformers import BartForConditionalGeneration, get_scheduler
 from forklift.par_data import DP
 
 from .config import TrainConfig
-from .data import DataConfig, ExeBenchDataset, collate_fn
+from .data import DataConfig, ExeBenchDataset, ObfuscatedExeBenchDataset, collate_fn
+from neurel_deob.obfuscation.pipeline import ObfuscationConfig
 
 logger = logging.getLogger(__name__)
 
@@ -375,7 +376,25 @@ def train(config: TrainConfig):
         strip_ir_declares=config.strip_ir_declares,
         streaming=config.streaming,
     )
-    train_ds = ExeBenchDataset(tokenizer, data_cfg)
+
+    if config.obfuscate:
+        obfu_cfg = ObfuscationConfig(
+            techniques=config.obfu_techniques,
+            intensity_range=(config.obfu_intensity_min, config.obfu_intensity_max),
+            min_transforms=config.obfu_min_transforms,
+            max_transforms=config.obfu_max_transforms,
+        )
+        train_ds = ObfuscatedExeBenchDataset(
+            tokenizer, data_cfg, obfu_config=obfu_cfg, seed=config.seed,
+        )
+        logger.info(
+            "Obfuscation ENABLED: techniques=%s  intensity=(%.2f, %.2f)  transforms=(%d, %d)",
+            config.obfu_techniques, config.obfu_intensity_min, config.obfu_intensity_max,
+            config.obfu_min_transforms, config.obfu_max_transforms,
+        )
+    else:
+        train_ds = ExeBenchDataset(tokenizer, data_cfg)
+
     train_loader = DataLoader(
         train_ds,
         batch_size=config.batch_size,
@@ -529,6 +548,12 @@ def parse_args() -> TrainConfig:
                 f"--no_{name}",
                 dest=name,
                 action="store_false",
+            )
+        elif isinstance(default, list):
+            # List fields: accept multiple values via --name val1 val2
+            elem_type = type(default[0]) if default else str
+            parser.add_argument(
+                f"--{name}", type=elem_type, nargs="+", default=default
             )
         else:
             parser.add_argument(f"--{name}", type=arg_type, default=default)

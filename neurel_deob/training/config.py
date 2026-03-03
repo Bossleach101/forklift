@@ -76,6 +76,16 @@ class TrainConfig:
     use_tensorboard: bool = True
     tensorboard_dir: str = "runs/arm_ir_ir"
 
+    # ── Obfuscation (Phase 4: deobfuscation training) ────────────────
+    obfuscate: bool = False              # Apply asm-level obfuscation to source
+    obfu_techniques: List[str] = field(
+        default_factory=lambda: ["dead_code", "insn_sub", "opaque_pred", "junk_comp"]
+    )
+    obfu_intensity_min: float = 0.1      # Min per-transform intensity
+    obfu_intensity_max: float = 0.4      # Max per-transform intensity
+    obfu_min_transforms: int = 1         # Min transforms per sample
+    obfu_max_transforms: int = 4         # Max transforms per sample
+
     @property
     def effective_batch_size(self) -> int:
         return self.batch_size * self.gradient_accumulation_steps
