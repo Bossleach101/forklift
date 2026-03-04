@@ -4,7 +4,7 @@
 #SBATCH -G 1
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=32G
-#SBATCH -t 0-4:00:00
+#SBATCH -t 0-16:00:00
 #SBATCH --output=logs/eval_%j.out
 #SBATCH --error=logs/eval_%j.err
 
@@ -45,9 +45,11 @@ PAIR="${PAIR:-arm_ir-ir}"
 SPLIT="${SPLIT:-test_synth}"
 ASM_KEY="${ASM_KEY:-angha}"
 
+BATCH_SIZE="${BATCH_SIZE:-8}"
+
 # ── Run evaluation ───────────────────────────────────────────
 echo "Evaluating model: $MODEL"
-echo "Pair: $PAIR  Split: $SPLIT  ASM key: $ASM_KEY"
+echo "Pair: $PAIR  Split: $SPLIT  ASM key: $ASM_KEY  Batch size: $BATCH_SIZE"
 echo ""
 
 python scripts/evaluate_exebench.py \
@@ -59,6 +61,7 @@ python scripts/evaluate_exebench.py \
     --repetition-penalty 1.2 \
     --no-repeat-ngram-size 6 \
     --max-new-tokens 2048 \
+    --batch-size "$BATCH_SIZE" \
     --strip-ir \
     --normalize-structs \
     --output "results/eval_${SPLIT}_$(echo $MODEL | tr '/' '_').json" \

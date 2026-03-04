@@ -117,8 +117,50 @@ def get_asm_code(row: dict, target_name: str) -> str | None:
 # Evaluation loop
 # ======================================================================
 
+def _flush_batch(
+    batch_srcs: list[list[int]],
+    batch_refs_tok: list[list[int]],
+    batch_fnames: list[str],
+    model,
+    dp: DP,
+    pad_id: int,
+    device: torch.device,
+    args,
+    all_preds: list[str],
+    all_refs: list[str],
+    all_fnames: list[str],
+):
+    """Generate predictions for an accumulated batch."""
+    if not batch_srcs:
+        return
+
+    # Pad source sequences
+    tensors = [torch.tensor(s) for s in batch_srcs]
+    input_ids = pad_sequence(tensors, batch_first=True, padding_value=pad_id).to(device)
+    attention_mask = (input_ids != pad_id).long()
+
+    with torch.no_grad():
+        generated = model.generate(
+            input_ids,
+            attention_mask=attention_mask,
+            max_new_tokens=args.max_new_tokens,
+            num_beams=args.beam,
+            early_stopping=True,
+            repetition_penalty=args.repetition_penalty,
+            no_repeat_ngram_size=args.no_repeat_ngram_size,
+        )
+
+    for gen, ref_tok, fname in zip(generated, batch_refs_tok, batch_fnames):
+        pred_text = dp.detokenize(gen.cpu().tolist())
+        ref_text = dp.detokenize(ref_tok)
+        pred_text = truncate_ir_output(pred_text)
+        all_preds.append(pred_text)
+        all_refs.append(ref_text)
+        all_fnames.append(fname)
+
+
 def run_evaluation(args) -> dict:
-    """Main evaluation loop."""
+    """Main evaluation loop with batched generation."""
 
     device = torch.device(args.device if args.device != "auto"
                           else ("cuda" if torch.cuda.is_available() else "cpu"))
@@ -158,10 +200,15 @@ def run_evaluation(args) -> dict:
     total_seen = 0
     start_time = time.time()
 
+    batch_size = args.batch_size
+    batch_srcs: list[list[int]] = []
+    batch_refs_tok: list[list[int]] = []
+    batch_fnames: list[str] = []
+
     for row in test_stream:
         total_seen += 1
 
-        if args.max_samples and len(all_preds) >= args.max_samples:
+        if args.max_samples and len(all_preds) + len(batch_srcs) >= args.max_samples:
             break
 
         # Check required targets exist
@@ -205,36 +252,34 @@ def run_evaluation(args) -> dict:
             skipped += 1
             continue
 
-        # ── Generate ──────────────────────────────────────────────────
-        input_ids = torch.tensor([tok_src], device=device)
+        # Accumulate into batch
+        batch_srcs.append(tok_src)
+        batch_refs_tok.append(tok_tgt)
+        batch_fnames.append(row.get("fname", "?"))
 
-        with torch.no_grad():
-            generated = model.generate(
-                input_ids,
-                max_new_tokens=args.max_new_tokens,
-                num_beams=args.beam,
-                early_stopping=True,
-                repetition_penalty=args.repetition_penalty,
-                no_repeat_ngram_size=args.no_repeat_ngram_size,
+        # Flush batch when full
+        if len(batch_srcs) >= batch_size:
+            _flush_batch(
+                batch_srcs, batch_refs_tok, batch_fnames,
+                model, dp, pad_id, device, args,
+                all_preds, all_refs, all_fnames,
             )
+            batch_srcs, batch_refs_tok, batch_fnames = [], [], []
 
-        pred_text = dp.detokenize(generated[0].cpu().tolist())
-        ref_text = dp.detokenize(tok_tgt)
-
-        # Post-process: truncate after closing }
-        pred_text = truncate_ir_output(pred_text)
-
-        all_preds.append(pred_text)
-        all_refs.append(ref_text)
-        all_fnames.append(row.get("fname", "?"))
-
-        if len(all_preds) % 50 == 0:
+        if len(all_preds) % 50 == 0 and len(all_preds) > 0:
             elapsed = time.time() - start_time
             rate = len(all_preds) / elapsed
             logger.info(
                 "Evaluated %d samples (%.1f/s) | skipped %d | seen %d rows",
                 len(all_preds), rate, skipped, total_seen,
             )
+
+    # Flush remaining samples
+    _flush_batch(
+        batch_srcs, batch_refs_tok, batch_fnames,
+        model, dp, pad_id, device, args,
+        all_preds, all_refs, all_fnames,
+    )
 
     elapsed = time.time() - start_time
 
@@ -338,6 +383,10 @@ def main():
     parser.add_argument("--max-new-tokens", type=int, default=2048)
     parser.add_argument("--repetition-penalty", type=float, default=1.2)
     parser.add_argument("--no-repeat-ngram-size", type=int, default=6)
+    parser.add_argument(
+        "--batch-size", type=int, default=8,
+        help="Number of samples to generate in parallel (default: 8)",
+    )
 
     # Preprocessing
     parser.add_argument(
