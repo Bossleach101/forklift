@@ -1,0 +1,216 @@
+nohup: ignoring input
+Resolving data files:   0%|          | 0/98 [00:00<?, ?it/s]Resolving data files:   1%|          | 1/98 [00:00<00:12,  7.67it/s]Resolving data files:   5%|▌         | 5/98 [00:00<00:04, 22.84it/s]Resolving data files:  27%|██▋       | 26/98 [00:00<00:00, 75.77it/s]Resolving data files:  41%|████      | 40/98 [00:05<00:09,  6.17it/s]Resolving data files: 100%|██████████| 98/98 [00:05<00:00, 18.71it/s]
+10:49:52  INFO      Shard 0: 10000 rows → obfu_dataset_clean/shard-00000.parquet (10.2 MB)
+10:49:52  INFO      Processed 10000 samples (81/s) | stripped=10000 failed=0
+10:52:13  INFO      Shard 1: 10000 rows → obfu_dataset_clean/shard-00001.parquet (10.3 MB)
+10:52:13  INFO      Processed 20000 samples (75/s) | stripped=20000 failed=0
+10:54:30  INFO      Shard 2: 10000 rows → obfu_dataset_clean/shard-00002.parquet (10.1 MB)
+10:54:30  INFO      Processed 30000 samples (74/s) | stripped=30000 failed=0
+10:57:13  INFO      Shard 3: 10000 rows → obfu_dataset_clean/shard-00003.parquet (10.1 MB)
+10:57:13  INFO      Processed 40000 samples (71/s) | stripped=40000 failed=0
+11:00:03  INFO      Shard 4: 10000 rows → obfu_dataset_clean/shard-00004.parquet (10.2 MB)
+11:00:03  INFO      Processed 50000 samples (68/s) | stripped=50000 failed=0
+11:02:43  INFO      Shard 5: 10000 rows → obfu_dataset_clean/shard-00005.parquet (10.1 MB)
+11:02:43  INFO      Processed 60000 samples (67/s) | stripped=60000 failed=0
+11:05:18  INFO      Shard 6: 10000 rows → obfu_dataset_clean/shard-00006.parquet (10.0 MB)
+11:05:18  INFO      Processed 70000 samples (67/s) | stripped=70000 failed=0
+11:08:01  INFO      Shard 7: 10000 rows → obfu_dataset_clean/shard-00007.parquet (10.4 MB)
+11:08:01  INFO      Processed 80000 samples (66/s) | stripped=80000 failed=0
+11:10:50  INFO      Shard 8: 10000 rows → obfu_dataset_clean/shard-00008.parquet (10.4 MB)
+11:10:50  INFO      Processed 90000 samples (65/s) | stripped=90000 failed=0
+11:13:37  INFO      Shard 9: 10000 rows → obfu_dataset_clean/shard-00009.parquet (10.4 MB)
+11:13:37  INFO      Processed 100000 samples (65/s) | stripped=100000 failed=0
+11:16:20  INFO      Shard 10: 10000 rows → obfu_dataset_clean/shard-00010.parquet (10.3 MB)
+11:16:20  INFO      Processed 110000 samples (64/s) | stripped=110000 failed=0
+11:19:02  INFO      Shard 11: 10000 rows → obfu_dataset_clean/shard-00011.parquet (10.2 MB)
+11:19:02  INFO      Processed 120000 samples (64/s) | stripped=120000 failed=0
+11:21:50  INFO      Shard 12: 10000 rows → obfu_dataset_clean/shard-00012.parquet (10.3 MB)
+11:21:50  INFO      Processed 130000 samples (64/s) | stripped=130000 failed=0
+11:24:31  INFO      Shard 13: 10000 rows → obfu_dataset_clean/shard-00013.parquet (10.6 MB)
+11:24:31  INFO      Processed 140000 samples (64/s) | stripped=140000 failed=0
+11:27:28  INFO      Shard 14: 10000 rows → obfu_dataset_clean/shard-00014.parquet (10.1 MB)
+11:27:28  INFO      Processed 150000 samples (63/s) | stripped=150000 failed=0
+11:30:14  INFO      Shard 15: 10000 rows → obfu_dataset_clean/shard-00015.parquet (10.3 MB)
+11:30:14  INFO      Processed 160000 samples (63/s) | stripped=160000 failed=0
+11:32:59  INFO      Shard 16: 10000 rows → obfu_dataset_clean/shard-00016.parquet (10.0 MB)
+11:32:59  INFO      Processed 170000 samples (63/s) | stripped=170000 failed=0
+11:35:58  INFO      Shard 17: 10000 rows → obfu_dataset_clean/shard-00017.parquet (10.1 MB)
+11:35:58  INFO      Processed 180000 samples (62/s) | stripped=180000 failed=0
+11:38:40  INFO      Shard 18: 10000 rows → obfu_dataset_clean/shard-00018.parquet (9.9 MB)
+11:38:40  INFO      Processed 190000 samples (62/s) | stripped=190000 failed=0
+11:41:34  INFO      Shard 19: 10000 rows → obfu_dataset_clean/shard-00019.parquet (10.3 MB)
+11:41:34  INFO      Processed 200000 samples (62/s) | stripped=200000 failed=0
+11:44:31  INFO      Shard 20: 10000 rows → obfu_dataset_clean/shard-00020.parquet (10.4 MB)
+11:44:31  INFO      Processed 210000 samples (62/s) | stripped=210000 failed=0
+11:47:05  INFO      Shard 21: 10000 rows → obfu_dataset_clean/shard-00021.parquet (10.2 MB)
+11:47:05  INFO      Processed 220000 samples (62/s) | stripped=220000 failed=0
+11:49:40  INFO      Shard 22: 10000 rows → obfu_dataset_clean/shard-00022.parquet (10.0 MB)
+11:49:40  INFO      Processed 230000 samples (62/s) | stripped=230000 failed=0
+11:52:25  INFO      Shard 23: 10000 rows → obfu_dataset_clean/shard-00023.parquet (10.3 MB)
+11:52:25  INFO      Processed 240000 samples (62/s) | stripped=240000 failed=0
+11:54:53  INFO      Shard 24: 10000 rows → obfu_dataset_clean/shard-00024.parquet (10.6 MB)
+11:54:53  INFO      Processed 250000 samples (62/s) | stripped=250000 failed=0
+11:57:29  INFO      Shard 25: 10000 rows → obfu_dataset_clean/shard-00025.parquet (10.3 MB)
+11:57:29  INFO      Processed 260000 samples (62/s) | stripped=260000 failed=0
+12:00:08  INFO      Shard 26: 10000 rows → obfu_dataset_clean/shard-00026.parquet (10.3 MB)
+12:00:08  INFO      Processed 270000 samples (62/s) | stripped=270000 failed=0
+12:02:15  INFO      Shard 27: 10000 rows → obfu_dataset_clean/shard-00027.parquet (10.3 MB)
+12:02:15  INFO      Processed 280000 samples (63/s) | stripped=280000 failed=0
+12:04:16  INFO      Shard 28: 10000 rows → obfu_dataset_clean/shard-00028.parquet (10.3 MB)
+12:04:16  INFO      Processed 290000 samples (63/s) | stripped=290000 failed=0
+12:06:58  INFO      Shard 29: 10000 rows → obfu_dataset_clean/shard-00029.parquet (10.1 MB)
+12:06:58  INFO      Processed 300000 samples (63/s) | stripped=300000 failed=0
+12:09:30  INFO      Shard 30: 10000 rows → obfu_dataset_clean/shard-00030.parquet (10.3 MB)
+12:09:30  INFO      Processed 310000 samples (63/s) | stripped=310000 failed=0
+12:12:11  INFO      Shard 31: 10000 rows → obfu_dataset_clean/shard-00031.parquet (10.2 MB)
+12:12:11  INFO      Processed 320000 samples (63/s) | stripped=320000 failed=0
+12:14:58  INFO      Shard 32: 10000 rows → obfu_dataset_clean/shard-00032.parquet (10.2 MB)
+12:14:58  INFO      Processed 330000 samples (63/s) | stripped=330000 failed=0
+12:17:30  INFO      Shard 33: 10000 rows → obfu_dataset_clean/shard-00033.parquet (10.2 MB)
+12:17:30  INFO      Processed 340000 samples (63/s) | stripped=340000 failed=0
+12:20:01  INFO      Shard 34: 10000 rows → obfu_dataset_clean/shard-00034.parquet (10.1 MB)
+12:20:01  INFO      Processed 350000 samples (63/s) | stripped=350000 failed=0
+12:22:21  INFO      Shard 35: 10000 rows → obfu_dataset_clean/shard-00035.parquet (10.2 MB)
+12:22:21  INFO      Processed 360000 samples (63/s) | stripped=360000 failed=0
+12:24:58  INFO      Shard 36: 10000 rows → obfu_dataset_clean/shard-00036.parquet (10.1 MB)
+12:24:58  INFO      Processed 370000 samples (63/s) | stripped=370000 failed=0
+12:27:38  INFO      Shard 37: 10000 rows → obfu_dataset_clean/shard-00037.parquet (10.4 MB)
+12:27:38  INFO      Processed 380000 samples (63/s) | stripped=380000 failed=0
+12:30:20  INFO      Shard 38: 10000 rows → obfu_dataset_clean/shard-00038.parquet (10.2 MB)
+12:30:20  INFO      Processed 390000 samples (63/s) | stripped=390000 failed=0
+12:32:55  INFO      Shard 39: 10000 rows → obfu_dataset_clean/shard-00039.parquet (10.3 MB)
+12:32:55  INFO      Processed 400000 samples (63/s) | stripped=400000 failed=0
+12:35:28  INFO      Shard 40: 10000 rows → obfu_dataset_clean/shard-00040.parquet (10.2 MB)
+12:35:28  INFO      Processed 410000 samples (63/s) | stripped=410000 failed=0
+12:37:47  INFO      Shard 41: 10000 rows → obfu_dataset_clean/shard-00041.parquet (10.1 MB)
+12:37:47  INFO      Processed 420000 samples (64/s) | stripped=420000 failed=0
+12:40:04  INFO      Shard 42: 10000 rows → obfu_dataset_clean/shard-00042.parquet (10.3 MB)
+12:40:04  INFO      Processed 430000 samples (64/s) | stripped=430000 failed=0
+12:42:26  INFO      Shard 43: 10000 rows → obfu_dataset_clean/shard-00043.parquet (10.0 MB)
+12:42:26  INFO      Processed 440000 samples (64/s) | stripped=440000 failed=0
+12:44:41  INFO      Shard 44: 10000 rows → obfu_dataset_clean/shard-00044.parquet (10.5 MB)
+12:44:41  INFO      Processed 450000 samples (64/s) | stripped=450000 failed=0
+12:47:03  INFO      Shard 45: 10000 rows → obfu_dataset_clean/shard-00045.parquet (9.9 MB)
+12:47:03  INFO      Processed 460000 samples (64/s) | stripped=460000 failed=0
+12:49:18  INFO      Shard 46: 10000 rows → obfu_dataset_clean/shard-00046.parquet (10.3 MB)
+12:49:18  INFO      Processed 470000 samples (64/s) | stripped=470000 failed=0
+12:51:37  INFO      Shard 47: 10000 rows → obfu_dataset_clean/shard-00047.parquet (10.4 MB)
+12:51:37  INFO      Processed 480000 samples (65/s) | stripped=480000 failed=0
+12:53:51  INFO      Shard 48: 10000 rows → obfu_dataset_clean/shard-00048.parquet (10.0 MB)
+12:53:51  INFO      Processed 490000 samples (65/s) | stripped=490000 failed=0
+12:56:11  INFO      Shard 49: 10000 rows → obfu_dataset_clean/shard-00049.parquet (10.3 MB)
+12:56:11  INFO      Processed 500000 samples (65/s) | stripped=500000 failed=0
+12:58:26  INFO      Shard 50: 10000 rows → obfu_dataset_clean/shard-00050.parquet (10.1 MB)
+12:58:26  INFO      Processed 510000 samples (65/s) | stripped=510000 failed=0
+13:01:08  INFO      Shard 51: 10000 rows → obfu_dataset_clean/shard-00051.parquet (10.3 MB)
+13:01:08  INFO      Processed 520000 samples (65/s) | stripped=520000 failed=0
+13:03:53  INFO      Shard 52: 10000 rows → obfu_dataset_clean/shard-00052.parquet (10.3 MB)
+13:03:53  INFO      Processed 530000 samples (65/s) | stripped=530000 failed=0
+13:06:32  INFO      Shard 53: 10000 rows → obfu_dataset_clean/shard-00053.parquet (10.4 MB)
+13:06:32  INFO      Processed 540000 samples (65/s) | stripped=540000 failed=0
+13:09:12  INFO      Shard 54: 10000 rows → obfu_dataset_clean/shard-00054.parquet (9.9 MB)
+13:09:12  INFO      Processed 550000 samples (65/s) | stripped=550000 failed=0
+13:11:52  INFO      Shard 55: 10000 rows → obfu_dataset_clean/shard-00055.parquet (10.2 MB)
+13:11:52  INFO      Processed 560000 samples (65/s) | stripped=560000 failed=0
+13:14:40  INFO      Shard 56: 10000 rows → obfu_dataset_clean/shard-00056.parquet (10.0 MB)
+13:14:40  INFO      Processed 570000 samples (65/s) | stripped=570000 failed=0
+13:17:28  INFO      Shard 57: 10000 rows → obfu_dataset_clean/shard-00057.parquet (10.1 MB)
+13:17:28  INFO      Processed 580000 samples (65/s) | stripped=580000 failed=0
+13:20:23  INFO      Shard 58: 10000 rows → obfu_dataset_clean/shard-00058.parquet (10.1 MB)
+13:20:23  INFO      Processed 590000 samples (64/s) | stripped=590000 failed=0
+13:23:26  INFO      Shard 59: 10000 rows → obfu_dataset_clean/shard-00059.parquet (10.2 MB)
+13:23:26  INFO      Processed 600000 samples (64/s) | stripped=600000 failed=0
+13:26:41  INFO      Shard 60: 10000 rows → obfu_dataset_clean/shard-00060.parquet (10.2 MB)
+13:26:41  INFO      Processed 610000 samples (64/s) | stripped=610000 failed=0
+13:29:53  INFO      Shard 61: 10000 rows → obfu_dataset_clean/shard-00061.parquet (10.0 MB)
+13:29:53  INFO      Processed 620000 samples (64/s) | stripped=620000 failed=0
+13:32:58  INFO      Shard 62: 10000 rows → obfu_dataset_clean/shard-00062.parquet (10.3 MB)
+13:32:58  INFO      Processed 630000 samples (64/s) | stripped=630000 failed=0
+13:36:15  INFO      Shard 63: 10000 rows → obfu_dataset_clean/shard-00063.parquet (10.1 MB)
+13:36:15  INFO      Processed 640000 samples (63/s) | stripped=640000 failed=0
+13:39:32  INFO      Shard 64: 10000 rows → obfu_dataset_clean/shard-00064.parquet (10.2 MB)
+13:39:32  INFO      Processed 650000 samples (63/s) | stripped=650000 failed=0
+'HTTPSConnectionPool(host='cas-bridge.xethub.hf.co', port=443): Read timed out.' thrown while requesting GET https://huggingface.co/datasets/leachl/obfuscated-exebench/resolve/158c6f06c81c14471887433aa0c1cc8323640d66/train_synth_compilable/shard-chunk0004-00006.parquet
+13:41:41  WARNING   'HTTPSConnectionPool(host='cas-bridge.xethub.hf.co', port=443): Read timed out.' thrown while requesting GET https://huggingface.co/datasets/leachl/obfuscated-exebench/resolve/158c6f06c81c14471887433aa0c1cc8323640d66/train_synth_compilable/shard-chunk0004-00006.parquet
+Retrying in 1s [Retry 1/5].
+13:41:41  WARNING   Retrying in 1s [Retry 1/5].
+'(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 0bc06bcf-0701-418f-8908-d6281151b7e8)')' thrown while requesting GET https://huggingface.co/datasets/leachl/obfuscated-exebench/resolve/158c6f06c81c14471887433aa0c1cc8323640d66/train_synth_compilable/shard-chunk0004-00006.parquet
+13:41:52  WARNING   '(ReadTimeoutError("HTTPSConnectionPool(host='huggingface.co', port=443): Read timed out. (read timeout=10)"), '(Request ID: 0bc06bcf-0701-418f-8908-d6281151b7e8)')' thrown while requesting GET https://huggingface.co/datasets/leachl/obfuscated-exebench/resolve/158c6f06c81c14471887433aa0c1cc8323640d66/train_synth_compilable/shard-chunk0004-00006.parquet
+Retrying in 2s [Retry 2/5].
+13:41:52  WARNING   Retrying in 2s [Retry 2/5].
+'(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /datasets/leachl/obfuscated-exebench/resolve/158c6f06c81c14471887433aa0c1cc8323640d66/train_synth_compilable/shard-chunk0004-00006.parquet (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f825073b890>: Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 2a831c7c-c938-4de6-9558-cd4fcbb61866)')' thrown while requesting GET https://huggingface.co/datasets/leachl/obfuscated-exebench/resolve/158c6f06c81c14471887433aa0c1cc8323640d66/train_synth_compilable/shard-chunk0004-00006.parquet
+13:42:04  WARNING   '(MaxRetryError('HTTPSConnectionPool(host=\'huggingface.co\', port=443): Max retries exceeded with url: /datasets/leachl/obfuscated-exebench/resolve/158c6f06c81c14471887433aa0c1cc8323640d66/train_synth_compilable/shard-chunk0004-00006.parquet (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f825073b890>: Failed to resolve \'huggingface.co\' ([Errno -3] Temporary failure in name resolution)"))'), '(Request ID: 2a831c7c-c938-4de6-9558-cd4fcbb61866)')' thrown while requesting GET https://huggingface.co/datasets/leachl/obfuscated-exebench/resolve/158c6f06c81c14471887433aa0c1cc8323640d66/train_synth_compilable/shard-chunk0004-00006.parquet
+Retrying in 4s [Retry 3/5].
+13:42:04  WARNING   Retrying in 4s [Retry 3/5].
+13:45:12  INFO      Shard 65: 10000 rows → obfu_dataset_clean/shard-00065.parquet (10.4 MB)
+13:45:12  INFO      Processed 660000 samples (62/s) | stripped=660000 failed=0
+13:47:45  INFO      Shard 66: 10000 rows → obfu_dataset_clean/shard-00066.parquet (10.3 MB)
+13:47:45  INFO      Processed 670000 samples (62/s) | stripped=670000 failed=0
+13:50:22  INFO      Shard 67: 10000 rows → obfu_dataset_clean/shard-00067.parquet (10.1 MB)
+13:50:22  INFO      Processed 680000 samples (62/s) | stripped=680000 failed=0
+13:53:02  INFO      Shard 68: 10000 rows → obfu_dataset_clean/shard-00068.parquet (10.2 MB)
+13:53:02  INFO      Processed 690000 samples (62/s) | stripped=690000 failed=0
+13:55:43  INFO      Shard 69: 10000 rows → obfu_dataset_clean/shard-00069.parquet (10.1 MB)
+13:55:43  INFO      Processed 700000 samples (62/s) | stripped=700000 failed=0
+13:58:30  INFO      Shard 70: 10000 rows → obfu_dataset_clean/shard-00070.parquet (10.2 MB)
+13:58:30  INFO      Processed 710000 samples (62/s) | stripped=710000 failed=0
+14:01:18  INFO      Shard 71: 10000 rows → obfu_dataset_clean/shard-00071.parquet (10.1 MB)
+14:01:18  INFO      Processed 720000 samples (62/s) | stripped=720000 failed=0
+14:04:09  INFO      Shard 72: 10000 rows → obfu_dataset_clean/shard-00072.parquet (10.3 MB)
+14:04:09  INFO      Processed 730000 samples (62/s) | stripped=730000 failed=0
+14:07:01  INFO      Shard 73: 10000 rows → obfu_dataset_clean/shard-00073.parquet (10.2 MB)
+14:07:01  INFO      Processed 740000 samples (62/s) | stripped=740000 failed=0
+14:09:52  INFO      Shard 74: 10000 rows → obfu_dataset_clean/shard-00074.parquet (10.2 MB)
+14:09:52  INFO      Processed 750000 samples (62/s) | stripped=750000 failed=0
+14:12:32  INFO      Shard 75: 10000 rows → obfu_dataset_clean/shard-00075.parquet (10.3 MB)
+14:12:32  INFO      Processed 760000 samples (62/s) | stripped=760000 failed=0
+14:15:24  INFO      Shard 76: 10000 rows → obfu_dataset_clean/shard-00076.parquet (10.0 MB)
+14:15:24  INFO      Processed 770000 samples (62/s) | stripped=770000 failed=0
+14:18:14  INFO      Shard 77: 10000 rows → obfu_dataset_clean/shard-00077.parquet (10.4 MB)
+14:18:14  INFO      Processed 780000 samples (62/s) | stripped=780000 failed=0
+14:21:02  INFO      Shard 78: 10000 rows → obfu_dataset_clean/shard-00078.parquet (10.2 MB)
+14:21:02  INFO      Processed 790000 samples (62/s) | stripped=790000 failed=0
+14:23:42  INFO      Shard 79: 10000 rows → obfu_dataset_clean/shard-00079.parquet (10.3 MB)
+14:23:42  INFO      Processed 800000 samples (62/s) | stripped=800000 failed=0
+'HTTPSConnectionPool(host='cas-bridge.xethub.hf.co', port=443): Read timed out.' thrown while requesting GET https://huggingface.co/datasets/leachl/obfuscated-exebench/resolve/158c6f06c81c14471887433aa0c1cc8323640d66/train_synth_compilable/shard-chunk0005-00012.parquet
+14:24:24  WARNING   'HTTPSConnectionPool(host='cas-bridge.xethub.hf.co', port=443): Read timed out.' thrown while requesting GET https://huggingface.co/datasets/leachl/obfuscated-exebench/resolve/158c6f06c81c14471887433aa0c1cc8323640d66/train_synth_compilable/shard-chunk0005-00012.parquet
+Retrying in 1s [Retry 1/5].
+14:24:24  WARNING   Retrying in 1s [Retry 1/5].
+14:27:02  INFO      Shard 80: 10000 rows → obfu_dataset_clean/shard-00080.parquet (10.2 MB)
+14:27:02  INFO      Processed 810000 samples (62/s) | stripped=810000 failed=0
+14:29:42  INFO      Shard 81: 10000 rows → obfu_dataset_clean/shard-00081.parquet (10.6 MB)
+14:29:42  INFO      Processed 820000 samples (62/s) | stripped=820000 failed=0
+14:32:24  INFO      Shard 82: 10000 rows → obfu_dataset_clean/shard-00082.parquet (10.0 MB)
+14:32:24  INFO      Processed 830000 samples (62/s) | stripped=830000 failed=0
+14:35:09  INFO      Shard 83: 10000 rows → obfu_dataset_clean/shard-00083.parquet (10.4 MB)
+14:35:09  INFO      Processed 840000 samples (62/s) | stripped=840000 failed=0
+14:37:35  INFO      Shard 84: 10000 rows → obfu_dataset_clean/shard-00084.parquet (9.9 MB)
+14:37:35  INFO      Processed 850000 samples (62/s) | stripped=850000 failed=0
+14:40:02  INFO      Shard 85: 10000 rows → obfu_dataset_clean/shard-00085.parquet (10.3 MB)
+14:40:02  INFO      Processed 860000 samples (62/s) | stripped=860000 failed=0
+14:42:21  INFO      Shard 86: 10000 rows → obfu_dataset_clean/shard-00086.parquet (10.2 MB)
+14:42:21  INFO      Processed 870000 samples (62/s) | stripped=870000 failed=0
+14:44:51  INFO      Shard 87: 10000 rows → obfu_dataset_clean/shard-00087.parquet (10.5 MB)
+14:44:51  INFO      Processed 880000 samples (62/s) | stripped=880000 failed=0
+14:47:14  INFO      Shard 88: 10000 rows → obfu_dataset_clean/shard-00088.parquet (10.3 MB)
+14:47:14  INFO      Processed 890000 samples (62/s) | stripped=890000 failed=0
+14:49:40  INFO      Shard 89: 10000 rows → obfu_dataset_clean/shard-00089.parquet (10.5 MB)
+14:49:40  INFO      Processed 900000 samples (62/s) | stripped=900000 failed=0
+14:52:41  INFO      Shard 90: 10000 rows → obfu_dataset_clean/shard-00090.parquet (10.0 MB)
+14:52:41  INFO      Processed 910000 samples (62/s) | stripped=910000 failed=0
+14:55:08  INFO      Shard 91: 10000 rows → obfu_dataset_clean/shard-00091.parquet (10.1 MB)
+14:55:08  INFO      Processed 920000 samples (62/s) | stripped=920000 failed=0
+14:57:27  INFO      Shard 92: 10000 rows → obfu_dataset_clean/shard-00092.parquet (10.1 MB)
+14:57:27  INFO      Processed 930000 samples (62/s) | stripped=930000 failed=0
+14:59:40  INFO      Shard 93: 10000 rows → obfu_dataset_clean/shard-00093.parquet (10.2 MB)
+14:59:40  INFO      Processed 940000 samples (62/s) | stripped=940000 failed=0
+15:01:58  INFO      Shard 94: 10000 rows → obfu_dataset_clean/shard-00094.parquet (10.1 MB)
+15:01:58  INFO      Processed 950000 samples (62/s) | stripped=950000 failed=0
+15:04:14  INFO      Shard 95: 10000 rows → obfu_dataset_clean/shard-00095.parquet (10.2 MB)
+15:04:14  INFO      Processed 960000 samples (62/s) | stripped=960000 failed=0
+15:06:28  INFO      Shard 96: 10000 rows → obfu_dataset_clean/shard-00096.parquet (10.2 MB)
+15:06:28  INFO      Processed 970000 samples (62/s) | stripped=970000 failed=0
+15:08:43  INFO      Shard 97: 10000 rows → obfu_dataset_clean/shard-00097.parquet (10.4 MB)
+15:08:43  INFO      Processed 980000 samples (63/s) | stripped=980000 failed=0
+15:08:43  INFO      Done: 980000 samples in 98 shards (15656s). Stripped: 980000, failed: 0
+15:08:43  INFO      Wrote obfu_dataset_clean/dataset_info.json
