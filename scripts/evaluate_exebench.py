@@ -134,7 +134,8 @@ def _flush_batch(
     if not batch_srcs:
         return
 
-    # Pad source sequences
+    # Pad source sequences (left-padding is standard for generation but
+    # BART uses right-padding, which is fine with an explicit attention mask)
     tensors = [torch.tensor(s) for s in batch_srcs]
     input_ids = pad_sequence(tensors, batch_first=True, padding_value=pad_id).to(device)
     attention_mask = (input_ids != pad_id).long()
@@ -159,8 +160,42 @@ def _flush_batch(
         all_fnames.append(fname)
 
 
+def _flush_buffer_sorted(
+    buffer: list[tuple[list[int], list[int], str]],
+    batch_size: int,
+    model,
+    dp: DP,
+    pad_id: int,
+    device: torch.device,
+    args,
+    all_preds: list[str],
+    all_refs: list[str],
+    all_fnames: list[str],
+):
+    """Sort buffer by source length, split into batches, and flush each.
+
+    Sorting minimises padding waste so every sample in a batch is close
+    in length, which is the key to making batched beam-search efficient.
+    """
+    if not buffer:
+        return
+    # Sort by source token length (shortest first → minimal padding)
+    buffer.sort(key=lambda t: len(t[0]))
+
+    for i in range(0, len(buffer), batch_size):
+        chunk = buffer[i : i + batch_size]
+        b_srcs = [c[0] for c in chunk]
+        b_refs = [c[1] for c in chunk]
+        b_names = [c[2] for c in chunk]
+        _flush_batch(
+            b_srcs, b_refs, b_names,
+            model, dp, pad_id, device, args,
+            all_preds, all_refs, all_fnames,
+        )
+
+
 def run_evaluation(args) -> dict:
-    """Main evaluation loop with batched generation."""
+    """Main evaluation loop with length-bucketed batched generation."""
 
     device = torch.device(args.device if args.device != "auto"
                           else ("cuda" if torch.cuda.is_available() else "cpu"))
@@ -201,14 +236,16 @@ def run_evaluation(args) -> dict:
     start_time = time.time()
 
     batch_size = args.batch_size
-    batch_srcs: list[list[int]] = []
-    batch_refs_tok: list[list[int]] = []
-    batch_fnames: list[str] = []
+    # Prefetch buffer: collect BUFFER_MULT * batch_size samples, then
+    # sort by source length and dispatch as length-bucketed batches.
+    BUFFER_MULT = 4
+    buffer_cap = batch_size * BUFFER_MULT
+    buffer: list[tuple[list[int], list[int], str]] = []   # (tok_src, tok_tgt, fname)
 
     for row in test_stream:
         total_seen += 1
 
-        if args.max_samples and len(all_preds) + len(batch_srcs) >= args.max_samples:
+        if args.max_samples and len(all_preds) + len(buffer) >= args.max_samples:
             break
 
         # Check required targets exist
@@ -252,31 +289,29 @@ def run_evaluation(args) -> dict:
             skipped += 1
             continue
 
-        # Accumulate into batch
-        batch_srcs.append(tok_src)
-        batch_refs_tok.append(tok_tgt)
-        batch_fnames.append(row.get("fname", "?"))
+        # Accumulate into prefetch buffer
+        buffer.append((tok_src, tok_tgt, row.get("fname", "?")))
 
-        # Flush batch when full
-        if len(batch_srcs) >= batch_size:
-            _flush_batch(
-                batch_srcs, batch_refs_tok, batch_fnames,
+        # When buffer is full, sort by length and dispatch batches
+        if len(buffer) >= buffer_cap:
+            _flush_buffer_sorted(
+                buffer, batch_size,
                 model, dp, pad_id, device, args,
                 all_preds, all_refs, all_fnames,
             )
-            batch_srcs, batch_refs_tok, batch_fnames = [], [], []
+            buffer = []
 
-        if len(all_preds) % 50 == 0 and len(all_preds) > 0:
+            # Log progress (only once per buffer flush)
             elapsed = time.time() - start_time
-            rate = len(all_preds) / elapsed
+            rate = len(all_preds) / elapsed if elapsed > 0 else 0
             logger.info(
-                "Evaluated %d samples (%.1f/s) | skipped %d | seen %d rows",
+                "Evaluated %d samples (%.2f/s) | skipped %d | seen %d rows",
                 len(all_preds), rate, skipped, total_seen,
             )
 
-    # Flush remaining samples
-    _flush_batch(
-        batch_srcs, batch_refs_tok, batch_fnames,
+    # Flush remaining samples in buffer
+    _flush_buffer_sorted(
+        buffer, batch_size,
         model, dp, pad_id, device, args,
         all_preds, all_refs, all_fnames,
     )
@@ -303,6 +338,7 @@ def run_evaluation(args) -> dict:
         "repetition_penalty": args.repetition_penalty,
         "no_repeat_ngram_size": args.no_repeat_ngram_size,
         "max_new_tokens": args.max_new_tokens,
+        "batch_size": args.batch_size,
         "elapsed_seconds": round(elapsed, 1),
         "samples_per_second": round(len(all_preds) / elapsed, 2) if elapsed > 0 else 0,
     }
