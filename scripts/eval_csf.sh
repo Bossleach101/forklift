@@ -4,7 +4,7 @@
 #SBATCH -G 1
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=32G
-#SBATCH -t 0-16:00:00
+#SBATCH -t 0-24:00:00
 #SBATCH --output=logs/eval_%j.out
 #SBATCH --error=logs/eval_%j.err
 
@@ -57,7 +57,7 @@ python scripts/evaluate_exebench.py \
     --pair "$PAIR" \
     --split "$SPLIT" \
     --asm-key "$ASM_KEY" \
-    --beam 5 \
+    --beam 3 \
     --repetition-penalty 1.2 \
     --no-repeat-ngram-size 6 \
     --max-new-tokens 2048 \
