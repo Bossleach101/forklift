@@ -1,0 +1,47 @@
+16:13:39  INFO      Device: cuda
+16:13:39  INFO      Loading model: leachl/forklift-arm-ir-ir
+16:13:57  INFO      Model loaded (197059584 params)
+16:13:57  INFO      Pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+16:13:57  INFO      Loading split: test_synth
+Repo card metadata block was not found. Setting CardData to empty.
+16:13:58  WARNING   Repo card metadata block was not found. Setting CardData to empty.
+17:18:04  INFO      Evaluated 200 samples (0.1/s) | skipped 75 | seen 275 rows
+17:18:04  INFO      Evaluated 200 samples (0.1/s) | skipped 75 | seen 276 rows
+17:18:04  INFO      Evaluated 200 samples (0.1/s) | skipped 77 | seen 279 rows
+17:18:04  INFO      Evaluated 200 samples (0.1/s) | skipped 77 | seen 280 rows
+17:18:04  INFO      Evaluated 200 samples (0.1/s) | skipped 77 | seen 281 rows
+17:18:04  INFO      Evaluated 200 samples (0.1/s) | skipped 77 | seen 282 rows
+17:18:04  INFO      Evaluated 200 samples (0.1/s) | skipped 77 | seen 283 rows
+17:18:04  INFO      Evaluated 200 samples (0.1/s) | skipped 77 | seen 284 rows
+18:21:51  INFO      Evaluated 400 samples (0.1/s) | skipped 139 | seen 539 rows
+18:21:51  INFO      Evaluated 400 samples (0.1/s) | skipped 139 | seen 540 rows
+18:21:51  INFO      Evaluated 400 samples (0.1/s) | skipped 139 | seen 541 rows
+18:21:51  INFO      Evaluated 400 samples (0.1/s) | skipped 139 | seen 542 rows
+18:21:51  INFO      Evaluated 400 samples (0.1/s) | skipped 139 | seen 543 rows
+18:21:51  INFO      Evaluated 400 samples (0.1/s) | skipped 139 | seen 544 rows
+18:21:51  INFO      Evaluated 400 samples (0.1/s) | skipped 139 | seen 545 rows
+18:21:51  INFO      Evaluated 400 samples (0.1/s) | skipped 140 | seen 547 rows
+19:25:53  INFO      Evaluated 600 samples (0.1/s) | skipped 196 | seen 796 rows
+19:25:53  INFO      Evaluated 600 samples (0.1/s) | skipped 196 | seen 797 rows
+19:25:53  INFO      Evaluated 600 samples (0.1/s) | skipped 196 | seen 798 rows
+19:25:53  INFO      Evaluated 600 samples (0.1/s) | skipped 196 | seen 799 rows
+19:25:53  INFO      Evaluated 600 samples (0.1/s) | skipped 196 | seen 800 rows
+19:25:53  INFO      Evaluated 600 samples (0.1/s) | skipped 196 | seen 801 rows
+19:25:53  INFO      Evaluated 600 samples (0.1/s) | skipped 196 | seen 802 rows
+19:25:53  INFO      Evaluated 600 samples (0.1/s) | skipped 196 | seen 803 rows
+20:30:02  INFO      Evaluated 800 samples (0.1/s) | skipped 274 | seen 1074 rows
+20:30:02  INFO      Evaluated 800 samples (0.1/s) | skipped 274 | seen 1075 rows
+20:30:02  INFO      Evaluated 800 samples (0.1/s) | skipped 274 | seen 1076 rows
+20:30:02  INFO      Evaluated 800 samples (0.1/s) | skipped 274 | seen 1077 rows
+20:30:02  INFO      Evaluated 800 samples (0.1/s) | skipped 274 | seen 1078 rows
+20:30:02  INFO      Evaluated 800 samples (0.1/s) | skipped 274 | seen 1079 rows
+20:30:02  INFO      Evaluated 800 samples (0.1/s) | skipped 274 | seen 1080 rows
+20:30:02  INFO      Evaluated 800 samples (0.1/s) | skipped 274 | seen 1081 rows
+21:27:54  INFO      Evaluated 1000 samples (0.1/s) | skipped 352 | seen 1352 rows
+21:27:54  INFO      Evaluated 1000 samples (0.1/s) | skipped 352 | seen 1353 rows
+21:27:54  INFO      Evaluated 1000 samples (0.1/s) | skipped 352 | seen 1354 rows
+21:27:54  INFO      Evaluated 1000 samples (0.1/s) | skipped 352 | seen 1355 rows
+21:27:54  INFO      Evaluated 1000 samples (0.1/s) | skipped 352 | seen 1356 rows
+21:27:54  INFO      Evaluated 1000 samples (0.1/s) | skipped 352 | seen 1357 rows
+21:27:54  INFO      Evaluated 1000 samples (0.1/s) | skipped 352 | seen 1358 rows
+21:27:54  INFO      Evaluated 1000 samples (0.1/s) | skipped 352 | seen 1359 rows

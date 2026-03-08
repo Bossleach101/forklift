@@ -1,0 +1,9 @@
+================================================
+Job ID:    11808085
+Node:      node877.csf3.man.alces.network
+GPU:       NVIDIA L40S
+Date:      Wed  4 Mar 15:08:19 GMT 2026
+================================================
+Evaluating model: leachl/forklift-arm-ir-ir
+Pair: arm_ir-ir  Split: test_synth  ASM key: angha
+

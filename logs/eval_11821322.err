@@ -1,0 +1,12 @@
+15:38:10  INFO      Device: cuda
+15:38:10  INFO      Loading model: leachl/forklift-arm-ir-ir
+15:38:27  INFO      Model loaded (197059584 params)
+15:38:27  INFO      Pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+15:38:27  INFO      Loading split: test_synth
+Repo card metadata block was not found. Setting CardData to empty.
+15:38:29  WARNING   Repo card metadata block was not found. Setting CardData to empty.
+15:47:26  INFO      Evaluated 32 samples (0.06/s) | skipped 7 | seen 39 rows
+15:55:59  INFO      Evaluated 64 samples (0.06/s) | skipped 18 | seen 82 rows
+16:04:29  INFO      Evaluated 96 samples (0.06/s) | skipped 40 | seen 136 rows
+16:13:00  INFO      Evaluated 128 samples (0.06/s) | skipped 52 | seen 180 rows
+[2026-03-05T16:20:57.327] error: *** JOB 11821322 ON node874 CANCELLED AT 2026-03-05T16:20:57 DUE to SIGNAL Terminated ***

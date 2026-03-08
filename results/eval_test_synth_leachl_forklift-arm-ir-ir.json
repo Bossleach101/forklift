@@ -1,0 +1,19 @@
+{
+  "model": "leachl/forklift-arm-ir-ir",
+  "pair": "arm_ir-ir",
+  "split": "test_synth",
+  "asm_key": "angha",
+  "num_evaluated": 3719,
+  "num_skipped": 1281,
+  "total_rows_seen": 5000,
+  "bleu": 33.45,
+  "ned": 0.6266,
+  "exact_match_pct": 0.03,
+  "beam": 3,
+  "repetition_penalty": 1.2,
+  "no_repeat_ngram_size": 6,
+  "max_new_tokens": 2048,
+  "batch_size": 8,
+  "elapsed_seconds": 37698.8,
+  "samples_per_second": 0.1
+}
