@@ -1,0 +1,19 @@
+{
+  "model": "jordiae/clang_opt3_ir_optz-ir_optz-2024-01-15-0959-e1bf-bc2b",
+  "pair": "opt3_ir_optz-ir_optz",
+  "split": "test_synth",
+  "asm_key": "angha",
+  "num_evaluated": 4578,
+  "num_skipped": 422,
+  "total_rows_seen": 5000,
+  "bleu": 27.62,
+  "ned": 0.6839,
+  "exact_match_pct": 0.0,
+  "beam": 3,
+  "repetition_penalty": 1.2,
+  "no_repeat_ngram_size": 6,
+  "max_new_tokens": 2048,
+  "batch_size": 8,
+  "elapsed_seconds": 16459.8,
+  "samples_per_second": 0.28
+}

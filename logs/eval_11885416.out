@@ -1,0 +1,13 @@
+================================================
+Job ID:    11885416
+Node:      node882.csf3.man.alces.network
+GPU:       NVIDIA L40S
+Date:      Sun  8 Mar 09:56:08 GMT 2026
+================================================
+Evaluating model: leachl/forklift-arm-ir-ir
+Pair: arm_ir-ir  Split: test_synth  ASM key: angha  Batch size: 8
+
+
+================================================
+Evaluation complete at Sun  8 Mar 14:36:13 GMT 2026
+================================================
