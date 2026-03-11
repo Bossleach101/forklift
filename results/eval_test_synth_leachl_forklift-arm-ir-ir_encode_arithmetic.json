@@ -1,0 +1,28 @@
+{
+    "model": "leachl/forklift-arm-ir-ir",
+    "dataset": "leachl/obfuscated-exebench",
+    "pair": "arm-ir-ir",
+    "split": "test_encode_arithmetic",
+    "technique_filter": "all",
+    "num_evaluated": 3571,
+    "num_skipped": 337,
+    "total_rows_seen": 3908,
+    "bleu": 27.83,
+    "ned": 0.6677,
+    "exact_match_pct": 0.0,
+    "per_technique": {
+        "EncodeArithmetic": {
+            "count": 3571,
+            "bleu": 27.83,
+            "ned": 0.6677,
+            "exact_match_pct": 0.0
+        }
+    },
+    "beam": 3,
+    "repetition_penalty": 1.2,
+    "no_repeat_ngram_size": 6,
+    "max_new_tokens": 2048,
+    "batch_size": 8,
+    "elapsed_seconds": 36878.4,
+    "samples_per_second": 0.1
+}
