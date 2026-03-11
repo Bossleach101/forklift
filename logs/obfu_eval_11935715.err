@@ -1,0 +1,145 @@
+10:04:03  INFO      Device: cuda
+10:04:03  INFO      Loading model: leachl/forklift-arm-ir-ir
+10:04:18  INFO      Model loaded (197059584 params)
+10:04:18  INFO      Pair: arm_ir-ir
+10:04:18  INFO      Loading leachl/obfuscated-exebench split=test_encode_arithmetic
+Downloading readme: 0.00B [00:00, ?B/s]Downloading readme: 3.94kB [00:00, 21.5MB/s]
+Resolving data files:   0%|          | 0/98 [00:00<?, ?it/s]Resolving data files:   1%|          | 1/98 [00:00<00:25,  3.81it/s]Resolving data files: 100%|██████████| 98/98 [00:00<00:00, 358.18it/s]
+Resolving data files:   0%|          | 0/98 [00:00<?, ?it/s]Resolving data files: 100%|██████████| 98/98 [00:00<00:00, 535210.67it/s]
+10:10:14  INFO      Evaluated 32 samples (0.09/s) | skipped 2 | seen 34 rows
+10:15:55  INFO      Evaluated 64 samples (0.09/s) | skipped 7 | seen 71 rows
+10:21:33  INFO      Evaluated 96 samples (0.09/s) | skipped 16 | seen 112 rows
+10:27:07  INFO      Evaluated 128 samples (0.09/s) | skipped 20 | seen 148 rows
+10:32:41  INFO      Evaluated 160 samples (0.09/s) | skipped 23 | seen 183 rows
+10:38:10  INFO      Evaluated 192 samples (0.09/s) | skipped 24 | seen 216 rows
+10:43:50  INFO      Evaluated 224 samples (0.09/s) | skipped 28 | seen 252 rows
+10:49:34  INFO      Evaluated 256 samples (0.09/s) | skipped 30 | seen 286 rows
+10:55:09  INFO      Evaluated 288 samples (0.09/s) | skipped 31 | seen 319 rows
+11:00:44  INFO      Evaluated 320 samples (0.09/s) | skipped 33 | seen 353 rows
+11:06:14  INFO      Evaluated 352 samples (0.09/s) | skipped 34 | seen 386 rows
+11:11:46  INFO      Evaluated 384 samples (0.09/s) | skipped 38 | seen 422 rows
+11:17:12  INFO      Evaluated 416 samples (0.10/s) | skipped 39 | seen 455 rows
+11:22:43  INFO      Evaluated 448 samples (0.10/s) | skipped 41 | seen 489 rows
+11:28:07  INFO      Evaluated 480 samples (0.10/s) | skipped 45 | seen 525 rows
+11:33:25  INFO      Evaluated 512 samples (0.10/s) | skipped 46 | seen 558 rows
+11:38:54  INFO      Evaluated 544 samples (0.10/s) | skipped 51 | seen 595 rows
+11:44:24  INFO      Evaluated 576 samples (0.10/s) | skipped 53 | seen 629 rows
+11:49:56  INFO      Evaluated 608 samples (0.10/s) | skipped 55 | seen 663 rows
+11:55:31  INFO      Evaluated 640 samples (0.10/s) | skipped 56 | seen 696 rows
+12:01:06  INFO      Evaluated 672 samples (0.10/s) | skipped 61 | seen 733 rows
+12:06:41  INFO      Evaluated 704 samples (0.10/s) | skipped 65 | seen 769 rows
+12:12:16  INFO      Evaluated 736 samples (0.10/s) | skipped 66 | seen 802 rows
+12:17:48  INFO      Evaluated 768 samples (0.10/s) | skipped 67 | seen 835 rows
+12:23:17  INFO      Evaluated 800 samples (0.10/s) | skipped 72 | seen 872 rows
+12:28:43  INFO      Evaluated 832 samples (0.10/s) | skipped 75 | seen 907 rows
+12:34:16  INFO      Evaluated 864 samples (0.10/s) | skipped 79 | seen 943 rows
+12:39:47  INFO      Evaluated 896 samples (0.10/s) | skipped 83 | seen 979 rows
+12:45:21  INFO      Evaluated 928 samples (0.10/s) | skipped 88 | seen 1016 rows
+12:50:53  INFO      Evaluated 960 samples (0.10/s) | skipped 92 | seen 1052 rows
+12:56:25  INFO      Evaluated 992 samples (0.10/s) | skipped 94 | seen 1086 rows
+13:01:52  INFO      Evaluated 1024 samples (0.10/s) | skipped 99 | seen 1123 rows
+13:07:29  INFO      Evaluated 1056 samples (0.10/s) | skipped 102 | seen 1158 rows
+13:12:56  INFO      Evaluated 1088 samples (0.10/s) | skipped 104 | seen 1192 rows
+13:18:19  INFO      Evaluated 1120 samples (0.10/s) | skipped 106 | seen 1226 rows
+13:23:50  INFO      Evaluated 1152 samples (0.10/s) | skipped 110 | seen 1262 rows
+13:29:16  INFO      Evaluated 1184 samples (0.10/s) | skipped 114 | seen 1298 rows
+13:34:54  INFO      Evaluated 1216 samples (0.10/s) | skipped 116 | seen 1332 rows
+13:40:23  INFO      Evaluated 1248 samples (0.10/s) | skipped 118 | seen 1366 rows
+13:45:54  INFO      Evaluated 1280 samples (0.10/s) | skipped 124 | seen 1404 rows
+13:51:30  INFO      Evaluated 1312 samples (0.10/s) | skipped 128 | seen 1440 rows
+13:57:00  INFO      Evaluated 1344 samples (0.10/s) | skipped 131 | seen 1475 rows
+14:02:36  INFO      Evaluated 1376 samples (0.10/s) | skipped 135 | seen 1511 rows
+14:08:06  INFO      Evaluated 1408 samples (0.10/s) | skipped 140 | seen 1548 rows
+14:13:37  INFO      Evaluated 1440 samples (0.10/s) | skipped 142 | seen 1582 rows
+14:19:03  INFO      Evaluated 1472 samples (0.10/s) | skipped 143 | seen 1615 rows
+14:24:33  INFO      Evaluated 1504 samples (0.10/s) | skipped 144 | seen 1648 rows
+14:29:59  INFO      Evaluated 1536 samples (0.10/s) | skipped 146 | seen 1682 rows
+14:35:30  INFO      Evaluated 1568 samples (0.10/s) | skipped 149 | seen 1717 rows
+14:41:12  INFO      Evaluated 1600 samples (0.10/s) | skipped 152 | seen 1752 rows
+14:46:32  INFO      Evaluated 1632 samples (0.10/s) | skipped 155 | seen 1787 rows
+14:52:09  INFO      Evaluated 1664 samples (0.10/s) | skipped 158 | seen 1822 rows
+14:57:36  INFO      Evaluated 1696 samples (0.10/s) | skipped 162 | seen 1858 rows
+15:03:01  INFO      Evaluated 1728 samples (0.10/s) | skipped 164 | seen 1892 rows
+15:08:38  INFO      Evaluated 1760 samples (0.10/s) | skipped 169 | seen 1929 rows
+15:14:12  INFO      Evaluated 1792 samples (0.10/s) | skipped 176 | seen 1968 rows
+15:19:44  INFO      Evaluated 1824 samples (0.10/s) | skipped 177 | seen 2001 rows
+15:25:16  INFO      Evaluated 1856 samples (0.10/s) | skipped 181 | seen 2037 rows
+15:30:45  INFO      Evaluated 1888 samples (0.10/s) | skipped 183 | seen 2071 rows
+15:36:11  INFO      Evaluated 1920 samples (0.10/s) | skipped 184 | seen 2104 rows
+15:41:45  INFO      Evaluated 1952 samples (0.10/s) | skipped 189 | seen 2141 rows
+15:47:27  INFO      Evaluated 1984 samples (0.10/s) | skipped 195 | seen 2179 rows
+15:52:50  INFO      Evaluated 2016 samples (0.10/s) | skipped 199 | seen 2215 rows
+15:58:20  INFO      Evaluated 2048 samples (0.10/s) | skipped 199 | seen 2247 rows
+16:03:58  INFO      Evaluated 2080 samples (0.10/s) | skipped 206 | seen 2286 rows
+16:09:32  INFO      Evaluated 2112 samples (0.10/s) | skipped 210 | seen 2322 rows
+16:14:59  INFO      Evaluated 2144 samples (0.10/s) | skipped 215 | seen 2359 rows
+16:20:27  INFO      Evaluated 2176 samples (0.10/s) | skipped 216 | seen 2392 rows
+16:26:00  INFO      Evaluated 2208 samples (0.10/s) | skipped 219 | seen 2427 rows
+16:31:29  INFO      Evaluated 2240 samples (0.10/s) | skipped 225 | seen 2465 rows
+16:37:00  INFO      Evaluated 2272 samples (0.10/s) | skipped 226 | seen 2498 rows
+16:42:29  INFO      Evaluated 2304 samples (0.10/s) | skipped 226 | seen 2530 rows
+16:47:53  INFO      Evaluated 2336 samples (0.10/s) | skipped 230 | seen 2566 rows
+16:53:31  INFO      Evaluated 2368 samples (0.10/s) | skipped 234 | seen 2602 rows
+16:59:01  INFO      Evaluated 2400 samples (0.10/s) | skipped 235 | seen 2635 rows
+17:04:33  INFO      Evaluated 2432 samples (0.10/s) | skipped 240 | seen 2672 rows
+17:10:03  INFO      Evaluated 2464 samples (0.10/s) | skipped 242 | seen 2706 rows
+17:15:32  INFO      Evaluated 2496 samples (0.10/s) | skipped 242 | seen 2738 rows
+17:21:05  INFO      Evaluated 2528 samples (0.10/s) | skipped 247 | seen 2775 rows
+17:26:33  INFO      Evaluated 2560 samples (0.10/s) | skipped 249 | seen 2809 rows
+17:32:00  INFO      Evaluated 2592 samples (0.10/s) | skipped 252 | seen 2844 rows
+17:37:25  INFO      Evaluated 2624 samples (0.10/s) | skipped 256 | seen 2880 rows
+17:42:58  INFO      Evaluated 2656 samples (0.10/s) | skipped 262 | seen 2918 rows
+17:48:31  INFO      Evaluated 2688 samples (0.10/s) | skipped 263 | seen 2951 rows
+17:53:57  INFO      Evaluated 2720 samples (0.10/s) | skipped 267 | seen 2987 rows
+17:59:21  INFO      Evaluated 2752 samples (0.10/s) | skipped 269 | seen 3021 rows
+18:04:48  INFO      Evaluated 2784 samples (0.10/s) | skipped 271 | seen 3055 rows
+18:10:08  INFO      Evaluated 2816 samples (0.10/s) | skipped 274 | seen 3090 rows
+18:15:35  INFO      Evaluated 2848 samples (0.10/s) | skipped 276 | seen 3124 rows
+18:21:04  INFO      Evaluated 2880 samples (0.10/s) | skipped 278 | seen 3158 rows
+18:26:41  INFO      Evaluated 2912 samples (0.10/s) | skipped 283 | seen 3195 rows
+18:32:12  INFO      Evaluated 2944 samples (0.10/s) | skipped 286 | seen 3230 rows
+18:37:44  INFO      Evaluated 2976 samples (0.10/s) | skipped 288 | seen 3264 rows
+18:43:12  INFO      Evaluated 3008 samples (0.10/s) | skipped 293 | seen 3301 rows
+18:48:41  INFO      Evaluated 3040 samples (0.10/s) | skipped 295 | seen 3335 rows
+18:54:10  INFO      Evaluated 3072 samples (0.10/s) | skipped 295 | seen 3367 rows
+18:59:25  INFO      Evaluated 3104 samples (0.10/s) | skipped 297 | seen 3401 rows
+19:04:50  INFO      Evaluated 3136 samples (0.10/s) | skipped 303 | seen 3439 rows
+19:10:16  INFO      Evaluated 3168 samples (0.10/s) | skipped 304 | seen 3472 rows
+19:15:44  INFO      Evaluated 3200 samples (0.10/s) | skipped 304 | seen 3504 rows
+19:21:10  INFO      Evaluated 3232 samples (0.10/s) | skipped 306 | seen 3538 rows
+19:26:39  INFO      Evaluated 3264 samples (0.10/s) | skipped 309 | seen 3573 rows
+19:32:03  INFO      Evaluated 3296 samples (0.10/s) | skipped 312 | seen 3608 rows
+19:37:27  INFO      Evaluated 3328 samples (0.10/s) | skipped 313 | seen 3641 rows
+19:42:42  INFO      Evaluated 3360 samples (0.10/s) | skipped 315 | seen 3675 rows
+19:48:05  INFO      Evaluated 3392 samples (0.10/s) | skipped 316 | seen 3708 rows
+19:53:41  INFO      Evaluated 3424 samples (0.10/s) | skipped 320 | seen 3744 rows
+19:59:07  INFO      Evaluated 3456 samples (0.10/s) | skipped 326 | seen 3782 rows
+20:04:34  INFO      Evaluated 3488 samples (0.10/s) | skipped 328 | seen 3816 rows
+20:10:09  INFO      Evaluated 3520 samples (0.10/s) | skipped 330 | seen 3850 rows
+20:15:43  INFO      Evaluated 3552 samples (0.10/s) | skipped 335 | seen 3887 rows
+20:19:35  INFO      ============================================================
+20:19:35  INFO      RESULTS
+20:19:35  INFO      ============================================================
+20:19:35  INFO        model                     leachl/forklift-arm-ir-ir
+20:19:35  INFO        dataset                   leachl/obfuscated-exebench
+20:19:35  INFO        pair                      arm_ir-ir
+20:19:35  INFO        split                     test_encode_arithmetic
+20:19:35  INFO        technique_filter          all
+20:19:35  INFO        num_evaluated             3571
+20:19:35  INFO        num_skipped               337
+20:19:35  INFO        total_rows_seen           3908
+20:19:35  INFO        bleu                      27.83
+20:19:35  INFO        ned                       0.6677
+20:19:35  INFO        exact_match_pct           0.0
+20:19:35  INFO        per_technique:
+20:19:35  INFO          EncodeArithmetic                {'count': 3571, 'bleu': 27.83, 'ned': 0.6677, 'exact_match_pct': 0.0}
+20:19:35  INFO        beam                      3
+20:19:35  INFO        repetition_penalty        1.2
+20:19:35  INFO        no_repeat_ngram_size      6
+20:19:35  INFO        max_new_tokens            2048
+20:19:35  INFO        batch_size                8
+20:19:35  INFO        elapsed_seconds           36878.4
+20:19:35  INFO        samples_per_second        0.1
+20:19:35  INFO      ============================================================
+20:19:35  INFO      Results saved to results/obfu_eval_test_leachl_forklift-arm-ir-ir.json
+20:19:35  INFO      Predictions saved to results/obfu_preds_test_leachl_forklift-arm-ir-ir.jsonl
