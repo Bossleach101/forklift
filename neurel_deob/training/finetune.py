@@ -52,7 +52,7 @@ from transformers import BartForConditionalGeneration, get_scheduler
 from forklift.par_data import DP
 
 from .config import TrainConfig
-from .data import DataConfig, ExeBenchDataset, ObfuscatedExeBenchDataset, collate_fn
+from .data import DataConfig, ExeBenchDataset, ObfuscatedExeBenchDataset, TigressObfuDataset, collate_fn
 from neurel_deob.obfuscation.pipeline import ObfuscationConfig
 
 logger = logging.getLogger(__name__)
@@ -123,27 +123,43 @@ def evaluate(
     device: torch.device,
 ) -> dict:
     """
-    Run evaluation on ``valid_synth`` split.
+    Run evaluation on the validation split.
+
+    When ``config.deob_dataset`` is set, evaluates on that dataset's
+    ``valid_split`` (e.g. ``test_flatten``).  Otherwise evaluates on
+    ExeBench ``valid_synth``.
 
     Returns a dict with ``val_loss``, ``bleu``, ``ned``, and
     ``num_samples``.
     """
     model.eval()
 
-    data_cfg = DataConfig(
-        hf_dataset=config.hf_dataset,
-        revision=config.hf_revision,
-        split=config.valid_split,
-        pair=config.pair,
-        asm_key=config.asm_key,
-        max_source_len=config.max_source_len,
-        max_target_len=config.max_target_len,
-        normalize_ir_structs=config.normalize_ir_structs,
-        strip_ir_declares=config.strip_ir_declares,
-        streaming=config.streaming,
-    )
-
-    val_ds = ExeBenchDataset(tokenizer, data_cfg)
+    if config.deob_dataset:
+        data_cfg = DataConfig(
+            hf_dataset=config.deob_dataset,
+            split=config.valid_split,
+            pair=config.pair,
+            max_source_len=config.max_source_len,
+            max_target_len=config.max_target_len,
+            normalize_ir_structs=config.normalize_ir_structs,
+            strip_ir_declares=config.strip_ir_declares,
+            streaming=config.streaming,
+        )
+        val_ds = TigressObfuDataset(tokenizer, data_cfg)
+    else:
+        data_cfg = DataConfig(
+            hf_dataset=config.hf_dataset,
+            revision=config.hf_revision,
+            split=config.valid_split,
+            pair=config.pair,
+            asm_key=config.asm_key,
+            max_source_len=config.max_source_len,
+            max_target_len=config.max_target_len,
+            normalize_ir_structs=config.normalize_ir_structs,
+            strip_ir_declares=config.strip_ir_declares,
+            streaming=config.streaming,
+        )
+        val_ds = ExeBenchDataset(tokenizer, data_cfg)
     pad_id = tokenizer.get_vocab()["<pad>"]
     val_loader = DataLoader(
         val_ds,
@@ -364,20 +380,36 @@ def train(config: TrainConfig):
         logger.info("Resumed at step %d (lr=%.2e)", global_step, scheduler.get_last_lr()[0])
 
     # ── Data ─────────────────────────────────────────────────────────
-    data_cfg = DataConfig(
-        hf_dataset=config.hf_dataset,
-        revision=config.hf_revision,
-        split=config.train_split,
-        pair=config.pair,
-        asm_key=config.asm_key,
-        max_source_len=config.max_source_len,
-        max_target_len=config.max_target_len,
-        normalize_ir_structs=config.normalize_ir_structs,
-        strip_ir_declares=config.strip_ir_declares,
-        streaming=config.streaming,
-    )
-
-    if config.obfuscate:
+    if config.deob_dataset:
+        # ── Tigress pre-generated dataset (flat schema) ──────────────
+        data_cfg = DataConfig(
+            hf_dataset=config.deob_dataset,
+            split=config.train_split,
+            pair=config.pair,
+            max_source_len=config.max_source_len,
+            max_target_len=config.max_target_len,
+            normalize_ir_structs=config.normalize_ir_structs,
+            strip_ir_declares=config.strip_ir_declares,
+            streaming=config.streaming,
+        )
+        train_ds = TigressObfuDataset(tokenizer, data_cfg)
+        logger.info(
+            "Tigress deob dataset: %s  split=%s  pair=%s",
+            config.deob_dataset, config.train_split, config.pair,
+        )
+    elif config.obfuscate:
+        data_cfg = DataConfig(
+            hf_dataset=config.hf_dataset,
+            revision=config.hf_revision,
+            split=config.train_split,
+            pair=config.pair,
+            asm_key=config.asm_key,
+            max_source_len=config.max_source_len,
+            max_target_len=config.max_target_len,
+            normalize_ir_structs=config.normalize_ir_structs,
+            strip_ir_declares=config.strip_ir_declares,
+            streaming=config.streaming,
+        )
         obfu_cfg = ObfuscationConfig(
             techniques=config.obfu_techniques,
             intensity_range=(config.obfu_intensity_min, config.obfu_intensity_max),
@@ -393,6 +425,18 @@ def train(config: TrainConfig):
             config.obfu_min_transforms, config.obfu_max_transforms,
         )
     else:
+        data_cfg = DataConfig(
+            hf_dataset=config.hf_dataset,
+            revision=config.hf_revision,
+            split=config.train_split,
+            pair=config.pair,
+            asm_key=config.asm_key,
+            max_source_len=config.max_source_len,
+            max_target_len=config.max_target_len,
+            normalize_ir_structs=config.normalize_ir_structs,
+            strip_ir_declares=config.strip_ir_declares,
+            streaming=config.streaming,
+        )
         train_ds = ExeBenchDataset(tokenizer, data_cfg)
 
     train_loader = DataLoader(

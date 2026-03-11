@@ -36,6 +36,7 @@ from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import IterableDataset
 
 from forklift.par_data import DP
+from forklift.utils import normalize_structs
 from neurel_deob.obfuscation.pipeline import ObfuscationConfig, ObfuscationPipeline
 
 logger = logging.getLogger(__name__)
@@ -361,6 +362,132 @@ class ObfuscatedExeBenchDataset(ExeBenchDataset):
             return None
 
         # Length filter (obfuscated source is longer than clean)
+        if len(tok_src) > self.config.max_source_len:
+            return None
+        if len(tok_tgt) > self.config.max_target_len:
+            return None
+
+        return {
+            "input_ids": torch.tensor(tok_src, dtype=torch.long),
+            "labels": torch.tensor(tok_tgt, dtype=torch.long),
+        }
+
+
+# ------------------------------------------------------------------
+# Tigress-obfuscated dataset (leachl/obfuscated-exebench)
+# ------------------------------------------------------------------
+
+
+class TigressObfuDataset(IterableDataset):
+    """
+    Streaming dataset for pre-generated Tigress-obfuscated samples.
+
+    Reads from ``leachl/obfuscated-exebench`` (flat schema) which has
+    columns like ``obfuscated_asm``, ``clean_ir``, ``technique``, etc.
+
+    Each yielded sample is a dict with:
+        ``input_ids``  – tokenized obfuscated ARM assembly (encoder)
+        ``labels``     – tokenized clean LLVM IR (decoder labels)
+
+    Uses ``dp.tokenize()`` directly with the raw text, matching the
+    tokenization format used by ``evaluate_obfu.py``.
+    """
+
+    def __init__(
+        self,
+        tokenizer: Tokenizer,
+        config: Optional[DataConfig] = None,
+        *,
+        split: Optional[str] = None,
+        pair: Optional[str] = None,
+    ):
+        super().__init__()
+        self.config = config or DataConfig()
+        if split is not None:
+            self.config.split = split
+        if pair is not None:
+            self.config.pair = pair
+
+        self.dp = DP(tokenizer=tokenizer)
+        self.tokenizer = tokenizer
+        self.pad_id = tokenizer.get_vocab()["<pad>"]
+
+        logger.info(
+            "TigressObfuDataset: dataset=%s  split=%s  pair=%s",
+            self.config.hf_dataset,
+            self.config.split,
+            self.config.pair,
+        )
+
+    def _load_hf_stream(self):
+        return load_dataset(
+            self.config.hf_dataset,
+            split=self.config.split,
+            streaming=self.config.streaming,
+        )
+
+    def __iter__(self) -> Iterator[dict]:
+        hf_stream = self._load_hf_stream()
+        skipped = 0
+        yielded = 0
+
+        for row in hf_stream:
+            result = self._process_row(row)
+            if result is None:
+                skipped += 1
+                if skipped % 5000 == 0:
+                    logger.debug(
+                        "Skipped %d rows so far (yielded %d)", skipped, yielded
+                    )
+                continue
+            yielded += 1
+            if yielded % 10000 == 0:
+                logger.info("Yielded %d samples (skipped %d)", yielded, skipped)
+            yield result
+
+        logger.info(
+            "Finished streaming %s: yielded=%d  skipped=%d",
+            self.config.split, yielded, skipped,
+        )
+
+    def _process_row(self, row: dict) -> Optional[dict]:
+        """
+        Convert a single obfuscated-exebench row into tokenized tensors.
+
+        Flat schema columns:
+            obfuscated_asm, clean_ir, technique, fname, ...
+        """
+        source_text = row.get("obfuscated_asm", "")
+        target_text = row.get("clean_ir", "")
+
+        if not source_text or not target_text:
+            return None
+
+        # ── Clean IR target (same preprocessing as training/eval) ────
+        if self.config.strip_ir_declares:
+            target_text = strip_ir_noise(target_text)
+            if not target_text.strip():
+                return None
+
+        if self.config.normalize_ir_structs:
+            target_text = normalize_structs(target_text)
+
+        # ── Tokenize using dp.tokenize (raw text → token IDs) ───────
+        try:
+            tok_src, tok_tgt = self.dp.tokenize(
+                source=source_text,
+                target=target_text,
+                pair=self.config.pair,
+                ids=True,
+            )
+        except (ValueError, KeyError, IndexError) as exc:
+            logger.debug("Skipping row due to tokenize error: %s", exc)
+            return None
+
+        if tok_src is None or tok_tgt is None:
+            return None
+
+        # Length filter
         if len(tok_src) > self.config.max_source_len:
             return None
         if len(tok_tgt) > self.config.max_target_len:

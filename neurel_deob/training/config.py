@@ -86,6 +86,12 @@ class TrainConfig:
     obfu_min_transforms: int = 1         # Min transforms per sample
     obfu_max_transforms: int = 4         # Max transforms per sample
 
+    # ── Tigress deobfuscation dataset ────────────────────────────────
+    # When set, trains on a pre-generated Tigress-obfuscated dataset
+    # (flat schema: obfuscated_asm, clean_ir, technique) instead of
+    # ExeBench.  Overrides --obfuscate.
+    deob_dataset: Optional[str] = None   # e.g. "leachl/obfuscated-exebench"
+
     @property
     def effective_batch_size(self) -> int:
         return self.batch_size * self.gradient_accumulation_steps
