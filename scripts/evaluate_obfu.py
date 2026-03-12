@@ -45,6 +45,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from forklift.par_data import DP
 from forklift.utils import normalize_structs, truncate_ir_output
+from forklift.ir_checker import check_ir, CompilabilityStats
 from neurel_deob.training.data import strip_ir_noise
 
 logging.basicConfig(
@@ -328,6 +329,35 @@ def run_evaluation(args) -> dict:
             logger.info("  %-25s %s", k, v)
     logger.info("=" * 60)
 
+    # ── Compilability checks ──────────────────────────────────────────
+    if args.check_compilability:
+        logger.info(
+            "Running Level 2 checks on %d predictions...", len(all_preds),
+        )
+        comp_stats = CompilabilityStats()
+        # Per-technique compilability
+        from collections import defaultdict as _ddict
+        tech_comp_stats: dict[str, CompilabilityStats] = _ddict(CompilabilityStats)
+        for idx, (pred, fname, tech) in enumerate(
+            zip(all_preds, all_fnames, all_techniques)
+        ):
+            cr = check_ir(pred, level=2)
+            comp_stats.update(cr, fname=fname)
+            tech_comp_stats[tech].update(cr, fname=fname)
+            if (idx + 1) % 50 == 0:
+                logger.info(
+                    "  Checked %d / %d  (syntax=%d  compile=%d)",
+                    idx + 1, len(all_preds),
+                    comp_stats.syntax_valid, comp_stats.compiles,
+                )
+        comp_stats.log_summary()
+        results["compilability"] = comp_stats.to_dict()
+        # Per-technique compilability
+        per_tech_comp = {}
+        for t in sorted(tech_comp_stats.keys()):
+            per_tech_comp[t] = tech_comp_stats[t].to_dict()
+        results["compilability_per_technique"] = per_tech_comp
+
     # ── Save ──────────────────────────────────────────────────────────
     if args.output:
         output_path = Path(args.output)
@@ -402,6 +432,12 @@ def main():
     parser.add_argument("--output", default=None)
     parser.add_argument("--save-predictions", default=None)
     parser.add_argument("--device", default="auto")
+
+    # Compilability
+    parser.add_argument(
+        "--check-compilability", action="store_true", default=False,
+        help="Run Level 1 (llvm-as) and Level 2 (clang -c) checks on predictions",
+    )
 
     args = parser.parse_args()
     run_evaluation(args)

@@ -42,6 +42,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from forklift.par_data import DP
 from forklift.utils import normalize_structs, truncate_ir_output
+from forklift.ir_checker import check_ir, CompilabilityStats
 from neurel_deob.training.data import strip_ir_noise
 
 logging.basicConfig(
@@ -129,6 +130,8 @@ def _flush_batch(
     all_preds: list[str],
     all_refs: list[str],
     all_fnames: list[str],
+    all_metadata: list[dict],
+    batch_metadata: list[dict],
 ):
     """Generate predictions for an accumulated batch."""
     if not batch_srcs:
@@ -159,9 +162,11 @@ def _flush_batch(
         all_refs.append(ref_text)
         all_fnames.append(fname)
 
+    all_metadata.extend(batch_metadata)
+
 
 def _flush_buffer_sorted(
-    buffer: list[tuple[list[int], list[int], str]],
+    buffer: list[tuple[list[int], list[int], str, dict]],
     batch_size: int,
     model,
     dp: DP,
@@ -171,6 +176,7 @@ def _flush_buffer_sorted(
     all_preds: list[str],
     all_refs: list[str],
     all_fnames: list[str],
+    all_metadata: list[dict],
 ):
     """Sort buffer by source length, split into batches, and flush each.
 
@@ -187,10 +193,12 @@ def _flush_buffer_sorted(
         b_srcs = [c[0] for c in chunk]
         b_refs = [c[1] for c in chunk]
         b_names = [c[2] for c in chunk]
+        b_meta = [c[3] for c in chunk]
         _flush_batch(
             b_srcs, b_refs, b_names,
             model, dp, pad_id, device, args,
             all_preds, all_refs, all_fnames,
+            all_metadata, b_meta,
         )
 
 
@@ -231,6 +239,7 @@ def run_evaluation(args) -> dict:
     all_preds: list[str] = []
     all_refs: list[str] = []
     all_fnames: list[str] = []
+    all_metadata: list[dict] = []   # ExeBench row metadata for functional testing
     skipped = 0
     total_seen = 0
     start_time = time.time()
@@ -240,7 +249,7 @@ def run_evaluation(args) -> dict:
     # sort by source length and dispatch as length-bucketed batches.
     BUFFER_MULT = 4
     buffer_cap = batch_size * BUFFER_MULT
-    buffer: list[tuple[list[int], list[int], str]] = []   # (tok_src, tok_tgt, fname)
+    buffer: list[tuple[list[int], list[int], str, dict]] = []   # (tok_src, tok_tgt, fname, metadata)
 
     for row in test_stream:
         total_seen += 1
@@ -290,7 +299,16 @@ def run_evaluation(args) -> dict:
             continue
 
         # Accumulate into prefetch buffer
-        buffer.append((tok_src, tok_tgt, row.get("fname", "?")))
+        # Save ExeBench metadata needed for functional testing (Level 3)
+        meta = {}
+        if args.check_compilability or args.check_functional:
+            meta = {
+                "synth_deps": row.get("synth_deps", ""),
+                "func_head_types": row.get("func_head_types", ""),
+                "synth_exe_wrapper": row.get("synth_exe_wrapper", ""),
+                "synth_io_pairs": row.get("synth_io_pairs"),
+            }
+        buffer.append((tok_src, tok_tgt, row.get("fname", "?"), meta))
 
         # When buffer is full, sort by length and dispatch batches
         if len(buffer) >= buffer_cap:
@@ -298,6 +316,7 @@ def run_evaluation(args) -> dict:
                 buffer, batch_size,
                 model, dp, pad_id, device, args,
                 all_preds, all_refs, all_fnames,
+                all_metadata,
             )
             buffer = []
 
@@ -314,6 +333,7 @@ def run_evaluation(args) -> dict:
         buffer, batch_size,
         model, dp, pad_id, device, args,
         all_preds, all_refs, all_fnames,
+        all_metadata,
     )
 
     elapsed = time.time() - start_time
@@ -349,6 +369,37 @@ def run_evaluation(args) -> dict:
     for k, v in results.items():
         logger.info("  %-25s %s", k, v)
     logger.info("=" * 60)
+
+    # ── Compilability / functional checks ─────────────────────────────
+    if args.check_compilability or args.check_functional:
+        check_level = 3 if args.check_functional else 2
+        logger.info(
+            "Running Level %d checks on %d predictions...", check_level, len(all_preds),
+        )
+        comp_stats = CompilabilityStats()
+        for idx, (pred, fname, meta) in enumerate(
+            zip(all_preds, all_fnames, all_metadata)
+        ):
+            cr = check_ir(
+                pred,
+                level=check_level,
+                c_deps=meta.get("synth_deps"),
+                func_c_signature=(meta.get("func_head_types") or "").replace("extern", ""),
+                cpp_wrapper=meta.get("synth_exe_wrapper"),
+                io_pairs=meta.get("synth_io_pairs"),
+                max_io_tests=args.max_io_tests,
+            )
+            comp_stats.update(cr, fname=fname)
+            if (idx + 1) % 50 == 0:
+                logger.info(
+                    "  Checked %d / %d  (syntax=%d  compile=%d  link=%d  func=%d/%d)",
+                    idx + 1, len(all_preds),
+                    comp_stats.syntax_valid, comp_stats.compiles,
+                    comp_stats.links, comp_stats.functional_pass,
+                    comp_stats.functional_tested,
+                )
+        comp_stats.log_summary()
+        results["compilability"] = comp_stats.to_dict()
 
     # ── Save results ──────────────────────────────────────────────────
     if args.output:
@@ -449,6 +500,20 @@ def main():
     parser.add_argument(
         "--device", default="auto",
         help="Device: auto, cpu, cuda, cuda:0",
+    )
+
+    # Compilability / functional testing
+    parser.add_argument(
+        "--check-compilability", action="store_true", default=False,
+        help="Run Level 1 (llvm-as) and Level 2 (clang -c) checks on predictions",
+    )
+    parser.add_argument(
+        "--check-functional", action="store_true", default=False,
+        help="Run Level 3 functional tests using ExeBench IO pairs (implies --check-compilability)",
+    )
+    parser.add_argument(
+        "--max-io-tests", type=int, default=5,
+        help="Max IO test cases per sample for functional testing (default: 5)",
     )
 
     args = parser.parse_args()
