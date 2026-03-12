@@ -50,6 +50,7 @@ from torch.utils.data import DataLoader
 from transformers import BartForConditionalGeneration, get_scheduler
 
 from forklift.par_data import DP
+from forklift.ir_checker import validate_ir_syntax
 
 from .config import TrainConfig
 from .data import DataConfig, ExeBenchDataset, ObfuscatedExeBenchDataset, TigressObfuDataset, collate_fn
@@ -210,12 +211,24 @@ def evaluate(
     bleu = compute_bleu(all_preds, all_refs)
     ned = compute_ned(all_preds, all_refs)
 
+    # ── Compilability metric (syntax validity) ───────────────────────
+    # Quick check: what fraction of generated predictions parse as
+    # valid LLVM IR?  Uses auto_declare to inject missing `declare`
+    # stubs (same as strip_ir_noise strips them from targets).
+    syntax_ok = 0
+    for pred in all_preds:
+        ok, _ = validate_ir_syntax(pred, auto_declare=True)
+        if ok:
+            syntax_ok += 1
+    syntax_valid_pct = 100.0 * syntax_ok / max(len(all_preds), 1)
+
     model.train()
 
     return {
         "val_loss": avg_loss,
         "bleu": bleu,
         "ned": ned,
+        "syntax_valid_pct": syntax_valid_pct,
         "num_samples": n_samples,
     }
 
@@ -528,17 +541,19 @@ def train(config: TrainConfig):
                     logger.info("Running evaluation at step %d …", global_step)
                     metrics = evaluate(model, tokenizer, dp, config, device)
                     logger.info(
-                        "EVAL step=%d  val_loss=%.4f  BLEU=%.2f  NED=%.4f  (n=%d)",
+                        "EVAL step=%d  val_loss=%.4f  BLEU=%.2f  NED=%.4f  syntax_valid=%.1f%%  (n=%d)",
                         global_step,
                         metrics["val_loss"],
                         metrics["bleu"],
                         metrics["ned"],
+                        metrics["syntax_valid_pct"],
                         metrics["num_samples"],
                     )
                     if tb_writer:
                         tb_writer.add_scalar("eval/loss", metrics["val_loss"], global_step)
                         tb_writer.add_scalar("eval/bleu", metrics["bleu"], global_step)
                         tb_writer.add_scalar("eval/ned", metrics["ned"], global_step)
+                        tb_writer.add_scalar("eval/syntax_valid_pct", metrics["syntax_valid_pct"], global_step)
                     model.train()
 
                 # ── Save checkpoint ──────────────────────────────────
