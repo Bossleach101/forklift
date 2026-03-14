@@ -112,13 +112,20 @@ def generate_candidates(
     no_repeat_ngram_size: int,
 ) -> list[torch.Tensor]:
     """Generate N candidate outputs via diverse beam search."""
+    # Ensure num_beams is divisible by num_beam_groups for diverse beam search
+    num_beam_groups = min(num_candidates, 5)
+    # E.g. if num_candidates=3 and groups=3, then beams=3 doesn't work if we want some extra beams
+    # Make num_beams a strict multiple of num_beam_groups that is >= num_candidates
+    multiplier = (max(num_candidates, 5) + num_beam_groups - 1) // num_beam_groups
+    num_beams = multiplier * num_beam_groups
+    
     outputs = model.generate(
         input_ids=input_ids,
         attention_mask=attention_mask,
         max_new_tokens=max_new_tokens,
-        num_beams=max(num_candidates, 5),
+        num_beams=num_beams,
         num_return_sequences=num_candidates,
-        num_beam_groups=min(num_candidates, 5),
+        num_beam_groups=num_beam_groups,
         diversity_penalty=1.0,
         early_stopping=True,
         repetition_penalty=repetition_penalty,
