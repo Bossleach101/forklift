@@ -123,6 +123,8 @@ def generate_candidates(
         early_stopping=True,
         repetition_penalty=repetition_penalty,
         no_repeat_ngram_size=no_repeat_ngram_size,
+        trust_remote_code=True,
+        custom_generate='transformers-community/group-beam-search',
     )
     return list(outputs)
 
