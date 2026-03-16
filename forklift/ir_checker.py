@@ -88,7 +88,7 @@ def _tool_available(tool: str) -> bool:
             timeout=10,
         )
         return True
-    except (FileNotFoundError, subprocess.TimeoutExpired):
+    except (FileNotFoundError, subprocess.TimeoutExpired, PermissionError):
         return False
 
 
