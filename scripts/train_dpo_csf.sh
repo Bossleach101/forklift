@@ -51,16 +51,16 @@ DPO_DATASET="${DPO_DATASET:-dpo_pairs/}"
 python -m neurel_deob.training.dpo_finetune \
     --model_path "$MODEL_PATH" \
     --dpo_dataset "$DPO_DATASET" \
-    --max_steps 5000 \
+    --max_steps 900 \
     --batch_size 2 \
     --gradient_accumulation_steps 8 \
     --lr 5e-7 \
     --lr_scheduler cosine \
-    --warmup_steps 100 \
+    --warmup_steps 90 \
     --beta 0.1 \
     --fp16 \
-    --eval_steps 500 \
-    --save_steps 500 \
+    --eval_steps 150 \
+    --save_steps 150 \
     --eval_samples 200 \
     --checkpoint_dir "checkpoints/dpo" \
     --tensorboard_dir "runs/dpo" \
