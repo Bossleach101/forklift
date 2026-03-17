@@ -1,0 +1,115 @@
+09:01:33  INFO      Device: cuda
+09:01:33  INFO      Loading model: leachl/forklift-arm-ir-ir
+09:01:35  INFO      Model loaded (197059584 params)
+09:01:35  INFO      Pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+09:01:35  INFO      Loading split: train_synth_compilable
+Repo card metadata block was not found. Setting CardData to empty.
+09:01:36  WARNING   Repo card metadata block was not found. Setting CardData to empty.
+09:22:37  INFO      Generated 50 pairs (0.0/s) | skipped 26 | gt_fallback 0 | best_score dist: {0: 50, 1: 0, 2: 0}
+09:43:10  INFO      Generated 100 pairs (0.0/s) | skipped 53 | gt_fallback 0 | best_score dist: {0: 100, 1: 0, 2: 0}
+10:04:06  INFO      Generated 150 pairs (0.0/s) | skipped 92 | gt_fallback 0 | best_score dist: {0: 150, 1: 0, 2: 0}
+10:25:29  INFO      Generated 200 pairs (0.0/s) | skipped 122 | gt_fallback 0 | best_score dist: {0: 200, 1: 0, 2: 0}
+10:45:23  INFO      Generated 250 pairs (0.0/s) | skipped 147 | gt_fallback 0 | best_score dist: {0: 250, 1: 0, 2: 0}
+11:06:27  INFO      Generated 300 pairs (0.0/s) | skipped 163 | gt_fallback 0 | best_score dist: {0: 300, 1: 0, 2: 0}
+11:27:56  INFO      Generated 350 pairs (0.0/s) | skipped 193 | gt_fallback 0 | best_score dist: {0: 350, 1: 0, 2: 0}
+11:48:01  INFO      Generated 400 pairs (0.0/s) | skipped 217 | gt_fallback 0 | best_score dist: {0: 400, 1: 0, 2: 0}
+12:08:27  INFO      Generated 450 pairs (0.0/s) | skipped 241 | gt_fallback 0 | best_score dist: {0: 450, 1: 0, 2: 0}
+12:29:56  INFO      Generated 500 pairs (0.0/s) | skipped 273 | gt_fallback 0 | best_score dist: {0: 500, 1: 0, 2: 0}
+12:50:44  INFO      Generated 550 pairs (0.0/s) | skipped 301 | gt_fallback 0 | best_score dist: {0: 550, 1: 0, 2: 0}
+13:11:54  INFO      Generated 600 pairs (0.0/s) | skipped 336 | gt_fallback 0 | best_score dist: {0: 600, 1: 0, 2: 0}
+13:33:17  INFO      Generated 650 pairs (0.0/s) | skipped 370 | gt_fallback 0 | best_score dist: {0: 650, 1: 0, 2: 0}
+13:54:16  INFO      Generated 700 pairs (0.0/s) | skipped 405 | gt_fallback 0 | best_score dist: {0: 700, 1: 0, 2: 0}
+14:15:03  INFO      Generated 750 pairs (0.0/s) | skipped 422 | gt_fallback 0 | best_score dist: {0: 750, 1: 0, 2: 0}
+14:36:25  INFO      Generated 800 pairs (0.0/s) | skipped 460 | gt_fallback 0 | best_score dist: {0: 800, 1: 0, 2: 0}
+14:57:20  INFO      Generated 850 pairs (0.0/s) | skipped 498 | gt_fallback 0 | best_score dist: {0: 850, 1: 0, 2: 0}
+15:17:46  INFO      Generated 900 pairs (0.0/s) | skipped 519 | gt_fallback 0 | best_score dist: {0: 900, 1: 0, 2: 0}
+15:38:49  INFO      Generated 950 pairs (0.0/s) | skipped 551 | gt_fallback 0 | best_score dist: {0: 950, 1: 0, 2: 0}
+15:59:56  INFO      Generated 1000 pairs (0.0/s) | skipped 576 | gt_fallback 0 | best_score dist: {0: 1000, 1: 0, 2: 0}
+16:20:20  INFO      Generated 1050 pairs (0.0/s) | skipped 602 | gt_fallback 0 | best_score dist: {0: 1050, 1: 0, 2: 0}
+16:41:16  INFO      Generated 1100 pairs (0.0/s) | skipped 627 | gt_fallback 0 | best_score dist: {0: 1100, 1: 0, 2: 0}
+17:01:45  INFO      Generated 1150 pairs (0.0/s) | skipped 656 | gt_fallback 0 | best_score dist: {0: 1150, 1: 0, 2: 0}
+17:22:57  INFO      Generated 1200 pairs (0.0/s) | skipped 684 | gt_fallback 0 | best_score dist: {0: 1200, 1: 0, 2: 0}
+17:44:10  INFO      Generated 1250 pairs (0.0/s) | skipped 710 | gt_fallback 0 | best_score dist: {0: 1250, 1: 0, 2: 0}
+18:05:02  INFO      Generated 1300 pairs (0.0/s) | skipped 737 | gt_fallback 0 | best_score dist: {0: 1300, 1: 0, 2: 0}
+18:26:24  INFO      Generated 1350 pairs (0.0/s) | skipped 758 | gt_fallback 0 | best_score dist: {0: 1350, 1: 0, 2: 0}
+18:47:07  INFO      Generated 1400 pairs (0.0/s) | skipped 790 | gt_fallback 0 | best_score dist: {0: 1400, 1: 0, 2: 0}
+19:08:31  INFO      Generated 1450 pairs (0.0/s) | skipped 818 | gt_fallback 0 | best_score dist: {0: 1450, 1: 0, 2: 0}
+19:29:54  INFO      Generated 1500 pairs (0.0/s) | skipped 840 | gt_fallback 0 | best_score dist: {0: 1500, 1: 0, 2: 0}
+19:50:30  INFO      Generated 1550 pairs (0.0/s) | skipped 875 | gt_fallback 0 | best_score dist: {0: 1550, 1: 0, 2: 0}
+20:12:05  INFO      Generated 1600 pairs (0.0/s) | skipped 894 | gt_fallback 0 | best_score dist: {0: 1600, 1: 0, 2: 0}
+20:33:33  INFO      Generated 1650 pairs (0.0/s) | skipped 916 | gt_fallback 0 | best_score dist: {0: 1650, 1: 0, 2: 0}
+20:54:17  INFO      Generated 1700 pairs (0.0/s) | skipped 952 | gt_fallback 0 | best_score dist: {0: 1700, 1: 0, 2: 0}
+21:14:54  INFO      Generated 1750 pairs (0.0/s) | skipped 983 | gt_fallback 0 | best_score dist: {0: 1750, 1: 0, 2: 0}
+21:36:03  INFO      Generated 1800 pairs (0.0/s) | skipped 1008 | gt_fallback 0 | best_score dist: {0: 1800, 1: 0, 2: 0}
+21:56:16  INFO      Generated 1850 pairs (0.0/s) | skipped 1032 | gt_fallback 0 | best_score dist: {0: 1850, 1: 0, 2: 0}
+22:17:35  INFO      Generated 1900 pairs (0.0/s) | skipped 1067 | gt_fallback 0 | best_score dist: {0: 1900, 1: 0, 2: 0}
+22:39:10  INFO      Generated 1950 pairs (0.0/s) | skipped 1088 | gt_fallback 0 | best_score dist: {0: 1950, 1: 0, 2: 0}
+22:59:36  INFO      Generated 2000 pairs (0.0/s) | skipped 1124 | gt_fallback 0 | best_score dist: {0: 2000, 1: 0, 2: 0}
+23:20:54  INFO      Generated 2050 pairs (0.0/s) | skipped 1152 | gt_fallback 0 | best_score dist: {0: 2050, 1: 0, 2: 0}
+23:41:43  INFO      Generated 2100 pairs (0.0/s) | skipped 1176 | gt_fallback 0 | best_score dist: {0: 2100, 1: 0, 2: 0}
+00:02:54  INFO      Generated 2150 pairs (0.0/s) | skipped 1212 | gt_fallback 0 | best_score dist: {0: 2150, 1: 0, 2: 0}
+00:23:34  INFO      Generated 2200 pairs (0.0/s) | skipped 1231 | gt_fallback 0 | best_score dist: {0: 2200, 1: 0, 2: 0}
+00:44:10  INFO      Generated 2250 pairs (0.0/s) | skipped 1249 | gt_fallback 0 | best_score dist: {0: 2250, 1: 0, 2: 0}
+01:05:30  INFO      Generated 2300 pairs (0.0/s) | skipped 1281 | gt_fallback 0 | best_score dist: {0: 2300, 1: 0, 2: 0}
+01:26:49  INFO      Generated 2350 pairs (0.0/s) | skipped 1313 | gt_fallback 0 | best_score dist: {0: 2350, 1: 0, 2: 0}
+01:47:21  INFO      Generated 2400 pairs (0.0/s) | skipped 1334 | gt_fallback 0 | best_score dist: {0: 2400, 1: 0, 2: 0}
+02:07:52  INFO      Generated 2450 pairs (0.0/s) | skipped 1359 | gt_fallback 0 | best_score dist: {0: 2450, 1: 0, 2: 0}
+02:28:36  INFO      Generated 2500 pairs (0.0/s) | skipped 1378 | gt_fallback 0 | best_score dist: {0: 2500, 1: 0, 2: 0}
+02:49:24  INFO      Generated 2550 pairs (0.0/s) | skipped 1403 | gt_fallback 0 | best_score dist: {0: 2550, 1: 0, 2: 0}
+03:10:38  INFO      Generated 2600 pairs (0.0/s) | skipped 1427 | gt_fallback 0 | best_score dist: {0: 2600, 1: 0, 2: 0}
+03:32:04  INFO      Generated 2650 pairs (0.0/s) | skipped 1460 | gt_fallback 0 | best_score dist: {0: 2650, 1: 0, 2: 0}
+03:53:57  INFO      Generated 2700 pairs (0.0/s) | skipped 1505 | gt_fallback 0 | best_score dist: {0: 2700, 1: 0, 2: 0}
+04:15:47  INFO      Generated 2750 pairs (0.0/s) | skipped 1530 | gt_fallback 0 | best_score dist: {0: 2750, 1: 0, 2: 0}
+04:36:14  INFO      Generated 2800 pairs (0.0/s) | skipped 1554 | gt_fallback 0 | best_score dist: {0: 2800, 1: 0, 2: 0}
+04:56:36  INFO      Generated 2850 pairs (0.0/s) | skipped 1579 | gt_fallback 0 | best_score dist: {0: 2850, 1: 0, 2: 0}
+05:18:09  INFO      Generated 2900 pairs (0.0/s) | skipped 1618 | gt_fallback 0 | best_score dist: {0: 2900, 1: 0, 2: 0}
+05:38:48  INFO      Generated 2950 pairs (0.0/s) | skipped 1640 | gt_fallback 0 | best_score dist: {0: 2950, 1: 0, 2: 0}
+06:00:13  INFO      Generated 3000 pairs (0.0/s) | skipped 1675 | gt_fallback 0 | best_score dist: {0: 3000, 1: 0, 2: 0}
+06:21:31  INFO      Generated 3050 pairs (0.0/s) | skipped 1696 | gt_fallback 0 | best_score dist: {0: 3050, 1: 0, 2: 0}
+06:42:33  INFO      Generated 3100 pairs (0.0/s) | skipped 1710 | gt_fallback 0 | best_score dist: {0: 3100, 1: 0, 2: 0}
+07:03:34  INFO      Generated 3150 pairs (0.0/s) | skipped 1741 | gt_fallback 0 | best_score dist: {0: 3150, 1: 0, 2: 0}
+07:24:15  INFO      Generated 3200 pairs (0.0/s) | skipped 1756 | gt_fallback 0 | best_score dist: {0: 3200, 1: 0, 2: 0}
+07:45:05  INFO      Generated 3250 pairs (0.0/s) | skipped 1787 | gt_fallback 0 | best_score dist: {0: 3250, 1: 0, 2: 0}
+08:06:50  INFO      Generated 3300 pairs (0.0/s) | skipped 1808 | gt_fallback 0 | best_score dist: {0: 3300, 1: 0, 2: 0}
+08:28:38  INFO      Generated 3350 pairs (0.0/s) | skipped 1834 | gt_fallback 0 | best_score dist: {0: 3350, 1: 0, 2: 0}
+08:48:51  INFO      Generated 3400 pairs (0.0/s) | skipped 1855 | gt_fallback 0 | best_score dist: {0: 3400, 1: 0, 2: 0}
+09:09:06  INFO      Generated 3450 pairs (0.0/s) | skipped 1888 | gt_fallback 0 | best_score dist: {0: 3450, 1: 0, 2: 0}
+09:29:51  INFO      Generated 3500 pairs (0.0/s) | skipped 1912 | gt_fallback 0 | best_score dist: {0: 3500, 1: 0, 2: 0}
+09:50:55  INFO      Generated 3550 pairs (0.0/s) | skipped 1945 | gt_fallback 0 | best_score dist: {0: 3550, 1: 0, 2: 0}
+10:12:13  INFO      Generated 3600 pairs (0.0/s) | skipped 1970 | gt_fallback 0 | best_score dist: {0: 3600, 1: 0, 2: 0}
+10:32:49  INFO      Generated 3650 pairs (0.0/s) | skipped 1991 | gt_fallback 0 | best_score dist: {0: 3650, 1: 0, 2: 0}
+10:54:18  INFO      Generated 3700 pairs (0.0/s) | skipped 2012 | gt_fallback 0 | best_score dist: {0: 3700, 1: 0, 2: 0}
+11:15:51  INFO      Generated 3750 pairs (0.0/s) | skipped 2041 | gt_fallback 0 | best_score dist: {0: 3750, 1: 0, 2: 0}
+11:37:20  INFO      Generated 3800 pairs (0.0/s) | skipped 2063 | gt_fallback 0 | best_score dist: {0: 3800, 1: 0, 2: 0}
+11:57:59  INFO      Generated 3850 pairs (0.0/s) | skipped 2100 | gt_fallback 0 | best_score dist: {0: 3850, 1: 0, 2: 0}
+12:18:51  INFO      Generated 3900 pairs (0.0/s) | skipped 2129 | gt_fallback 0 | best_score dist: {0: 3900, 1: 0, 2: 0}
+12:39:58  INFO      Generated 3950 pairs (0.0/s) | skipped 2152 | gt_fallback 0 | best_score dist: {0: 3950, 1: 0, 2: 0}
+13:01:04  INFO      Generated 4000 pairs (0.0/s) | skipped 2180 | gt_fallback 0 | best_score dist: {0: 4000, 1: 0, 2: 0}
+13:22:51  INFO      Generated 4050 pairs (0.0/s) | skipped 2206 | gt_fallback 0 | best_score dist: {0: 4050, 1: 0, 2: 0}
+13:43:26  INFO      Generated 4100 pairs (0.0/s) | skipped 2231 | gt_fallback 0 | best_score dist: {0: 4100, 1: 0, 2: 0}
+14:04:42  INFO      Generated 4150 pairs (0.0/s) | skipped 2260 | gt_fallback 0 | best_score dist: {0: 4150, 1: 0, 2: 0}
+14:25:21  INFO      Generated 4200 pairs (0.0/s) | skipped 2284 | gt_fallback 0 | best_score dist: {0: 4200, 1: 0, 2: 0}
+14:46:17  INFO      Generated 4250 pairs (0.0/s) | skipped 2312 | gt_fallback 0 | best_score dist: {0: 4250, 1: 0, 2: 0}
+15:07:02  INFO      Generated 4300 pairs (0.0/s) | skipped 2339 | gt_fallback 0 | best_score dist: {0: 4300, 1: 0, 2: 0}
+15:27:26  INFO      Generated 4350 pairs (0.0/s) | skipped 2370 | gt_fallback 0 | best_score dist: {0: 4350, 1: 0, 2: 0}
+15:47:34  INFO      Generated 4400 pairs (0.0/s) | skipped 2399 | gt_fallback 0 | best_score dist: {0: 4400, 1: 0, 2: 0}
+16:09:11  INFO      Generated 4450 pairs (0.0/s) | skipped 2437 | gt_fallback 0 | best_score dist: {0: 4450, 1: 0, 2: 0}
+16:30:40  INFO      Generated 4500 pairs (0.0/s) | skipped 2473 | gt_fallback 0 | best_score dist: {0: 4500, 1: 0, 2: 0}
+16:51:28  INFO      Generated 4550 pairs (0.0/s) | skipped 2501 | gt_fallback 0 | best_score dist: {0: 4550, 1: 0, 2: 0}
+17:12:24  INFO      Generated 4600 pairs (0.0/s) | skipped 2524 | gt_fallback 0 | best_score dist: {0: 4600, 1: 0, 2: 0}
+17:33:29  INFO      Generated 4650 pairs (0.0/s) | skipped 2553 | gt_fallback 0 | best_score dist: {0: 4650, 1: 0, 2: 0}
+17:55:00  INFO      Generated 4700 pairs (0.0/s) | skipped 2574 | gt_fallback 0 | best_score dist: {0: 4700, 1: 0, 2: 0}
+18:15:17  INFO      Generated 4750 pairs (0.0/s) | skipped 2598 | gt_fallback 0 | best_score dist: {0: 4750, 1: 0, 2: 0}
+18:36:29  INFO      Generated 4800 pairs (0.0/s) | skipped 2634 | gt_fallback 0 | best_score dist: {0: 4800, 1: 0, 2: 0}
+18:57:28  INFO      Generated 4850 pairs (0.0/s) | skipped 2658 | gt_fallback 0 | best_score dist: {0: 4850, 1: 0, 2: 0}
+19:18:16  INFO      Generated 4900 pairs (0.0/s) | skipped 2695 | gt_fallback 0 | best_score dist: {0: 4900, 1: 0, 2: 0}
+19:40:17  INFO      Generated 4950 pairs (0.0/s) | skipped 2725 | gt_fallback 0 | best_score dist: {0: 4950, 1: 0, 2: 0}
+20:01:19  INFO      Generated 5000 pairs (0.0/s) | skipped 2747 | gt_fallback 0 | best_score dist: {0: 5000, 1: 0, 2: 0}
+20:01:19  INFO      ============================================================
+20:01:19  INFO      DONE: 5000 preference pairs in 125982.8s
+20:01:19  INFO        skipped: 2747   gt_fallback: 0
+20:01:19  INFO        best_score distribution: {0: 5000, 1: 0, 2: 0}
+20:01:19  INFO      ============================================================
+Saving the dataset (0/1 shards):   0%|          | 0/5000 [00:00<?, ? examples/s]Saving the dataset (0/1 shards):  20%|██        | 1000/5000 [00:01<00:07, 568.11 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 5000/5000 [00:01<00:00, 568.11 examples/s]Saving the dataset (1/1 shards): 100%|██████████| 5000/5000 [00:01<00:00, 2775.38 examples/s]
+20:01:30  INFO      Saved dataset to: dpo_pairs
+20:01:30  INFO      Saved 10 sample pairs to: dpo_pairs/samples.json

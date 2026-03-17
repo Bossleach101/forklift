@@ -1,0 +1,266 @@
+2026-03-16 09:26:57 [INFO] __main__: Device: cuda
+2026-03-16 09:26:58 [INFO] __main__: Loading policy model from leachl/forklift-arm-ir-ir
+2026-03-16 09:27:02 [INFO] __main__: Loading reference model from leachl/forklift-arm-ir-ir
+2026-03-16 09:27:02 [INFO] __main__: Policy parameters: 197059584 (197.1M trainable)
+2026-03-16 09:27:02 [INFO] __main__: DPODataset: loaded 5000 samples from dpo_pairs/
+2026-03-16 09:27:03 [INFO] __main__: TensorBoard logging to runs/dpo
+2026-03-16 09:27:03 [INFO] __main__: Starting DPO training: max_steps=5000  eff_batch=16  lr=5.00e-07  β=0.10
+2026-03-16 09:27:03 [INFO] __main__: Starting epoch 1 at step 0
+2026-03-16 09:27:23 [INFO] __main__: step=25  loss=2.1649  margin=0.0190  rew_c=0.019  rew_r=0.000  lr=1.25e-07  s/s=1.26
+2026-03-16 09:27:36 [INFO] __main__: step=50  loss=2.1577  margin=0.1343  rew_c=0.119  rew_r=-0.015  lr=2.50e-07  s/s=1.52
+2026-03-16 09:27:49 [INFO] __main__: step=75  loss=2.1412  margin=0.3998  rew_c=0.292  rew_r=-0.108  lr=3.75e-07  s/s=1.63
+2026-03-16 09:28:02 [INFO] __main__: step=100  loss=2.1156  margin=0.8161  rew_c=0.414  rew_r=-0.402  lr=5.00e-07  s/s=1.70
+2026-03-16 09:28:15 [INFO] __main__: step=125  loss=2.0702  margin=1.5636  rew_c=0.442  rew_r=-1.121  lr=5.00e-07  s/s=1.74
+2026-03-16 09:28:28 [INFO] __main__: step=150  loss=2.0186  margin=2.4326  rew_c=0.151  rew_r=-2.282  lr=5.00e-07  s/s=1.77
+2026-03-16 09:28:41 [INFO] __main__: step=175  loss=1.9556  margin=3.5185  rew_c=-0.100  rew_r=-3.618  lr=5.00e-07  s/s=1.79
+2026-03-16 09:28:54 [INFO] __main__: step=200  loss=1.8918  margin=4.6583  rew_c=-0.404  rew_r=-5.062  lr=4.99e-07  s/s=1.81
+2026-03-16 09:29:07 [INFO] __main__: step=225  loss=1.8402  margin=5.5974  rew_c=-0.305  rew_r=-5.902  lr=4.99e-07  s/s=1.82
+2026-03-16 09:29:19 [INFO] __main__: step=250  loss=1.7526  margin=7.2447  rew_c=-0.566  rew_r=-7.810  lr=4.99e-07  s/s=1.84
+2026-03-16 09:29:25 [INFO] __main__: Starting epoch 2 at step 261
+2026-03-16 09:29:32 [INFO] __main__: step=275  loss=1.6737  margin=8.8092  rew_c=-0.853  rew_r=-9.662  lr=4.98e-07  s/s=1.85
+2026-03-16 09:29:45 [INFO] __main__: step=300  loss=1.5473  margin=11.5140  rew_c=-1.316  rew_r=-12.830  lr=4.98e-07  s/s=1.85
+2026-03-16 09:29:58 [INFO] __main__: step=325  loss=1.1543  margin=22.0963  rew_c=-6.848  rew_r=-28.945  lr=4.97e-07  s/s=1.86
+2026-03-16 09:30:11 [INFO] __main__: step=350  loss=0.7550  margin=37.6151  rew_c=-10.052  rew_r=-47.667  lr=4.97e-07  s/s=1.86
+2026-03-16 09:30:24 [INFO] __main__: step=375  loss=0.5214  margin=48.8576  rew_c=-10.445  rew_r=-59.303  lr=4.96e-07  s/s=1.87
+2026-03-16 09:30:37 [INFO] __main__: step=400  loss=0.4452  margin=54.0932  rew_c=-11.977  rew_r=-66.070  lr=4.95e-07  s/s=1.87
+2026-03-16 09:30:50 [INFO] __main__: step=425  loss=0.4569  margin=57.0171  rew_c=-11.850  rew_r=-68.867  lr=4.95e-07  s/s=1.88
+2026-03-16 09:31:03 [INFO] __main__: step=450  loss=0.3342  margin=63.5224  rew_c=-11.223  rew_r=-74.745  lr=4.94e-07  s/s=1.88
+2026-03-16 09:31:16 [INFO] __main__: step=475  loss=0.3358  margin=64.8286  rew_c=-12.354  rew_r=-77.183  lr=4.93e-07  s/s=1.88
+2026-03-16 09:31:28 [INFO] __main__: step=500  loss=0.3380  margin=65.7723  rew_c=-12.498  rew_r=-78.270  lr=4.92e-07  s/s=1.89
+2026-03-16 09:31:28 [INFO] __main__: Running evaluation at step 500 …
+2026-03-16 09:41:26 [INFO] __main__: EVAL step=500  reward_acc=99.0%  syntax_valid=0.0%
+2026-03-16 09:41:28 [INFO] __main__: Saved checkpoint at step 500 → checkpoints/dpo/step_500
+2026-03-16 09:41:38 [INFO] __main__: Starting epoch 3 at step 518
+2026-03-16 09:41:41 [INFO] __main__: step=525  loss=0.2904  margin=69.1108  rew_c=-13.464  rew_r=-82.575  lr=4.91e-07  s/s=0.60
+2026-03-16 09:41:54 [INFO] __main__: step=550  loss=0.2629  margin=72.2938  rew_c=-12.416  rew_r=-84.710  lr=4.90e-07  s/s=0.62
+2026-03-16 09:42:07 [INFO] __main__: step=575  loss=0.2473  margin=73.1964  rew_c=-12.587  rew_r=-85.783  lr=4.88e-07  s/s=0.64
+2026-03-16 09:42:20 [INFO] __main__: step=600  loss=0.2513  margin=74.7519  rew_c=-11.936  rew_r=-86.688  lr=4.87e-07  s/s=0.65
+2026-03-16 09:42:33 [INFO] __main__: step=625  loss=0.2121  margin=77.5325  rew_c=-12.090  rew_r=-89.623  lr=4.86e-07  s/s=0.67
+2026-03-16 09:42:46 [INFO] __main__: step=650  loss=0.2439  margin=77.3675  rew_c=-11.783  rew_r=-89.150  lr=4.85e-07  s/s=0.69
+2026-03-16 09:42:58 [INFO] __main__: step=675  loss=0.2412  margin=76.9467  rew_c=-11.500  rew_r=-88.446  lr=4.83e-07  s/s=0.71
+2026-03-16 09:43:11 [INFO] __main__: step=700  loss=0.1954  margin=78.9402  rew_c=-12.714  rew_r=-91.654  lr=4.82e-07  s/s=0.72
+2026-03-16 09:43:24 [INFO] __main__: step=725  loss=0.2247  margin=79.8739  rew_c=-11.430  rew_r=-91.303  lr=4.80e-07  s/s=0.74
+2026-03-16 09:43:37 [INFO] __main__: step=750  loss=0.2426  margin=79.1936  rew_c=-12.619  rew_r=-91.813  lr=4.79e-07  s/s=0.75
+2026-03-16 09:43:49 [INFO] __main__: Starting epoch 4 at step 772
+2026-03-16 09:43:50 [INFO] __main__: step=775  loss=0.1813  margin=82.6711  rew_c=-11.212  rew_r=-93.883  lr=4.77e-07  s/s=0.77
+2026-03-16 09:44:03 [INFO] __main__: step=800  loss=0.1864  margin=82.4062  rew_c=-11.243  rew_r=-93.650  lr=4.75e-07  s/s=0.78
+2026-03-16 09:44:16 [INFO] __main__: step=825  loss=0.1690  margin=84.2823  rew_c=-11.501  rew_r=-95.784  lr=4.73e-07  s/s=0.80
+2026-03-16 09:44:29 [INFO] __main__: step=850  loss=0.1919  margin=82.8322  rew_c=-11.829  rew_r=-94.661  lr=4.72e-07  s/s=0.81
+2026-03-16 09:44:42 [INFO] __main__: step=875  loss=0.1925  margin=84.8231  rew_c=-11.606  rew_r=-96.429  lr=4.70e-07  s/s=0.83
+2026-03-16 09:44:55 [INFO] __main__: step=900  loss=0.1965  margin=83.7076  rew_c=-13.135  rew_r=-96.843  lr=4.68e-07  s/s=0.84
+2026-03-16 09:45:08 [INFO] __main__: step=925  loss=0.1668  margin=86.0005  rew_c=-11.579  rew_r=-97.579  lr=4.66e-07  s/s=0.85
+2026-03-16 09:45:20 [INFO] __main__: step=950  loss=0.1787  margin=86.7236  rew_c=-9.447  rew_r=-96.171  lr=4.64e-07  s/s=0.87
+2026-03-16 09:45:33 [INFO] __main__: step=975  loss=0.1816  margin=85.2116  rew_c=-11.043  rew_r=-96.255  lr=4.62e-07  s/s=0.88
+2026-03-16 09:45:46 [INFO] __main__: step=1000  loss=0.1666  margin=87.1751  rew_c=-11.703  rew_r=-98.878  lr=4.60e-07  s/s=0.89
+2026-03-16 09:45:46 [INFO] __main__: Running evaluation at step 1000 …
+2026-03-16 09:55:37 [INFO] __main__: EVAL step=1000  reward_acc=99.5%  syntax_valid=0.0%
+2026-03-16 09:55:39 [INFO] __main__: Saved checkpoint at step 1000 → checkpoints/dpo/step_1000
+2026-03-16 09:55:52 [INFO] __main__: step=1025  loss=0.1780  margin=87.6100  rew_c=-9.918  rew_r=-97.528  lr=4.57e-07  s/s=0.59
+2026-03-16 09:55:55 [INFO] __main__: Starting epoch 5 at step 1030
+2026-03-16 09:56:05 [INFO] __main__: step=1050  loss=0.1336  margin=90.7406  rew_c=-10.709  rew_r=-101.450  lr=4.55e-07  s/s=0.60
+2026-03-16 09:56:18 [INFO] __main__: step=1075  loss=0.1633  margin=88.5442  rew_c=-10.207  rew_r=-98.751  lr=4.53e-07  s/s=0.61
+2026-03-16 09:56:31 [INFO] __main__: step=1100  loss=0.1200  margin=92.3299  rew_c=-10.223  rew_r=-102.553  lr=4.50e-07  s/s=0.62
+2026-03-16 09:56:44 [INFO] __main__: step=1125  loss=0.1500  margin=91.1107  rew_c=-11.236  rew_r=-102.346  lr=4.48e-07  s/s=0.63
+2026-03-16 09:56:57 [INFO] __main__: step=1150  loss=0.1575  margin=89.8351  rew_c=-10.394  rew_r=-100.229  lr=4.45e-07  s/s=0.64
+2026-03-16 09:57:10 [INFO] __main__: step=1175  loss=0.1515  margin=90.3659  rew_c=-10.285  rew_r=-100.651  lr=4.43e-07  s/s=0.65
+2026-03-16 09:57:22 [INFO] __main__: step=1200  loss=0.1350  margin=90.8505  rew_c=-9.628  rew_r=-100.478  lr=4.40e-07  s/s=0.66
+2026-03-16 09:57:35 [INFO] __main__: step=1225  loss=0.1458  margin=91.0124  rew_c=-9.235  rew_r=-100.247  lr=4.38e-07  s/s=0.67
+2026-03-16 09:57:48 [INFO] __main__: step=1250  loss=0.1616  margin=89.7683  rew_c=-10.177  rew_r=-99.945  lr=4.35e-07  s/s=0.68
+2026-03-16 09:58:01 [INFO] __main__: step=1275  loss=0.1275  margin=92.8911  rew_c=-9.909  rew_r=-102.800  lr=4.32e-07  s/s=0.69
+2026-03-16 09:58:08 [INFO] __main__: Starting epoch 6 at step 1289
+2026-03-16 09:58:14 [INFO] __main__: step=1300  loss=0.1338  margin=92.7992  rew_c=-11.106  rew_r=-103.905  lr=4.30e-07  s/s=0.69
+2026-03-16 09:58:27 [INFO] __main__: step=1325  loss=0.1292  margin=93.0710  rew_c=-9.128  rew_r=-102.199  lr=4.27e-07  s/s=0.70
+2026-03-16 09:58:39 [INFO] __main__: step=1350  loss=0.1443  margin=92.8098  rew_c=-10.035  rew_r=-102.845  lr=4.24e-07  s/s=0.71
+2026-03-16 09:58:52 [INFO] __main__: step=1375  loss=0.0995  margin=97.5787  rew_c=-7.455  rew_r=-105.033  lr=4.21e-07  s/s=0.72
+2026-03-16 09:59:05 [INFO] __main__: step=1400  loss=0.1273  margin=94.4249  rew_c=-10.372  rew_r=-104.797  lr=4.18e-07  s/s=0.73
+2026-03-16 09:59:18 [INFO] __main__: step=1425  loss=0.1222  margin=95.0726  rew_c=-9.606  rew_r=-104.679  lr=4.15e-07  s/s=0.74
+2026-03-16 09:59:31 [INFO] __main__: step=1450  loss=0.1432  margin=93.7778  rew_c=-11.377  rew_r=-105.155  lr=4.12e-07  s/s=0.74
+2026-03-16 09:59:44 [INFO] __main__: step=1475  loss=0.1367  margin=93.4112  rew_c=-12.406  rew_r=-105.817  lr=4.09e-07  s/s=0.75
+2026-03-16 09:59:57 [INFO] __main__: step=1500  loss=0.1200  margin=95.6292  rew_c=-8.985  rew_r=-104.614  lr=4.06e-07  s/s=0.76
+2026-03-16 09:59:57 [INFO] __main__: Running evaluation at step 1500 …
+2026-03-16 10:09:44 [INFO] __main__: EVAL step=1500  reward_acc=99.5%  syntax_valid=0.0%
+2026-03-16 10:09:48 [INFO] __main__: Saved checkpoint at step 1500 → checkpoints/dpo/step_1500
+2026-03-16 10:10:01 [INFO] __main__: step=1525  loss=0.1098  margin=95.1681  rew_c=-9.998  rew_r=-105.166  lr=4.03e-07  s/s=0.59
+2026-03-16 10:10:13 [INFO] __main__: Starting epoch 7 at step 1549
+2026-03-16 10:10:13 [INFO] __main__: step=1550  loss=0.0985  margin=96.8648  rew_c=-10.843  rew_r=-107.708  lr=4.00e-07  s/s=0.60
+2026-03-16 10:10:26 [INFO] __main__: step=1575  loss=0.1100  margin=96.7800  rew_c=-8.957  rew_r=-105.736  lr=3.96e-07  s/s=0.61
+2026-03-16 10:10:39 [INFO] __main__: step=1600  loss=0.1229  margin=95.8782  rew_c=-11.237  rew_r=-107.115  lr=3.93e-07  s/s=0.61
+2026-03-16 10:10:52 [INFO] __main__: step=1625  loss=0.1395  margin=96.8837  rew_c=-8.154  rew_r=-105.038  lr=3.90e-07  s/s=0.62
+2026-03-16 10:11:05 [INFO] __main__: step=1650  loss=0.1069  margin=98.0327  rew_c=-9.698  rew_r=-107.730  lr=3.86e-07  s/s=0.62
+2026-03-16 10:11:18 [INFO] __main__: step=1675  loss=0.0921  margin=97.7666  rew_c=-10.677  rew_r=-108.443  lr=3.83e-07  s/s=0.63
+2026-03-16 10:11:30 [INFO] __main__: step=1700  loss=0.1013  margin=98.8562  rew_c=-8.992  rew_r=-107.849  lr=3.80e-07  s/s=0.64
+2026-03-16 10:11:43 [INFO] __main__: step=1725  loss=0.1064  margin=97.7950  rew_c=-10.944  rew_r=-108.739  lr=3.76e-07  s/s=0.64
+2026-03-16 10:11:56 [INFO] __main__: step=1750  loss=0.0979  margin=97.6170  rew_c=-11.893  rew_r=-109.510  lr=3.73e-07  s/s=0.65
+2026-03-16 10:12:09 [INFO] __main__: step=1775  loss=0.1141  margin=97.0023  rew_c=-9.886  rew_r=-106.888  lr=3.69e-07  s/s=0.66
+2026-03-16 10:12:21 [INFO] __main__: step=1800  loss=0.0956  margin=99.5199  rew_c=-8.937  rew_r=-108.457  lr=3.66e-07  s/s=0.66
+2026-03-16 10:12:27 [INFO] __main__: Starting epoch 8 at step 1809
+2026-03-16 10:12:34 [INFO] __main__: step=1825  loss=0.1011  margin=99.6952  rew_c=-8.684  rew_r=-108.380  lr=3.62e-07  s/s=0.67
+2026-03-16 10:12:47 [INFO] __main__: step=1850  loss=0.0946  margin=99.8443  rew_c=-8.992  rew_r=-108.836  lr=3.58e-07  s/s=0.67
+2026-03-16 10:13:00 [INFO] __main__: step=1875  loss=0.1006  margin=99.9828  rew_c=-9.911  rew_r=-109.894  lr=3.55e-07  s/s=0.68
+2026-03-16 10:13:13 [INFO] __main__: step=1900  loss=0.1171  margin=97.9169  rew_c=-11.440  rew_r=-109.357  lr=3.51e-07  s/s=0.69
+2026-03-16 10:13:26 [INFO] __main__: step=1925  loss=0.1175  margin=97.8703  rew_c=-8.695  rew_r=-106.565  lr=3.48e-07  s/s=0.69
+2026-03-16 10:13:39 [INFO] __main__: step=1950  loss=0.0829  margin=101.8968  rew_c=-8.063  rew_r=-109.960  lr=3.44e-07  s/s=0.70
+2026-03-16 10:13:52 [INFO] __main__: step=1975  loss=0.0887  margin=102.2756  rew_c=-9.607  rew_r=-111.883  lr=3.40e-07  s/s=0.70
+2026-03-16 10:14:04 [INFO] __main__: step=2000  loss=0.1143  margin=99.9923  rew_c=-10.362  rew_r=-110.354  lr=3.36e-07  s/s=0.71
+2026-03-16 10:14:04 [INFO] __main__: Running evaluation at step 2000 …
+2026-03-16 10:23:57 [INFO] __main__: EVAL step=2000  reward_acc=100.0%  syntax_valid=0.0%
+2026-03-16 10:23:58 [INFO] __main__: Saved checkpoint at step 2000 → checkpoints/dpo/step_2000
+2026-03-16 10:23:59 [INFO] __main__: Pruned old checkpoint: checkpoints/dpo/step_500
+2026-03-16 10:24:12 [INFO] __main__: step=2025  loss=0.1213  margin=99.0529  rew_c=-8.684  rew_r=-107.737  lr=3.33e-07  s/s=0.59
+2026-03-16 10:24:25 [INFO] __main__: step=2050  loss=0.0850  margin=101.4740  rew_c=-9.605  rew_r=-111.079  lr=3.29e-07  s/s=0.60
+2026-03-16 10:24:33 [INFO] __main__: Starting epoch 9 at step 2066
+2026-03-16 10:24:38 [INFO] __main__: step=2075  loss=0.0921  margin=99.3321  rew_c=-10.239  rew_r=-109.571  lr=3.25e-07  s/s=0.60
+2026-03-16 10:24:50 [INFO] __main__: step=2100  loss=0.0990  margin=100.4359  rew_c=-10.190  rew_r=-110.626  lr=3.21e-07  s/s=0.61
+2026-03-16 10:25:03 [INFO] __main__: step=2125  loss=0.0943  margin=101.1694  rew_c=-9.782  rew_r=-110.951  lr=3.17e-07  s/s=0.61
+2026-03-16 10:25:16 [INFO] __main__: step=2150  loss=0.0715  margin=103.2230  rew_c=-8.130  rew_r=-111.353  lr=3.13e-07  s/s=0.62
+2026-03-16 10:25:29 [INFO] __main__: step=2175  loss=0.1118  margin=100.6474  rew_c=-8.467  rew_r=-109.115  lr=3.10e-07  s/s=0.62
+2026-03-16 10:25:42 [INFO] __main__: step=2200  loss=0.0679  margin=104.2958  rew_c=-8.453  rew_r=-112.749  lr=3.06e-07  s/s=0.63
+2026-03-16 10:25:54 [INFO] __main__: step=2225  loss=0.1228  margin=100.2173  rew_c=-9.251  rew_r=-109.468  lr=3.02e-07  s/s=0.63
+2026-03-16 10:26:07 [INFO] __main__: step=2250  loss=0.0948  margin=102.7663  rew_c=-8.922  rew_r=-111.688  lr=2.98e-07  s/s=0.63
+2026-03-16 10:26:20 [INFO] __main__: step=2275  loss=0.0865  margin=103.5704  rew_c=-8.901  rew_r=-112.472  lr=2.94e-07  s/s=0.64
+2026-03-16 10:26:33 [INFO] __main__: step=2300  loss=0.0918  margin=102.3715  rew_c=-9.262  rew_r=-111.633  lr=2.90e-07  s/s=0.64
+2026-03-16 10:26:46 [INFO] __main__: step=2325  loss=0.0786  margin=103.3760  rew_c=-10.523  rew_r=-113.900  lr=2.86e-07  s/s=0.65
+2026-03-16 10:26:46 [INFO] __main__: Starting epoch 10 at step 2325
+2026-03-16 10:26:58 [INFO] __main__: step=2350  loss=0.0728  margin=104.0366  rew_c=-8.949  rew_r=-112.986  lr=2.82e-07  s/s=0.65
+2026-03-16 10:27:11 [INFO] __main__: step=2375  loss=0.0991  margin=102.2339  rew_c=-8.784  rew_r=-111.018  lr=2.78e-07  s/s=0.66
+2026-03-16 10:27:24 [INFO] __main__: step=2400  loss=0.1046  margin=101.4732  rew_c=-9.781  rew_r=-111.255  lr=2.74e-07  s/s=0.66
+2026-03-16 10:27:36 [INFO] __main__: step=2425  loss=0.0723  margin=105.6499  rew_c=-8.089  rew_r=-113.739  lr=2.70e-07  s/s=0.67
+2026-03-16 10:27:49 [INFO] __main__: step=2450  loss=0.0784  margin=104.7370  rew_c=-8.819  rew_r=-113.556  lr=2.66e-07  s/s=0.67
+2026-03-16 10:28:02 [INFO] __main__: step=2475  loss=0.0919  margin=103.0625  rew_c=-8.710  rew_r=-111.773  lr=2.62e-07  s/s=0.68
+2026-03-16 10:28:15 [INFO] __main__: step=2500  loss=0.1173  margin=100.9400  rew_c=-10.503  rew_r=-111.443  lr=2.58e-07  s/s=0.68
+2026-03-16 10:28:15 [INFO] __main__: Running evaluation at step 2500 …
+2026-03-16 10:38:23 [INFO] __main__: EVAL step=2500  reward_acc=99.5%  syntax_valid=0.0%
+2026-03-16 10:38:39 [INFO] __main__: Saved checkpoint at step 2500 → checkpoints/dpo/step_2500
+2026-03-16 10:38:40 [INFO] __main__: Pruned old checkpoint: checkpoints/dpo/step_1000
+2026-03-16 10:38:59 [INFO] __main__: step=2525  loss=0.0750  margin=104.7090  rew_c=-8.755  rew_r=-113.464  lr=2.54e-07  s/s=0.59
+2026-03-16 10:39:13 [INFO] __main__: step=2550  loss=0.0729  margin=105.8519  rew_c=-7.680  rew_r=-113.532  lr=2.50e-07  s/s=0.59
+2026-03-16 10:39:27 [INFO] __main__: step=2575  loss=0.0996  margin=102.6079  rew_c=-9.031  rew_r=-111.639  lr=2.46e-07  s/s=0.59
+2026-03-16 10:39:35 [INFO] __main__: Starting epoch 11 at step 2589
+2026-03-16 10:39:40 [INFO] __main__: step=2600  loss=0.0664  margin=103.8700  rew_c=-8.665  rew_r=-112.535  lr=2.42e-07  s/s=0.60
+2026-03-16 10:39:54 [INFO] __main__: step=2625  loss=0.0992  margin=103.0552  rew_c=-10.264  rew_r=-113.319  lr=2.38e-07  s/s=0.60
+2026-03-16 10:40:07 [INFO] __main__: step=2650  loss=0.0704  margin=105.3038  rew_c=-9.560  rew_r=-114.864  lr=2.34e-07  s/s=0.60
+2026-03-16 10:40:20 [INFO] __main__: step=2675  loss=0.0922  margin=104.7893  rew_c=-8.578  rew_r=-113.368  lr=2.30e-07  s/s=0.61
+2026-03-16 10:40:33 [INFO] __main__: step=2700  loss=0.0884  margin=105.2134  rew_c=-7.303  rew_r=-112.517  lr=2.26e-07  s/s=0.61
+2026-03-16 10:40:47 [INFO] __main__: step=2725  loss=0.0915  margin=104.6649  rew_c=-8.121  rew_r=-112.786  lr=2.22e-07  s/s=0.62
+2026-03-16 10:41:00 [INFO] __main__: step=2750  loss=0.0704  margin=104.4530  rew_c=-9.762  rew_r=-114.215  lr=2.18e-07  s/s=0.62
+2026-03-16 10:41:13 [INFO] __main__: step=2775  loss=0.0641  margin=106.6349  rew_c=-8.409  rew_r=-115.044  lr=2.14e-07  s/s=0.62
+2026-03-16 10:41:25 [INFO] __main__: step=2800  loss=0.0691  margin=106.5851  rew_c=-8.014  rew_r=-114.599  lr=2.10e-07  s/s=0.63
+2026-03-16 10:41:38 [INFO] __main__: step=2825  loss=0.0825  margin=105.5048  rew_c=-8.338  rew_r=-113.843  lr=2.06e-07  s/s=0.63
+2026-03-16 10:41:51 [INFO] __main__: Starting epoch 12 at step 2849
+2026-03-16 10:41:51 [INFO] __main__: step=2850  loss=0.0916  margin=104.8267  rew_c=-8.738  rew_r=-113.564  lr=2.02e-07  s/s=0.64
+2026-03-16 10:42:04 [INFO] __main__: step=2875  loss=0.0697  margin=106.4151  rew_c=-8.576  rew_r=-114.992  lr=1.98e-07  s/s=0.64
+2026-03-16 10:42:16 [INFO] __main__: step=2900  loss=0.0814  margin=105.4739  rew_c=-9.277  rew_r=-114.751  lr=1.94e-07  s/s=0.64
+2026-03-16 10:42:29 [INFO] __main__: step=2925  loss=0.0964  margin=104.8041  rew_c=-8.281  rew_r=-113.085  lr=1.90e-07  s/s=0.65
+2026-03-16 10:42:42 [INFO] __main__: step=2950  loss=0.0844  margin=106.7179  rew_c=-7.731  rew_r=-114.449  lr=1.87e-07  s/s=0.65
+2026-03-16 10:42:55 [INFO] __main__: step=2975  loss=0.0679  margin=106.0846  rew_c=-8.510  rew_r=-114.595  lr=1.83e-07  s/s=0.65
+2026-03-16 10:43:08 [INFO] __main__: step=3000  loss=0.0731  margin=107.9734  rew_c=-7.792  rew_r=-115.765  lr=1.79e-07  s/s=0.66
+2026-03-16 10:43:08 [INFO] __main__: Running evaluation at step 3000 …
+2026-03-16 10:53:18 [INFO] __main__: EVAL step=3000  reward_acc=100.0%  syntax_valid=0.0%
+2026-03-16 10:53:26 [INFO] __main__: Saved checkpoint at step 3000 → checkpoints/dpo/step_3000
+2026-03-16 10:53:26 [INFO] __main__: Pruned old checkpoint: checkpoints/dpo/step_1500
+2026-03-16 10:53:42 [INFO] __main__: step=3025  loss=0.0761  margin=106.8384  rew_c=-9.041  rew_r=-115.880  lr=1.75e-07  s/s=0.58
+2026-03-16 10:53:55 [INFO] __main__: step=3050  loss=0.0680  margin=106.5046  rew_c=-8.955  rew_r=-115.460  lr=1.71e-07  s/s=0.59
+2026-03-16 10:54:08 [INFO] __main__: step=3075  loss=0.0899  margin=103.9872  rew_c=-10.310  rew_r=-114.297  lr=1.67e-07  s/s=0.59
+2026-03-16 10:54:20 [INFO] __main__: step=3100  loss=0.0773  margin=105.5417  rew_c=-8.675  rew_r=-114.216  lr=1.64e-07  s/s=0.59
+2026-03-16 10:54:25 [INFO] __main__: Starting epoch 13 at step 3108
+2026-03-16 10:54:33 [INFO] __main__: step=3125  loss=0.0774  margin=106.7024  rew_c=-7.199  rew_r=-113.901  lr=1.60e-07  s/s=0.60
+2026-03-16 10:54:46 [INFO] __main__: step=3150  loss=0.0760  margin=106.3691  rew_c=-9.289  rew_r=-115.659  lr=1.56e-07  s/s=0.60
+2026-03-16 10:54:59 [INFO] __main__: step=3175  loss=0.0660  margin=107.9830  rew_c=-6.648  rew_r=-114.631  lr=1.52e-07  s/s=0.60
+2026-03-16 10:55:12 [INFO] __main__: step=3200  loss=0.0907  margin=104.8218  rew_c=-9.160  rew_r=-113.982  lr=1.49e-07  s/s=0.61
+2026-03-16 10:55:25 [INFO] __main__: step=3225  loss=0.0677  margin=107.7112  rew_c=-7.424  rew_r=-115.135  lr=1.45e-07  s/s=0.61
+2026-03-16 10:55:38 [INFO] __main__: step=3250  loss=0.0666  margin=108.3173  rew_c=-7.090  rew_r=-115.407  lr=1.42e-07  s/s=0.61
+2026-03-16 10:55:51 [INFO] __main__: step=3275  loss=0.0684  margin=106.6634  rew_c=-8.744  rew_r=-115.407  lr=1.38e-07  s/s=0.61
+2026-03-16 10:56:03 [INFO] __main__: step=3300  loss=0.0820  margin=107.2163  rew_c=-7.380  rew_r=-114.596  lr=1.34e-07  s/s=0.62
+2026-03-16 10:56:16 [INFO] __main__: step=3325  loss=0.0895  margin=105.9781  rew_c=-9.574  rew_r=-115.552  lr=1.31e-07  s/s=0.62
+2026-03-16 10:56:29 [INFO] __main__: step=3350  loss=0.0615  margin=107.9392  rew_c=-8.526  rew_r=-116.465  lr=1.27e-07  s/s=0.62
+2026-03-16 10:56:38 [INFO] __main__: Starting epoch 14 at step 3368
+2026-03-16 10:56:42 [INFO] __main__: step=3375  loss=0.0592  margin=109.5027  rew_c=-7.876  rew_r=-117.378  lr=1.24e-07  s/s=0.63
+2026-03-16 10:56:54 [INFO] __main__: step=3400  loss=0.0633  margin=108.3643  rew_c=-8.136  rew_r=-116.500  lr=1.20e-07  s/s=0.63
+2026-03-16 10:57:07 [INFO] __main__: step=3425  loss=0.0679  margin=108.6237  rew_c=-8.192  rew_r=-116.816  lr=1.17e-07  s/s=0.63
+2026-03-16 10:57:20 [INFO] __main__: step=3450  loss=0.0923  margin=106.6339  rew_c=-7.133  rew_r=-113.767  lr=1.14e-07  s/s=0.64
+2026-03-16 10:57:33 [INFO] __main__: step=3475  loss=0.0943  margin=104.4395  rew_c=-10.509  rew_r=-114.949  lr=1.10e-07  s/s=0.64
+2026-03-16 10:57:46 [INFO] __main__: step=3500  loss=0.0785  margin=106.6654  rew_c=-8.219  rew_r=-114.884  lr=1.07e-07  s/s=0.64
+2026-03-16 10:57:46 [INFO] __main__: Running evaluation at step 3500 …
+2026-03-16 11:07:44 [INFO] __main__: EVAL step=3500  reward_acc=100.0%  syntax_valid=0.0%
+2026-03-16 11:07:46 [INFO] __main__: Saved checkpoint at step 3500 → checkpoints/dpo/step_3500
+2026-03-16 11:07:46 [INFO] __main__: Pruned old checkpoint: checkpoints/dpo/step_2000
+2026-03-16 11:07:59 [INFO] __main__: step=3525  loss=0.0663  margin=107.8833  rew_c=-8.994  rew_r=-116.877  lr=1.04e-07  s/s=0.58
+2026-03-16 11:08:12 [INFO] __main__: step=3550  loss=0.0715  margin=105.8523  rew_c=-8.764  rew_r=-114.616  lr=1.00e-07  s/s=0.58
+2026-03-16 11:08:25 [INFO] __main__: step=3575  loss=0.0818  margin=107.7962  rew_c=-8.589  rew_r=-116.385  lr=9.73e-08  s/s=0.59
+2026-03-16 11:08:37 [INFO] __main__: step=3600  loss=0.0708  margin=108.3823  rew_c=-8.441  rew_r=-116.823  lr=9.41e-08  s/s=0.59
+2026-03-16 11:08:50 [INFO] __main__: step=3625  loss=0.0528  margin=109.6997  rew_c=-7.026  rew_r=-116.725  lr=9.10e-08  s/s=0.59
+2026-03-16 11:08:52 [INFO] __main__: Starting epoch 15 at step 3628
+2026-03-16 11:09:03 [INFO] __main__: step=3650  loss=0.0611  margin=108.2463  rew_c=-7.781  rew_r=-116.027  lr=8.79e-08  s/s=0.60
+2026-03-16 11:09:16 [INFO] __main__: step=3675  loss=0.0531  margin=109.4987  rew_c=-7.680  rew_r=-117.179  lr=8.49e-08  s/s=0.60
+2026-03-16 11:09:28 [INFO] __main__: step=3700  loss=0.0676  margin=108.1324  rew_c=-8.305  rew_r=-116.437  lr=8.19e-08  s/s=0.60
+2026-03-16 11:09:41 [INFO] __main__: step=3725  loss=0.0810  margin=106.4969  rew_c=-9.086  rew_r=-115.583  lr=7.90e-08  s/s=0.60
+2026-03-16 11:09:54 [INFO] __main__: step=3750  loss=0.0791  margin=106.5744  rew_c=-9.343  rew_r=-115.917  lr=7.61e-08  s/s=0.61
+2026-03-16 11:10:07 [INFO] __main__: step=3775  loss=0.0808  margin=107.9102  rew_c=-8.745  rew_r=-116.655  lr=7.32e-08  s/s=0.61
+2026-03-16 11:10:20 [INFO] __main__: step=3800  loss=0.0747  margin=108.0308  rew_c=-7.779  rew_r=-115.810  lr=7.04e-08  s/s=0.61
+2026-03-16 11:10:32 [INFO] __main__: step=3825  loss=0.0619  margin=108.7427  rew_c=-7.907  rew_r=-116.650  lr=6.76e-08  s/s=0.62
+2026-03-16 11:10:45 [INFO] __main__: step=3850  loss=0.0610  margin=108.9075  rew_c=-6.762  rew_r=-115.670  lr=6.49e-08  s/s=0.62
+2026-03-16 11:10:58 [INFO] __main__: step=3875  loss=0.0711  margin=107.7306  rew_c=-8.650  rew_r=-116.381  lr=6.23e-08  s/s=0.62
+2026-03-16 11:11:04 [INFO] __main__: Starting epoch 16 at step 3888
+2026-03-16 11:11:11 [INFO] __main__: step=3900  loss=0.0782  margin=107.1563  rew_c=-8.692  rew_r=-115.848  lr=5.96e-08  s/s=0.62
+2026-03-16 11:11:23 [INFO] __main__: step=3925  loss=0.0546  margin=110.7814  rew_c=-6.684  rew_r=-117.466  lr=5.71e-08  s/s=0.63
+2026-03-16 11:11:36 [INFO] __main__: step=3950  loss=0.0657  margin=108.6455  rew_c=-7.220  rew_r=-115.865  lr=5.45e-08  s/s=0.63
+2026-03-16 11:11:49 [INFO] __main__: step=3975  loss=0.0736  margin=108.6140  rew_c=-9.106  rew_r=-117.720  lr=5.21e-08  s/s=0.63
+2026-03-16 11:12:02 [INFO] __main__: step=4000  loss=0.0862  margin=106.3549  rew_c=-7.772  rew_r=-114.127  lr=4.96e-08  s/s=0.64
+2026-03-16 11:12:02 [INFO] __main__: Running evaluation at step 4000 …
+2026-03-16 11:22:20 [INFO] __main__: EVAL step=4000  reward_acc=100.0%  syntax_valid=0.0%
+2026-03-16 11:22:23 [INFO] __main__: Saved checkpoint at step 4000 → checkpoints/dpo/step_4000
+2026-03-16 11:22:23 [INFO] __main__: Pruned old checkpoint: checkpoints/dpo/step_2500
+2026-03-16 11:22:38 [INFO] __main__: step=4025  loss=0.0739  margin=108.0392  rew_c=-8.067  rew_r=-116.106  lr=4.73e-08  s/s=0.58
+2026-03-16 11:22:52 [INFO] __main__: step=4050  loss=0.0777  margin=107.7636  rew_c=-8.932  rew_r=-116.695  lr=4.50e-08  s/s=0.58
+2026-03-16 11:23:05 [INFO] __main__: step=4075  loss=0.0660  margin=108.0437  rew_c=-8.198  rew_r=-116.242  lr=4.27e-08  s/s=0.59
+2026-03-16 11:23:19 [INFO] __main__: step=4100  loss=0.0556  margin=109.2996  rew_c=-7.522  rew_r=-116.822  lr=4.05e-08  s/s=0.59
+2026-03-16 11:23:33 [INFO] __main__: step=4125  loss=0.0679  margin=108.8652  rew_c=-8.077  rew_r=-116.942  lr=3.83e-08  s/s=0.59
+2026-03-16 11:23:46 [INFO] __main__: Starting epoch 17 at step 4149
+2026-03-16 11:23:46 [INFO] __main__: step=4150  loss=0.0827  margin=107.4393  rew_c=-8.236  rew_r=-115.675  lr=3.62e-08  s/s=0.59
+2026-03-16 11:24:00 [INFO] __main__: step=4175  loss=0.0759  margin=108.2600  rew_c=-7.792  rew_r=-116.052  lr=3.42e-08  s/s=0.60
+2026-03-16 11:24:14 [INFO] __main__: step=4200  loss=0.0692  margin=108.3947  rew_c=-8.547  rew_r=-116.942  lr=3.22e-08  s/s=0.60
+2026-03-16 11:24:27 [INFO] __main__: step=4225  loss=0.0537  margin=110.6701  rew_c=-7.198  rew_r=-117.868  lr=3.02e-08  s/s=0.60
+2026-03-16 11:24:41 [INFO] __main__: step=4250  loss=0.0729  margin=107.2568  rew_c=-7.858  rew_r=-115.115  lr=2.84e-08  s/s=0.60
+2026-03-16 11:24:55 [INFO] __main__: step=4275  loss=0.0650  margin=109.1844  rew_c=-7.499  rew_r=-116.683  lr=2.65e-08  s/s=0.60
+2026-03-16 11:25:08 [INFO] __main__: step=4300  loss=0.0494  margin=110.4829  rew_c=-7.792  rew_r=-118.275  lr=2.48e-08  s/s=0.61
+2026-03-16 11:25:22 [INFO] __main__: step=4325  loss=0.0591  margin=108.5999  rew_c=-8.474  rew_r=-117.074  lr=2.30e-08  s/s=0.61
+2026-03-16 11:25:36 [INFO] __main__: step=4350  loss=0.0928  margin=106.9824  rew_c=-8.489  rew_r=-115.472  lr=2.14e-08  s/s=0.61
+2026-03-16 11:25:50 [INFO] __main__: step=4375  loss=0.0708  margin=108.6476  rew_c=-7.361  rew_r=-116.009  lr=1.98e-08  s/s=0.61
+2026-03-16 11:26:03 [INFO] __main__: step=4400  loss=0.0774  margin=107.5878  rew_c=-10.356  rew_r=-117.943  lr=1.83e-08  s/s=0.62
+2026-03-16 11:26:07 [INFO] __main__: Starting epoch 18 at step 4407
+2026-03-16 11:26:16 [INFO] __main__: step=4425  loss=0.0708  margin=108.8178  rew_c=-7.952  rew_r=-116.770  lr=1.68e-08  s/s=0.62
+2026-03-16 11:26:29 [INFO] __main__: step=4450  loss=0.0544  margin=109.1655  rew_c=-7.559  rew_r=-116.724  lr=1.54e-08  s/s=0.62
+2026-03-16 11:26:42 [INFO] __main__: step=4475  loss=0.0753  margin=106.7549  rew_c=-7.886  rew_r=-114.641  lr=1.40e-08  s/s=0.62
+2026-03-16 11:26:55 [INFO] __main__: step=4500  loss=0.0725  margin=109.1023  rew_c=-7.873  rew_r=-116.976  lr=1.27e-08  s/s=0.63
+2026-03-16 11:26:55 [INFO] __main__: Running evaluation at step 4500 …
+2026-03-16 11:37:13 [INFO] __main__: EVAL step=4500  reward_acc=100.0%  syntax_valid=0.0%
+2026-03-16 11:37:17 [INFO] __main__: Saved checkpoint at step 4500 → checkpoints/dpo/step_4500
+2026-03-16 11:37:17 [INFO] __main__: Pruned old checkpoint: checkpoints/dpo/step_3000
+2026-03-16 11:37:35 [INFO] __main__: step=4525  loss=0.0622  margin=109.1835  rew_c=-9.004  rew_r=-118.188  lr=1.15e-08  s/s=0.58
+2026-03-16 11:37:49 [INFO] __main__: step=4550  loss=0.0578  margin=109.6516  rew_c=-6.758  rew_r=-116.409  lr=1.03e-08  s/s=0.58
+2026-03-16 11:38:03 [INFO] __main__: step=4575  loss=0.0674  margin=108.9642  rew_c=-7.520  rew_r=-116.484  lr=9.22e-09  s/s=0.58
+2026-03-16 11:38:17 [INFO] __main__: step=4600  loss=0.0704  margin=107.6307  rew_c=-9.149  rew_r=-116.780  lr=8.18e-09  s/s=0.58
+2026-03-16 11:38:30 [INFO] __main__: step=4625  loss=0.0856  margin=107.9760  rew_c=-8.553  rew_r=-116.529  lr=7.19e-09  s/s=0.59
+2026-03-16 11:38:44 [INFO] __main__: step=4650  loss=0.0630  margin=109.1168  rew_c=-8.080  rew_r=-117.196  lr=6.27e-09  s/s=0.59
+2026-03-16 11:38:53 [INFO] __main__: Starting epoch 19 at step 4666
+2026-03-16 11:38:58 [INFO] __main__: step=4675  loss=0.0618  margin=109.6546  rew_c=-8.297  rew_r=-117.952  lr=5.41e-09  s/s=0.59
+2026-03-16 11:39:11 [INFO] __main__: step=4700  loss=0.0638  margin=108.6745  rew_c=-7.503  rew_r=-116.178  lr=4.61e-09  s/s=0.59
+2026-03-16 11:39:25 [INFO] __main__: step=4725  loss=0.0610  margin=110.5154  rew_c=-8.341  rew_r=-118.856  lr=3.88e-09  s/s=0.59
+2026-03-16 11:39:38 [INFO] __main__: step=4750  loss=0.0615  margin=109.5710  rew_c=-7.930  rew_r=-117.501  lr=3.20e-09  s/s=0.60
+2026-03-16 11:39:52 [INFO] __main__: step=4775  loss=0.0783  margin=107.8689  rew_c=-8.271  rew_r=-116.140  lr=2.60e-09  s/s=0.60
+2026-03-16 11:40:06 [INFO] __main__: step=4800  loss=0.0654  margin=108.1477  rew_c=-7.181  rew_r=-115.328  lr=2.05e-09  s/s=0.60
+2026-03-16 11:40:19 [INFO] __main__: step=4825  loss=0.0756  margin=108.1944  rew_c=-8.592  rew_r=-116.786  lr=1.57e-09  s/s=0.60
+2026-03-16 11:40:33 [INFO] __main__: step=4850  loss=0.0654  margin=109.4658  rew_c=-7.263  rew_r=-116.729  lr=1.16e-09  s/s=0.61
+2026-03-16 11:40:47 [INFO] __main__: step=4875  loss=0.0836  margin=106.5646  rew_c=-8.074  rew_r=-114.638  lr=8.02e-10  s/s=0.61
+2026-03-16 11:41:00 [INFO] __main__: step=4900  loss=0.0564  margin=110.6823  rew_c=-8.014  rew_r=-118.697  lr=5.14e-10  s/s=0.61
+2026-03-16 11:41:14 [INFO] __main__: step=4925  loss=0.0676  margin=107.5805  rew_c=-8.218  rew_r=-115.799  lr=2.89e-10  s/s=0.61
+2026-03-16 11:41:14 [INFO] __main__: Starting epoch 20 at step 4925
+2026-03-16 11:41:28 [INFO] __main__: step=4950  loss=0.0761  margin=107.3560  rew_c=-8.323  rew_r=-115.679  lr=1.28e-10  s/s=0.61
+2026-03-16 11:41:41 [INFO] __main__: step=4975  loss=0.0724  margin=107.8473  rew_c=-9.124  rew_r=-116.971  lr=3.21e-11  s/s=0.62
+2026-03-16 11:41:55 [INFO] __main__: step=5000  loss=0.0558  margin=110.3507  rew_c=-6.475  rew_r=-116.826  lr=0.00e+00  s/s=0.62
+2026-03-16 11:41:55 [INFO] __main__: Running evaluation at step 5000 …
+2026-03-16 11:52:59 [INFO] __main__: EVAL step=5000  reward_acc=100.0%  syntax_valid=0.0%
+2026-03-16 11:53:01 [INFO] __main__: Saved checkpoint at step 5000 → checkpoints/dpo/step_5000
+2026-03-16 11:53:01 [INFO] __main__: Pruned old checkpoint: checkpoints/dpo/step_3500
+2026-03-16 11:53:01 [INFO] __main__: DPO training complete at step 5000
+2026-03-16 11:53:07 [INFO] __main__: Saved checkpoint at step 5000 → checkpoints/dpo/step_5000
