@@ -21,7 +21,7 @@ where:
 Usage
 -----
     python -m neurel_deob.training.dpo_finetune \\
-        --model_path leachl/forklift-arm-ir-ir \\
+        --model_path leachl/forklift-arm-ir-ir_v2 \\
         --dpo_dataset dpo_pairs/ \\
         --max_steps 5000 \\
         --lr 5e-7 \\
@@ -66,7 +66,7 @@ class DPOConfig:
     """Configuration for DPO training of seq2seq models."""
 
     # ── Model ────────────────────────────────────────────────────────
-    model_path: str = "leachl/forklift-arm-ir-ir"
+    model_path: str = "leachl/forklift-arm-ir-ir_v2"
     pair: str = "arm_ir-ir"
 
     # ── DPO dataset ──────────────────────────────────────────────────
