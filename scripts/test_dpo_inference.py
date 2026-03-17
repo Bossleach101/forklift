@@ -4,7 +4,7 @@ import sys
 
 def main():
     base_model_name = "leachl/forklift-arm-ir-ir"
-    checkpoint_dir = "leachl/forklift-arm-ir-ir-dpo"
+    checkpoint_dir = "checkpoints/dpo/step_900"
     
     device = "cuda" if torch.cuda.is_available() else "cpu"
     

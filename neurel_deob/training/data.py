@@ -49,34 +49,46 @@ logger = logging.getLogger(__name__)
 def strip_ir_noise(ir_text: str) -> str:
     """Remove noise from LLVM IR targets that causes repetitive generation.
 
-    Strips:
-    * ``declare`` forward-declarations  – the model learns to repeat
-      these endlessly after the closing ``}``.
-    * ``attributes #N = { … }`` blocks – target-specific metadata that
-      adds no semantic value for lifting.
-    * ``!N = …`` metadata lines – debug/loop metadata.
+    Option 2: Aggressive Function Extraction.
+    Instead of carefully filtering out lines, this function targets the 
+    core mathematical/logic functions and strips away all ExeBench globals,
+    dummy strings (`@.str`), and struct definitions unless strictly necessary.
 
-    Keeps:
-    * ``%struct.*`` / ``%union.*`` type definitions (used in the body).
-    * ``@.str*`` / ``@.*`` global constant declarations (used by the body).
-    * The ``define … { … }`` function body itself.
+    1. We extract only `define ... { ... }` blocks.
+    2. We throw away ExeBench's internal dummy/wrapper functions if possible.
     """
     if not ir_text:
         return ir_text
 
     kept: list[str] = []
+    
+    # We want to extract ONLY the function bodies and their immediate types.
+    # ExeBench often defines globals like `@.str = external hidden unnamed_addr...`
+    # We will ignore those to prevent the model from memorizing them.
+    
+    in_function = False
     for line in ir_text.split("\n"):
         stripped = line.strip()
-        # Skip declare forward-declarations
-        if stripped.startswith("declare "):
+        
+        # Start of a function
+        if stripped.startswith("define "):
+            in_function = True
+            kept.append(line)
             continue
-        # Skip attribute groups
-        if stripped.startswith("attributes "):
+            
+        # End of a function
+        if in_function and stripped == "}":
+            kept.append(line)
+            in_function = False
             continue
-        # Skip LLVM metadata
-        if re.match(r"^!\d+\s*=", stripped):
-            continue
-        kept.append(line)
+            
+        # Ensure we are only grabbing code inside a function body OR vital type definitions
+        if in_function:
+            kept.append(line)
+        elif stripped.startswith("%struct.") or stripped.startswith("%union."):
+            # We keep struct/union types as they are required for syntax validation 
+            # if they are passed as arguments to the function.
+            kept.append(line)
 
     # Remove trailing blank lines
     while kept and not kept[-1].strip():
