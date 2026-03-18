@@ -40,12 +40,13 @@ export PYTHONPATH="${PROJECT_DIR}:${PYTHONPATH:-}"
 mkdir -p logs results
 
 # ── Default config ───────────────────────────────────────────
-MODEL="${MODEL:-leachl/forklift-arm-ir-ir}"
+MODEL="${MODEL:-checkpoints/arm_ir_ir_v3/step_16000}"
 PAIR="${PAIR:-arm_ir-ir}"
 SPLIT="${SPLIT:-test_synth}"
 ASM_KEY="${ASM_KEY:-angha}"
 
 BATCH_SIZE="${BATCH_SIZE:-8}"
+MAX_SAMPLES="${MAX_SAMPLES:-1000}"
 
 # ── Run evaluation ───────────────────────────────────────────
 echo "Evaluating model: $MODEL"
@@ -62,8 +63,10 @@ python scripts/evaluate_exebench.py \
     --no-repeat-ngram-size 6 \
     --max-new-tokens 2048 \
     --batch-size "$BATCH_SIZE" \
+    --max-samples "$MAX_SAMPLES" \
     --strip-ir \
     --normalize-structs \
+    --check-compilability \
     --output "results/eval_${SPLIT}_$(echo $MODEL | tr '/' '_').json" \
     --save-predictions "results/preds_${SPLIT}_$(echo $MODEL | tr '/' '_').jsonl" \
     --device auto \
