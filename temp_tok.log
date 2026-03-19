@@ -1,0 +1,39 @@
+from tokenizers import Tokenizer
+    def __init__(self, tokenizer=None):
+        self.tokenizer = tokenizer
+    def lang_special_token(self, lang, opt3_legacy=False):
+            token = 'intel'
+            token = 'intel'
+            token = 'intel'
+            token = 'c'
+            token = 'arm'
+            token = 'riscv'
+            token = 'ir'
+        start, end = _get_start_end(token)
+    def tokenize(self, source, target, pair, ids=True, no_tokenize=False, opt3_legacy=False):
+            raise RuntimeError('mono tokenization not supported')
+        start_lang_tok, end_lang_tok, modifiers = self.lang_special_token(lang_source, opt3_legacy=opt3_legacy)
+        start_lang_tok, end_lang_tok, modifiers = self.lang_special_token(self.get_lang_from_pair(pair, 'target'), opt3_legacy=opt3_legacy)
+            if no_tokenize:
+            one_sample_ref_norm = self.tokenizer.normalizer.normalize_str(one_sample_ref)
+            if no_tokenize:
+            one_sample_ref_norm = self.tokenizer.normalizer.normalize_str(one_sample_ref)
+        source_tokenized = self.tokenizer.encode(self.tokenizer.normalizer.normalize_str(one_sample))
+        target_tokenized = self.tokenizer.encode(one_sample_ref_norm)
+            source_tokenized = source_tokenized.ids
+            target_tokenized = target_tokenized.ids
+            source_tokenized = source_tokenized.tokens
+            target_tokenized = target_tokenized.tokens
+        return source_tokenized, target_tokenized
+        source, target, tokenized_source, tokenized_target = self.get_par_data(row, pair, asm_key=asm_key, fPIC=False,
+                                                                               tokenize_ids=True,
+            return tokenized_source
+        return tokenized_source, len(tokenized_target)
+    def detokenize(self, one_sample, remove_mask=True):
+        # We can't directly use decode(), need to remove some special tokens by hand (they can't be skipped as the others)
+        detok = self.tokenizer.decode(one_sample, skip_special_tokens=False)
+    def get_par_data(self, row, pair, asm_key='angha', fPIC=False, tokenize_ids=True, do_normalize_ir_structs=False):
+        tokenized_source, tokenized_target = None, None
+        if self.tokenizer:
+            tokenized_source, tokenized_target = self.tokenize(source, target, pair, ids=tokenize_ids)
+        return source, target, tokenized_source, tokenized_target

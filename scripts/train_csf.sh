@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=forklift-arm-v3
+#SBATCH --job-name=forklift-arm-v4
 #SBATCH -p gpuL
 #SBATCH -G 1
 #SBATCH --cpus-per-task=12
@@ -11,11 +11,12 @@
 # ──────────────────────────────────────────────────────────────
 # SLURM launcher for Forklift AArch64 → LLVM IR fine-tuning (v3)
 #
-# v3 changes vs v2:
-#   - Aggressively extracting ONLY function bodies and essential structs.
-#     (v2 left ExeBench boilerplate like dummy string globals @.str 
-#      and generated wrapper strings forcing mode collapse).
-#   - Continuing to use cosine scheduler and FP16.
+# v4 changes vs v3:
+#   - Fixed catastrophic train-test mismatch involving BART's `decoder_start_token_id`.
+#     During training, the custom collate_fn was injecting `bos_id = 0` via manual teacher forcing,
+#     but the generation loop expects `decoder_start_token_id = 2`. Model was suffering
+#     from profound hallucination due to starting seqs with a token it was never trained on.
+#     Now `decoder_input_ids` are handled natively by HuggingFace properly prepending `2`.
 #
 # Usage:
 #   sbatch scripts/train_csf.sh                    # default config
@@ -60,8 +61,8 @@ python -m neurel_deob.training.finetune \
     --save_steps 2000 \
     --max_source_len 1024 \
     --max_target_len 1024 \
-    --checkpoint_dir "checkpoints/arm_ir_ir_v3" \
-    --tensorboard_dir "runs/arm_ir_ir_v3" \
+    --checkpoint_dir "checkpoints/arm_ir_ir_v4" \
+    --tensorboard_dir "runs/arm_ir_ir_v4" \
     "$@"
 
 echo "Training finished at $(date)"

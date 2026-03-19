@@ -235,15 +235,19 @@ def dpo_collate_fn(
 
     prompt_mask = (prompt_padded != pad_id).long()
 
-    # BART decoder_input_ids = right-shift labels, prepend <s>
-    bos_id = 0
+    # For BART, the custom decoder start token is usually 2, not 0.
+    # To avoid mismatches with generation, we use prepare_decoder_input_ids_from_labels
+    # but since this runs outside a model forward we manually shift using decoder_start_token_id.
+    # Note: 2 corresponds to </s> which BART uses as decoder start.
+    decoder_start_id = 2 
+
     chosen_dec = chosen_padded.new_full(chosen_padded.shape, pad_id)
-    chosen_dec[:, 0] = bos_id
+    chosen_dec[:, 0] = decoder_start_id
     chosen_dec[:, 1:] = chosen_padded[:, :-1].clone()
     chosen_dec[chosen_dec == label_pad_id] = pad_id
 
     rejected_dec = rejected_padded.new_full(rejected_padded.shape, pad_id)
-    rejected_dec[:, 0] = bos_id
+    rejected_dec[:, 0] = decoder_start_id
     rejected_dec[:, 1:] = rejected_padded[:, :-1].clone()
     rejected_dec[rejected_dec == label_pad_id] = pad_id
 

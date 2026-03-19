@@ -533,18 +533,15 @@ def collate_fn(
 
     attention_mask = (input_ids_padded != pad_id).long()
 
-    # BART decoder_input_ids = shift labels right, prepend <s> (id=0 for BART),
-    # and use pad where label == -100
-    bos_id = 0  # BART convention
-    decoder_input_ids = labels_padded.new_full(labels_padded.shape, pad_id)
-    decoder_input_ids[:, 0] = bos_id
-    decoder_input_ids[:, 1:] = labels_padded[:, :-1].clone()
-    # Replace -100 with pad_id in decoder_input_ids (can't embed -100)
-    decoder_input_ids[decoder_input_ids == label_pad_id] = pad_id
+    # DO NOT manually construct decoder_input_ids!
+    # HF BartForConditionalGeneration does it much better internally using 
+    # model.prepare_decoder_input_ids_from_labels(labels), which properly 
+    # shifts and prepends decoder_start_token_id (2 for BART).
+    # Manually prepending 0 (bos_id) causes catastrophic train-test mismatch 
+    # as .generate() uses 2!
 
     return {
         "input_ids": input_ids_padded,
         "attention_mask": attention_mask,
-        "decoder_input_ids": decoder_input_ids,
         "labels": labels_padded,
     }

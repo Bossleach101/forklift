@@ -182,7 +182,6 @@ def evaluate(
         outputs = model(
             input_ids=batch["input_ids"],
             attention_mask=batch["attention_mask"],
-            decoder_input_ids=batch["decoder_input_ids"],
             labels=batch["labels"],
         )
         total_loss += outputs.loss.item() * batch["input_ids"].size(0)
@@ -493,7 +492,6 @@ def train(config: TrainConfig):
                 outputs = model(
                     input_ids=batch["input_ids"],
                     attention_mask=batch["attention_mask"],
-                    decoder_input_ids=batch["decoder_input_ids"],
                     labels=batch["labels"],
                 )
                 loss = outputs.loss / config.gradient_accumulation_steps
