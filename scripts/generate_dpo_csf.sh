@@ -49,8 +49,8 @@ python scripts/generate_dpo_pairs.py \
     --gt-as-chosen \
     --max-samples 5000 \
     --max-new-tokens 2048 \
-    --repetition-penalty 1.2 \
-    --no-repeat-ngram-size 6 \
+    --repetition-penalty 1.0 \
+    --no-repeat-ngram-size 0 \
     --output "dpo_pairs/" \
     "$@"
 

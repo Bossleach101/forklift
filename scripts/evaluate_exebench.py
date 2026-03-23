@@ -144,14 +144,20 @@ def _flush_batch(
     attention_mask = (input_ids != pad_id).long()
 
     with torch.no_grad():
+        gen_kwargs = {
+            "max_new_tokens": args.max_new_tokens,
+            "num_beams": args.beam,
+            "early_stopping": True,
+        }
+        if args.repetition_penalty != 1.0:
+            gen_kwargs["repetition_penalty"] = args.repetition_penalty
+        if args.no_repeat_ngram_size != 0:
+            gen_kwargs["no_repeat_ngram_size"] = args.no_repeat_ngram_size
+            
         generated = model.generate(
             input_ids,
             attention_mask=attention_mask,
-            max_new_tokens=args.max_new_tokens,
-            num_beams=args.beam,
-            early_stopping=True,
-            repetition_penalty=args.repetition_penalty,
-            no_repeat_ngram_size=args.no_repeat_ngram_size,
+            **gen_kwargs
         )
 
     for gen, ref_tok, fname in zip(generated, batch_refs_tok, batch_fnames):
@@ -468,8 +474,8 @@ def main():
     # Generation
     parser.add_argument("--beam", type=int, default=5)
     parser.add_argument("--max-new-tokens", type=int, default=2048)
-    parser.add_argument("--repetition-penalty", type=float, default=1.2)
-    parser.add_argument("--no-repeat-ngram-size", type=int, default=6)
+    parser.add_argument("--repetition-penalty", type=float, default=1.0)
+    parser.add_argument("--no-repeat-ngram-size", type=int, default=0)
     parser.add_argument(
         "--batch-size", type=int, default=8,
         help="Number of samples to generate in parallel (default: 8)",

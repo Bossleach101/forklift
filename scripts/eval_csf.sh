@@ -59,8 +59,8 @@ python scripts/evaluate_exebench.py \
     --split "$SPLIT" \
     --asm-key "$ASM_KEY" \
     --beam 3 \
-    --repetition-penalty 1.2 \
-    --no-repeat-ngram-size 6 \
+    --repetition-penalty 1.0 \
+    --no-repeat-ngram-size 0 \
     --max-new-tokens 2048 \
     --batch-size "$BATCH_SIZE" \
     --max-samples "$MAX_SAMPLES" \

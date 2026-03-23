@@ -119,19 +119,25 @@ def generate_candidates(
     multiplier = (max(num_candidates, 5) + num_beam_groups - 1) // num_beam_groups
     num_beams = multiplier * num_beam_groups
     
+    gen_kwargs = {
+        "max_new_tokens": max_new_tokens,
+        "num_beams": num_beams,
+        "num_return_sequences": num_candidates,
+        "num_beam_groups": num_beam_groups,
+        "diversity_penalty": 1.0,
+        "early_stopping": True,
+        "trust_remote_code": True,
+        "custom_generate": 'transformers-community/group-beam-search',
+    }
+    if repetition_penalty != 1.0:
+        gen_kwargs["repetition_penalty"] = repetition_penalty
+    if no_repeat_ngram_size != 0:
+        gen_kwargs["no_repeat_ngram_size"] = no_repeat_ngram_size
+
     outputs = model.generate(
         input_ids=input_ids,
         attention_mask=attention_mask,
-        max_new_tokens=max_new_tokens,
-        num_beams=num_beams,
-        num_return_sequences=num_candidates,
-        num_beam_groups=num_beam_groups,
-        diversity_penalty=1.0,
-        early_stopping=True,
-        repetition_penalty=repetition_penalty,
-        no_repeat_ngram_size=no_repeat_ngram_size,
-        trust_remote_code=True,
-        custom_generate='transformers-community/group-beam-search',
+        **gen_kwargs
     )
     return list(outputs)
 
@@ -379,8 +385,8 @@ def main():
     parser.add_argument("--num-candidates", type=int, default=5,
                         help="Number of candidate outputs per sample")
     parser.add_argument("--max-new-tokens", type=int, default=2048)
-    parser.add_argument("--repetition-penalty", type=float, default=1.2)
-    parser.add_argument("--no-repeat-ngram-size", type=int, default=6)
+    parser.add_argument("--repetition-penalty", type=float, default=1.0)
+    parser.add_argument("--no-repeat-ngram-size", type=int, default=0)
     parser.add_argument("--check-level", type=int, default=2,
                         help="Max check level (1=syntax, 2=compile)")
 

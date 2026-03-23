@@ -54,8 +54,8 @@ python scripts/evaluate_obfu.py \
     --pair "$PAIR" \
     --split "$SPLIT" \
     --beam 3 \
-    --repetition-penalty 1.2 \
-    --no-repeat-ngram-size 6 \
+    --repetition-penalty 1.0 \
+    --no-repeat-ngram-size 0 \
     --max-new-tokens 2048 \
     --batch-size "$BATCH_SIZE" \
     --strip-ir \
