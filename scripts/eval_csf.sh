@@ -40,7 +40,7 @@ export PYTHONPATH="${PROJECT_DIR}:${PYTHONPATH:-}"
 mkdir -p logs results
 
 # ── Default config ───────────────────────────────────────────
-MODEL="${MODEL:-checkpoints/arm_ir_ir_v3/step_16000}"
+MODEL="${MODEL:-checkpoints/arm_ir_ir_v4/step_50000}"
 PAIR="${PAIR:-arm_ir-ir}"
 SPLIT="${SPLIT:-test_synth}"
 ASM_KEY="${ASM_KEY:-angha}"

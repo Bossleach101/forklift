@@ -1,0 +1,89 @@
+10:08:03  INFO      Device: cuda
+10:08:03  INFO      Loading model: checkpoints/arm_ir_ir_v4/step_14000
+10:08:12  INFO      Model loaded (197059584 params)
+10:08:12  INFO      Pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+10:08:12  INFO      Loading split: test_synth
+Repo card metadata block was not found. Setting CardData to empty.
+10:08:14  WARNING   Repo card metadata block was not found. Setting CardData to empty.
+10:13:35  INFO      Evaluated 32 samples (0.10/s) | skipped 7 | seen 39 rows
+10:17:40  INFO      Evaluated 64 samples (0.11/s) | skipped 18 | seen 82 rows
+10:22:09  INFO      Evaluated 96 samples (0.12/s) | skipped 40 | seen 136 rows
+10:26:00  INFO      Evaluated 128 samples (0.12/s) | skipped 52 | seen 180 rows
+10:30:14  INFO      Evaluated 160 samples (0.12/s) | skipped 59 | seen 219 rows
+10:34:50  INFO      Evaluated 192 samples (0.12/s) | skipped 71 | seen 263 rows
+10:39:07  INFO      Evaluated 224 samples (0.12/s) | skipped 88 | seen 312 rows
+10:44:26  INFO      Evaluated 256 samples (0.12/s) | skipped 101 | seen 357 rows
+10:49:09  INFO      Evaluated 288 samples (0.12/s) | skipped 108 | seen 396 rows
+10:53:56  INFO      Evaluated 320 samples (0.12/s) | skipped 120 | seen 440 rows
+10:58:33  INFO      Evaluated 352 samples (0.12/s) | skipped 126 | seen 478 rows
+11:02:46  INFO      Evaluated 384 samples (0.12/s) | skipped 137 | seen 521 rows
+11:06:31  INFO      Evaluated 416 samples (0.12/s) | skipped 146 | seen 562 rows
+11:12:01  INFO      Evaluated 448 samples (0.12/s) | skipped 160 | seen 608 rows
+11:16:13  INFO      Evaluated 480 samples (0.12/s) | skipped 167 | seen 647 rows
+11:20:58  INFO      Evaluated 512 samples (0.12/s) | skipped 178 | seen 690 rows
+11:24:39  INFO      Evaluated 544 samples (0.12/s) | skipped 184 | seen 728 rows
+11:29:32  INFO      Evaluated 576 samples (0.12/s) | skipped 193 | seen 769 rows
+11:32:52  INFO      Evaluated 608 samples (0.12/s) | skipped 196 | seen 804 rows
+11:37:44  INFO      Evaluated 640 samples (0.12/s) | skipped 212 | seen 852 rows
+11:41:29  INFO      Evaluated 672 samples (0.12/s) | skipped 225 | seen 897 rows
+11:47:11  INFO      Evaluated 704 samples (0.12/s) | skipped 246 | seen 950 rows
+11:52:12  INFO      Evaluated 736 samples (0.12/s) | skipped 257 | seen 993 rows
+11:56:49  INFO      Evaluated 768 samples (0.12/s) | skipped 262 | seen 1030 rows
+12:01:29  INFO      Evaluated 800 samples (0.12/s) | skipped 274 | seen 1074 rows
+12:06:19  INFO      Evaluated 832 samples (0.12/s) | skipped 285 | seen 1117 rows
+12:10:58  INFO      Evaluated 864 samples (0.12/s) | skipped 294 | seen 1158 rows
+12:15:56  INFO      Evaluated 896 samples (0.12/s) | skipped 308 | seen 1204 rows
+12:20:41  INFO      Evaluated 928 samples (0.12/s) | skipped 319 | seen 1247 rows
+12:25:17  INFO      Evaluated 960 samples (0.12/s) | skipped 331 | seen 1291 rows
+12:30:50  INFO      Evaluated 992 samples (0.12/s) | skipped 349 | seen 1341 rows
+12:31:46  INFO      ============================================================
+12:31:46  INFO      RESULTS
+12:31:46  INFO      ============================================================
+12:31:46  INFO        model                     checkpoints/arm_ir_ir_v4/step_14000
+12:31:46  INFO        pair                      arm_ir-ir
+12:31:46  INFO        split                     test_synth
+12:31:46  INFO        asm_key                   angha
+12:31:46  INFO        num_evaluated             1000
+12:31:46  INFO        num_skipped               352
+12:31:46  INFO        total_rows_seen           1353
+12:31:46  INFO        bleu                      25.28
+12:31:46  INFO        ned                       0.6471
+12:31:46  INFO        exact_match_pct           0.0
+12:31:46  INFO        beam                      3
+12:31:46  INFO        repetition_penalty        1.2
+12:31:46  INFO        no_repeat_ngram_size      6
+12:31:46  INFO        max_new_tokens            2048
+12:31:46  INFO        batch_size                8
+12:31:46  INFO        elapsed_seconds           8600.0
+12:31:46  INFO        samples_per_second        0.12
+12:31:46  INFO      ============================================================
+12:31:46  INFO      Running Level 2 checks on 1000 predictions...
+12:31:49  INFO        Checked 50 / 1000  (syntax=0  compile=0  link=0  func=0/0)
+12:31:49  INFO        Checked 100 / 1000  (syntax=0  compile=0  link=0  func=0/0)
+12:31:50  INFO        Checked 150 / 1000  (syntax=0  compile=0  link=0  func=0/0)
+12:31:50  INFO        Checked 200 / 1000  (syntax=0  compile=0  link=0  func=0/0)
+12:31:50  INFO        Checked 250 / 1000  (syntax=0  compile=0  link=0  func=0/0)
+12:31:51  INFO        Checked 300 / 1000  (syntax=0  compile=0  link=0  func=0/0)
+12:31:51  INFO        Checked 350 / 1000  (syntax=0  compile=0  link=0  func=0/0)
+12:31:52  INFO        Checked 400 / 1000  (syntax=0  compile=0  link=0  func=0/0)
+12:31:52  INFO        Checked 450 / 1000  (syntax=0  compile=0  link=0  func=0/0)
+12:31:53  INFO        Checked 500 / 1000  (syntax=0  compile=0  link=0  func=0/0)
+12:31:53  INFO        Checked 550 / 1000  (syntax=0  compile=0  link=0  func=0/0)
+12:31:53  INFO        Checked 600 / 1000  (syntax=0  compile=0  link=0  func=0/0)
+12:31:54  INFO        Checked 650 / 1000  (syntax=0  compile=0  link=0  func=0/0)
+12:31:54  INFO        Checked 700 / 1000  (syntax=0  compile=0  link=0  func=0/0)
+12:31:55  INFO        Checked 750 / 1000  (syntax=0  compile=0  link=0  func=0/0)
+12:31:55  INFO        Checked 800 / 1000  (syntax=0  compile=0  link=0  func=0/0)
+12:31:55  INFO        Checked 850 / 1000  (syntax=0  compile=0  link=0  func=0/0)
+12:31:56  INFO        Checked 900 / 1000  (syntax=0  compile=0  link=0  func=0/0)
+12:31:56  INFO        Checked 950 / 1000  (syntax=0  compile=0  link=0  func=0/0)
+12:31:57  INFO        Checked 1000 / 1000  (syntax=0  compile=0  link=0  func=0/0)
+12:31:57  INFO      ============================================================
+12:31:57  INFO      COMPILABILITY / FUNCTIONAL RESULTS
+12:31:57  INFO      ============================================================
+12:31:57  INFO        Total predictions              1000
+12:31:57  INFO        Syntax valid (llvm-as)         0 / 1000  (0.0%)
+12:31:57  INFO        Compiles (clang -c)            0 / 1000  (0.0%)
+12:31:57  INFO      ============================================================
+12:31:57  INFO      Results saved to results/eval_test_synth_checkpoints_arm_ir_ir_v4_step_14000.json
+12:31:57  INFO      Predictions saved to results/preds_test_synth_checkpoints_arm_ir_ir_v4_step_14000.jsonl

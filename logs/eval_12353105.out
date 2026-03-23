@@ -1,0 +1,13 @@
+================================================
+Job ID:    12353105
+Node:      node875.csf3.man.alces.network
+GPU:       NVIDIA L40S
+Date:      Fri 20 Mar 10:00:49 GMT 2026
+================================================
+Evaluating model: checkpoints/arm_ir_ir_v4/step_14000
+Pair: arm_ir-ir  Split: test_synth  ASM key: angha  Batch size: 8
+
+
+================================================
+Evaluation complete at Fri 20 Mar 12:33:01 GMT 2026
+================================================
