@@ -196,6 +196,7 @@ def validate_ir_syntax(
         ``strip_ir_noise``).
     """
     if not _tool_available("llvm-as"):
+        logger.error("CRITICAL ERROR: 'llvm-as' is not installed or not in PATH! Run 'module load llvm' or install clang first.")
         return False, "llvm-as not available"
     text = _inject_missing_declares(ir_text) if auto_declare else ir_text
     with _tmp_file(text, suffix=".ll") as ll_path:

@@ -11,11 +11,11 @@
 # ──────────────────────────────────────────────────────────────
 # SLURM launcher for Forklift evaluation on ExeBench test split
 #
-# Evaluates the fine-tuned ARM→IR v2 model on test_synth
+# Evaluates the fine-tuned ARM→IR v4 model on test_synth
 # (5,000 samples) and optionally the baseline model.
 #
 # Usage:
-#   sbatch scripts/eval_csf.sh                           # v2 model only
+#   sbatch scripts/eval_csf.sh                           # v4 model only
 #   sbatch scripts/eval_csf.sh --split test_real          # override split
 #   sbatch scripts/eval_csf.sh --model jordiae/clang_...  # evaluate baseline
 # ──────────────────────────────────────────────────────────────
@@ -37,10 +37,17 @@ cd "$PROJECT_DIR"
 source "${VENV_DIR}/bin/activate"
 export PYTHONPATH="${PROJECT_DIR}:${PYTHONPATH:-}"
 
+# Check for LLVM in local tools folder first
+LLVM_BIN="$PROJECT_DIR/tools/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin"
+if [ -d "$LLVM_BIN" ]; then
+    echo "Using local LLVM installation: $LLVM_BIN"
+    export PATH="$LLVM_BIN:$PATH"
+fi
+
 mkdir -p logs results
 
 # ── Default config ───────────────────────────────────────────
-MODEL="${MODEL:-checkpoints/arm_ir_ir_v4/step_50000}"
+MODEL="${MODEL:-leachl/forklift-arm-ir-ir_v4}"
 PAIR="${PAIR:-arm_ir-ir}"
 SPLIT="${SPLIT:-test_synth}"
 ASM_KEY="${ASM_KEY:-angha}"
