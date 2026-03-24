@@ -7,3 +7,4 @@ experiments
 /checkpoints
 /obfu_dataset_split
 /obfu_test*
+/tools

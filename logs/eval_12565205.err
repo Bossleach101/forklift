@@ -1,0 +1,228 @@
+08:56:29  INFO      Device: cuda
+08:56:29  INFO      Loading model: leachl/forklift-arm-ir-ir_v4
+08:56:44  INFO      Model loaded (197059584 params)
+08:56:44  INFO      Pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+08:56:44  INFO      Loading split: test_synth
+Repo card metadata block was not found. Setting CardData to empty.
+08:56:45  WARNING   Repo card metadata block was not found. Setting CardData to empty.
+08:57:53  INFO      Evaluated 32 samples (0.48/s) | skipped 7 | seen 39 rows
+08:58:43  INFO      Evaluated 64 samples (0.55/s) | skipped 18 | seen 82 rows
+08:59:26  INFO      Evaluated 96 samples (0.60/s) | skipped 40 | seen 136 rows
+09:00:25  INFO      Evaluated 128 samples (0.58/s) | skipped 52 | seen 180 rows
+09:01:45  INFO      Evaluated 160 samples (0.54/s) | skipped 59 | seen 219 rows
+09:02:31  INFO      Evaluated 192 samples (0.56/s) | skipped 71 | seen 263 rows
+09:03:33  INFO      Evaluated 224 samples (0.55/s) | skipped 88 | seen 312 rows
+09:04:40  INFO      Evaluated 256 samples (0.54/s) | skipped 101 | seen 357 rows
+09:05:49  INFO      Evaluated 288 samples (0.53/s) | skipped 108 | seen 396 rows
+09:06:41  INFO      Evaluated 320 samples (0.54/s) | skipped 120 | seen 440 rows
+09:07:38  INFO      Evaluated 352 samples (0.54/s) | skipped 126 | seen 478 rows
+09:08:32  INFO      Evaluated 384 samples (0.54/s) | skipped 137 | seen 521 rows
+09:09:19  INFO      Evaluated 416 samples (0.55/s) | skipped 146 | seen 562 rows
+09:10:21  INFO      Evaluated 448 samples (0.55/s) | skipped 160 | seen 608 rows
+09:11:22  INFO      Evaluated 480 samples (0.55/s) | skipped 167 | seen 647 rows
+09:12:34  INFO      Evaluated 512 samples (0.54/s) | skipped 178 | seen 690 rows
+09:13:13  INFO      Evaluated 544 samples (0.55/s) | skipped 184 | seen 728 rows
+09:14:27  INFO      Evaluated 576 samples (0.54/s) | skipped 193 | seen 769 rows
+09:15:52  INFO      Evaluated 608 samples (0.53/s) | skipped 196 | seen 804 rows
+09:16:55  INFO      Evaluated 640 samples (0.53/s) | skipped 212 | seen 852 rows
+09:17:39  INFO      Evaluated 672 samples (0.54/s) | skipped 225 | seen 897 rows
+09:18:45  INFO      Evaluated 704 samples (0.53/s) | skipped 246 | seen 950 rows
+09:19:57  INFO      Evaluated 736 samples (0.53/s) | skipped 257 | seen 993 rows
+09:21:13  INFO      Evaluated 768 samples (0.52/s) | skipped 262 | seen 1030 rows
+09:22:01  INFO      Evaluated 800 samples (0.53/s) | skipped 274 | seen 1074 rows
+09:22:50  INFO      Evaluated 832 samples (0.53/s) | skipped 285 | seen 1117 rows
+09:23:56  INFO      Evaluated 864 samples (0.53/s) | skipped 294 | seen 1158 rows
+09:25:03  INFO      Evaluated 896 samples (0.53/s) | skipped 308 | seen 1204 rows
+09:26:03  INFO      Evaluated 928 samples (0.53/s) | skipped 319 | seen 1247 rows
+09:27:13  INFO      Evaluated 960 samples (0.53/s) | skipped 331 | seen 1291 rows
+09:28:23  INFO      Evaluated 992 samples (0.52/s) | skipped 349 | seen 1341 rows
+09:29:16  INFO      Evaluated 1024 samples (0.53/s) | skipped 353 | seen 1377 rows
+09:30:40  INFO      Evaluated 1056 samples (0.52/s) | skipped 369 | seen 1425 rows
+09:31:32  INFO      Evaluated 1088 samples (0.52/s) | skipped 378 | seen 1466 rows
+09:32:30  INFO      Evaluated 1120 samples (0.52/s) | skipped 388 | seen 1508 rows
+09:33:30  INFO      Evaluated 1152 samples (0.52/s) | skipped 394 | seen 1546 rows
+09:34:13  INFO      Evaluated 1184 samples (0.53/s) | skipped 411 | seen 1595 rows
+09:35:22  INFO      Evaluated 1216 samples (0.53/s) | skipped 418 | seen 1634 rows
+09:36:27  INFO      Evaluated 1248 samples (0.52/s) | skipped 434 | seen 1682 rows
+09:38:09  INFO      Evaluated 1280 samples (0.52/s) | skipped 442 | seen 1722 rows
+09:38:57  INFO      Evaluated 1312 samples (0.52/s) | skipped 453 | seen 1765 rows
+09:40:12  INFO      Evaluated 1344 samples (0.52/s) | skipped 469 | seen 1813 rows
+09:41:22  INFO      Evaluated 1376 samples (0.51/s) | skipped 482 | seen 1858 rows
+09:42:33  INFO      Evaluated 1408 samples (0.51/s) | skipped 492 | seen 1900 rows
+09:43:38  INFO      Evaluated 1440 samples (0.51/s) | skipped 515 | seen 1955 rows
+09:44:31  INFO      Evaluated 1472 samples (0.51/s) | skipped 521 | seen 1993 rows
+09:45:42  INFO      Evaluated 1504 samples (0.51/s) | skipped 531 | seen 2035 rows
+09:46:27  INFO      Evaluated 1536 samples (0.52/s) | skipped 534 | seen 2070 rows
+09:47:21  INFO      Evaluated 1568 samples (0.52/s) | skipped 541 | seen 2109 rows
+09:48:08  INFO      Evaluated 1600 samples (0.52/s) | skipped 547 | seen 2147 rows
+09:49:29  INFO      Evaluated 1632 samples (0.52/s) | skipped 556 | seen 2188 rows
+09:50:32  INFO      Evaluated 1664 samples (0.52/s) | skipped 566 | seen 2230 rows
+09:51:51  INFO      Evaluated 1696 samples (0.51/s) | skipped 577 | seen 2273 rows
+09:53:23  INFO      Evaluated 1728 samples (0.51/s) | skipped 592 | seen 2320 rows
+09:54:25  INFO      Evaluated 1760 samples (0.51/s) | skipped 597 | seen 2357 rows
+09:55:23  INFO      Evaluated 1792 samples (0.51/s) | skipped 609 | seen 2401 rows
+09:56:11  INFO      Evaluated 1824 samples (0.51/s) | skipped 618 | seen 2442 rows
+09:57:02  INFO      Evaluated 1856 samples (0.51/s) | skipped 638 | seen 2494 rows
+09:57:47  INFO      Evaluated 1888 samples (0.52/s) | skipped 661 | seen 2549 rows
+09:58:44  INFO      Evaluated 1920 samples (0.52/s) | skipped 668 | seen 2588 rows
+09:59:30  INFO      Evaluated 1952 samples (0.52/s) | skipped 679 | seen 2631 rows
+10:00:50  INFO      Evaluated 1984 samples (0.52/s) | skipped 687 | seen 2671 rows
+10:01:40  INFO      Evaluated 2016 samples (0.52/s) | skipped 692 | seen 2708 rows
+10:03:01  INFO      Evaluated 2048 samples (0.52/s) | skipped 711 | seen 2759 rows
+10:03:51  INFO      Evaluated 2080 samples (0.52/s) | skipped 721 | seen 2801 rows
+10:04:59  INFO      Evaluated 2112 samples (0.52/s) | skipped 735 | seen 2847 rows
+10:06:13  INFO      Evaluated 2144 samples (0.51/s) | skipped 745 | seen 2889 rows
+10:07:09  INFO      Evaluated 2176 samples (0.52/s) | skipped 763 | seen 2939 rows
+10:08:09  INFO      Evaluated 2208 samples (0.52/s) | skipped 777 | seen 2985 rows
+10:08:52  INFO      Evaluated 2240 samples (0.52/s) | skipped 787 | seen 3027 rows
+10:09:43  INFO      Evaluated 2272 samples (0.52/s) | skipped 801 | seen 3073 rows
+10:10:21  INFO      Evaluated 2304 samples (0.52/s) | skipped 813 | seen 3117 rows
+10:11:30  INFO      Evaluated 2336 samples (0.52/s) | skipped 822 | seen 3158 rows
+10:12:47  INFO      Evaluated 2368 samples (0.52/s) | skipped 835 | seen 3203 rows
+10:13:57  INFO      Evaluated 2400 samples (0.52/s) | skipped 842 | seen 3242 rows
+10:14:34  INFO      Evaluated 2432 samples (0.52/s) | skipped 852 | seen 3284 rows
+10:15:41  INFO      Evaluated 2464 samples (0.52/s) | skipped 860 | seen 3324 rows
+10:16:38  INFO      Evaluated 2496 samples (0.52/s) | skipped 877 | seen 3373 rows
+10:17:20  INFO      Evaluated 2528 samples (0.52/s) | skipped 885 | seen 3413 rows
+10:18:26  INFO      Evaluated 2560 samples (0.52/s) | skipped 897 | seen 3457 rows
+10:19:24  INFO      Evaluated 2592 samples (0.52/s) | skipped 904 | seen 3496 rows
+10:20:39  INFO      Evaluated 2624 samples (0.52/s) | skipped 914 | seen 3538 rows
+10:21:30  INFO      Evaluated 2656 samples (0.52/s) | skipped 923 | seen 3579 rows
+10:22:50  INFO      Evaluated 2688 samples (0.52/s) | skipped 931 | seen 3619 rows
+10:24:04  INFO      Evaluated 2720 samples (0.52/s) | skipped 941 | seen 3661 rows
+10:24:48  INFO      Evaluated 2752 samples (0.52/s) | skipped 950 | seen 3702 rows
+10:25:54  INFO      Evaluated 2784 samples (0.52/s) | skipped 958 | seen 3742 rows
+10:27:14  INFO      Evaluated 2816 samples (0.52/s) | skipped 967 | seen 3783 rows
+10:27:47  INFO      Evaluated 2848 samples (0.52/s) | skipped 971 | seen 3819 rows
+10:28:59  INFO      Evaluated 2880 samples (0.52/s) | skipped 980 | seen 3860 rows
+10:30:24  INFO      Evaluated 2912 samples (0.52/s) | skipped 985 | seen 3897 rows
+10:31:14  INFO      Evaluated 2944 samples (0.52/s) | skipped 995 | seen 3939 rows
+10:32:02  INFO      Evaluated 2976 samples (0.52/s) | skipped 1009 | seen 3985 rows
+10:33:03  INFO      Evaluated 3008 samples (0.52/s) | skipped 1019 | seen 4027 rows
+10:34:10  INFO      Evaluated 3040 samples (0.52/s) | skipped 1036 | seen 4076 rows
+10:35:19  INFO      Evaluated 3072 samples (0.52/s) | skipped 1053 | seen 4125 rows
+10:36:42  INFO      Evaluated 3104 samples (0.52/s) | skipped 1061 | seen 4165 rows
+10:37:34  INFO      Evaluated 3136 samples (0.52/s) | skipped 1070 | seen 4206 rows
+10:38:56  INFO      Evaluated 3168 samples (0.52/s) | skipped 1080 | seen 4248 rows
+10:39:39  INFO      Evaluated 3200 samples (0.52/s) | skipped 1097 | seen 4297 rows
+10:40:20  INFO      Evaluated 3232 samples (0.52/s) | skipped 1105 | seen 4337 rows
+10:41:09  INFO      Evaluated 3264 samples (0.52/s) | skipped 1114 | seen 4378 rows
+10:42:11  INFO      Evaluated 3296 samples (0.52/s) | skipped 1126 | seen 4422 rows
+10:43:18  INFO      Evaluated 3328 samples (0.52/s) | skipped 1132 | seen 4460 rows
+10:44:13  INFO      Evaluated 3360 samples (0.52/s) | skipped 1151 | seen 4511 rows
+10:45:24  INFO      Evaluated 3392 samples (0.52/s) | skipped 1159 | seen 4551 rows
+10:46:57  INFO      Evaluated 3424 samples (0.52/s) | skipped 1173 | seen 4597 rows
+10:48:04  INFO      Evaluated 3456 samples (0.52/s) | skipped 1181 | seen 4637 rows
+10:48:53  INFO      Evaluated 3488 samples (0.52/s) | skipped 1195 | seen 4683 rows
+10:49:57  INFO      Evaluated 3520 samples (0.52/s) | skipped 1201 | seen 4721 rows
+10:51:13  INFO      Evaluated 3552 samples (0.52/s) | skipped 1207 | seen 4759 rows
+10:52:18  INFO      Evaluated 3584 samples (0.52/s) | skipped 1222 | seen 4806 rows
+10:53:13  INFO      Evaluated 3616 samples (0.52/s) | skipped 1237 | seen 4853 rows
+10:54:40  INFO      Evaluated 3648 samples (0.52/s) | skipped 1249 | seen 4897 rows
+10:56:04  INFO      Evaluated 3680 samples (0.51/s) | skipped 1264 | seen 4944 rows
+10:57:31  INFO      Evaluated 3712 samples (0.51/s) | skipped 1276 | seen 4988 rows
+10:58:20  INFO      ============================================================
+10:58:20  INFO      RESULTS
+10:58:20  INFO      ============================================================
+10:58:20  INFO        model                     leachl/forklift-arm-ir-ir_v4
+10:58:20  INFO        pair                      arm_ir-ir
+10:58:20  INFO        split                     test_synth
+10:58:20  INFO        asm_key                   angha
+10:58:20  INFO        num_evaluated             3719
+10:58:20  INFO        num_skipped               1281
+10:58:20  INFO        total_rows_seen           5000
+10:58:20  INFO        bleu                      84.86
+10:58:20  INFO        ned                       0.1612
+10:58:20  INFO        exact_match_pct           27.1
+10:58:20  INFO        beam                      3
+10:58:20  INFO        repetition_penalty        1.0
+10:58:20  INFO        no_repeat_ngram_size      0
+10:58:20  INFO        max_new_tokens            2048
+10:58:20  INFO        batch_size                8
+10:58:20  INFO        elapsed_seconds           7277.8
+10:58:20  INFO        samples_per_second        0.51
+10:58:20  INFO      ============================================================
+10:58:20  INFO      Running Level 2 checks on 3719 predictions...
+10:58:29  INFO        Checked 50 / 3719  (syntax=10  compile=10  link=0  func=0/0)
+10:58:32  INFO        Checked 100 / 3719  (syntax=16  compile=16  link=0  func=0/0)
+10:58:36  INFO        Checked 150 / 3719  (syntax=23  compile=23  link=0  func=0/0)
+10:58:39  INFO        Checked 200 / 3719  (syntax=34  compile=34  link=0  func=0/0)
+10:58:43  INFO        Checked 250 / 3719  (syntax=43  compile=43  link=0  func=0/0)
+10:58:46  INFO        Checked 300 / 3719  (syntax=49  compile=49  link=0  func=0/0)
+10:58:50  INFO        Checked 350 / 3719  (syntax=53  compile=53  link=0  func=0/0)
+10:58:53  INFO        Checked 400 / 3719  (syntax=58  compile=58  link=0  func=0/0)
+10:58:57  INFO        Checked 450 / 3719  (syntax=64  compile=64  link=0  func=0/0)
+10:59:01  INFO        Checked 500 / 3719  (syntax=76  compile=76  link=0  func=0/0)
+10:59:04  INFO        Checked 550 / 3719  (syntax=84  compile=84  link=0  func=0/0)
+10:59:08  INFO        Checked 600 / 3719  (syntax=87  compile=87  link=0  func=0/0)
+10:59:11  INFO        Checked 650 / 3719  (syntax=96  compile=96  link=0  func=0/0)
+10:59:15  INFO        Checked 700 / 3719  (syntax=106  compile=106  link=0  func=0/0)
+10:59:19  INFO        Checked 750 / 3719  (syntax=113  compile=113  link=0  func=0/0)
+10:59:22  INFO        Checked 800 / 3719  (syntax=119  compile=119  link=0  func=0/0)
+10:59:26  INFO        Checked 850 / 3719  (syntax=131  compile=131  link=0  func=0/0)
+10:59:30  INFO        Checked 900 / 3719  (syntax=140  compile=140  link=0  func=0/0)
+10:59:33  INFO        Checked 950 / 3719  (syntax=146  compile=146  link=0  func=0/0)
+10:59:37  INFO        Checked 1000 / 3719  (syntax=150  compile=150  link=0  func=0/0)
+10:59:40  INFO        Checked 1050 / 3719  (syntax=158  compile=158  link=0  func=0/0)
+10:59:44  INFO        Checked 1100 / 3719  (syntax=166  compile=166  link=0  func=0/0)
+10:59:48  INFO        Checked 1150 / 3719  (syntax=173  compile=173  link=0  func=0/0)
+10:59:51  INFO        Checked 1200 / 3719  (syntax=184  compile=184  link=0  func=0/0)
+10:59:55  INFO        Checked 1250 / 3719  (syntax=187  compile=187  link=0  func=0/0)
+10:59:58  INFO        Checked 1300 / 3719  (syntax=197  compile=197  link=0  func=0/0)
+11:00:02  INFO        Checked 1350 / 3719  (syntax=202  compile=202  link=0  func=0/0)
+11:00:05  INFO        Checked 1400 / 3719  (syntax=209  compile=209  link=0  func=0/0)
+11:00:09  INFO        Checked 1450 / 3719  (syntax=215  compile=215  link=0  func=0/0)
+11:00:12  INFO        Checked 1500 / 3719  (syntax=219  compile=219  link=0  func=0/0)
+11:00:16  INFO        Checked 1550 / 3719  (syntax=223  compile=223  link=0  func=0/0)
+11:00:19  INFO        Checked 1600 / 3719  (syntax=227  compile=227  link=0  func=0/0)
+11:00:23  INFO        Checked 1650 / 3719  (syntax=237  compile=237  link=0  func=0/0)
+11:00:27  INFO        Checked 1700 / 3719  (syntax=243  compile=243  link=0  func=0/0)
+11:00:30  INFO        Checked 1750 / 3719  (syntax=253  compile=253  link=0  func=0/0)
+11:00:34  INFO        Checked 1800 / 3719  (syntax=258  compile=258  link=0  func=0/0)
+11:00:38  INFO        Checked 1850 / 3719  (syntax=270  compile=270  link=0  func=0/0)
+11:00:42  INFO        Checked 1900 / 3719  (syntax=277  compile=277  link=0  func=0/0)
+11:00:45  INFO        Checked 1950 / 3719  (syntax=285  compile=285  link=0  func=0/0)
+11:00:49  INFO        Checked 2000 / 3719  (syntax=296  compile=296  link=0  func=0/0)
+11:00:53  INFO        Checked 2050 / 3719  (syntax=307  compile=307  link=0  func=0/0)
+11:00:56  INFO        Checked 2100 / 3719  (syntax=311  compile=311  link=0  func=0/0)
+11:01:00  INFO        Checked 2150 / 3719  (syntax=319  compile=319  link=0  func=0/0)
+11:01:04  INFO        Checked 2200 / 3719  (syntax=325  compile=325  link=0  func=0/0)
+11:01:07  INFO        Checked 2250 / 3719  (syntax=334  compile=334  link=0  func=0/0)
+11:01:11  INFO        Checked 2300 / 3719  (syntax=342  compile=342  link=0  func=0/0)
+11:01:15  INFO        Checked 2350 / 3719  (syntax=350  compile=350  link=0  func=0/0)
+11:01:18  INFO        Checked 2400 / 3719  (syntax=352  compile=352  link=0  func=0/0)
+11:01:21  INFO        Checked 2450 / 3719  (syntax=359  compile=359  link=0  func=0/0)
+11:01:25  INFO        Checked 2500 / 3719  (syntax=367  compile=367  link=0  func=0/0)
+11:01:29  INFO        Checked 2550 / 3719  (syntax=376  compile=376  link=0  func=0/0)
+11:01:32  INFO        Checked 2600 / 3719  (syntax=384  compile=384  link=0  func=0/0)
+11:01:36  INFO        Checked 2650 / 3719  (syntax=389  compile=389  link=0  func=0/0)
+11:01:39  INFO        Checked 2700 / 3719  (syntax=395  compile=395  link=0  func=0/0)
+11:01:43  INFO        Checked 2750 / 3719  (syntax=406  compile=406  link=0  func=0/0)
+11:01:47  INFO        Checked 2800 / 3719  (syntax=412  compile=412  link=0  func=0/0)
+11:01:50  INFO        Checked 2850 / 3719  (syntax=422  compile=422  link=0  func=0/0)
+11:01:54  INFO        Checked 2900 / 3719  (syntax=429  compile=429  link=0  func=0/0)
+11:01:58  INFO        Checked 2950 / 3719  (syntax=438  compile=438  link=0  func=0/0)
+11:02:01  INFO        Checked 3000 / 3719  (syntax=443  compile=443  link=0  func=0/0)
+11:02:05  INFO        Checked 3050 / 3719  (syntax=451  compile=451  link=0  func=0/0)
+11:02:09  INFO        Checked 3100 / 3719  (syntax=460  compile=460  link=0  func=0/0)
+11:02:12  INFO        Checked 3150 / 3719  (syntax=469  compile=469  link=0  func=0/0)
+11:02:16  INFO        Checked 3200 / 3719  (syntax=472  compile=472  link=0  func=0/0)
+11:02:19  INFO        Checked 3250 / 3719  (syntax=479  compile=479  link=0  func=0/0)
+11:02:23  INFO        Checked 3300 / 3719  (syntax=493  compile=493  link=0  func=0/0)
+11:02:27  INFO        Checked 3350 / 3719  (syntax=500  compile=500  link=0  func=0/0)
+11:02:31  INFO        Checked 3400 / 3719  (syntax=509  compile=509  link=0  func=0/0)
+11:02:34  INFO        Checked 3450 / 3719  (syntax=518  compile=518  link=0  func=0/0)
+11:02:38  INFO        Checked 3500 / 3719  (syntax=530  compile=530  link=0  func=0/0)
+11:02:42  INFO        Checked 3550 / 3719  (syntax=537  compile=537  link=0  func=0/0)
+11:02:46  INFO        Checked 3600 / 3719  (syntax=552  compile=552  link=0  func=0/0)
+11:02:49  INFO        Checked 3650 / 3719  (syntax=558  compile=558  link=0  func=0/0)
+11:02:53  INFO        Checked 3700 / 3719  (syntax=562  compile=562  link=0  func=0/0)
+11:02:54  INFO      ============================================================
+11:02:54  INFO      COMPILABILITY / FUNCTIONAL RESULTS
+11:02:54  INFO      ============================================================
+11:02:54  INFO        Total predictions              3719
+11:02:54  INFO        Syntax valid (llvm-as)         562 / 3719  (15.1%)
+11:02:54  INFO        Compiles (clang -c)            562 / 3719  (15.1%)
+11:02:54  INFO      ============================================================
+11:02:54  INFO      Results saved to results/eval_test_synth_leachl_forklift-arm-ir-ir_v4.json
+11:02:54  INFO      Predictions saved to results/preds_test_synth_leachl_forklift-arm-ir-ir_v4.jsonl
