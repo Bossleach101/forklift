@@ -120,8 +120,15 @@ def _flush_batch(
         }
         if args.repetition_penalty != 1.0:
             gen_kwargs["repetition_penalty"] = args.repetition_penalty
+        else:
+             # Explicitly set to 1.0 to override model config
+            gen_kwargs["repetition_penalty"] = 1.0
+
         if args.no_repeat_ngram_size != 0:
             gen_kwargs["no_repeat_ngram_size"] = args.no_repeat_ngram_size
+        else:
+            # Explicitly set to 0 to override model config
+            gen_kwargs["no_repeat_ngram_size"] = 0
             
         generated = model.generate(
             input_ids,

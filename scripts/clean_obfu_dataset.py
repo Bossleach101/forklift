@@ -55,6 +55,12 @@ OUTPUT_COLUMNS = [
     "obfuscated_c",        # now contains only the target function
     "tigress_seed",
     "exebench_split",
+    # Level 3 constraints
+    "c_deps",
+    "func_c_signature",
+    "cpp_wrapper",
+    "dummy_funcs",
+    "io_pairs",
 ]
 
 
@@ -177,6 +183,12 @@ def clean_dataset(
             "obfuscated_c":    {"dtype": "string", "_type": "Value"},
             "tigress_seed":    {"dtype": "int32",  "_type": "Value"},
             "exebench_split":  {"dtype": "string", "_type": "Value"},
+            # New columns
+            "c_deps":          {"dtype": "string", "_type": "Value"},
+            "func_c_signature":{"dtype": "string", "_type": "Value"},
+            "cpp_wrapper":     {"dtype": "string", "_type": "Value"},
+            "dummy_funcs":     {"dtype": "string", "_type": "Value"},
+            "io_pairs":        {"dtype": "string", "_type": "Value"}, # This is a JSON string or struct? ExeBench stores it as struct, load_dataset might return dict.
         },
         "techniques": ["Flatten", "EncodeArithmetic", "Flatten+EncodeArithmetic"],
         "source": "jordiae/exebench",

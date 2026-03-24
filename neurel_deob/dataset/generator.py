@@ -112,6 +112,12 @@ DATASET_COLUMNS = [
     "obfuscated_c",     # Tigress-obfuscated C source
     "tigress_seed",     # Tigress random seed used
     "exebench_split",   # ExeBench split name
+    # Level 3 constraints
+    "c_deps",
+    "func_c_signature",
+    "cpp_wrapper",
+    "dummy_funcs",
+    "io_pairs",
 ]
 
 
@@ -357,6 +363,16 @@ class DatasetGenerator:
             clean_ir = self._get_asm_code(row, "angha_clang_ir_O0")
             synth_deps = row.get("synth_deps", "") or ""
 
+            # Level 3 constraints
+            c_deps = row.get("c_deps", "") or ""
+            func_c_signature = row.get("func_c_signature", "") or ""
+            cpp_wrapper = row.get("cpp_wrapper", "") or ""
+            dummy_funcs = row.get("dummy_funcs", "") or ""
+            io_pairs = row.get("synth_io_pairs")
+            if io_pairs is not None and not isinstance(io_pairs, str):
+                import json
+                io_pairs = json.dumps(io_pairs)
+
             if not all([fname, func_def, clean_asm, clean_ir]):
                 self.stats["rows_skipped_no_data"] += 1
                 consecutive_fails += 1
@@ -418,6 +434,12 @@ class DatasetGenerator:
                     "obfuscated_c": result.obfuscated_c or "",
                     "tigress_seed": tigress_seed,
                     "exebench_split": self.config.split,
+                    # New columns
+                    "c_deps": c_deps,
+                    "func_c_signature": func_c_signature,
+                    "cpp_wrapper": cpp_wrapper,
+                    "dummy_funcs": dummy_funcs,
+                    "io_pairs": io_pairs,
                 }
                 samples.append(sample)
                 self.stats["samples_generated"] += 1
@@ -539,6 +561,12 @@ class DatasetGenerator:
                         "obfuscated_c": worker_result["obfuscated_c"] or "",
                         "tigress_seed": meta["tigress_seed"],
                         "exebench_split": self.config.split,
+                        # New fields
+                        "c_deps": meta["c_deps"],
+                        "func_c_signature": meta["func_c_signature"],
+                        "cpp_wrapper": meta["cpp_wrapper"],
+                        "dummy_funcs": meta["dummy_funcs"],
+                        "io_pairs": meta["io_pairs"],
                     }
                     samples.append(sample)
                     self.stats["samples_generated"] += 1
@@ -593,6 +621,16 @@ class DatasetGenerator:
                 clean_ir = self._get_asm_code(row, "angha_clang_ir_O0")
                 synth_deps = row.get("synth_deps", "") or ""
 
+                # Level 3 constraints
+                c_deps = row.get("c_deps", "") or ""
+                func_c_signature = row.get("func_c_signature", "") or ""
+                cpp_wrapper = row.get("cpp_wrapper", "") or ""
+                dummy_funcs = row.get("dummy_funcs", "") or ""
+                io_pairs = row.get("synth_io_pairs")
+                if io_pairs is not None and not isinstance(io_pairs, str):
+                    import json
+                    io_pairs = json.dumps(io_pairs)
+
                 if not all([fname, func_def, clean_asm, clean_ir]):
                     self.stats["rows_skipped_no_data"] += 1
                     consecutive_fails += 1
@@ -624,6 +662,12 @@ class DatasetGenerator:
                         "clean_ir": clean_ir,
                         "tigress_seed": tigress_seed,
                         "_produced": False,
+                        # New fields
+                        "c_deps": c_deps,
+                        "func_c_signature": func_c_signature,
+                        "cpp_wrapper": cpp_wrapper,
+                        "dummy_funcs": dummy_funcs,
+                        "io_pairs": io_pairs,
                     }
 
                     fut = pool.submit(

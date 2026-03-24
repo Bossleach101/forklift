@@ -18,7 +18,7 @@
 #   - train  (980K samples: Flatten, EncodeArithmetic, Flatten+EncodeArithmetic)
 #   - test_flatten, test_encode_arithmetic, test_combined  (~3.9K each)
 #
-# The model starts from the v2 arm-ir-ir checkpoint (clean lifting),
+# The model starts from the v4 arm-ir-ir checkpoint (clean lifting),
 # then learns to "see through" Tigress obfuscation while lifting.
 #
 # Validation is run on test_combined by default (change with --valid_split).
@@ -47,11 +47,18 @@ VENV_DIR="${PROJECT_DIR}/env"
 cd "$PROJECT_DIR"
 source "${VENV_DIR}/bin/activate"
 
+# Check for LLVM in local tools folder first
+LLVM_BIN="$PROJECT_DIR/tools/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin"
+if [ -d "$LLVM_BIN" ]; then
+    echo "Using local LLVM installation: $LLVM_BIN"
+    export PATH="$LLVM_BIN:$PATH"
+fi
+
 mkdir -p logs
 
 # ── Model to fine-tune from ─────────────────────────────────
-# Start from the v2 arm-ir-ir checkpoint (clean lifting model).
-MODEL_PATH="${MODEL_PATH:-leachl/forklift-arm-ir-ir}"
+# Start from the v4 arm-ir-ir checkpoint (clean lifting model).
+MODEL_PATH="${MODEL_PATH:-leachl/forklift-arm-ir-ir_v4}"
 
 # ── Launch deobfuscation training ────────────────────────────
 python -m neurel_deob.training.finetune \

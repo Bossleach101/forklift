@@ -62,8 +62,8 @@ class TrainConfig:
     # ── Inference at eval time ───────────────────────────────────────
     eval_beam: int = 5
     eval_max_new_tokens: int = 2048
-    repetition_penalty: float = 1.2      # Penalise repeated tokens during generation
-    no_repeat_ngram_size: int = 6        # Forbid repeating any 6-gram
+    repetition_penalty: float = 1.0      # Default: no penalty (essential for code/IR)
+    no_repeat_ngram_size: int = 0        # Default: allow repetition (essential for code/IR)
 
     # ── Hardware ─────────────────────────────────────────────────────
     device: str = "auto"                 # "auto", "cpu", "cuda", "cuda:0"

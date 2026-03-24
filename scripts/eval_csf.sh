@@ -53,7 +53,7 @@ SPLIT="${SPLIT:-test_synth}"
 ASM_KEY="${ASM_KEY:-angha}"
 
 BATCH_SIZE="${BATCH_SIZE:-8}"
-MAX_SAMPLES="${MAX_SAMPLES:-1000}"
+MAX_SAMPLES="${MAX_SAMPLES:-5000}"
 
 # ── Run evaluation ───────────────────────────────────────────
 echo "Evaluating model: $MODEL"

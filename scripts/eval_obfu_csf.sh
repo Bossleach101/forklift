@@ -36,6 +36,13 @@ cd "$PROJECT_DIR"
 source "${VENV_DIR}/bin/activate"
 export PYTHONPATH="${PROJECT_DIR}:${PYTHONPATH:-}"
 
+# Check for LLVM in local tools folder first
+LLVM_BIN="$PROJECT_DIR/tools/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin"
+if [ -d "$LLVM_BIN" ]; then
+    echo "Using local LLVM installation: $LLVM_BIN"
+    export PATH="$LLVM_BIN:$PATH"
+fi
+
 mkdir -p logs results
 
 # ── Default config ───────────────────────────────────────────
