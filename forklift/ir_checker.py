@@ -169,10 +169,20 @@ def _inject_missing_declares(ir_text: str, max_retries: int = 5) -> str:
             break  # valid!
 
         # Parse error: "use of undefined value '@name'"
+        # Improved regex to handle quoted/unquoted and more characters (dots, dashes)
         import re as _re
-        m = _re.search(r"use of undefined value '(@\w+)'", r.stderr)
+        # Matches: use of undefined value '@foo'  OR  use of undefined value @foo
+        m = _re.search(r"use of undefined value\s+(?:['\"])(@[-\w$.]+)(?:['\"])?", r.stderr)
         if not m:
+            # Try without quotes
+            m = _re.search(r"use of undefined value\s+(@[-\w$.]+)", r.stderr)
+
+        if not m:
+            # Log the failure to parse if we can't fix it, to help debugging
+            if _ == 0: # Only log on first retry to avoid spam if we loop
+                logger.warning(f"llvm-as failed with unparseable error: {r.stderr.strip()}")
             break  # different error, can't fix
+
         sym = m.group(1)
         # Inject a generic variadic declare at the top
         patched = f"declare void {sym}(...)\n" + patched
