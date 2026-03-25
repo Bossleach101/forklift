@@ -184,8 +184,64 @@ def _inject_missing_declares(ir_text: str, max_retries: int = 5) -> str:
             break  # different error, can't fix
 
         sym = m.group(1)
-        # Inject a generic variadic declare at the top
-        patched = f"declare void {sym}(...)\n" + patched
+        
+        # Determine strict declaration type based on usage in source line
+        # Scan stderr for the source line containing the symbol
+        decl = f"declare void {sym}(...)" # default to function
+        
+        # Look for line in stderr: "llvm-as: file:line:col: error: ..."
+        # follow by the source code line.
+        # We search for the symbol in the lines provided in stderr.
+        lines = r.stderr.splitlines()
+        source_line = None
+        for i, ln in enumerate(lines):
+            if "error:" in ln and "use of undefined value" in ln:
+                # The next line(s) usually show the source
+                # Or sometimes the caret line. We want the line above caret?
+                # Actually llvm-as usually output:
+                # llvm-as: <file>:<line>:<col>: error: use of undefined value '@var'
+                #   %1 = load i32, i32* @var
+                #                       ^
+                if i + 1 < len(lines):
+                    potential_code = lines[i+1].strip()
+                    if sym in potential_code:
+                        source_line = potential_code
+                        break
+        
+        if source_line:
+            # Heuristics for global variables vs functions
+            is_func = False
+            # Check for call/invoke
+            if _re.search(rf"(?:call|invoke)\s+.+\s+{_re.escape(sym)}\(", source_line):
+                is_func = True
+            
+            if not is_func:
+                # Check for load: load <ty>, <ty>* @sym
+                m_load = _re.search(r"load\s+([\w%.*\[\]\(\)\s]+?)\s*,\s*([\w%.*\[\]\(\)\s]+?)\s+" + _re.escape(sym), source_line)
+                if m_load:
+                    ty = m_load.group(1).strip()
+                    decl = f"{sym} = external global {ty}"
+                else:
+                    # Check for store: store <ty> %val, <ty>* @sym
+                    m_store = _re.search(r"store\s+([\w%.*\[\]\(\)\s]+?)\s+[%\d@\-\w.]+\s*,\s*([\w%.*\[\]\(\)\s]+?)\s+" + _re.escape(sym), source_line)
+                    if m_store:
+                        ty = m_store.group(1).strip()
+                        decl = f"{sym} = external global {ty}"
+                    else:
+                        # Check for getelementptr
+                        # Heuristic: look for type before symbol in getelementptr line
+                        # "getelementptr inbounds (%struct.struct0, %struct.struct0* @foo, ...)"
+                        # "getelementptr %struct.struct0, %struct.struct0* @foo, ..."
+                        # Key: type, type* @sym
+                        m_gep = _re.search(r"getelementptr\s+(?:inbounds\s+)?(?:\([^\)]+\)\s*,)?\s*([\w%.*\[\]\(\)\s]+?)\s*,\s*([\w%.*\[\]\(\)\s]+?)[\s,]+" + _re.escape(sym), source_line)
+                        if m_gep:
+                            ty = m_gep.group(1).strip()
+                            if ty.startswith('(') and ty.endswith(')'):
+                                ty = ty[1:-1]
+                            decl = f"{sym} = external global {ty}"
+
+        # Inject declaration
+        patched = f"{decl}\n" + patched
 
     return patched
 
