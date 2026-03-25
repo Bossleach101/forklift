@@ -24,6 +24,25 @@ from collections import defaultdict
 from typing import Dict, Any, Set, Tuple
 
 from datasets import load_dataset, DatasetDict, Features, Value
+import huggingface_hub
+from huggingface_hub import HfApi
+
+# --- Monkeypatch for datasets==2.15.0 vs huggingface_hub>0.20 compatibility ---
+# `datasets` 2.15 calls `list_files_info` which was removed in recent `huggingface_hub`.
+# We map it to `list_repo_tree` and ensure `rfilename` attribute exists.
+
+if not hasattr(HfApi, "list_files_info"):
+    def _list_files_info_compat(self, repo_id, revision=None, repo_type=None, token=None, **kwargs):
+        # We assume recursive listing is desired by datasets
+        for item in self.list_repo_tree(repo_id, revision=revision, repo_type=repo_type, token=token, recursive=True, **kwargs):
+            if isinstance(item, huggingface_hub.hf_api.RepoFile):
+                # Back-compat: datasets 2.15 expects .rfilename
+                if not hasattr(item, "rfilename"):
+                    item.rfilename = item.path
+                yield item
+            # list_repo_tree can also yield RepoFolder, likely ignored by datasets validation if strict typed check isn't done
+    
+    HfApi.list_files_info = _list_files_info_compat
 
 logging.basicConfig(
     level=logging.INFO,
