@@ -2,7 +2,7 @@
 #SBATCH --job-name=val-recheck
 #SBATCH -p multicore
 #SBATCH --mem=16G
-#SBATCH --array=0-99
+#SBATCH -n 8
 #SBATCH -t 0-02:00:00
 #SBATCH --output=logs/recheck_%j.out
 #SBATCH --error=logs/recheck_%j.err
