@@ -1,0 +1,662 @@
+03:36:31  INFO      Loading target dataset: leachl/obfuscated-exebench
+Resolving data files:   0%|          | 0/98 [00:00<?, ?it/s]Resolving data files:   2%|▏         | 2/98 [00:00<00:45,  2.11it/s]Resolving data files:   9%|▉         | 9/98 [00:01<00:09,  9.00it/s]Resolving data files: 100%|██████████| 98/98 [00:01<00:00, 80.41it/s]
+Resolving data files:   0%|          | 0/98 [00:00<?, ?it/s]Resolving data files: 100%|██████████| 98/98 [00:00<00:00, 417725.40it/s]
+03:37:15  INFO      Analyzing keys in target split: train
+03:38:24  INFO      Analyzing keys in target split: test_flatten
+03:38:24  INFO      Analyzing keys in target split: test_encode_arithmetic
+03:38:25  INFO      Analyzing keys in target split: test_combined
+03:38:25  INFO      Identified 991726 rows requiring metadata across 2 source splits.
+03:38:25  INFO      Scanning source jordiae/exebench split='train_synth_compilable' for 291082 fnames...
+Repo card metadata block was not found. Setting CardData to empty.
+03:38:29  WARNING   Repo card metadata block was not found. Setting CardData to empty.
+04:05:39  INFO        Found 291082/291082 records in 'train_synth_compilable'.
+04:05:39  INFO      Scanning source jordiae/exebench split='test_synth' for 3842 fnames...
+Repo card metadata block was not found. Setting CardData to empty.
+04:05:40  WARNING   Repo card metadata block was not found. Setting CardData to empty.
+04:06:05  INFO        Found 3842/3842 records in 'test_synth'.
+04:06:05  INFO      Merging metadata into target dataset...
+04:07:08  INFO      Pushing updated dataset to leachl/obfuscated-exebench...
+Uploading the dataset shards:   0%|          | 0/22 [00:00<?, ?it/s]
+Creating parquet from Arrow format:   0%|          | 0/45 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:   2%|▏         | 1/45 [00:01<00:54,  1.24s/ba][A
+Creating parquet from Arrow format:   7%|▋         | 3/45 [00:01<00:15,  2.63ba/s][A
+Creating parquet from Arrow format:  11%|█         | 5/45 [00:01<00:08,  4.59ba/s][A
+Creating parquet from Arrow format:  16%|█▌        | 7/45 [00:01<00:05,  6.54ba/s][A
+Creating parquet from Arrow format:  20%|██        | 9/45 [00:01<00:04,  8.41ba/s][A
+Creating parquet from Arrow format:  24%|██▍       | 11/45 [00:02<00:07,  4.51ba/s][A
+Creating parquet from Arrow format:  29%|██▉       | 13/45 [00:02<00:05,  5.54ba/s][A
+Creating parquet from Arrow format:  33%|███▎      | 15/45 [00:02<00:04,  6.97ba/s][A
+Creating parquet from Arrow format:  38%|███▊      | 17/45 [00:03<00:03,  8.30ba/s][A
+Creating parquet from Arrow format:  42%|████▏     | 19/45 [00:03<00:02,  9.53ba/s][A
+Creating parquet from Arrow format:  47%|████▋     | 21/45 [00:03<00:03,  6.61ba/s][A
+Creating parquet from Arrow format:  51%|█████     | 23/45 [00:04<00:03,  6.26ba/s][A
+Creating parquet from Arrow format:  56%|█████▌    | 25/45 [00:04<00:02,  7.86ba/s][A
+Creating parquet from Arrow format:  60%|██████    | 27/45 [00:04<00:01,  9.45ba/s][A
+Creating parquet from Arrow format:  64%|██████▍   | 29/45 [00:04<00:01, 10.81ba/s][A
+Creating parquet from Arrow format:  69%|██████▉   | 31/45 [00:04<00:01, 11.92ba/s][A
+Creating parquet from Arrow format:  73%|███████▎  | 33/45 [00:05<00:02,  5.98ba/s][A
+Creating parquet from Arrow format:  78%|███████▊  | 35/45 [00:05<00:01,  7.45ba/s][A
+Creating parquet from Arrow format:  82%|████████▏ | 37/45 [00:05<00:00,  8.88ba/s][A
+Creating parquet from Arrow format:  87%|████████▋ | 39/45 [00:05<00:00,  9.86ba/s][A
+Creating parquet from Arrow format:  91%|█████████ | 41/45 [00:05<00:00, 11.21ba/s][A
+Creating parquet from Arrow format:  96%|█████████▌| 43/45 [00:06<00:00,  6.70ba/s][A
+Creating parquet from Arrow format: 100%|██████████| 45/45 [00:06<00:00,  7.38ba/s][ACreating parquet from Arrow format: 100%|██████████| 45/45 [00:06<00:00,  6.85ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:08:39  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards:   5%|▍         | 1/22 [00:07<02:42,  7.75s/it]
+Creating parquet from Arrow format:   0%|          | 0/45 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:   2%|▏         | 1/45 [00:00<00:05,  8.74ba/s][A
+Creating parquet from Arrow format:   4%|▍         | 2/45 [00:00<00:04,  9.32ba/s][A
+Creating parquet from Arrow format:   9%|▉         | 4/45 [00:00<00:03, 11.77ba/s][A
+Creating parquet from Arrow format:  13%|█▎        | 6/45 [00:00<00:03, 10.94ba/s][A
+Creating parquet from Arrow format:  18%|█▊        | 8/45 [00:00<00:03, 12.04ba/s][A
+Creating parquet from Arrow format:  22%|██▏       | 10/45 [00:00<00:03, 10.09ba/s][A
+Creating parquet from Arrow format:  27%|██▋       | 12/45 [00:01<00:05,  6.05ba/s][A
+Creating parquet from Arrow format:  31%|███       | 14/45 [00:01<00:04,  7.55ba/s][A
+Creating parquet from Arrow format:  36%|███▌      | 16/45 [00:01<00:03,  8.50ba/s][A
+Creating parquet from Arrow format:  40%|████      | 18/45 [00:02<00:02,  9.16ba/s][A
+Creating parquet from Arrow format:  44%|████▍     | 20/45 [00:02<00:02,  8.41ba/s][A
+Creating parquet from Arrow format:  47%|████▋     | 21/45 [00:02<00:03,  6.45ba/s][A
+Creating parquet from Arrow format:  49%|████▉     | 22/45 [00:02<00:03,  5.90ba/s][A
+Creating parquet from Arrow format:  53%|█████▎    | 24/45 [00:03<00:02,  7.21ba/s][A
+Creating parquet from Arrow format:  56%|█████▌    | 25/45 [00:03<00:02,  7.51ba/s][A
+Creating parquet from Arrow format:  60%|██████    | 27/45 [00:03<00:02,  8.98ba/s][A
+Creating parquet from Arrow format:  62%|██████▏   | 28/45 [00:03<00:02,  8.05ba/s][A
+Creating parquet from Arrow format:  67%|██████▋   | 30/45 [00:03<00:01,  9.24ba/s][A
+Creating parquet from Arrow format:  69%|██████▉   | 31/45 [00:03<00:01,  7.76ba/s][A
+Creating parquet from Arrow format:  71%|███████   | 32/45 [00:04<00:02,  6.45ba/s][A
+Creating parquet from Arrow format:  73%|███████▎  | 33/45 [00:04<00:02,  5.52ba/s][A
+Creating parquet from Arrow format:  78%|███████▊  | 35/45 [00:04<00:01,  7.40ba/s][A
+Creating parquet from Arrow format:  82%|████████▏ | 37/45 [00:04<00:00,  8.17ba/s][A
+Creating parquet from Arrow format:  87%|████████▋ | 39/45 [00:04<00:00,  9.30ba/s][A
+Creating parquet from Arrow format:  91%|█████████ | 41/45 [00:05<00:00,  9.37ba/s][A
+Creating parquet from Arrow format:  96%|█████████▌| 43/45 [00:05<00:00,  8.42ba/s][A
+Creating parquet from Arrow format:  98%|█████████▊| 44/45 [00:05<00:00,  5.79ba/s][A
+Creating parquet from Arrow format: 100%|██████████| 45/45 [00:05<00:00,  5.68ba/s][ACreating parquet from Arrow format: 100%|██████████| 45/45 [00:05<00:00,  7.60ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:08:46  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards:   9%|▉         | 2/22 [00:13<02:17,  6.86s/it]
+Creating parquet from Arrow format:   0%|          | 0/45 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:   2%|▏         | 1/45 [00:00<00:05,  8.13ba/s][A
+Creating parquet from Arrow format:   4%|▍         | 2/45 [00:00<00:04,  8.97ba/s][A
+Creating parquet from Arrow format:   9%|▉         | 4/45 [00:00<00:03, 10.75ba/s][A
+Creating parquet from Arrow format:  13%|█▎        | 6/45 [00:00<00:03, 11.15ba/s][A
+Creating parquet from Arrow format:  18%|█▊        | 8/45 [00:00<00:03, 10.70ba/s][A
+Creating parquet from Arrow format:  22%|██▏       | 10/45 [00:01<00:04,  7.58ba/s][A
+Creating parquet from Arrow format:  24%|██▍       | 11/45 [00:01<00:04,  7.52ba/s][A
+Creating parquet from Arrow format:  29%|██▉       | 13/45 [00:01<00:03,  9.26ba/s][A
+Creating parquet from Arrow format:  33%|███▎      | 15/45 [00:01<00:02, 10.12ba/s][A
+Creating parquet from Arrow format:  38%|███▊      | 17/45 [00:01<00:02, 11.04ba/s][A
+Creating parquet from Arrow format:  42%|████▏     | 19/45 [00:01<00:02, 10.90ba/s][A
+Creating parquet from Arrow format:  47%|████▋     | 21/45 [00:02<00:03,  6.07ba/s][A
+Creating parquet from Arrow format:  51%|█████     | 23/45 [00:02<00:03,  7.11ba/s][A
+Creating parquet from Arrow format:  56%|█████▌    | 25/45 [00:02<00:02,  8.24ba/s][A
+Creating parquet from Arrow format:  60%|██████    | 27/45 [00:03<00:01,  9.46ba/s][A
+Creating parquet from Arrow format:  64%|██████▍   | 29/45 [00:03<00:01, 10.16ba/s][A
+Creating parquet from Arrow format:  69%|██████▉   | 31/45 [00:03<00:02,  5.44ba/s][A
+Creating parquet from Arrow format:  71%|███████   | 32/45 [00:04<00:02,  5.68ba/s][A
+Creating parquet from Arrow format:  76%|███████▌  | 34/45 [00:04<00:01,  7.02ba/s][A
+Creating parquet from Arrow format:  80%|████████  | 36/45 [00:04<00:01,  8.53ba/s][A
+Creating parquet from Arrow format:  84%|████████▍ | 38/45 [00:04<00:00, 10.18ba/s][A
+Creating parquet from Arrow format:  89%|████████▉ | 40/45 [00:04<00:00, 10.99ba/s][A
+Creating parquet from Arrow format:  93%|█████████▎| 42/45 [00:05<00:00,  7.37ba/s][A
+Creating parquet from Arrow format:  98%|█████████▊| 44/45 [00:05<00:00,  8.03ba/s][ACreating parquet from Arrow format: 100%|██████████| 45/45 [00:05<00:00,  8.40ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:08:51  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards:  14%|█▎        | 3/22 [00:19<02:00,  6.34s/it]
+Creating parquet from Arrow format:   0%|          | 0/45 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:   4%|▍         | 2/45 [00:00<00:03, 12.36ba/s][A
+Creating parquet from Arrow format:   9%|▉         | 4/45 [00:00<00:03, 11.96ba/s][A
+Creating parquet from Arrow format:  13%|█▎        | 6/45 [00:00<00:03, 11.51ba/s][A
+Creating parquet from Arrow format:  18%|█▊        | 8/45 [00:00<00:02, 12.50ba/s][A
+Creating parquet from Arrow format:  22%|██▏       | 10/45 [00:01<00:04,  7.76ba/s][A
+Creating parquet from Arrow format:  24%|██▍       | 11/45 [00:01<00:05,  6.50ba/s][A
+Creating parquet from Arrow format:  29%|██▉       | 13/45 [00:01<00:04,  7.58ba/s][A
+Creating parquet from Arrow format:  31%|███       | 14/45 [00:01<00:03,  7.86ba/s][A
+Creating parquet from Arrow format:  33%|███▎      | 15/45 [00:01<00:03,  8.13ba/s][A
+Creating parquet from Arrow format:  38%|███▊      | 17/45 [00:01<00:03,  9.13ba/s][A
+Creating parquet from Arrow format:  42%|████▏     | 19/45 [00:02<00:02, 10.08ba/s][A
+Creating parquet from Arrow format:  47%|████▋     | 21/45 [00:02<00:03,  7.32ba/s][A
+Creating parquet from Arrow format:  49%|████▉     | 22/45 [00:02<00:03,  6.84ba/s][A
+Creating parquet from Arrow format:  53%|█████▎    | 24/45 [00:02<00:02,  8.70ba/s][A
+Creating parquet from Arrow format:  58%|█████▊    | 26/45 [00:03<00:02,  8.81ba/s][A
+Creating parquet from Arrow format:  62%|██████▏   | 28/45 [00:03<00:01,  9.30ba/s][A
+Creating parquet from Arrow format:  67%|██████▋   | 30/45 [00:03<00:01, 10.43ba/s][A
+Creating parquet from Arrow format:  71%|███████   | 32/45 [00:03<00:01,  8.21ba/s][A
+Creating parquet from Arrow format:  73%|███████▎  | 33/45 [00:03<00:01,  7.21ba/s][A
+Creating parquet from Arrow format:  78%|███████▊  | 35/45 [00:04<00:01,  9.00ba/s][A
+Creating parquet from Arrow format:  82%|████████▏ | 37/45 [00:04<00:00, 10.68ba/s][A
+Creating parquet from Arrow format:  87%|████████▋ | 39/45 [00:04<00:00, 11.08ba/s][A
+Creating parquet from Arrow format:  91%|█████████ | 41/45 [00:04<00:00, 11.55ba/s][A
+Creating parquet from Arrow format:  96%|█████████▌| 43/45 [00:04<00:00,  8.62ba/s][A
+Creating parquet from Arrow format: 100%|██████████| 45/45 [00:05<00:00,  7.48ba/s][ACreating parquet from Arrow format: 100%|██████████| 45/45 [00:05<00:00,  8.66ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:08:57  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards:  18%|█▊        | 4/22 [00:25<01:48,  6.03s/it]
+Creating parquet from Arrow format:   0%|          | 0/45 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:   2%|▏         | 1/45 [00:00<00:05,  7.36ba/s][A
+Creating parquet from Arrow format:   7%|▋         | 3/45 [00:00<00:03, 11.73ba/s][A
+Creating parquet from Arrow format:  11%|█         | 5/45 [00:00<00:03, 12.25ba/s][A
+Creating parquet from Arrow format:  16%|█▌        | 7/45 [00:00<00:03, 11.66ba/s][A
+Creating parquet from Arrow format:  20%|██        | 9/45 [00:00<00:02, 12.34ba/s][A
+Creating parquet from Arrow format:  24%|██▍       | 11/45 [00:01<00:04,  7.00ba/s][A
+Creating parquet from Arrow format:  27%|██▋       | 12/45 [00:01<00:06,  5.47ba/s][A
+Creating parquet from Arrow format:  29%|██▉       | 13/45 [00:01<00:05,  5.80ba/s][A
+Creating parquet from Arrow format:  33%|███▎      | 15/45 [00:01<00:04,  7.22ba/s][A
+Creating parquet from Arrow format:  36%|███▌      | 16/45 [00:02<00:04,  6.99ba/s][A
+Creating parquet from Arrow format:  38%|███▊      | 17/45 [00:02<00:04,  6.73ba/s][A
+Creating parquet from Arrow format:  42%|████▏     | 19/45 [00:02<00:03,  8.33ba/s][A
+Creating parquet from Arrow format:  47%|████▋     | 21/45 [00:02<00:02,  9.80ba/s][A
+Creating parquet from Arrow format:  51%|█████     | 23/45 [00:03<00:03,  6.42ba/s][A
+Creating parquet from Arrow format:  56%|█████▌    | 25/45 [00:03<00:02,  7.56ba/s][A
+Creating parquet from Arrow format:  60%|██████    | 27/45 [00:03<00:02,  8.71ba/s][A
+Creating parquet from Arrow format:  64%|██████▍   | 29/45 [00:03<00:01,  9.79ba/s][A
+Creating parquet from Arrow format:  69%|██████▉   | 31/45 [00:03<00:01, 10.70ba/s][A
+Creating parquet from Arrow format:  73%|███████▎  | 33/45 [00:04<00:01,  8.80ba/s][A
+Creating parquet from Arrow format:  78%|███████▊  | 35/45 [00:04<00:01,  7.30ba/s][A
+Creating parquet from Arrow format:  82%|████████▏ | 37/45 [00:04<00:00,  8.53ba/s][A
+Creating parquet from Arrow format:  87%|████████▋ | 39/45 [00:04<00:00,  9.64ba/s][A
+Creating parquet from Arrow format:  91%|█████████ | 41/45 [00:04<00:00,  9.74ba/s][A
+Creating parquet from Arrow format:  96%|█████████▌| 43/45 [00:05<00:00, 10.38ba/s][A
+Creating parquet from Arrow format: 100%|██████████| 45/45 [00:05<00:00, 10.85ba/s][ACreating parquet from Arrow format: 100%|██████████| 45/45 [00:05<00:00,  8.65ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:09:03  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards:  23%|██▎       | 5/22 [00:30<01:39,  5.84s/it]
+Creating parquet from Arrow format:   0%|          | 0/45 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:   2%|▏         | 1/45 [00:00<00:08,  5.10ba/s][A
+Creating parquet from Arrow format:   4%|▍         | 2/45 [00:00<00:06,  6.41ba/s][A
+Creating parquet from Arrow format:   9%|▉         | 4/45 [00:00<00:04,  9.69ba/s][A
+Creating parquet from Arrow format:  13%|█▎        | 6/45 [00:00<00:03, 12.31ba/s][A
+Creating parquet from Arrow format:  20%|██        | 9/45 [00:00<00:02, 15.09ba/s][A
+Creating parquet from Arrow format:  24%|██▍       | 11/45 [00:01<00:03,  9.54ba/s][A
+Creating parquet from Arrow format:  29%|██▉       | 13/45 [00:01<00:04,  6.75ba/s][A
+Creating parquet from Arrow format:  33%|███▎      | 15/45 [00:01<00:03,  7.80ba/s][A
+Creating parquet from Arrow format:  38%|███▊      | 17/45 [00:01<00:03,  9.14ba/s][A
+Creating parquet from Arrow format:  42%|████▏     | 19/45 [00:01<00:02, 10.85ba/s][A
+Creating parquet from Arrow format:  47%|████▋     | 21/45 [00:02<00:01, 12.34ba/s][A
+Creating parquet from Arrow format:  51%|█████     | 23/45 [00:02<00:03,  6.05ba/s][A
+Creating parquet from Arrow format:  56%|█████▌    | 25/45 [00:03<00:03,  6.45ba/s][A
+Creating parquet from Arrow format:  60%|██████    | 27/45 [00:03<00:02,  6.42ba/s][A
+Creating parquet from Arrow format:  67%|██████▋   | 30/45 [00:03<00:01,  8.60ba/s][A
+Creating parquet from Arrow format:  71%|███████   | 32/45 [00:03<00:01,  9.48ba/s][A
+Creating parquet from Arrow format:  76%|███████▌  | 34/45 [00:04<00:01,  5.86ba/s][A
+Creating parquet from Arrow format:  78%|███████▊  | 35/45 [00:04<00:01,  5.47ba/s][A
+Creating parquet from Arrow format:  82%|████████▏ | 37/45 [00:04<00:01,  6.64ba/s][A
+Creating parquet from Arrow format:  87%|████████▋ | 39/45 [00:04<00:00,  7.73ba/s][A
+Creating parquet from Arrow format:  91%|█████████ | 41/45 [00:05<00:00,  9.30ba/s][A
+Creating parquet from Arrow format:  96%|█████████▌| 43/45 [00:05<00:00, 10.51ba/s][A
+Creating parquet from Arrow format: 100%|██████████| 45/45 [00:05<00:00,  9.29ba/s][ACreating parquet from Arrow format: 100%|██████████| 45/45 [00:05<00:00,  8.18ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:09:08  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards:  27%|██▋       | 6/22 [00:36<01:33,  5.85s/it]
+Creating parquet from Arrow format:   0%|          | 0/45 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:   2%|▏         | 1/45 [00:00<00:10,  4.15ba/s][A
+Creating parquet from Arrow format:   4%|▍         | 2/45 [00:00<00:08,  5.34ba/s][A
+Creating parquet from Arrow format:   9%|▉         | 4/45 [00:00<00:04,  8.53ba/s][A
+Creating parquet from Arrow format:  11%|█         | 5/45 [00:00<00:04,  8.26ba/s][A
+Creating parquet from Arrow format:  16%|█▌        | 7/45 [00:00<00:03,  9.53ba/s][A
+Creating parquet from Arrow format:  18%|█▊        | 8/45 [00:00<00:03,  9.30ba/s][A
+Creating parquet from Arrow format:  22%|██▏       | 10/45 [00:01<00:03,  9.72ba/s][A
+Creating parquet from Arrow format:  24%|██▍       | 11/45 [00:01<00:03,  8.68ba/s][A
+Creating parquet from Arrow format:  27%|██▋       | 12/45 [00:01<00:06,  5.20ba/s][A
+Creating parquet from Arrow format:  29%|██▉       | 13/45 [00:02<00:07,  4.09ba/s][A
+Creating parquet from Arrow format:  31%|███       | 14/45 [00:02<00:06,  4.60ba/s][A
+Creating parquet from Arrow format:  33%|███▎      | 15/45 [00:02<00:05,  5.18ba/s][A
+Creating parquet from Arrow format:  38%|███▊      | 17/45 [00:02<00:03,  7.05ba/s][A
+Creating parquet from Arrow format:  42%|████▏     | 19/45 [00:02<00:02,  8.85ba/s][A
+Creating parquet from Arrow format:  47%|████▋     | 21/45 [00:02<00:02,  9.61ba/s][A
+Creating parquet from Arrow format:  51%|█████     | 23/45 [00:03<00:02,  7.40ba/s][A
+Creating parquet from Arrow format:  53%|█████▎    | 24/45 [00:03<00:03,  6.48ba/s][A
+Creating parquet from Arrow format:  56%|█████▌    | 25/45 [00:03<00:03,  6.02ba/s][A
+Creating parquet from Arrow format:  58%|█████▊    | 26/45 [00:03<00:03,  6.14ba/s][A
+Creating parquet from Arrow format:  62%|██████▏   | 28/45 [00:04<00:02,  7.70ba/s][A
+Creating parquet from Arrow format:  64%|██████▍   | 29/45 [00:04<00:02,  7.93ba/s][A
+Creating parquet from Arrow format:  67%|██████▋   | 30/45 [00:04<00:02,  7.32ba/s][A
+Creating parquet from Arrow format:  71%|███████   | 32/45 [00:04<00:01,  9.00ba/s][A
+Creating parquet from Arrow format:  76%|███████▌  | 34/45 [00:04<00:01,  9.55ba/s][A
+Creating parquet from Arrow format:  78%|███████▊  | 35/45 [00:04<00:01,  6.93ba/s][A
+Creating parquet from Arrow format:  80%|████████  | 36/45 [00:05<00:01,  6.33ba/s][A
+Creating parquet from Arrow format:  82%|████████▏ | 37/45 [00:05<00:01,  6.46ba/s][A
+Creating parquet from Arrow format:  87%|████████▋ | 39/45 [00:05<00:00,  7.59ba/s][A
+Creating parquet from Arrow format:  91%|█████████ | 41/45 [00:05<00:00,  9.04ba/s][A
+Creating parquet from Arrow format:  96%|█████████▌| 43/45 [00:05<00:00,  9.69ba/s][A
+Creating parquet from Arrow format: 100%|██████████| 45/45 [00:05<00:00, 11.36ba/s][ACreating parquet from Arrow format: 100%|██████████| 45/45 [00:05<00:00,  7.60ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:09:15  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards:  32%|███▏      | 7/22 [00:42<01:29,  5.99s/it]
+Creating parquet from Arrow format:   0%|          | 0/45 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:   2%|▏         | 1/45 [00:00<00:07,  6.02ba/s][A
+Creating parquet from Arrow format:   7%|▋         | 3/45 [00:00<00:03, 10.73ba/s][A
+Creating parquet from Arrow format:  11%|█         | 5/45 [00:00<00:03, 12.67ba/s][A
+Creating parquet from Arrow format:  18%|█▊        | 8/45 [00:00<00:02, 15.31ba/s][A
+Creating parquet from Arrow format:  22%|██▏       | 10/45 [00:00<00:03, 11.63ba/s][A
+Creating parquet from Arrow format:  27%|██▋       | 12/45 [00:01<00:03, 10.29ba/s][A
+Creating parquet from Arrow format:  31%|███       | 14/45 [00:01<00:03,  8.62ba/s][A
+Creating parquet from Arrow format:  36%|███▌      | 16/45 [00:01<00:02, 10.31ba/s][A
+Creating parquet from Arrow format:  40%|████      | 18/45 [00:01<00:02, 11.55ba/s][A
+Creating parquet from Arrow format:  47%|████▋     | 21/45 [00:01<00:01, 13.61ba/s][A
+Creating parquet from Arrow format:  51%|█████     | 23/45 [00:01<00:01, 12.37ba/s][A
+Creating parquet from Arrow format:  56%|█████▌    | 25/45 [00:02<00:02,  7.99ba/s][A
+Creating parquet from Arrow format:  60%|██████    | 27/45 [00:02<00:02,  8.39ba/s][A
+Creating parquet from Arrow format:  64%|██████▍   | 29/45 [00:02<00:01,  9.71ba/s][A
+Creating parquet from Arrow format:  69%|██████▉   | 31/45 [00:02<00:01, 10.97ba/s][A
+Creating parquet from Arrow format:  73%|███████▎  | 33/45 [00:03<00:00, 12.38ba/s][A
+Creating parquet from Arrow format:  78%|███████▊  | 35/45 [00:03<00:00, 13.90ba/s][A
+Creating parquet from Arrow format:  82%|████████▏ | 37/45 [00:03<00:00, 10.68ba/s][A
+Creating parquet from Arrow format:  87%|████████▋ | 39/45 [00:03<00:00,  8.91ba/s][A
+Creating parquet from Arrow format:  91%|█████████ | 41/45 [00:03<00:00,  9.68ba/s][A
+Creating parquet from Arrow format:  96%|█████████▌| 43/45 [00:04<00:00, 11.39ba/s][ACreating parquet from Arrow format: 100%|██████████| 45/45 [00:04<00:00, 10.96ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:09:19  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards:  36%|███▋      | 8/22 [00:47<01:16,  5.50s/it]
+Creating parquet from Arrow format:   0%|          | 0/45 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:   2%|▏         | 1/45 [00:00<00:05,  8.42ba/s][A
+Creating parquet from Arrow format:   7%|▋         | 3/45 [00:00<00:03, 11.94ba/s][A
+Creating parquet from Arrow format:  11%|█         | 5/45 [00:00<00:03, 11.63ba/s][A
+Creating parquet from Arrow format:  16%|█▌        | 7/45 [00:00<00:03, 11.16ba/s][A
+Creating parquet from Arrow format:  20%|██        | 9/45 [00:00<00:03, 11.67ba/s][A
+Creating parquet from Arrow format:  24%|██▍       | 11/45 [00:01<00:03,  9.65ba/s][A
+Creating parquet from Arrow format:  29%|██▉       | 13/45 [00:01<00:03,  9.30ba/s][A
+Creating parquet from Arrow format:  33%|███▎      | 15/45 [00:01<00:02, 10.32ba/s][A
+Creating parquet from Arrow format:  38%|███▊      | 17/45 [00:01<00:02, 10.92ba/s][A
+Creating parquet from Arrow format:  42%|████▏     | 19/45 [00:01<00:02, 11.14ba/s][A
+Creating parquet from Arrow format:  47%|████▋     | 21/45 [00:01<00:02, 11.31ba/s][A
+Creating parquet from Arrow format:  51%|█████     | 23/45 [00:02<00:02,  8.06ba/s][A
+Creating parquet from Arrow format:  53%|█████▎    | 24/45 [00:02<00:03,  6.91ba/s][A
+Creating parquet from Arrow format:  56%|█████▌    | 25/45 [00:02<00:03,  5.92ba/s][A
+Creating parquet from Arrow format:  58%|█████▊    | 26/45 [00:02<00:03,  6.20ba/s][A
+Creating parquet from Arrow format:  62%|██████▏   | 28/45 [00:03<00:02,  7.73ba/s][A
+Creating parquet from Arrow format:  67%|██████▋   | 30/45 [00:03<00:01,  9.11ba/s][A
+Creating parquet from Arrow format:  71%|███████   | 32/45 [00:03<00:01,  8.75ba/s][A
+Creating parquet from Arrow format:  73%|███████▎  | 33/45 [00:03<00:01,  8.94ba/s][A
+Creating parquet from Arrow format:  76%|███████▌  | 34/45 [00:03<00:01,  8.65ba/s][A
+Creating parquet from Arrow format:  78%|███████▊  | 35/45 [00:04<00:01,  6.80ba/s][A
+Creating parquet from Arrow format:  80%|████████  | 36/45 [00:04<00:01,  6.94ba/s][A
+Creating parquet from Arrow format:  82%|████████▏ | 37/45 [00:04<00:01,  6.85ba/s][A
+Creating parquet from Arrow format:  87%|████████▋ | 39/45 [00:04<00:00,  8.28ba/s][A
+Creating parquet from Arrow format:  91%|█████████ | 41/45 [00:04<00:00,  9.40ba/s][A
+Creating parquet from Arrow format:  96%|█████████▌| 43/45 [00:04<00:00,  9.95ba/s][A
+Creating parquet from Arrow format: 100%|██████████| 45/45 [00:05<00:00, 10.52ba/s][ACreating parquet from Arrow format: 100%|██████████| 45/45 [00:05<00:00,  9.00ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:09:24  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards:  41%|████      | 9/22 [00:52<01:11,  5.53s/it]
+Creating parquet from Arrow format:   0%|          | 0/45 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:   2%|▏         | 1/45 [00:00<00:11,  3.95ba/s][A
+Creating parquet from Arrow format:   7%|▋         | 3/45 [00:00<00:04,  8.79ba/s][A
+Creating parquet from Arrow format:  13%|█▎        | 6/45 [00:00<00:02, 13.55ba/s][A
+Creating parquet from Arrow format:  18%|█▊        | 8/45 [00:00<00:02, 14.70ba/s][A
+Creating parquet from Arrow format:  22%|██▏       | 10/45 [00:00<00:02, 15.60ba/s][A
+Creating parquet from Arrow format:  27%|██▋       | 12/45 [00:01<00:03, 10.57ba/s][A
+Creating parquet from Arrow format:  31%|███       | 14/45 [00:01<00:03,  7.97ba/s][A
+Creating parquet from Arrow format:  36%|███▌      | 16/45 [00:01<00:02,  9.73ba/s][A
+Creating parquet from Arrow format:  40%|████      | 18/45 [00:01<00:02, 10.99ba/s][A
+Creating parquet from Arrow format:  44%|████▍     | 20/45 [00:01<00:02, 12.42ba/s][A
+Creating parquet from Arrow format:  49%|████▉     | 22/45 [00:01<00:01, 13.32ba/s][A
+Creating parquet from Arrow format:  53%|█████▎    | 24/45 [00:02<00:02,  9.21ba/s][A
+Creating parquet from Arrow format:  58%|█████▊    | 26/45 [00:02<00:02,  7.31ba/s][A
+Creating parquet from Arrow format:  62%|██████▏   | 28/45 [00:02<00:01,  8.91ba/s][A
+Creating parquet from Arrow format:  67%|██████▋   | 30/45 [00:02<00:01, 10.43ba/s][A
+Creating parquet from Arrow format:  71%|███████   | 32/45 [00:03<00:01, 12.00ba/s][A
+Creating parquet from Arrow format:  76%|███████▌  | 34/45 [00:03<00:00, 13.60ba/s][A
+Creating parquet from Arrow format:  80%|████████  | 36/45 [00:03<00:00, 10.93ba/s][A
+Creating parquet from Arrow format:  84%|████████▍ | 38/45 [00:03<00:00,  7.13ba/s][A
+Creating parquet from Arrow format:  89%|████████▉ | 40/45 [00:04<00:00,  7.71ba/s][A
+Creating parquet from Arrow format:  93%|█████████▎| 42/45 [00:04<00:00,  9.19ba/s][A
+Creating parquet from Arrow format: 100%|██████████| 45/45 [00:04<00:00, 12.07ba/s][ACreating parquet from Arrow format: 100%|██████████| 45/45 [00:04<00:00, 10.29ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:09:30  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards:  45%|████▌     | 10/22 [00:57<01:03,  5.32s/it]
+Creating parquet from Arrow format:   0%|          | 0/45 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:   4%|▍         | 2/45 [00:00<00:02, 15.02ba/s][A
+Creating parquet from Arrow format:   9%|▉         | 4/45 [00:00<00:03, 12.99ba/s][A
+Creating parquet from Arrow format:  13%|█▎        | 6/45 [00:00<00:03, 12.38ba/s][A
+Creating parquet from Arrow format:  18%|█▊        | 8/45 [00:00<00:02, 12.85ba/s][A
+Creating parquet from Arrow format:  22%|██▏       | 10/45 [00:00<00:03, 10.10ba/s][A
+Creating parquet from Arrow format:  27%|██▋       | 12/45 [00:01<00:04,  7.33ba/s][A
+Creating parquet from Arrow format:  29%|██▉       | 13/45 [00:01<00:04,  7.00ba/s][A
+Creating parquet from Arrow format:  33%|███▎      | 15/45 [00:01<00:03,  8.35ba/s][A
+Creating parquet from Arrow format:  38%|███▊      | 17/45 [00:01<00:02,  9.68ba/s][A
+Creating parquet from Arrow format:  42%|████▏     | 19/45 [00:01<00:02, 10.42ba/s][A
+Creating parquet from Arrow format:  47%|████▋     | 21/45 [00:02<00:02,  8.98ba/s][A
+Creating parquet from Arrow format:  49%|████▉     | 22/45 [00:02<00:03,  7.42ba/s][A
+Creating parquet from Arrow format:  51%|█████     | 23/45 [00:02<00:03,  6.27ba/s][A
+Creating parquet from Arrow format:  53%|█████▎    | 24/45 [00:02<00:03,  6.48ba/s][A
+Creating parquet from Arrow format:  58%|█████▊    | 26/45 [00:02<00:02,  8.42ba/s][A
+Creating parquet from Arrow format:  62%|██████▏   | 28/45 [00:03<00:01,  9.79ba/s][A
+Creating parquet from Arrow format:  67%|██████▋   | 30/45 [00:03<00:01, 11.11ba/s][A
+Creating parquet from Arrow format:  71%|███████   | 32/45 [00:03<00:01, 11.46ba/s][A
+Creating parquet from Arrow format:  76%|███████▌  | 34/45 [00:03<00:01,  7.14ba/s][A
+Creating parquet from Arrow format:  80%|████████  | 36/45 [00:04<00:01,  7.51ba/s][A
+Creating parquet from Arrow format:  84%|████████▍ | 38/45 [00:04<00:00,  8.81ba/s][A
+Creating parquet from Arrow format:  89%|████████▉ | 40/45 [00:04<00:00,  9.91ba/s][A
+Creating parquet from Arrow format:  93%|█████████▎| 42/45 [00:04<00:00, 10.97ba/s][A
+Creating parquet from Arrow format:  98%|█████████▊| 44/45 [00:04<00:00,  8.72ba/s][ACreating parquet from Arrow format: 100%|██████████| 45/45 [00:05<00:00,  8.99ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:09:35  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards:  50%|█████     | 11/22 [01:03<00:58,  5.34s/it]
+Creating parquet from Arrow format:   0%|          | 0/45 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:   2%|▏         | 1/45 [00:00<00:15,  2.80ba/s][A
+Creating parquet from Arrow format:   7%|▋         | 3/45 [00:00<00:06,  6.67ba/s][A
+Creating parquet from Arrow format:  11%|█         | 5/45 [00:00<00:04,  9.65ba/s][A
+Creating parquet from Arrow format:  16%|█▌        | 7/45 [00:00<00:03, 12.04ba/s][A
+Creating parquet from Arrow format:  20%|██        | 9/45 [00:00<00:02, 13.53ba/s][A
+Creating parquet from Arrow format:  24%|██▍       | 11/45 [00:01<00:04,  7.22ba/s][A
+Creating parquet from Arrow format:  29%|██▉       | 13/45 [00:01<00:04,  7.19ba/s][A
+Creating parquet from Arrow format:  33%|███▎      | 15/45 [00:01<00:03,  8.89ba/s][A
+Creating parquet from Arrow format:  38%|███▊      | 17/45 [00:01<00:02, 10.56ba/s][A
+Creating parquet from Arrow format:  44%|████▍     | 20/45 [00:02<00:01, 13.04ba/s][A
+Creating parquet from Arrow format:  49%|████▉     | 22/45 [00:02<00:02,  8.95ba/s][A
+Creating parquet from Arrow format:  53%|█████▎    | 24/45 [00:02<00:03,  6.92ba/s][A
+Creating parquet from Arrow format:  58%|█████▊    | 26/45 [00:03<00:02,  8.25ba/s][A
+Creating parquet from Arrow format:  62%|██████▏   | 28/45 [00:03<00:01,  9.92ba/s][A
+Creating parquet from Arrow format:  67%|██████▋   | 30/45 [00:03<00:01, 11.42ba/s][A
+Creating parquet from Arrow format:  71%|███████   | 32/45 [00:03<00:01, 12.93ba/s][A
+Creating parquet from Arrow format:  76%|███████▌  | 34/45 [00:03<00:01,  8.08ba/s][A
+Creating parquet from Arrow format:  80%|████████  | 36/45 [00:04<00:01,  8.63ba/s][A
+Creating parquet from Arrow format:  84%|████████▍ | 38/45 [00:04<00:00, 10.31ba/s][A
+Creating parquet from Arrow format:  89%|████████▉ | 40/45 [00:04<00:00, 11.81ba/s][A
+Creating parquet from Arrow format:  93%|█████████▎| 42/45 [00:04<00:00, 12.85ba/s][A
+Creating parquet from Arrow format:  98%|█████████▊| 44/45 [00:04<00:00, 12.50ba/s][ACreating parquet from Arrow format: 100%|██████████| 45/45 [00:04<00:00,  9.71ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:09:40  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards:  55%|█████▍    | 12/22 [01:08<00:52,  5.22s/it]
+Creating parquet from Arrow format:   0%|          | 0/45 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:   2%|▏         | 1/45 [00:00<00:10,  4.25ba/s][A
+Creating parquet from Arrow format:   7%|▋         | 3/45 [00:00<00:05,  7.92ba/s][A
+Creating parquet from Arrow format:   9%|▉         | 4/45 [00:00<00:05,  7.87ba/s][A
+Creating parquet from Arrow format:  11%|█         | 5/45 [00:00<00:05,  7.03ba/s][A
+Creating parquet from Arrow format:  16%|█▌        | 7/45 [00:00<00:04,  9.30ba/s][A
+Creating parquet from Arrow format:  20%|██        | 9/45 [00:00<00:03, 11.30ba/s][A
+Creating parquet from Arrow format:  24%|██▍       | 11/45 [00:01<00:03, 11.19ba/s][A
+Creating parquet from Arrow format:  29%|██▉       | 13/45 [00:01<00:04,  6.44ba/s][A
+Creating parquet from Arrow format:  33%|███▎      | 15/45 [00:01<00:03,  7.64ba/s][A
+Creating parquet from Arrow format:  38%|███▊      | 17/45 [00:02<00:03,  8.68ba/s][A
+Creating parquet from Arrow format:  42%|████▏     | 19/45 [00:02<00:02,  9.44ba/s][A
+Creating parquet from Arrow format:  47%|████▋     | 21/45 [00:02<00:02, 11.01ba/s][A
+Creating parquet from Arrow format:  51%|█████     | 23/45 [00:02<00:02,  9.25ba/s][A
+Creating parquet from Arrow format:  56%|█████▌    | 25/45 [00:03<00:02,  7.11ba/s][A
+Creating parquet from Arrow format:  60%|██████    | 27/45 [00:03<00:02,  8.05ba/s][A
+Creating parquet from Arrow format:  64%|██████▍   | 29/45 [00:03<00:01,  9.45ba/s][A
+Creating parquet from Arrow format:  69%|██████▉   | 31/45 [00:03<00:01,  9.99ba/s][A
+Creating parquet from Arrow format:  73%|███████▎  | 33/45 [00:03<00:01, 10.25ba/s][A
+Creating parquet from Arrow format:  78%|███████▊  | 35/45 [00:04<00:01,  8.67ba/s][A
+Creating parquet from Arrow format:  80%|████████  | 36/45 [00:04<00:01,  7.63ba/s][A
+Creating parquet from Arrow format:  82%|████████▏ | 37/45 [00:04<00:01,  7.00ba/s][A
+Creating parquet from Arrow format:  84%|████████▍ | 38/45 [00:04<00:00,  7.42ba/s][A
+Creating parquet from Arrow format:  89%|████████▉ | 40/45 [00:04<00:00,  8.82ba/s][A
+Creating parquet from Arrow format:  91%|█████████ | 41/45 [00:04<00:00,  8.42ba/s][A
+Creating parquet from Arrow format:  93%|█████████▎| 42/45 [00:04<00:00,  8.14ba/s][A
+Creating parquet from Arrow format:  98%|█████████▊| 44/45 [00:05<00:00,  8.86ba/s][ACreating parquet from Arrow format: 100%|██████████| 45/45 [00:05<00:00,  8.68ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:09:45  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards:  59%|█████▉    | 13/22 [01:13<00:47,  5.31s/it]
+Creating parquet from Arrow format:   0%|          | 0/45 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:   4%|▍         | 2/45 [00:00<00:03, 12.85ba/s][A
+Creating parquet from Arrow format:   9%|▉         | 4/45 [00:00<00:03, 12.56ba/s][A
+Creating parquet from Arrow format:  13%|█▎        | 6/45 [00:00<00:03, 12.93ba/s][A
+Creating parquet from Arrow format:  18%|█▊        | 8/45 [00:00<00:02, 13.34ba/s][A
+Creating parquet from Arrow format:  22%|██▏       | 10/45 [00:00<00:03,  9.40ba/s][A
+Creating parquet from Arrow format:  27%|██▋       | 12/45 [00:01<00:04,  7.30ba/s][A
+Creating parquet from Arrow format:  31%|███       | 14/45 [00:01<00:03,  8.80ba/s][A
+Creating parquet from Arrow format:  36%|███▌      | 16/45 [00:01<00:02, 10.26ba/s][A
+Creating parquet from Arrow format:  40%|████      | 18/45 [00:01<00:02, 11.88ba/s][A
+Creating parquet from Arrow format:  44%|████▍     | 20/45 [00:01<00:01, 13.05ba/s][A
+Creating parquet from Arrow format:  49%|████▉     | 22/45 [00:02<00:02, 10.64ba/s][A
+Creating parquet from Arrow format:  53%|█████▎    | 24/45 [00:02<00:03,  6.98ba/s][A
+Creating parquet from Arrow format:  58%|█████▊    | 26/45 [00:02<00:02,  7.83ba/s][A
+Creating parquet from Arrow format:  62%|██████▏   | 28/45 [00:02<00:01,  8.82ba/s][A
+Creating parquet from Arrow format:  67%|██████▋   | 30/45 [00:03<00:01,  9.68ba/s][A
+Creating parquet from Arrow format:  71%|███████   | 32/45 [00:03<00:01, 10.52ba/s][A
+Creating parquet from Arrow format:  76%|███████▌  | 34/45 [00:03<00:01,  8.41ba/s][A
+Creating parquet from Arrow format:  80%|████████  | 36/45 [00:03<00:01,  7.50ba/s][A
+Creating parquet from Arrow format:  82%|████████▏ | 37/45 [00:04<00:01,  7.78ba/s][A
+Creating parquet from Arrow format:  87%|████████▋ | 39/45 [00:04<00:00,  9.27ba/s][A
+Creating parquet from Arrow format:  91%|█████████ | 41/45 [00:04<00:00,  9.97ba/s][A
+Creating parquet from Arrow format:  96%|█████████▌| 43/45 [00:04<00:00,  9.95ba/s][A
+Creating parquet from Arrow format: 100%|██████████| 45/45 [00:04<00:00,  8.38ba/s][ACreating parquet from Arrow format: 100%|██████████| 45/45 [00:04<00:00,  9.25ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:09:51  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards:  64%|██████▎   | 14/22 [01:18<00:42,  5.28s/it]
+Creating parquet from Arrow format:   0%|          | 0/45 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:   2%|▏         | 1/45 [00:00<00:05,  7.39ba/s][A
+Creating parquet from Arrow format:   7%|▋         | 3/45 [00:00<00:03, 10.68ba/s][A
+Creating parquet from Arrow format:  11%|█         | 5/45 [00:00<00:03, 12.10ba/s][A
+Creating parquet from Arrow format:  16%|█▌        | 7/45 [00:00<00:02, 12.85ba/s][A
+Creating parquet from Arrow format:  20%|██        | 9/45 [00:00<00:02, 12.89ba/s][A
+Creating parquet from Arrow format:  24%|██▍       | 11/45 [00:01<00:03,  9.62ba/s][A
+Creating parquet from Arrow format:  29%|██▉       | 13/45 [00:01<00:03,  8.05ba/s][A
+Creating parquet from Arrow format:  33%|███▎      | 15/45 [00:01<00:03,  8.79ba/s][A
+Creating parquet from Arrow format:  38%|███▊      | 17/45 [00:01<00:02,  9.85ba/s][A
+Creating parquet from Arrow format:  42%|████▏     | 19/45 [00:01<00:02, 10.38ba/s][A
+Creating parquet from Arrow format:  47%|████▋     | 21/45 [00:02<00:02, 11.57ba/s][A
+Creating parquet from Arrow format:  51%|█████     | 23/45 [00:02<00:02,  7.45ba/s][A
+Creating parquet from Arrow format:  53%|█████▎    | 24/45 [00:02<00:03,  6.81ba/s][A
+Creating parquet from Arrow format:  58%|█████▊    | 26/45 [00:02<00:02,  8.55ba/s][A
+Creating parquet from Arrow format:  62%|██████▏   | 28/45 [00:03<00:01,  9.07ba/s][A
+Creating parquet from Arrow format:  67%|██████▋   | 30/45 [00:03<00:01,  9.96ba/s][A
+Creating parquet from Arrow format:  71%|███████   | 32/45 [00:03<00:01, 11.57ba/s][A
+Creating parquet from Arrow format:  76%|███████▌  | 34/45 [00:03<00:01,  9.16ba/s][A
+Creating parquet from Arrow format:  80%|████████  | 36/45 [00:04<00:01,  7.06ba/s][A
+Creating parquet from Arrow format:  84%|████████▍ | 38/45 [00:04<00:00,  8.53ba/s][A
+Creating parquet from Arrow format:  89%|████████▉ | 40/45 [00:04<00:00,  9.93ba/s][A
+Creating parquet from Arrow format:  93%|█████████▎| 42/45 [00:04<00:00, 11.24ba/s][A
+Creating parquet from Arrow format:  98%|█████████▊| 44/45 [00:04<00:00, 11.25ba/s][ACreating parquet from Arrow format: 100%|██████████| 45/45 [00:04<00:00,  9.54ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:09:56  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards:  68%|██████▊   | 15/22 [01:24<00:37,  5.29s/it]
+Creating parquet from Arrow format:   0%|          | 0/45 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:   2%|▏         | 1/45 [00:00<00:10,  4.25ba/s][A
+Creating parquet from Arrow format:   4%|▍         | 2/45 [00:00<00:07,  6.14ba/s][A
+Creating parquet from Arrow format:   9%|▉         | 4/45 [00:00<00:04,  8.91ba/s][A
+Creating parquet from Arrow format:  13%|█▎        | 6/45 [00:00<00:04,  9.60ba/s][A
+Creating parquet from Arrow format:  18%|█▊        | 8/45 [00:00<00:03, 11.64ba/s][A
+Creating parquet from Arrow format:  24%|██▍       | 11/45 [00:00<00:02, 15.98ba/s][A
+Creating parquet from Arrow format:  31%|███       | 14/45 [00:01<00:01, 18.81ba/s][A
+Creating parquet from Arrow format:  38%|███▊      | 17/45 [00:01<00:01, 14.81ba/s][A
+Creating parquet from Arrow format:  42%|████▏     | 19/45 [00:01<00:02, 12.77ba/s][A
+Creating parquet from Arrow format:  47%|████▋     | 21/45 [00:01<00:01, 12.10ba/s][A
+Creating parquet from Arrow format:  53%|█████▎    | 24/45 [00:01<00:01, 15.03ba/s][A
+Creating parquet from Arrow format:  58%|█████▊    | 26/45 [00:01<00:01, 15.87ba/s][A
+Creating parquet from Arrow format:  67%|██████▋   | 30/45 [00:02<00:00, 20.27ba/s][A
+Creating parquet from Arrow format:  73%|███████▎  | 33/45 [00:02<00:00, 21.78ba/s][A
+Creating parquet from Arrow format:  82%|████████▏ | 37/45 [00:02<00:00, 23.54ba/s][A
+Creating parquet from Arrow format:  89%|████████▉ | 40/45 [00:02<00:00, 16.29ba/s][A
+Creating parquet from Arrow format:  93%|█████████▎| 42/45 [00:02<00:00, 15.02ba/s][ACreating parquet from Arrow format: 100%|██████████| 45/45 [00:02<00:00, 15.45ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:09:59  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards:  73%|███████▎  | 16/22 [01:27<00:27,  4.67s/it]
+Creating parquet from Arrow format:   0%|          | 0/45 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:   7%|▋         | 3/45 [00:00<00:01, 23.77ba/s][A
+Creating parquet from Arrow format:  16%|█▌        | 7/45 [00:00<00:01, 29.75ba/s][A
+Creating parquet from Arrow format:  24%|██▍       | 11/45 [00:00<00:01, 31.59ba/s][A
+Creating parquet from Arrow format:  33%|███▎      | 15/45 [00:00<00:01, 24.17ba/s][A
+Creating parquet from Arrow format:  40%|████      | 18/45 [00:00<00:01, 21.66ba/s][A
+Creating parquet from Arrow format:  47%|████▋     | 21/45 [00:00<00:01, 18.17ba/s][A
+Creating parquet from Arrow format:  51%|█████     | 23/45 [00:01<00:02, 10.70ba/s][A
+Creating parquet from Arrow format:  56%|█████▌    | 25/45 [00:01<00:02,  8.69ba/s][A
+Creating parquet from Arrow format:  64%|██████▍   | 29/45 [00:01<00:01, 11.97ba/s][A
+Creating parquet from Arrow format:  73%|███████▎  | 33/45 [00:02<00:00, 15.13ba/s][A
+Creating parquet from Arrow format:  80%|████████  | 36/45 [00:02<00:00, 15.05ba/s][A
+Creating parquet from Arrow format:  87%|████████▋ | 39/45 [00:02<00:00, 16.63ba/s][A
+Creating parquet from Arrow format:  91%|█████████ | 41/45 [00:02<00:00, 16.64ba/s][A
+Creating parquet from Arrow format:  96%|█████████▌| 43/45 [00:03<00:00,  9.33ba/s][A
+Creating parquet from Arrow format: 100%|██████████| 45/45 [00:03<00:00,  9.67ba/s][ACreating parquet from Arrow format: 100%|██████████| 45/45 [00:03<00:00, 13.82ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:10:03  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards:  77%|███████▋  | 17/22 [01:31<00:22,  4.45s/it]
+Creating parquet from Arrow format:   0%|          | 0/45 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:   4%|▍         | 2/45 [00:00<00:02, 15.18ba/s][A
+Creating parquet from Arrow format:   9%|▉         | 4/45 [00:00<00:02, 15.74ba/s][A
+Creating parquet from Arrow format:  13%|█▎        | 6/45 [00:00<00:02, 15.19ba/s][A
+Creating parquet from Arrow format:  18%|█▊        | 8/45 [00:00<00:02, 16.50ba/s][A
+Creating parquet from Arrow format:  24%|██▍       | 11/45 [00:00<00:01, 20.41ba/s][A
+Creating parquet from Arrow format:  31%|███       | 14/45 [00:00<00:01, 18.12ba/s][A
+Creating parquet from Arrow format:  36%|███▌      | 16/45 [00:00<00:01, 16.67ba/s][A
+Creating parquet from Arrow format:  40%|████      | 18/45 [00:01<00:01, 17.00ba/s][A
+Creating parquet from Arrow format:  44%|████▍     | 20/45 [00:01<00:02, 11.41ba/s][A
+Creating parquet from Arrow format:  49%|████▉     | 22/45 [00:01<00:02, 10.53ba/s][A
+Creating parquet from Arrow format:  53%|█████▎    | 24/45 [00:01<00:01, 11.91ba/s][A
+Creating parquet from Arrow format:  58%|█████▊    | 26/45 [00:01<00:01, 12.76ba/s][A
+Creating parquet from Arrow format:  62%|██████▏   | 28/45 [00:02<00:01, 11.47ba/s][A
+Creating parquet from Arrow format:  69%|██████▉   | 31/45 [00:02<00:00, 14.92ba/s][A
+Creating parquet from Arrow format:  76%|███████▌  | 34/45 [00:02<00:00, 17.22ba/s][A
+Creating parquet from Arrow format:  82%|████████▏ | 37/45 [00:02<00:00, 18.20ba/s][A
+Creating parquet from Arrow format:  87%|████████▋ | 39/45 [00:02<00:00, 14.73ba/s][A
+Creating parquet from Arrow format:  91%|█████████ | 41/45 [00:02<00:00, 14.30ba/s][A
+Creating parquet from Arrow format:  96%|█████████▌| 43/45 [00:02<00:00, 14.22ba/s][ACreating parquet from Arrow format: 100%|██████████| 45/45 [00:03<00:00, 14.94ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:10:06  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards:  82%|████████▏ | 18/22 [01:34<00:16,  4.13s/it]
+Creating parquet from Arrow format:   0%|          | 0/45 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:   9%|▉         | 4/45 [00:00<00:01, 27.17ba/s][A
+Creating parquet from Arrow format:  18%|█▊        | 8/45 [00:00<00:01, 28.15ba/s][A
+Creating parquet from Arrow format:  24%|██▍       | 11/45 [00:00<00:01, 27.60ba/s][A
+Creating parquet from Arrow format:  33%|███▎      | 15/45 [00:00<00:01, 29.11ba/s][A
+Creating parquet from Arrow format:  40%|████      | 18/45 [00:00<00:01, 20.26ba/s][A
+Creating parquet from Arrow format:  47%|████▋     | 21/45 [00:01<00:01, 13.47ba/s][A
+Creating parquet from Arrow format:  53%|█████▎    | 24/45 [00:01<00:01, 15.82ba/s][A
+Creating parquet from Arrow format:  60%|██████    | 27/45 [00:01<00:01, 17.66ba/s][A
+Creating parquet from Arrow format:  67%|██████▋   | 30/45 [00:01<00:00, 19.75ba/s][A
+Creating parquet from Arrow format:  76%|███████▌  | 34/45 [00:01<00:00, 22.86ba/s][A
+Creating parquet from Arrow format:  82%|████████▏ | 37/45 [00:01<00:00, 22.19ba/s][A
+Creating parquet from Arrow format:  89%|████████▉ | 40/45 [00:02<00:00, 13.76ba/s][A
+Creating parquet from Arrow format:  93%|█████████▎| 42/45 [00:02<00:00, 11.21ba/s][A
+Creating parquet from Arrow format:  98%|█████████▊| 44/45 [00:02<00:00, 12.50ba/s][ACreating parquet from Arrow format: 100%|██████████| 45/45 [00:02<00:00, 17.05ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:10:09  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards:  86%|████████▋ | 19/22 [01:37<00:11,  3.81s/it]
+Creating parquet from Arrow format:   0%|          | 0/45 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:   7%|▋         | 3/45 [00:00<00:01, 27.84ba/s][A
+Creating parquet from Arrow format:  13%|█▎        | 6/45 [00:00<00:01, 23.07ba/s][A
+Creating parquet from Arrow format:  20%|██        | 9/45 [00:00<00:01, 19.74ba/s][A
+Creating parquet from Arrow format:  27%|██▋       | 12/45 [00:00<00:01, 17.86ba/s][A
+Creating parquet from Arrow format:  33%|███▎      | 15/45 [00:00<00:01, 20.08ba/s][A
+Creating parquet from Arrow format:  40%|████      | 18/45 [00:00<00:01, 19.23ba/s][A
+Creating parquet from Arrow format:  47%|████▋     | 21/45 [00:01<00:01, 12.22ba/s][A
+Creating parquet from Arrow format:  51%|█████     | 23/45 [00:01<00:02, 10.80ba/s][A
+Creating parquet from Arrow format:  56%|█████▌    | 25/45 [00:01<00:01, 11.42ba/s][A
+Creating parquet from Arrow format:  62%|██████▏   | 28/45 [00:01<00:01, 14.56ba/s][A
+Creating parquet from Arrow format:  67%|██████▋   | 30/45 [00:01<00:01, 14.88ba/s][A
+Creating parquet from Arrow format:  71%|███████   | 32/45 [00:02<00:00, 15.37ba/s][A
+Creating parquet from Arrow format:  78%|███████▊  | 35/45 [00:02<00:00, 18.48ba/s][A
+Creating parquet from Arrow format:  84%|████████▍ | 38/45 [00:02<00:00, 18.30ba/s][A
+Creating parquet from Arrow format:  89%|████████▉ | 40/45 [00:02<00:00, 15.22ba/s][A
+Creating parquet from Arrow format:  93%|█████████▎| 42/45 [00:02<00:00, 12.72ba/s][A
+Creating parquet from Arrow format:  98%|█████████▊| 44/45 [00:02<00:00, 12.69ba/s][ACreating parquet from Arrow format: 100%|██████████| 45/45 [00:02<00:00, 15.21ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:10:13  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards:  91%|█████████ | 20/22 [01:41<00:07,  3.73s/it]
+Creating parquet from Arrow format:   0%|          | 0/45 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:   4%|▍         | 2/45 [00:00<00:02, 19.69ba/s][A
+Creating parquet from Arrow format:  13%|█▎        | 6/45 [00:00<00:01, 27.73ba/s][A
+Creating parquet from Arrow format:  22%|██▏       | 10/45 [00:00<00:01, 29.29ba/s][A
+Creating parquet from Arrow format:  29%|██▉       | 13/45 [00:00<00:01, 26.82ba/s][A
+Creating parquet from Arrow format:  36%|███▌      | 16/45 [00:00<00:01, 27.79ba/s][A
+Creating parquet from Arrow format:  42%|████▏     | 19/45 [00:00<00:01, 19.17ba/s][A
+Creating parquet from Arrow format:  49%|████▉     | 22/45 [00:01<00:01, 12.90ba/s][A
+Creating parquet from Arrow format:  58%|█████▊    | 26/45 [00:01<00:01, 16.73ba/s][A
+Creating parquet from Arrow format:  64%|██████▍   | 29/45 [00:01<00:00, 19.08ba/s][A
+Creating parquet from Arrow format:  71%|███████   | 32/45 [00:01<00:00, 20.65ba/s][A
+Creating parquet from Arrow format:  80%|████████  | 36/45 [00:01<00:00, 23.41ba/s][A
+Creating parquet from Arrow format:  87%|████████▋ | 39/45 [00:01<00:00, 21.75ba/s][A
+Creating parquet from Arrow format:  93%|█████████▎| 42/45 [00:02<00:00, 14.24ba/s][A
+Creating parquet from Arrow format:  98%|█████████▊| 44/45 [00:02<00:00, 10.35ba/s][ACreating parquet from Arrow format: 100%|██████████| 45/45 [00:02<00:00, 16.74ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:10:16  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards:  95%|█████████▌| 21/22 [01:44<00:03,  3.52s/it]
+Creating parquet from Arrow format:   0%|          | 0/45 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:   4%|▍         | 2/45 [00:00<00:03, 13.99ba/s][A
+Creating parquet from Arrow format:  11%|█         | 5/45 [00:00<00:02, 18.89ba/s][A
+Creating parquet from Arrow format:  20%|██        | 9/45 [00:00<00:01, 24.30ba/s][A
+Creating parquet from Arrow format:  27%|██▋       | 12/45 [00:00<00:01, 24.39ba/s][A
+Creating parquet from Arrow format:  36%|███▌      | 16/45 [00:00<00:01, 26.50ba/s][A
+Creating parquet from Arrow format:  42%|████▏     | 19/45 [00:00<00:01, 19.06ba/s][A
+Creating parquet from Arrow format:  49%|████▉     | 22/45 [00:01<00:01, 15.54ba/s][A
+Creating parquet from Arrow format:  53%|█████▎    | 24/45 [00:01<00:01, 13.33ba/s][A
+Creating parquet from Arrow format:  60%|██████    | 27/45 [00:01<00:01, 16.12ba/s][A
+Creating parquet from Arrow format:  69%|██████▉   | 31/45 [00:01<00:00, 19.79ba/s][A
+Creating parquet from Arrow format:  78%|███████▊  | 35/45 [00:01<00:00, 23.03ba/s][A
+Creating parquet from Arrow format:  84%|████████▍ | 38/45 [00:01<00:00, 20.25ba/s][A
+Creating parquet from Arrow format:  91%|█████████ | 41/45 [00:02<00:00, 20.64ba/s][A
+Creating parquet from Arrow format:  98%|█████████▊| 44/45 [00:02<00:00, 16.08ba/s][ACreating parquet from Arrow format: 100%|██████████| 45/45 [00:02<00:00, 18.49ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:10:19  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards: 100%|██████████| 22/22 [01:47<00:00,  3.29s/it]Uploading the dataset shards: 100%|██████████| 22/22 [01:47<00:00,  4.87s/it]
+Uploading the dataset shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Creating parquet from Arrow format:   0%|          | 0/4 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:  25%|██▌       | 1/4 [00:00<00:02,  1.23ba/s][A
+Creating parquet from Arrow format:  50%|█████     | 2/4 [00:01<00:01,  1.30ba/s][A
+Creating parquet from Arrow format:  75%|███████▌  | 3/4 [00:02<00:00,  1.40ba/s][A
+Creating parquet from Arrow format: 100%|██████████| 4/4 [00:02<00:00,  1.54ba/s][ACreating parquet from Arrow format: 100%|██████████| 4/4 [00:02<00:00,  1.46ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:10:22  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards: 100%|██████████| 1/1 [00:03<00:00,  3.04s/it]Uploading the dataset shards: 100%|██████████| 1/1 [00:03<00:00,  3.04s/it]
+Uploading the dataset shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Creating parquet from Arrow format:   0%|          | 0/4 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:  25%|██▌       | 1/4 [00:00<00:02,  1.24ba/s][A
+Creating parquet from Arrow format:  50%|█████     | 2/4 [00:01<00:01,  1.41ba/s][A
+Creating parquet from Arrow format:  75%|███████▌  | 3/4 [00:02<00:00,  1.50ba/s][A
+Creating parquet from Arrow format: 100%|██████████| 4/4 [00:02<00:00,  1.82ba/s][ACreating parquet from Arrow format: 100%|██████████| 4/4 [00:02<00:00,  1.64ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:10:25  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards: 100%|██████████| 1/1 [00:02<00:00,  2.79s/it]Uploading the dataset shards: 100%|██████████| 1/1 [00:02<00:00,  2.79s/it]
+Uploading the dataset shards:   0%|          | 0/1 [00:00<?, ?it/s]
+Creating parquet from Arrow format:   0%|          | 0/4 [00:00<?, ?ba/s][A
+Creating parquet from Arrow format:  25%|██▌       | 1/4 [00:00<00:02,  1.36ba/s][A
+Creating parquet from Arrow format:  50%|█████     | 2/4 [00:01<00:01,  1.21ba/s][A
+Creating parquet from Arrow format:  75%|███████▌  | 3/4 [00:02<00:00,  1.30ba/s][A
+Creating parquet from Arrow format: 100%|██████████| 4/4 [00:02<00:00,  1.41ba/s][ACreating parquet from Arrow format: 100%|██████████| 4/4 [00:02<00:00,  1.36ba/s]
+Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+04:10:29  WARNING   Uploading files as a binary IO buffer is not supported by Xet Storage. Falling back to HTTP upload.
+
+Upload 0 LFS files: 0it [00:00, ?it/s][AUpload 0 LFS files: 0it [00:00, ?it/s]
+Uploading the dataset shards: 100%|██████████| 1/1 [00:03<00:00,  3.51s/it]Uploading the dataset shards: 100%|██████████| 1/1 [00:03<00:00,  3.51s/it]
+04:10:31  INFO      Success! Dataset updated on Hub.
