@@ -1,59 +1,43 @@
-# Forklift: An Extensible Neural Lifter
+# Forklift: Neural Lifting and Deobfuscation
 
-Repository for *Forklift: An Extensible Neural Lifter*, accepted for publication at COLM 2024.
+Repository extending the original *Forklift: An Extensible Neural Lifter* (COLM 2024) to target binary deobfuscation and assembly-to-IR translation. 
 
-## Data
+Forklift leverages language modeling to translate compiled assembly back to LLVM IR. In this extended work, we apply Forklift's architecture towards lifting and recovering semantics from intentionally obfuscated binaries, building a robust pipeline for evaluating structural and functional translation metrics on complex LLVM 14 toolchains.
 
-### ExeBench
+## Datasets
 
-Available on the HF hub: https://huggingface.co/datasets/jordiae/exebench/tree/clang
-Note that it's the branch/revision `clang`, not `main`. The dataloader supports streaming:
+### Obfuscated ExeBench
+Our primary dataset, `leachl/obfuscated-exebench`, is an augmented form of the ExeBench dataset that combines obfuscated LLVM IR, assembly pairs, and execution `io_pairs` required for functional evaluations.
 
-```
-# pip install datasets==2.15 zstandard
-# A known issue is that the data loader requires datasets 2.15.
-splits = ['train_synth_compilable', 'valid_synth', 'test_synth']
-stream = True 
-datasets = {k: load_dataset('jordiae/exebench', split=k, revision='clang', subsets=[k], streaming=stream) for k in splits}
-```
+It is available on the Hugging Face Hub: https://huggingface.co/datasets/leachl/obfuscated-exebench
 
-The assembly and LLVM IR are stored in the `'key'` field. For example, for obtaining:
+Usage via `datasets`:
+```python
+from datasets import load_dataset
 
-```
-def retrieve_asm(row, asm_target):
-    asm = row['asm']
-    asm_idx = asm['target'].index(asm_target)
-    return asm['code'][asm_idx]
-
-retrieve_asm(row, asm_target=asm_target)
-```
-Following the original work in ExeBench (https://dl.acm.org/doi/abs/10.1145/3520312.3534867), assembly targets with prefixes `angha` correspond to the assembly obtained following the AnghaBench methodology (https://ieeexplore.ieee.org/document/9370322), that is, with synthetic dependencies, and the ones prefixed with `real` correspond to assembly compiled with the dependencies obtained from the headers. For example, for obtaining assembly generated with GCC, for x86, for the O0 optimization level, with synthetic dependencies, one can run:
-
-```
-retrieve_asm(row, asm_target='angha_gcc_x86_O0')
+# Supports streaming for large-scale evaluation
+ds = load_dataset('leachl/obfuscated-exebench', split='train', streaming=True)
 ```
 
-As another example, for LLVM IR Oz:
+### Base ExeBench
+The base clean dataset from the original Forklift paper is available at: https://huggingface.co/datasets/jordiae/exebench/tree/clang
 
-```
-retrieve_asm(row, asm_target='angha_clang_ir_Oz')
-```
+## Pipeline & Evaluation
 
-### Synth:
+The repository includes tools for end-to-end evaluation of generated LLVM IR:
 
-The C functions to be compiled for the Synth benchmark can be found on Github: https://github.com/mob-group/synthesis-eval/tree/master/examples
+- **IR Syntax Validation (`forklift/ir_checker.py`)**: Uses intelligent heuristic-based fallbacks to recover undefined variables and function declarations to strict LLVM 14 typing standards.
+- **SLURM Cluster Evaluation (`scripts/recheck_validity_job.sh`)**: High-throughput jobs for checking the translation syntax mapping rate and recompilation validity.
+- **Neural Deobfuscation (`neurel_deob/`)**: Modules focused on processing and extracting semantics out of mangled instruction graphs.
 
 ## Model
+See an example of the model architecture in `interactive.py`. Note that this represents a stripped down version of the primary lifting network used for demonstration.
 
-See example in `interactive.py`.
-
-Note that this code is a stripped down version to demo the model. Preprocessing and training code are not provided in this release.
-
-## Paper
+## Original Paper
 
 https://openreview.net/forum?id=LWfDcI6txJ#discussion
 
-```
+```bibtex
 @inproceedings{
 armengol-estape2024forklift,
 title={Forklift: An Extensible Neural Lifter},
