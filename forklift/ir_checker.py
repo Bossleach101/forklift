@@ -235,7 +235,8 @@ def _inject_missing_declares(ir_text: str, max_retries: int = 15) -> str:
             
             if source_line:
                 # Find the token immediately preceding the symbol
-                m_tok = _re.search(r"([\w%.\[\]\(\)\{\}\*]+)\s+" + _re.escape(sym), source_line)
+                # We specifically exclude parentheses to avoid capturing function names or casting blocks
+                m_tok = _re.search(r"([a-zA-Z0-9_%.\[\]\{\}\*]+)\s+" + _re.escape(sym), source_line)
                 if m_tok:
                     ty = m_tok.group(1).strip()
                     is_func = bool(_re.search(rf"(?:call|invoke)\s+.+\s+{_re.escape(sym)}\(", source_line))
