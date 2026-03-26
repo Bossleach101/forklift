@@ -157,11 +157,16 @@ def load_test_stream(split: str, dataset: str, revision: str):
 
 
 def get_asm_code(row: dict, key: str) -> Optional[str]:
-    targets = row.get("asm", {}).get("target", [])
-    if key not in targets:
-        return None
-    idx = targets.index(key)
-    return row["asm"]["code"][idx]
+    if "asm" in row and "target" in row["asm"]:
+        targets = row["asm"]["target"]
+        if key in targets:
+            idx = targets.index(key)
+            return row["asm"]["code"][idx]
+    
+    if key in row:
+        return row[key]
+        
+    return None
 
 
 # ======================================================================
@@ -227,12 +232,15 @@ def run(args):
             if not target_text.strip():
                 skipped += 1
                 continue
-            codes = list(row["asm"]["code"])
-            tgt_idx = row["asm"]["target"].index(tgt_key)
-            codes[tgt_idx] = target_text
             row = dict(row)
-            row["asm"] = dict(row["asm"])
-            row["asm"]["code"] = codes
+            if "asm" in row and "target" in row["asm"]:
+                codes = list(row["asm"]["code"])
+                tgt_idx = row["asm"]["target"].index(tgt_key)
+                codes[tgt_idx] = target_text
+                row["asm"] = dict(row["asm"])
+                row["asm"]["code"] = codes
+            else:
+                row[tgt_key] = target_text
 
         # Tokenize
         try:

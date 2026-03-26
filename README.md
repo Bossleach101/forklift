@@ -33,6 +33,10 @@ The repository includes tools for end-to-end evaluation of generated LLVM IR:
 ## Model
 See an example of the model architecture in `interactive.py`. Note that this represents a stripped down version of the primary lifting network used for demonstration.
 
+## Acknowledgments
+
+We would like to acknowledge that the files in the `forklift/` directory are derived from the original Forklift repository, with the exception of `forklift/ir_checker.py`, which was newly developed for this project.
+
 ## Original Paper
 
 https://openreview.net/forum?id=LWfDcI6txJ#discussion

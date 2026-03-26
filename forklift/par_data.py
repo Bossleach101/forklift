@@ -202,24 +202,37 @@ class DP:
         if do_normalize_ir_structs:
             assert 'ir' in key
             assert row is not None
+        
         try:
             k = self.get_asm_key(key, asm_key, compiler, fPIC=fPIC)
             if not row:
                 return k
-            #print(row['asm']['target'])
-            asm_idx = row['asm']['target'].index(k)
-        except ValueError as e:
-            if not fPIC:
-                raise ValueError(e)
-            else:
-                k = self.get_asm_key(key, asm_key, compiler, fPIC=False)
-                if not row:
-                    return k
+            if "asm" in row and "target" in row["asm"]:
                 try:
                     asm_idx = row['asm']['target'].index(k)
-                except ValueError:
+                    res = row['asm']['code'][asm_idx]
+                except ValueError as e:
+                    if not fPIC:
+                        raise ValueError(e)
+                    else:
+                        k = self.get_asm_key(key, asm_key, compiler, fPIC=False)
+                        if not row:
+                            return k
+                        try:
+                            asm_idx = row['asm']['target'].index(k)
+                            res = row['asm']['code'][asm_idx]
+                        except ValueError:
+                            return ''
+            else:
+                if k in row:
+                    res = row[k]
+                elif key in row:
+                    res = row[key]
+                else:
                     return ''
-        res = row['asm']['code'][asm_idx]
+        except Exception as e:
+            return ''
+            
         if 'ir' in key and do_normalize_ir_structs:
             res = normalize_structs(res)
         return res
