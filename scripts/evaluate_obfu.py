@@ -104,6 +104,7 @@ def _flush_batch(
     all_refs: list[str],
     all_fnames: list[str],
     all_techniques: list[str],
+    all_metadata: list[dict]=None,
 ):
     if not batch_srcs:
         return
@@ -136,7 +137,7 @@ def _flush_batch(
             **gen_kwargs
         )
 
-    for gen, ref_tok, fname, tech in zip(generated, batch_refs_tok, batch_fnames, batch_techniques):
+    for i, (gen, ref_tok, fname, tech) in enumerate(zip(generated, batch_refs_tok, batch_fnames, batch_techniques)):
         pred_text = dp.detokenize(gen.cpu().tolist())
         ref_text = dp.detokenize(ref_tok)
         pred_text = truncate_ir_output(pred_text)
@@ -144,13 +145,15 @@ def _flush_batch(
         all_refs.append(ref_text)
         all_fnames.append(fname)
         all_techniques.append(tech)
-
+        if all_metadata is not None:
+            # We assume chunk length matches
+            pass # Appended in caller
 
 def _flush_buffer_sorted(
-    buffer: list[tuple[list[int], list[int], str, str]],
+    buffer: list[tuple],
     batch_size: int,
     model, dp, pad_id, device, args,
-    all_preds, all_refs, all_fnames, all_techniques,
+    all_preds, all_refs, all_fnames, all_techniques, all_metadata=None,
 ):
     if not buffer:
         return
@@ -163,8 +166,11 @@ def _flush_buffer_sorted(
             [c[2] for c in chunk],
             [c[3] for c in chunk],
             model, dp, pad_id, device, args,
-            all_preds, all_refs, all_fnames, all_techniques,
+            all_preds, all_refs, all_fnames, all_techniques, all_metadata
         )
+        if all_metadata is not None:
+            for c in chunk:
+                all_metadata.append(c[4])
 
 
 # ======================================================================
@@ -202,6 +208,7 @@ def run_evaluation(args) -> dict:
     all_refs: list[str] = []
     all_fnames: list[str] = []
     all_techniques: list[str] = []
+    all_metadata: list[dict] = []
     skipped = 0
     total_seen = 0
     start_time = time.time()
@@ -209,7 +216,7 @@ def run_evaluation(args) -> dict:
     batch_size = args.batch_size
     BUFFER_MULT = 4
     buffer_cap = batch_size * BUFFER_MULT
-    buffer: list[tuple[list[int], list[int], str, str]] = []
+    buffer: list[tuple[list[int], list[int], str, str, dict]] = []
 
     for row in ds:
         total_seen += 1
@@ -259,13 +266,22 @@ def run_evaluation(args) -> dict:
             skipped += 1
             continue
 
-        buffer.append((tok_src, tok_tgt, row.get("fname", "?"), row["technique"]))
+        meta = {}
+        if args.check_compilability or getattr(args, "check_functional", False):
+            meta = {
+                "synth_deps": row.get("c_deps", ""),
+                "func_head_types": row.get("func_head_types", ""),
+                "synth_exe_wrapper": row.get("c_wrapper", ""),
+                "synth_io_pairs": row.get("io_pairs", []),
+            }
+
+        buffer.append((tok_src, tok_tgt, row.get("fname", "?"), row["technique"], meta))
 
         if len(buffer) >= buffer_cap:
             _flush_buffer_sorted(
                 buffer, batch_size,
                 model, dp, pad_id, device, args,
-                all_preds, all_refs, all_fnames, all_techniques,
+                all_preds, all_refs, all_fnames, all_techniques, all_metadata,
             )
             buffer = []
 
@@ -280,7 +296,7 @@ def run_evaluation(args) -> dict:
     _flush_buffer_sorted(
         buffer, batch_size,
         model, dp, pad_id, device, args,
-        all_preds, all_refs, all_fnames, all_techniques,
+        all_preds, all_refs, all_fnames, all_techniques, all_metadata,
     )
 
     elapsed = time.time() - start_time
@@ -342,27 +358,43 @@ def run_evaluation(args) -> dict:
             logger.info("  %-25s %s", k, v)
     logger.info("=" * 60)
 
-    # ── Compilability checks ──────────────────────────────────────────
-    if args.check_compilability:
+    # ── Compilability / Functional checks ─────────────────────────────
+    if args.check_compilability or getattr(args, "check_functional", False):
+        check_level = 3 if getattr(args, "check_functional", False) else 2
         logger.info(
-            "Running Level 2 checks on %d predictions...", len(all_preds),
+            "Running Level %d checks on %d predictions...", check_level, len(all_preds),
         )
         comp_stats = CompilabilityStats()
-        # Per-technique compilability
         from collections import defaultdict as _ddict
         tech_comp_stats: dict[str, CompilabilityStats] = _ddict(CompilabilityStats)
-        for idx, (pred, fname, tech) in enumerate(
-            zip(all_preds, all_fnames, all_techniques)
+        for idx, (pred, fname, tech, meta) in enumerate(
+            zip(all_preds, all_fnames, all_techniques, all_metadata)
         ):
-            cr = check_ir(pred, level=2)
+            cr = check_ir(
+                pred, 
+                level=check_level,
+                c_deps=meta.get("synth_deps"),
+                func_c_signature=(meta.get("func_head_types") or "").replace("extern", ""),
+                cpp_wrapper=meta.get("synth_exe_wrapper"),
+                io_pairs=meta.get("synth_io_pairs"),
+                max_io_tests=getattr(args, "max_io_tests", 5),
+            )
             comp_stats.update(cr, fname=fname)
             tech_comp_stats[tech].update(cr, fname=fname)
             if (idx + 1) % 50 == 0:
-                logger.info(
-                    "  Checked %d / %d  (syntax=%d  compile=%d)",
-                    idx + 1, len(all_preds),
-                    comp_stats.syntax_valid, comp_stats.compiles,
-                )
+                if check_level == 3:
+                     logger.info(
+                        "  Checked %d / %d  (syntax=%d  compile=%d  func=%d/%d)",
+                        idx + 1, len(all_preds),
+                        comp_stats.syntax_valid, comp_stats.compiles,
+                        comp_stats.functional_pass, comp_stats.functional_tested,
+                     )
+                else:
+                    logger.info(
+                        "  Checked %d / %d  (syntax=%d  compile=%d)",
+                        idx + 1, len(all_preds),
+                        comp_stats.syntax_valid, comp_stats.compiles,
+                    )
         comp_stats.log_summary()
         results["compilability"] = comp_stats.to_dict()
         # Per-technique compilability
@@ -450,6 +482,14 @@ def main():
     parser.add_argument(
         "--check-compilability", action="store_true", default=False,
         help="Run Level 1 (llvm-as) and Level 2 (clang -c) checks on predictions",
+    )
+    parser.add_argument(
+        "--check-functional", action="store_true", default=False,
+        help="Run Level 3 functional tests on predictions (implies compilability)",
+    )
+    parser.add_argument(
+        "--max-io-tests", type=int, default=5,
+        help="Max IO test cases per sample for functional testing (default: 5)",
     )
 
     args = parser.parse_args()
