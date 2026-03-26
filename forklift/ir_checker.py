@@ -147,7 +147,7 @@ class IRCheckResult:
 # Level 1: Syntax validation via llvm-as
 # ---------------------------------------------------------------------------
 
-def _inject_missing_declares(ir_text: str, max_retries: int = 5) -> str:
+def _inject_missing_declares(ir_text: str, max_retries: int = 15) -> str:
     """Try to add ``declare`` stubs for undefined function references.
 
     The model output (and stripped ground-truth) typically lacks ``declare``
@@ -160,7 +160,15 @@ def _inject_missing_declares(ir_text: str, max_retries: int = 5) -> str:
     if not _tool_available("llvm-as"):
         return ir_text
 
+    import re as _re
     patched = ir_text
+
+    def remove_decls(ir: str, sym: str) -> str:
+        # Removes existing declarations around this symbol to prevent redefinition errors
+        ir = _re.sub(rf"^\s*declare\s+.*?(?:\s+|\*){_re.escape(sym)}\s*\(.*?\).*?$\n?", "", ir, flags=_re.MULTILINE)
+        ir = _re.sub(rf"^\s*{_re.escape(sym)}\s*=\s*external\s+global\s+.*?$\n?", "", ir, flags=_re.MULTILINE)
+        return ir
+
     for _ in range(max_retries):
         with _tmp_file(patched, suffix=".ll") as ll_path:
             # We must use the absolute path in subprocess.run for reliable mocking in tests
@@ -177,80 +185,77 @@ def _inject_missing_declares(ir_text: str, max_retries: int = 5) -> str:
             # If mocking, we might have set returncode=0 for success case
             break  # valid!
 
+        stderr = r.stderr
+
         # Parse error: "use of undefined value '@name'"
-        # Improved regex to handle quoted/unquoted and more characters (dots, dashes)
-        import re as _re
-        # Matches: use of undefined value '@foo'  OR  use of undefined value @foo
-        m = _re.search(r"use of undefined value\s+(?:['\"])(@[-\w$.]+)(?:['\"])?", r.stderr)
-        if not m:
+        m_undef = _re.search(r"use of undefined value\s+(?:['\"])(@[-\w$.]+)(?:['\"])?", stderr)
+        if not m_undef:
             # Try without quotes
-            m = _re.search(r"use of undefined value\s+(@[-\w$.]+)", r.stderr)
+            m_undef = _re.search(r"use of undefined value\s+(@[-\w$.]+)", stderr)
 
-        if not m:
-            # Log the failure to parse if we can't fix it, to help debugging
-            if _ == 0: # Only log on first retry to avoid spam if we loop
-                logger.warning(f"llvm-as failed with unparseable error: {r.stderr.strip()}")
-            break  # different error, can't fix
+        # Parse error: "'@name' defined with type '...' but expected '...'"
+        m_mismatch = _re.search(r"'(@[-\w$.]+)' defined with type '.*?' but expected '(.*?)'", stderr)
 
-        sym = m.group(1)
-        
-        # Determine strict declaration type based on usage in source line
-        # Scan stderr for the source line containing the symbol
-        decl = f"declare void {sym}(...)" # default to function
-        
-        # Look for line in stderr: "llvm-as: file:line:col: error: ..."
-        # follow by the source code line.
-        # We search for the symbol in the lines provided in stderr.
-        lines = r.stderr.splitlines()
-        source_line = None
-        for i, ln in enumerate(lines):
-            if "error:" in ln and "use of undefined value" in ln:
-                # The next line(s) usually show the source
-                # Or sometimes the caret line. We want the line above caret?
-                # Actually llvm-as usually output:
-                # llvm-as: <file>:<line>:<col>: error: use of undefined value '@var'
-                #   %1 = load i32, i32* @var
-                #                       ^
-                if i + 1 < len(lines):
-                    potential_code = lines[i+1].strip()
-                    if sym in potential_code:
-                        source_line = potential_code
-                        break
-        
-        if source_line:
-            # Heuristics for global variables vs functions
-            is_func = False
-            # Check for call/invoke
-            if _re.search(rf"(?:call|invoke)\s+.+\s+{_re.escape(sym)}\(", source_line):
-                is_func = True
+        if m_mismatch:
+            sym = m_mismatch.group(1)
+            expected = m_mismatch.group(2).strip()
             
-            if not is_func:
-                # Check for load: load <ty>, <ty>* @sym
-                m_load = _re.search(r"load\s+([\w%.*\[\]\(\)\s]+?)\s*,\s*([\w%.*\[\]\(\)\s]+?)\s+" + _re.escape(sym), source_line)
-                if m_load:
-                    ty = m_load.group(1).strip()
-                    decl = f"{sym} = external global {ty}"
+            if '(' in expected:
+                if expected.endswith('*'):
+                    expected = expected[:-1]
+                parts = expected.split(' (', 1)
+                if len(parts) == 2:
+                    new_decl = f"declare {parts[0]} {sym}({parts[1]}"
                 else:
-                    # Check for store: store <ty> %val, <ty>* @sym
-                    m_store = _re.search(r"store\s+([\w%.*\[\]\(\)\s]+?)\s+[%\d@\-\w.]+\s*,\s*([\w%.*\[\]\(\)\s]+?)\s+" + _re.escape(sym), source_line)
-                    if m_store:
-                        ty = m_store.group(1).strip()
-                        decl = f"{sym} = external global {ty}"
-                    else:
-                        # Check for getelementptr
-                        # Heuristic: look for type before symbol in getelementptr line
-                        # "getelementptr inbounds (%struct.struct0, %struct.struct0* @foo, ...)"
-                        # "getelementptr %struct.struct0, %struct.struct0* @foo, ..."
-                        # Key: type, type* @sym
-                        m_gep = _re.search(r"getelementptr\s+(?:inbounds\s+)?(?:\([^\)]+\)\s*,)?\s*([\w%.*\[\]\(\)\s]+?)\s*,\s*([\w%.*\[\]\(\)\s]+?)[\s,]+" + _re.escape(sym), source_line)
-                        if m_gep:
-                            ty = m_gep.group(1).strip()
-                            if ty.startswith('(') and ty.endswith(')'):
-                                ty = ty[1:-1]
-                            decl = f"{sym} = external global {ty}"
+                    new_decl = f"declare void {sym}(...)" # fallback
+            else:
+                if expected.endswith('*'):
+                    expected = expected[:-1]
+                new_decl = f"{sym} = external global {expected}"
 
-        # Inject declaration
-        patched = f"{decl}\n" + patched
+            patched = remove_decls(patched, sym)
+            patched = f"{new_decl}\n" + patched
+            continue
+
+        elif m_undef:
+            sym = m_undef.group(1)
+            
+            # Scan stderr for the source line containing the symbol
+            lines = stderr.splitlines()
+            source_line = None
+            for i, ln in enumerate(lines):
+                if "use of undefined value" in ln:
+                    if i + 1 < len(lines):
+                        potential_code = lines[i+1].strip()
+                        if sym in potential_code:
+                            source_line = potential_code
+                            break
+            
+            new_decl = f"declare void {sym}(...)" # default to function
+            
+            if source_line:
+                # Find the token immediately preceding the symbol
+                m_tok = _re.search(r"([\w%.\[\]\(\)\{\}\*]+)\s+" + _re.escape(sym), source_line)
+                if m_tok:
+                    ty = m_tok.group(1).strip()
+                    is_func = bool(_re.search(rf"(?:call|invoke)\s+.+\s+{_re.escape(sym)}\(", source_line))
+                    
+                    if is_func:
+                        # Fallback to void, and let the next iteration's "defined with type... but expected..." fix it if needed
+                        new_decl = f"declare void {sym}(...)"
+                    elif ty.endswith('*'):
+                        base_ty = ty[:-1]
+                        new_decl = f"{sym} = external global {base_ty}"
+                    else:
+                        new_decl = f"{sym} = external global {ty}"
+
+            patched = remove_decls(patched, sym)
+            patched = f"{new_decl}\n" + patched
+            continue
+
+        if _ == 0: # Only log on first retry
+            logger.warning(f"llvm-as failed with unparseable or unfixable error: {stderr.strip()}")
+        break  # different error, can't fix
 
     return patched
 
