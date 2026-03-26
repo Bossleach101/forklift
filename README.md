@@ -1,4 +1,4 @@
-# Forklift: Neural Lifting and Deobfuscation
+# Neural Lifting and Deobfuscation
 
 Repository extending the original *Forklift: An Extensible Neural Lifter* (COLM 2024) to target binary deobfuscation and assembly-to-IR translation. 
 
