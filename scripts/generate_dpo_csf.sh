@@ -36,6 +36,8 @@ if [ -f "env/bin/activate" ]; then
     source env/bin/activate
 fi
 
+export PATH="$HOME/scratch/forklift/tools/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin:$PATH"
+
 # ── Model to generate from ──────────────────────────────────
 MODEL_PATH="${MODEL_PATH:-leachl/forklift-arm-ir-ir}"
 

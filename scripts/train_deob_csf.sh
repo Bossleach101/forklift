@@ -54,6 +54,8 @@ if [ -d "$LLVM_BIN" ]; then
     export PATH="$LLVM_BIN:$PATH"
 fi
 
+export PATH="$HOME/scratch/forklift/tools/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin:$PATH"
+
 mkdir -p logs
 
 # ── Model to fine-tune from ─────────────────────────────────

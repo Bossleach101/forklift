@@ -1,8 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name=augment-obfu
 #SBATCH -p multicore
-#SBATCH -n 8
+#SBATCH --cpus-per-task=12
 #SBATCH --mem=32G
+#SBATCH --array=0-99
 #SBATCH -t 0-04:00:00
 #SBATCH --output=logs/augment_%j.out
 #SBATCH --error=logs/augment_%j.err

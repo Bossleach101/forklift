@@ -42,6 +42,9 @@ VENV_DIR="${PROJECT_DIR}/env"
 cd "$PROJECT_DIR"
 source "${VENV_DIR}/bin/activate"
 
+# Add LLVM to PATH
+export PATH="$HOME/scratch/forklift/tools/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin:$PATH"
+
 # Create log directory
 mkdir -p logs
 

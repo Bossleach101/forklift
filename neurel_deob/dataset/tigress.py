@@ -374,7 +374,7 @@ class TigressObfuscator:
                     error="AArch64 cross-compilation failed",
                     transform=transform,
                 )
-
+            
             # Read assembly output
             try:
                 obfu_asm = output_s.read_text()
