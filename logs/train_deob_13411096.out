@@ -1,0 +1,8 @@
+================================================
+Job ID:    13411096
+Node:      node881.csf3.man.alces.network
+GPU:       NVIDIA L40S
+Date:      Fri 10 Apr 10:23:22 BST 2026
+================================================
+Using local LLVM installation: /mnt/iusers01/fse-ugpgt01/compsci01/n28265ll/scratch/forklift/tools/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin
+Deobfuscation training finished at Sun 12 Apr 05:08:08 BST 2026
