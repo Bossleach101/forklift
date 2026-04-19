@@ -240,6 +240,7 @@ def save_checkpoint(
     model: BartForConditionalGeneration,
     tokenizer: Tokenizer,
     optimizer: AdamW,
+    scheduler,
     scaler: Optional[GradScaler],
     step: int,
     config: TrainConfig,
@@ -257,6 +258,7 @@ def save_checkpoint(
     torch.save(
         {
             "optimizer": optimizer.state_dict(),
+            "scheduler": scheduler.state_dict() if scheduler else None,
             "scaler": scaler.state_dict() if scaler else None,
             "step": step,
             "config": vars(config),
@@ -383,15 +385,16 @@ def train(config: TrainConfig):
         logger.info("Resuming from %s", ckpt)
         state = torch.load(ckpt / "training_state.pt", map_location=device)
         optimizer.load_state_dict(state["optimizer"])
+        global_step = state["step"]
+        if "scheduler" in state and state["scheduler"]:
+            scheduler.load_state_dict(state["scheduler"])
+        elif global_step > 0:
+            # Fallback for older checkpoints
+            optimizer.step()
+            for _ in range(global_step):
+                scheduler.step()
         if scaler and state.get("scaler"):
             scaler.load_state_dict(state["scaler"])
-        global_step = state["step"]
-        # Advance LR scheduler to the correct position
-        # Call optimizer.step() once before the loop to suppress PyTorch 1.1.0+ warning
-        if global_step > 0:
-            optimizer.step()
-        for _ in range(global_step):
-            scheduler.step()
         logger.info("Resumed at step %d (lr=%.2e)", global_step, scheduler.get_last_lr()[0])
 
     # ── Data ─────────────────────────────────────────────────────────
@@ -512,8 +515,11 @@ def train(config: TrainConfig):
                 if use_amp and not config.bf16:
                     scaler.unscale_(optimizer)
                     torch.nn.utils.clip_grad_norm_(model.parameters(), config.max_grad_norm)
+                    scale_before = scaler.get_scale()
                     scaler.step(optimizer)
                     scaler.update()
+                    if scaler.get_scale() >= scale_before:
+                        scheduler.step()
                 else:
                     torch.nn.utils.clip_grad_norm_(model.parameters(), config.max_grad_norm)
                     optimizer.step()
@@ -561,14 +567,14 @@ def train(config: TrainConfig):
                 if global_step % config.save_steps == 0:
                     metrics = {"step": global_step}
                     save_checkpoint(
-                        model, tokenizer, optimizer, scaler,
+                        model, tokenizer, optimizer, scheduler, scaler,
                         global_step, config, metrics,
                     )
 
     # ── Final save ───────────────────────────────────────────────────
     logger.info("Training complete at step %d", global_step)
     save_checkpoint(
-        model, tokenizer, optimizer, scaler,
+        model, tokenizer, optimizer, scheduler, scaler,
         global_step, config, {"step": global_step, "final": True},
     )
 
