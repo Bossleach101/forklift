@@ -49,7 +49,7 @@ export PATH="$HOME/scratch/forklift/tools/clang+llvm-14.0.0-x86_64-linux-gnu-ubu
 mkdir -p logs results
 
 # ── Default config ───────────────────────────────────────────
-MODEL="${MODEL:-leachl/forklift-arm-ir-ir_v4}"
+MODEL="${MODEL:-checkpoints/arm_ir_ir_v4/step_80000}"
 PAIR="${PAIR:-arm_ir-ir}"
 SPLIT="${SPLIT:-test_synth}"
 ASM_KEY="${ASM_KEY:-angha}"

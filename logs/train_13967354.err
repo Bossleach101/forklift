@@ -53747,3 +53747,23 @@ store i32* %1, i32** %4, align 8
 2026-04-21 12:19:17 [INFO] __main__: step=85300  loss=0.0620  lr=2.65e-06  steps/s=0.51
 2026-04-21 12:20:10 [INFO] neurel_deob.training.data: Yielded 690000 samples (skipped 724563)
 2026-04-21 12:20:19 [INFO] __main__: step=85350  loss=0.0677  lr=2.64e-06  steps/s=0.51
+2026-04-21 12:21:28 [INFO] __main__: step=85400  loss=0.0623  lr=2.62e-06  steps/s=0.51
+2026-04-21 12:22:28 [INFO] __main__: step=85450  loss=0.0586  lr=2.60e-06  steps/s=0.51
+2026-04-21 12:23:34 [INFO] __main__: step=85500  loss=0.0565  lr=2.58e-06  steps/s=0.51
+2026-04-21 12:24:38 [INFO] __main__: step=85550  loss=0.0592  lr=2.57e-06  steps/s=0.51
+2026-04-21 12:25:42 [INFO] __main__: step=85600  loss=0.0601  lr=2.55e-06  steps/s=0.51
+2026-04-21 12:26:50 [INFO] __main__: step=85650  loss=0.0544  lr=2.53e-06  steps/s=0.51
+2026-04-21 12:26:55 [INFO] neurel_deob.training.data: Yielded 700000 samples (skipped 734893)
+2026-04-21 12:27:56 [INFO] __main__: step=85700  loss=0.0615  lr=2.51e-06  steps/s=0.51
+2026-04-21 12:28:59 [INFO] __main__: step=85750  loss=0.0635  lr=2.50e-06  steps/s=0.51
+2026-04-21 12:30:02 [INFO] __main__: step=85800  loss=0.0662  lr=2.48e-06  steps/s=0.51
+2026-04-21 12:31:21 [INFO] __main__: step=85850  loss=0.0575  lr=2.46e-06  steps/s=0.51
+2026-04-21 12:32:26 [INFO] __main__: step=85900  loss=0.0643  lr=2.45e-06  steps/s=0.51
+2026-04-21 12:33:23 [INFO] __main__: step=85950  loss=0.0548  lr=2.43e-06  steps/s=0.51
+2026-04-21 12:33:44 [INFO] neurel_deob.training.data: Yielded 710000 samples (skipped 745200)
+2026-04-21 12:34:25 [INFO] __main__: step=86000  loss=0.0646  lr=2.41e-06  steps/s=0.51
+2026-04-21 12:34:25 [INFO] __main__: Running evaluation at step 86000 …
+2026-04-21 12:34:25 [INFO] neurel_deob.training.data: Resolved pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+Repo card metadata block was not found. Setting CardData to empty.
+2026-04-21 12:34:26 [WARNING] huggingface_hub.repocard: Repo card metadata block was not found. Setting CardData to empty.
+[2026-04-21T12:39:22.009] error: *** JOB 13967354 ON node879 CANCELLED AT 2026-04-21T12:39:22 DUE to SIGNAL Terminated ***
