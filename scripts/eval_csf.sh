@@ -75,7 +75,7 @@ python scripts/evaluate_exebench.py \
     --max-samples "$MAX_SAMPLES" \
     --strip-ir \
     --normalize-structs \
-    --check-compilability \
+    --check-functional \
     --output "results/eval_${SPLIT}_$(echo $MODEL | tr '/' '_').json" \
     --save-predictions "results/preds_${SPLIT}_$(echo $MODEL | tr '/' '_').jsonl" \
     --device auto \

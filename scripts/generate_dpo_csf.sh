@@ -39,7 +39,7 @@ fi
 export PATH="$HOME/scratch/forklift/tools/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin:$PATH"
 
 # ── Model to generate from ──────────────────────────────────
-MODEL_PATH="${MODEL_PATH:-leachl/forklift-arm-ir-ir}"
+MODEL_PATH="${MODEL_PATH:checkpoints/arm_ir_ir_v4/step_80000}"
 
 # ── Generate DPO pairs ──────────────────────────────────────
 # Strategy: use ground-truth as chosen, model output as rejected.
