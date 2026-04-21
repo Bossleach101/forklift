@@ -1,0 +1,14 @@
+================================================
+Job ID:    13979458
+Node:      node883.csf3.man.alces.network
+GPU:       NVIDIA L40S
+Date:      Mon 20 Apr 14:55:11 BST 2026
+================================================
+Using local LLVM installation: /mnt/iusers01/fse-ugpgt01/compsci01/n28265ll/scratch/forklift/tools/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin
+Evaluating model: leachl/forklift-arm-ir-ir_v4
+Pair: arm_ir-ir  Split: test_synth  ASM key: angha  Batch size: 8
+
+
+================================================
+Evaluation complete at Mon 20 Apr 16:52:27 BST 2026
+================================================

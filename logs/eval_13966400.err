@@ -1,0 +1,40 @@
+11:12:02  INFO      Device: cuda
+11:12:02  INFO      Loading model: ./checkpoints/arm_ir_ir_v4/
+Traceback (most recent call last):
+  File "/net/scratch/n28265ll/forklift/scripts/evaluate_exebench.py", line 221, in run_evaluation
+    tok = Tokenizer.from_file(os.path.join(args.model, "tokenizer.json"))
+Exception: No such file or directory (os error 2)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/net/scratch/n28265ll/forklift/env/lib64/python3.9/site-packages/huggingface_hub/hf_file_system.py", line 126, in _repo_and_revision_exist
+    self._api.repo_info(
+  File "/net/scratch/n28265ll/forklift/env/lib64/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/net/scratch/n28265ll/forklift/env/lib64/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 160, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must use alphanumeric chars, '-', '_' or '.'. The name cannot start or end with '-' or '.' and the maximum length is 96: './checkpoints'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/net/scratch/n28265ll/forklift/scripts/evaluate_exebench.py", line 530, in <module>
+    main()
+  File "/net/scratch/n28265ll/forklift/scripts/evaluate_exebench.py", line 526, in main
+    run_evaluation(args)
+  File "/net/scratch/n28265ll/forklift/scripts/evaluate_exebench.py", line 226, in run_evaluation
+    fs.open(os.path.join(args.model, "tokenizer.json"), "r").read()
+  File "/net/scratch/n28265ll/forklift/env/lib64/python3.9/site-packages/fsspec/spec.py", line 1295, in open
+    self.open(
+  File "/net/scratch/n28265ll/forklift/env/lib64/python3.9/site-packages/fsspec/spec.py", line 1307, in open
+    f = self._open(
+  File "/net/scratch/n28265ll/forklift/env/lib64/python3.9/site-packages/huggingface_hub/hf_file_system.py", line 279, in _open
+    return HfFileSystemFile(self, path, mode=mode, revision=revision, **kwargs)
+  File "/net/scratch/n28265ll/forklift/env/lib64/python3.9/site-packages/huggingface_hub/hf_file_system.py", line 948, in __init__
+    self.resolved_path = fs.resolve_path(path, revision=revision)
+  File "/net/scratch/n28265ll/forklift/env/lib64/python3.9/site-packages/huggingface_hub/hf_file_system.py", line 217, in resolve_path
+    _raise_file_not_found(path, err)
+  File "/net/scratch/n28265ll/forklift/env/lib64/python3.9/site-packages/huggingface_hub/hf_file_system.py", line 1139, in _raise_file_not_found
+    raise FileNotFoundError(msg) from err
+FileNotFoundError: ./checkpoints/arm_ir_ir_v4/tokenizer.json (invalid repository id)
