@@ -38,6 +38,9 @@ fi
 
 export PATH="$HOME/scratch/forklift/tools/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin:$PATH"
 
+# Add this near your PATH exports
+export EXEBENCH_CLIB_DIR="$HOME/scratch/exebench/exebench"
+
 # ── Model to generate from ──────────────────────────────────
 MODEL_PATH="${MODEL_PATH:-checkpoints/arm_ir_ir_v4/step_80000}"
 

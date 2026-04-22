@@ -41,6 +41,8 @@ fi
 
 export PATH="$HOME/scratch/forklift/tools/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin:$PATH"
 
+export EXEBENCH_CLIB_DIR="$HOME/scratch/exebench/exebench"
+
 # ── Model to start from ─────────────────────────────────────
 # Start from the v2 arm-ir-ir checkpoint (same as SFT model).
 MODEL_PATH="${MODEL_PATH:-leachl/forklift-arm-ir-ir_v2}"
