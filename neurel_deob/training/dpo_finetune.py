@@ -78,7 +78,8 @@ class DPOConfig:
     # ── DPO hyperparameters ──────────────────────────────────────────
     beta: float = 0.1                      # KL penalty strength
     label_smoothing: float = 0.0           # for robust DPO
-    loss_type: str = "sigmoid"             # "sigmoid" or "ipo"
+    loss_type: str = "ipo"                 # "sigmoid" or "ipo" (ipo limits runaway KL divergence)
+    sft_weight: float = 0.1                # NNL regularization weight to preserve base syntax
 
     # ── Optimiser ────────────────────────────────────────────────────
     lr: float = 5e-7                       # DPO uses much lower LR
@@ -310,6 +311,7 @@ def dpo_loss(
     beta: float = 0.1,
     label_smoothing: float = 0.0,
     loss_type: str = "sigmoid",
+    sft_weight: float = 0.1,
 ) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
     """Compute DPO loss.
 
@@ -326,6 +328,10 @@ def dpo_loss(
         loss = (logits - 1 / (2 * beta)) ** 2
     else:
         raise ValueError(f"Unknown DPO loss type: {loss_type}")
+
+    # Add SFT regularization term to prevent catastrophic grammar forgetting
+    # We penalize low log-probabilities on the chosen text
+    loss = loss - sft_weight * policy_chosen_logps
 
     chosen_rewards = beta * chosen_logratios.detach()
     rejected_rewards = beta * rejected_logratios.detach()
@@ -649,6 +655,7 @@ def train(config: DPOConfig):
                     beta=config.beta,
                     label_smoothing=config.label_smoothing,
                     loss_type=config.loss_type,
+                    sft_weight=config.sft_weight,
                 )
                 loss = loss / config.gradient_accumulation_steps
 

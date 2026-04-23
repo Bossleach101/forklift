@@ -58,10 +58,12 @@ python -m neurel_deob.training.dpo_finetune \
     --max_steps 200 \
     --batch_size 2 \
     --gradient_accumulation_steps 8 \
-    --lr 1e-7 \
+    --lr 5e-7 \
     --lr_scheduler cosine \
+    --loss_type ipo \
+    --sft_weight 0.1 \
     --warmup_steps 20 \
-    --beta 0.2 \
+    --beta 0.1 \
     --fp16 \
     --eval_steps 50 \
     --save_steps 50 \
