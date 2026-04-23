@@ -1,0 +1,1803 @@
+13:47:43  INFO      Device: cuda
+13:47:43  INFO      Loading model: checkpoints/arm_ir_ir_v4/step_80000
+13:47:50  INFO      Model loaded (197059584 params)
+13:47:50  INFO      Pair arm_ir-ir → source=angha_gcc_arm_O0  target=angha_clang_ir_O0
+13:47:50  INFO      Loading split: test_synth
+Repo card metadata block was not found. Setting CardData to empty.
+13:47:51  WARNING   Repo card metadata block was not found. Setting CardData to empty.
+13:48:47  INFO      Evaluated 32 samples (0.59/s) | skipped 7 | seen 39 rows
+13:49:38  INFO      Evaluated 64 samples (0.61/s) | skipped 18 | seen 82 rows
+13:50:27  INFO      Evaluated 96 samples (0.62/s) | skipped 40 | seen 136 rows
+13:51:23  INFO      Evaluated 128 samples (0.61/s) | skipped 52 | seen 180 rows
+13:52:07  INFO      Evaluated 160 samples (0.63/s) | skipped 59 | seen 219 rows
+13:52:52  INFO      Evaluated 192 samples (0.64/s) | skipped 71 | seen 263 rows
+13:53:41  INFO      Evaluated 224 samples (0.64/s) | skipped 88 | seen 312 rows
+13:54:38  INFO      Evaluated 256 samples (0.63/s) | skipped 101 | seen 357 rows
+13:55:23  INFO      Evaluated 288 samples (0.64/s) | skipped 108 | seen 396 rows
+13:56:14  INFO      Evaluated 320 samples (0.64/s) | skipped 120 | seen 440 rows
+13:57:06  INFO      Evaluated 352 samples (0.64/s) | skipped 126 | seen 478 rows
+13:57:52  INFO      Evaluated 384 samples (0.64/s) | skipped 137 | seen 521 rows
+13:58:20  INFO      Evaluated 416 samples (0.66/s) | skipped 146 | seen 562 rows
+13:59:10  INFO      Evaluated 448 samples (0.66/s) | skipped 160 | seen 608 rows
+14:00:06  INFO      Evaluated 480 samples (0.66/s) | skipped 167 | seen 647 rows
+14:00:59  INFO      Evaluated 512 samples (0.65/s) | skipped 178 | seen 690 rows
+14:01:39  INFO      Evaluated 544 samples (0.66/s) | skipped 184 | seen 728 rows
+14:02:49  INFO      Evaluated 576 samples (0.64/s) | skipped 193 | seen 769 rows
+14:03:40  INFO      Evaluated 608 samples (0.64/s) | skipped 196 | seen 804 rows
+14:04:34  INFO      Evaluated 640 samples (0.64/s) | skipped 212 | seen 852 rows
+14:05:17  INFO      Evaluated 672 samples (0.64/s) | skipped 225 | seen 897 rows
+14:06:24  INFO      Evaluated 704 samples (0.63/s) | skipped 246 | seen 950 rows
+14:07:38  INFO      Evaluated 736 samples (0.62/s) | skipped 257 | seen 993 rows
+14:08:54  INFO      Evaluated 768 samples (0.61/s) | skipped 262 | seen 1030 rows
+14:09:37  INFO      Evaluated 800 samples (0.61/s) | skipped 274 | seen 1074 rows
+14:10:53  INFO      Evaluated 832 samples (0.60/s) | skipped 285 | seen 1117 rows
+14:11:41  INFO      Evaluated 864 samples (0.60/s) | skipped 294 | seen 1158 rows
+14:12:48  INFO      Evaluated 896 samples (0.60/s) | skipped 308 | seen 1204 rows
+14:13:38  INFO      Evaluated 928 samples (0.60/s) | skipped 319 | seen 1247 rows
+14:14:37  INFO      Evaluated 960 samples (0.60/s) | skipped 331 | seen 1291 rows
+14:15:30  INFO      Evaluated 992 samples (0.60/s) | skipped 349 | seen 1341 rows
+14:16:50  INFO      Evaluated 1024 samples (0.59/s) | skipped 353 | seen 1377 rows
+14:17:59  INFO      Evaluated 1056 samples (0.58/s) | skipped 369 | seen 1425 rows
+14:18:46  INFO      Evaluated 1088 samples (0.59/s) | skipped 378 | seen 1466 rows
+14:19:45  INFO      Evaluated 1120 samples (0.59/s) | skipped 388 | seen 1508 rows
+14:20:31  INFO      Evaluated 1152 samples (0.59/s) | skipped 394 | seen 1546 rows
+14:21:20  INFO      Evaluated 1184 samples (0.59/s) | skipped 411 | seen 1595 rows
+14:22:16  INFO      Evaluated 1216 samples (0.59/s) | skipped 418 | seen 1634 rows
+14:23:08  INFO      Evaluated 1248 samples (0.59/s) | skipped 434 | seen 1682 rows
+14:24:04  INFO      Evaluated 1280 samples (0.59/s) | skipped 442 | seen 1722 rows
+14:24:53  INFO      Evaluated 1312 samples (0.59/s) | skipped 453 | seen 1765 rows
+14:25:57  INFO      Evaluated 1344 samples (0.59/s) | skipped 469 | seen 1813 rows
+14:26:56  INFO      Evaluated 1376 samples (0.59/s) | skipped 482 | seen 1858 rows
+14:28:11  INFO      Evaluated 1408 samples (0.58/s) | skipped 492 | seen 1900 rows
+14:29:07  INFO      Evaluated 1440 samples (0.58/s) | skipped 515 | seen 1955 rows
+14:30:03  INFO      Evaluated 1472 samples (0.58/s) | skipped 521 | seen 1993 rows
+14:31:14  INFO      Evaluated 1504 samples (0.58/s) | skipped 531 | seen 2035 rows
+14:32:01  INFO      Evaluated 1536 samples (0.58/s) | skipped 534 | seen 2070 rows
+14:32:59  INFO      Evaluated 1568 samples (0.58/s) | skipped 541 | seen 2109 rows
+14:33:50  INFO      Evaluated 1600 samples (0.58/s) | skipped 547 | seen 2147 rows
+14:34:37  INFO      Evaluated 1632 samples (0.58/s) | skipped 556 | seen 2188 rows
+14:35:37  INFO      Evaluated 1664 samples (0.58/s) | skipped 566 | seen 2230 rows
+14:36:24  INFO      Evaluated 1696 samples (0.58/s) | skipped 577 | seen 2273 rows
+14:37:52  INFO      Evaluated 1728 samples (0.58/s) | skipped 592 | seen 2320 rows
+14:38:43  INFO      Evaluated 1760 samples (0.58/s) | skipped 597 | seen 2357 rows
+14:39:27  INFO      Evaluated 1792 samples (0.58/s) | skipped 609 | seen 2401 rows
+14:40:19  INFO      Evaluated 1824 samples (0.58/s) | skipped 618 | seen 2442 rows
+14:41:16  INFO      Evaluated 1856 samples (0.58/s) | skipped 638 | seen 2494 rows
+14:42:23  INFO      Evaluated 1888 samples (0.58/s) | skipped 661 | seen 2549 rows
+14:43:19  INFO      Evaluated 1920 samples (0.58/s) | skipped 668 | seen 2588 rows
+14:44:15  INFO      Evaluated 1952 samples (0.58/s) | skipped 679 | seen 2631 rows
+14:45:06  INFO      Evaluated 1984 samples (0.58/s) | skipped 687 | seen 2671 rows
+14:45:53  INFO      Evaluated 2016 samples (0.58/s) | skipped 692 | seen 2708 rows
+14:46:42  INFO      Evaluated 2048 samples (0.58/s) | skipped 711 | seen 2759 rows
+14:47:52  INFO      Evaluated 2080 samples (0.58/s) | skipped 721 | seen 2801 rows
+14:48:44  INFO      Evaluated 2112 samples (0.58/s) | skipped 735 | seen 2847 rows
+14:49:23  INFO      Evaluated 2144 samples (0.58/s) | skipped 745 | seen 2889 rows
+14:50:32  INFO      Evaluated 2176 samples (0.58/s) | skipped 763 | seen 2939 rows
+14:51:24  INFO      Evaluated 2208 samples (0.58/s) | skipped 777 | seen 2985 rows
+14:52:11  INFO      Evaluated 2240 samples (0.58/s) | skipped 787 | seen 3027 rows
+14:53:17  INFO      Evaluated 2272 samples (0.58/s) | skipped 801 | seen 3073 rows
+14:54:01  INFO      Evaluated 2304 samples (0.58/s) | skipped 813 | seen 3117 rows
+14:54:47  INFO      Evaluated 2336 samples (0.58/s) | skipped 822 | seen 3158 rows
+14:55:38  INFO      Evaluated 2368 samples (0.58/s) | skipped 835 | seen 3203 rows
+14:56:36  INFO      Evaluated 2400 samples (0.58/s) | skipped 842 | seen 3242 rows
+14:57:16  INFO      Evaluated 2432 samples (0.58/s) | skipped 852 | seen 3284 rows
+14:58:17  INFO      Evaluated 2464 samples (0.58/s) | skipped 860 | seen 3324 rows
+14:59:05  INFO      Evaluated 2496 samples (0.58/s) | skipped 877 | seen 3373 rows
+14:59:54  INFO      Evaluated 2528 samples (0.59/s) | skipped 885 | seen 3413 rows
+15:00:54  INFO      Evaluated 2560 samples (0.58/s) | skipped 897 | seen 3457 rows
+15:01:55  INFO      Evaluated 2592 samples (0.58/s) | skipped 904 | seen 3496 rows
+15:02:42  INFO      Evaluated 2624 samples (0.58/s) | skipped 914 | seen 3538 rows
+15:03:36  INFO      Evaluated 2656 samples (0.58/s) | skipped 923 | seen 3579 rows
+15:04:27  INFO      Evaluated 2688 samples (0.59/s) | skipped 931 | seen 3619 rows
+15:05:07  INFO      Evaluated 2720 samples (0.59/s) | skipped 941 | seen 3661 rows
+15:06:15  INFO      Evaluated 2752 samples (0.59/s) | skipped 950 | seen 3702 rows
+15:07:23  INFO      Evaluated 2784 samples (0.58/s) | skipped 958 | seen 3742 rows
+15:08:16  INFO      Evaluated 2816 samples (0.58/s) | skipped 967 | seen 3783 rows
+15:08:48  INFO      Evaluated 2848 samples (0.59/s) | skipped 971 | seen 3819 rows
+15:09:40  INFO      Evaluated 2880 samples (0.59/s) | skipped 980 | seen 3860 rows
+15:10:34  INFO      Evaluated 2912 samples (0.59/s) | skipped 985 | seen 3897 rows
+15:11:18  INFO      Evaluated 2944 samples (0.59/s) | skipped 995 | seen 3939 rows
+15:12:20  INFO      Evaluated 2976 samples (0.59/s) | skipped 1009 | seen 3985 rows
+15:13:20  INFO      Evaluated 3008 samples (0.59/s) | skipped 1019 | seen 4027 rows
+15:14:13  INFO      Evaluated 3040 samples (0.59/s) | skipped 1036 | seen 4076 rows
+15:15:20  INFO      Evaluated 3072 samples (0.59/s) | skipped 1053 | seen 4125 rows
+15:16:13  INFO      Evaluated 3104 samples (0.59/s) | skipped 1061 | seen 4165 rows
+15:17:03  INFO      Evaluated 3136 samples (0.59/s) | skipped 1070 | seen 4206 rows
+15:17:49  INFO      Evaluated 3168 samples (0.59/s) | skipped 1080 | seen 4248 rows
+15:18:33  INFO      Evaluated 3200 samples (0.59/s) | skipped 1097 | seen 4297 rows
+15:19:15  INFO      Evaluated 3232 samples (0.59/s) | skipped 1105 | seen 4337 rows
+15:20:07  INFO      Evaluated 3264 samples (0.59/s) | skipped 1114 | seen 4378 rows
+15:20:57  INFO      Evaluated 3296 samples (0.59/s) | skipped 1126 | seen 4422 rows
+15:22:03  INFO      Evaluated 3328 samples (0.59/s) | skipped 1132 | seen 4460 rows
+15:23:01  INFO      Evaluated 3360 samples (0.59/s) | skipped 1151 | seen 4511 rows
+15:23:53  INFO      Evaluated 3392 samples (0.59/s) | skipped 1159 | seen 4551 rows
+15:24:56  INFO      Evaluated 3424 samples (0.59/s) | skipped 1173 | seen 4597 rows
+15:25:49  INFO      Evaluated 3456 samples (0.59/s) | skipped 1181 | seen 4637 rows
+15:26:22  INFO      Evaluated 3488 samples (0.59/s) | skipped 1195 | seen 4683 rows
+15:27:23  INFO      Evaluated 3520 samples (0.59/s) | skipped 1201 | seen 4721 rows
+15:28:18  INFO      Evaluated 3552 samples (0.59/s) | skipped 1207 | seen 4759 rows
+15:29:07  INFO      Evaluated 3584 samples (0.59/s) | skipped 1222 | seen 4806 rows
+15:30:09  INFO      Evaluated 3616 samples (0.59/s) | skipped 1237 | seen 4853 rows
+15:31:14  INFO      Evaluated 3648 samples (0.59/s) | skipped 1249 | seen 4897 rows
+15:32:09  INFO      Evaluated 3680 samples (0.59/s) | skipped 1264 | seen 4944 rows
+15:33:05  INFO      Evaluated 3712 samples (0.59/s) | skipped 1276 | seen 4988 rows
+15:33:37  INFO      ============================================================
+15:33:37  INFO      RESULTS
+15:33:37  INFO      ============================================================
+15:33:37  INFO        model                     checkpoints/arm_ir_ir_v4/step_80000
+15:33:37  INFO        pair                      arm_ir-ir
+15:33:37  INFO        split                     test_synth
+15:33:37  INFO        asm_key                   angha
+15:33:37  INFO        num_evaluated             3719
+15:33:37  INFO        num_skipped               1281
+15:33:37  INFO        total_rows_seen           5000
+15:33:37  INFO        bleu                      86.09
+15:33:37  INFO        ned                       0.1625
+15:33:37  INFO        exact_match_pct           29.9
+15:33:37  INFO        beam                      3
+15:33:37  INFO        repetition_penalty        1.0
+15:33:37  INFO        no_repeat_ngram_size      0
+15:33:37  INFO        max_new_tokens            2048
+15:33:37  INFO        batch_size                8
+15:33:37  INFO        elapsed_seconds           6326.2
+15:33:37  INFO        samples_per_second        0.59
+15:33:37  INFO      ============================================================
+15:33:37  INFO      Running Level 3 checks on 3719 predictions...
+15:34:01  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_e6zklybq.ll:9:23: error: constant expression type mismatch: got type 'i32*' but expected 'i32**'
+%6 = load i32*, i32** getelementptr inbounds (%struct.struct0, %struct.struct0* @GSU, i32 0, i32 5), align 8
+                      ^
+15:34:14  INFO        Checked 50 / 3719  (syntax=40  compile=40  link=11  func=11/11)
+15:34:19  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_64y4hoop.ll:21:1: error: instruction forward referenced with type 'label'
+%18 = getelementptr inbounds %struct.struct0, %struct.struct0* %17, i32 0, i32 0
+^
+15:34:20  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_wm4klp3_.ll:28:1: error: instruction forward referenced with type 'label'
+%23 = call i32 @svz_log(i32 1, i8* getelementptr inbounds ([14 x i8], [14 x i8]* @.str, i64 0, i64 0), i8* %22)
+^
+15:34:30  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_2qsx3q_g.ll:29:1: error: instruction forward referenced with type 'label'
+%22 = trunc i64 %21 to i32
+^
+15:34:30  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_eyvsg1bg.ll:17:22: error: '%11' defined with type 'i32*' but expected 'i64*'
+%12 = load i64, i64* %11, align 8
+                     ^
+15:34:32  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ljyvylna.ll:48:1: error: instruction forward referenced with type 'label'
+%35 = call i32* @type_construct_script_function_(%struct.struct0* %31, %struct.struct3* %32, %struct.struct4* %33, %struct.struct4* %33)
+^
+15:34:33  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_5rwqrp7p.ll:29:1: error: instruction forward referenced with type 'label'
+%20 = load %struct.struct0*, %struct.struct0** %2, align 8
+^
+15:34:33  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_qhqkxxqq.ll:18:30: error: '%11' defined with type '%struct.struct0*' but expected 'i32*'
+%13 = phi i32* [ %9, %7 ], [ %11, %10 ]
+                             ^
+15:34:33  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_r_uchvcp.ll:52:64: error: '%40' defined with type 'i32' but expected '%struct.struct0*'
+%41 = getelementptr inbounds %struct.struct0, %struct.struct0* %40, i32 0, i32 1
+                                                               ^
+15:34:35  INFO        Checked 100 / 3719  (syntax=75  compile=75  link=17  func=17/17)
+15:34:42  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_j9ki4vds.ll:30:1: error: instruction forward referenced with type 'label'
+%26 = trunc i64 %25 to i32
+^
+15:34:45  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_6846skuw.ll:42:1: error: instruction forward referenced with type 'label'
+%31 = getelementptr inbounds %struct.struct0, %struct.struct0* %30, i32 0, i32 2
+^
+15:34:45  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ny35k6kh.ll:11:20: error: '%4' defined with type 'i8*' but expected 'i8**'
+store i8* %8, i8** %4, align 8
+                   ^
+15:34:45  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_igupp1su.ll:25:22: error: '%20' defined with type 'i64*' but expected 'i32*'
+%21 = load i32, i32* %20, align 4
+                     ^
+15:34:46  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_b3hp5ph0.ll:43:1: error: instruction forward referenced with type 'label'
+%32 = getelementptr inbounds %struct.struct0, %struct.struct0* %31, i32 0, i32 0
+^
+15:35:00  INFO        Checked 150 / 3719  (syntax=119  compile=119  link=24  func=24/24)
+15:35:00  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_vlrk5y16.ll:17:83: error: argument is not of expected type 'i8*'
+%14 = call i32 (i32, i8*, ...) @kprintf(i32 ptrtoint ([26 x i8]* @.str.1 to i32), i32 %10, i32 %13)
+                                                                                  ^
+15:35:01  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_mozi4_76.ll:23:22: error: constant expression type mismatch: got type 'i64*' but expected 'i32*'
+%15 = load i32, i32* getelementptr inbounds (%struct.struct0, %struct.struct0* @gpu, i32 0, i32 0), align 8
+                     ^
+15:35:01  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_4f8rhrua.ll:30:1: error: instruction forward referenced with type 'label'
+%24 = getelementptr inbounds %struct.struct1, %struct.struct1* %23, i32 0, i32 0
+^
+15:35:02  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_bsxfvcb1.ll:37:48: error: '%5' defined with type '%struct.struct0*' but expected '%struct.struct0**'
+%27 = load %struct.struct0*, %struct.struct0** %5, align 8
+                                               ^
+15:35:02  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_2b4ke4cw.ll:42:1: error: instruction forward referenced with type 'label'
+%30 = ashr i32 %29, 8
+^
+15:35:16  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ifkyr_me.ll:41:1: error: instruction forward referenced with type 'label'
+%35 = add nsw i64 %34, %31
+^
+15:35:18  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_6u0yvt4a.ll:40:1: error: instruction forward referenced with type 'label'
+%34 = getelementptr inbounds i8, i8* %29, i64 %33
+^
+15:35:18  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_51po5pjf.ll:22:1: error: instruction forward referenced with type 'label'
+%18 = getelementptr inbounds %struct.struct0, %struct.struct0* %17, i32 0, i32 0
+^
+15:35:18  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_v0e7twjh.ll:24:1: error: instruction forward referenced with type 'label'
+%19 = add i64 %18, %17
+^
+15:35:19  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ekf_0o63.ll:40:47: error: invalid getelementptr indices
+%32 = getelementptr inbounds %struct.struct0, %struct.struct0* %31, i32 0, i32 8
+                                              ^
+15:35:19  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_cf42xo4w.ll:40:1: error: instruction forward referenced with type 'label'
+%32 = or i32 %31, %28
+^
+15:35:29  INFO        Checked 200 / 3719  (syntax=152  compile=152  link=35  func=35/35)
+15:35:39  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_6mtwy3nm.ll:15:29: error: use of undefined value '%38'
+br i1 %12, label %13, label %38
+                            ^
+15:35:40  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_d_jv2ge0.ll:50:24: error: '%4' defined with type 'float**' but expected 'double'
+%40 = fmul double %39, %4
+                       ^
+15:35:55  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ko863yut.ll:20:1: error: instruction forward referenced with type 'label'
+%17 = mul nsw i32 %16, %10
+^
+15:35:58  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_3jfe2ljz.ll:41:1: error: instruction forward referenced with type 'label'
+%34 = add nsw i64 %33, %31
+^
+15:35:58  INFO        Checked 250 / 3719  (syntax=187  compile=187  link=45  func=44/45)
+15:35:59  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ncmwbdn8.ll:28:1: error: instruction forward referenced with type 'label'
+%24 = getelementptr inbounds i32, i32* %20, i64 %23
+^
+15:35:59  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_uktvhxxp.ll:22:1: error: instruction forward referenced with type 'label'
+%18 = getelementptr inbounds %struct.struct1, %struct.struct1* %17, i32 0, i32 1
+^
+15:36:00  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_gnyo2boj.ll:6:20: error: base element of getelementptr must be sized
+store i32 %3, i32* getelementptr inbounds (%struct.struct0, %struct.struct0* @Ft_assertCallbackRoutine, i32 0, i32 0), align 4
+                   ^
+15:36:07  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_fvo11o0w.ll:14:22: error: constant expression type mismatch: got type 'double*' but expected 'i32*'
+%11 = load i32, i32* getelementptr inbounds (%struct.struct0, %struct.struct0* @x, i32 0, i32 0), align 4
+                     ^
+15:36:07  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_umlm0aqy.ll:37:1: error: instruction forward referenced with type 'label'
+%30 = getelementptr inbounds %struct.struct1, %struct.struct1* %29, i32 0, i32 0
+^
+15:36:10  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_i1d0927d.ll:41:1: error: instruction forward referenced with type 'label'
+%33 = sub nsw i32 %32, 6
+^
+15:36:11  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_f2dkr6uw.ll:11:21: error: constant expression type mismatch: got type 'i32*' but expected 'i64*'
+%4 = load i64, i64* getelementptr inbounds (%struct.struct0, %struct.struct0* @SA1, i32 0, i32 0, i32 0, i32 0), align 8
+                    ^
+15:36:12  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_4u8t0s0a.ll:28:1: error: instruction forward referenced with type 'label'
+%23 = or i32 %22, %16
+^
+15:36:20  INFO        Checked 300 / 3719  (syntax=221  compile=221  link=52  func=50/52)
+15:36:25  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_3oulvyqc.ll:21:1: error: instruction forward referenced with type 'label'
+%17 = getelementptr inbounds %struct.struct0, %struct.struct0* %16, i32 0, i32 0
+^
+15:36:26  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_5d7yqcw3.ll:39:1: error: instruction forward referenced with type 'label'
+%30 = load float, float* %29, align 4
+^
+15:36:27  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_mjj0pe3w.ll:38:1: error: instruction forward referenced with type 'label'
+%31 = getelementptr inbounds %struct.struct0, %struct.struct0* %26, i32 0, i32 0
+^
+15:36:27  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift__7jk6own.ll:54:1: error: instruction forward referenced with type 'label'
+%45 = load i32*, i32** %111, align 8
+^
+15:36:38  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_13fhj4qm.ll:41:1: error: instruction forward referenced with type 'label'
+%30 = getelementptr inbounds i8, i8* %29, i32 1
+^
+15:36:40  INFO        Checked 350 / 3719  (syntax=257  compile=257  link=57  func=54/57)
+15:36:41  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_j033jafr.ll:52:1: error: instruction forward referenced with type 'label'
+%39 = load i64, i64* %8, align 8
+^
+15:36:41  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ebl5m0l9.ll:40:21: error: '%30' defined with type 'i64*' but expected 'i32*'
+store i32 %28, i32* %30, align 8
+                    ^
+15:36:45  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_htk4j11c.ll:6:22: error: '%2' defined with type 'i32*' but expected 'i32'
+%4 = sub nsw i32 %3, %2
+                     ^
+15:36:54  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_wn8evwvz.ll:14:24: error: expected '(' in call
+%10 = call i32 @return _ACPI_STATUS(i32 %9)
+                       ^
+15:36:55  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_273_ri8z.ll:52:1: error: instruction forward referenced with type 'label'
+%38 = getelementptr inbounds i32, i32* %35, i64 %37
+^
+15:36:55  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_xunucib7.ll:44:22: error: '%32' defined with type '%struct.struct2*' but expected 'i32*'
+%33 = load i32, i32* %32, align 4
+                     ^
+15:36:55  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_h1_apaa9.ll:20:1: error: instruction forward referenced with type 'label'
+%17 = icmp sge i64 %13, %16
+^
+15:36:57  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_dhjkbwf9.ll:1:1: error: expected top-level entity
+<ir> define dso_local void @gdbmi_set_debug(i32 %0) {
+^
+15:37:00  INFO        Checked 400 / 3719  (syntax=296  compile=296  link=62  func=59/62)
+15:37:02  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_r5699791.ll:14:1: error: instruction forward referenced with type 'label'
+%7 = zext i8 %6 to i32
+^
+15:37:04  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_bey4bjj6.ll:33:21: error: '%24' defined with type 'i8*' but expected 'i32*'
+store i32 448, i32* %24, align 4
+                    ^
+15:37:04  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_bf4grqo9.ll:35:1: error: instruction forward referenced with type 'label'
+%28 = getelementptr inbounds %struct.struct1, %struct.struct1* %27, i32 0, i32 2
+^
+15:37:04  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_yu992ml7.ll:21:1: error: instruction forward referenced with type 'label'
+%17 = or i32 %16, %13
+^
+15:37:17  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ji8i5dwj.ll:30:1: error: instruction forward referenced with type 'label'
+%23 = add nsw i32 %22, 1
+^
+15:37:20  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_9v1ffps9.ll:43:1: error: instruction forward referenced with type 'label'
+%37 = getelementptr inbounds %struct.struct0, %struct.struct0* %34, i64 %36
+^
+15:37:21  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_u70ys0ae.ll:29:1: error: instruction forward referenced with type 'label'
+%23 = load i64, i64* %22, align 8
+^
+15:37:23  INFO        Checked 450 / 3719  (syntax=337  compile=337  link=68  func=65/68)
+15:37:25  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_vrq9hm_r.ll:1:1: error: expected top-level entity
+<ir> define dso_local void @json_set_escape_slashes(i32 %0) {
+^
+15:37:41  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_kkizft1g.ll:35:1: error: instruction forward referenced with type 'label'
+%30 = icmp eq i64 %26, %29
+^
+15:37:41  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ifs2pi6p.ll:39:50: error: '%28' defined with type 'label' but expected 'i32'
+call void @iface_panel_handle_input(i32 %27, i32 %28)
+                                                 ^
+15:37:41  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_3zygrktf.ll:32:1: error: instruction forward referenced with type 'label'
+%28 = load i16, i16* %27, align 2
+^
+15:37:41  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_o_n2t19p.ll:48:1: error: instruction forward referenced with type 'label'
+%39 = getelementptr inbounds %struct.struct0, %struct.struct0* %38, i32 0, i32 0
+^
+15:37:41  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_v30akm7r.ll:37:56: error: '%29' defined with type 'label' but expected 'float'
+%30 = phi float [ 1.000000e+00, %24 ], [ %28, %25 ], [ %29, %24 ]
+                                                       ^
+15:37:54  INFO        Checked 500 / 3719  (syntax=376  compile=376  link=80  func=76/80)
+15:37:56  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_z6pfn8g3.ll:34:1: error: instruction forward referenced with type 'label'
+%27 = load i32, i32* %26, align 8
+^
+15:37:57  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_qxprkrc2.ll:55:28: error: '%40' defined with type 'double' but expected 'double*'
+%51 = load double, double* %40, align 8
+                           ^
+15:38:02  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_qp2kbv6g.ll:26:1: error: instruction forward referenced with type 'label'
+%18 = add nsw i32 %17, 1
+^
+15:38:12  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift___sv7pj3.ll:40:1: error: instruction forward referenced with type 'label'
+%33 = call i32 @iwn_hw_stop(%struct.struct0* %32)
+^
+15:38:12  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_miit9aip.ll:64:21: error: '%44' defined with type '%struct.struct0*' but expected 'i64*'
+store i64 %43, i64* %44, align 8
+                    ^
+15:38:12  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_k86pl80v.ll:43:1: error: instruction forward referenced with type 'label'
+%34 = getelementptr inbounds %struct.struct0, %struct.struct0* %33, i32 0, i32 0
+^
+15:38:12  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_rfnt3m1_.ll:45:1: error: instruction forward referenced with type 'label'
+%37 = fadd double %36, %35
+^
+15:38:19  INFO        Checked 550 / 3719  (syntax=416  compile=416  link=88  func=83/88)
+15:38:24  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_npekeh7s.ll:8:63: error: '%3' defined with type 'double*' but expected '%struct.struct0*'
+%6 = getelementptr inbounds %struct.struct0, %struct.struct0* %3, i32 0, i32 4
+                                                              ^
+15:38:25  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_v7u4vcyn.ll:37:1: error: instruction forward referenced with type 'label'
+%30 = getelementptr inbounds %struct.struct0, %struct.struct0* %29, i32 0, i32 0
+^
+15:38:25  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_gi43agqg.ll:39:1: error: instruction forward referenced with type 'label'
+%32 = getelementptr inbounds i8, i8* %30, i64 %31
+^
+15:38:26  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_q44k5631.ll:43:19: error: '%34' defined with type 'i32*' but expected 'i64*'
+store i64 0, i64* %34, align 8
+                  ^
+15:38:26  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_aby8y6kv.ll:44:11: error: '%34' defined with type 'i32' but expected 'i16'
+store i16 %34, i16* %36, align 2
+          ^
+15:38:26  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_rvh6xp_4.ll:48:1: error: instruction forward referenced with type 'label'
+%36 = getelementptr inbounds %struct.struct1, %struct.struct1* %35, i32 0, i32 1
+^
+15:38:26  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_qpm8jiqu.ll:43:1: error: instruction forward referenced with type 'label'
+%37 = call i32 @readl(i64 %36)
+^
+15:38:27  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_qajse5tk.ll:47:1: error: instruction forward referenced with type 'label'
+%32 = trunc i32 %31 to i8
+^
+15:38:27  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_iytrkl4n.ll:45:1: error: instruction forward referenced with type 'label'
+%37 = zext i32 %36 to i64
+^
+15:38:27  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_i8n8d4ev.ll:59:35: error: '%41' defined with type '%struct.struct0*' but expected 'i64*'
+%46 = call i32 @rb_set_int32(i64* %41, i64 %45)
+                                  ^
+15:38:27  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_edckqi6a.ll:34:1: error: instruction forward referenced with type 'label'
+%30 = icmp slt i64 %23, %29
+^
+15:38:27  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_skj24vm2.ll:42:1: error: instruction forward referenced with type 'label'
+%38 = call i32 @ex_err(i8* getelementptr inbounds ([8 x i8], [8 x i8]* @.str.1, i64 0, i64 0), i8* %37, i32 -10000)
+^
+15:38:32  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_hc_f3s93.ll:52:82: error: expected instruction opcode
+%39 = getelementptr inbounds %struct.struct0, %struct.struct0* %38, i32 0, i32 2 2
+                                                                                 ^
+15:38:32  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_mm0resla.ll:38:1: error: instruction forward referenced with type 'label'
+%32 = call i32 @airThreadCondBroadcast(i32 %31)
+^
+15:38:32  INFO        Checked 600 / 3719  (syntax=447  compile=447  link=90  func=85/90)
+15:38:34  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_2k5ezw0_.ll:23:1: error: instruction forward referenced with type 'label'
+%19 = load i64, i64* %18, align 8
+^
+15:38:48  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_azm5q_y6.ll:31:1: error: instruction forward referenced with type 'label'
+%27 = sub i64 %25, %26
+^
+15:38:49  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_hoimzb35.ll:10:19: error: '%6' defined with type 'i32*' but expected 'i64*'
+store i64 0, i64* %6, align 8
+                  ^
+15:38:51  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_kkq9hiwc.ll:40:1: error: instruction forward referenced with type 'label'
+%32 = sub nsw i32 %31, %30
+^
+15:38:52  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_pxyh4061.ll:27:11: error: '%14' defined with type 'i8' but expected 'i32'
+store i32 %14, i32* %20, align 4
+          ^
+15:38:52  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_blcq7zfr.ll:8:24: error: '%5' defined with type 'i64*' but expected '%struct.struct0*'
+store %struct.struct0* %5, %struct.struct0** %3, align 8
+                       ^
+15:39:01  INFO        Checked 650 / 3719  (syntax=489  compile=489  link=100  func=95/100)
+15:39:03  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_q6m_tc3q.ll:37:21: error: '%29' defined with type 'i64*' but expected 'i32*'
+store i32 %27, i32* %29, align 4
+                    ^
+15:39:08  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_cn49wwah.ll:42:97: error: '%29' defined with type 'float*' but expected 'float'
+%40 = call float @ChiSqr(float %7, float %11, float %15, float %19, float %23, float %27, float %29, float %31, float %35, float %39)
+                                                                                                ^
+15:39:09  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_7yp17hzn.ll:7:10: error: use of undefined value '%24'
+br label %24
+         ^
+15:39:28  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_v65sp13y.ll:22:1: error: instruction forward referenced with type 'label'
+%17 = getelementptr inbounds %struct.struct0, %struct.struct0* %16, i32 0, i32 0
+^
+15:39:28  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_6kzf_396.ll:41:1: error: instruction forward referenced with type 'label'
+%29 = load %struct.struct1*, %struct.struct1** %4, align 8
+^
+15:39:29  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_re29t9yb.ll:45:22: error: '%42' defined with type 'float*' but expected 'i32*'
+%43 = load i32, i32* %42, align 4
+                     ^
+15:39:29  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_uuxhmnuw.ll:58:1: error: instruction forward referenced with type 'label'
+%45 = call i32 @emit_move(%struct.struct0* %42, i64 %43, i64 %44)
+^
+15:39:29  INFO        Checked 700 / 3719  (syntax=526  compile=526  link=109  func=104/109)
+15:39:29  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_t1_zlnqi.ll:19:11: error: '%10' defined with type 'i32' but expected 'i64'
+store i64 %10, i64* %14, align 8
+          ^
+15:39:29  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_h2rr7hbi.ll:40:1: error: instruction forward referenced with type 'label'
+%34 = zext i1 %33 to i32
+^
+15:39:30  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_az0pmv7w.ll:41:1: error: instruction forward referenced with type 'label'
+%31 = load %struct.struct0*, %struct.struct0** %2, align 8
+^
+15:39:33  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_8d2hqufh.ll:27:1: error: instruction forward referenced with type 'label'
+%20 = getelementptr inbounds %struct.struct0, %struct.struct0* %19, i32 1
+^
+15:39:36  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_n1fo047g.ll:42:1: error: instruction forward referenced with type 'label'
+%31 = load i8, i8* %4, align 1
+^
+15:39:36  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_q7vfsewh.ll:25:1: error: instruction forward referenced with type 'label'
+%20 = getelementptr inbounds %struct.struct0, %struct.struct0* %19, i32 0, i32 2
+^
+15:39:37  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_rze0j9to.ll:42:1: error: instruction forward referenced with type 'label'
+%33 = load i32, i32* %32, align 4
+^
+15:39:38  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ovl1a7fl.ll:47:1: error: instruction forward referenced with type 'label'
+%35 = call i32 @strcpy(i8* %32, i8* %34)
+^
+15:39:38  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_lcquz67m.ll:45:1: error: instruction forward referenced with type 'label'
+%38 = call i32 @regional_alloc_init(i32* %32, i64 %34, i64 %37)
+^
+15:39:38  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_nrniyj8r.ll:42:1: error: instruction forward referenced with type 'label'
+%33 = call i32 @jump_to(i64 %32)
+^
+15:39:38  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_mumnzcbv.ll:40:19: error: '%26' defined with type 'float' but expected 'double'
+%27 = fdiv double %26, 1.600000e+01
+                  ^
+15:39:52  INFO        Checked 750 / 3719  (syntax=558  compile=558  link=116  func=111/116)
+15:39:52  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_2ykuthe4.ll:44:21: error: '%3' defined with type '%struct.struct0**' but expected 'i64*'
+store i64 %35, i64* %3, align 8
+                    ^
+15:39:52  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ddebrnhb.ll:41:1: error: instruction forward referenced with type 'label'
+%35 = load %struct.struct0*, %struct.struct0** %4, align 8
+^
+15:39:56  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_rztu2mcw.ll:39:1: error: instruction forward referenced with type 'label'
+%29 = getelementptr inbounds %struct.struct2, %struct.struct2* %28, i32 0, i32 0
+^
+15:39:57  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_tm6iq3hr.ll:47:1: error: instruction forward referenced with type 'label'
+%38 = and i32 %37, -3
+^
+15:39:57  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_sxmqdpex.ll:52:1: error: instruction forward referenced with type 'label'
+%45 = getelementptr inbounds %struct.struct0, %struct.struct0* %44, i32 0, i32 0
+^
+15:40:10  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_k_r_8hue.ll:11:1: error: duplicate case value in switch
+i32 194, label %9
+^
+15:40:12  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_1umwbldl.ll:29:1: error: instruction forward referenced with type 'label'
+%23 = getelementptr inbounds %struct.struct0, %struct.struct0* %22, i32 0, i32 3
+^
+15:40:12  INFO        Checked 800 / 3719  (syntax=594  compile=594  link=121  func=115/121)
+15:40:32  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_s56ggutd.ll:6:27: error: constant expression type mismatch: got type 'float*' but expected 'double*'
+%4 = load double, double* getelementptr inbounds (%struct.struct0, %struct.struct0* @tax_percent, i32 0, i32 0), align 8
+                          ^
+15:40:33  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_m_yhwy34.ll:39:1: error: instruction forward referenced with type 'label'
+%32 = sub nsw i64 %28, %31
+^
+15:40:33  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_7fqtlziq.ll:33:1: error: instruction forward referenced with type 'label'
+%25 = load i32, i32* %3, align 4
+^
+15:40:33  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_wbr2a046.ll:43:1: error: instruction forward referenced with type 'label'
+%31 = load i32, i32* %30, align 8
+^
+15:40:46  INFO        Checked 850 / 3719  (syntax=639  compile=639  link=134  func=126/134)
+15:40:49  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_7ymvk6ha.ll:29:21: error: constant expression type mismatch: got type 'double*' but expected 'i32*'
+store i32 %19, i32* getelementptr inbounds (%struct.struct1, %struct.struct1* @p_mark, i32 0, i32 0), align 4
+                    ^
+15:40:50  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_u78yr7u9.ll:40:1: error: instruction forward referenced with type 'label'
+%33 = load i32*, i32** %6, align 8
+^
+15:40:50  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_xwv8c_z8.ll:53:19: error: '%4' defined with type '%struct.struct0*' but expected 'i32*'
+store i32 0, i32* %4, align 8
+                  ^
+15:40:51  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_wzu76ez6.ll:44:1: error: instruction forward referenced with type 'label'
+%37 = call i32 @target_remove_from_state_list(%struct.struct0* %36)
+^
+15:40:52  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_vft0sraa.ll:43:1: error: instruction forward referenced with type 'label'
+%33 = sub nsw i64 %32, 1
+^
+15:41:02  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_i7_6h4v6.ll:35:1: error: instruction forward referenced with type 'label'
+%30 = sub nsw i64 %29, %26
+^
+15:41:07  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_2xrl4p7z.ll:22:22: error: '%15' defined with type 'i64*' but expected 'i32*'
+%16 = load i32, i32* %15, align 4
+                     ^
+15:41:07  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_9z01csm9.ll:11:46: error: '%2' defined with type 'i64*' but expected '%struct.struct1**'
+store %struct.struct1* %6, %struct.struct1** %2, align 8
+                                             ^
+15:41:07  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ncjw0yxk.ll:43:1: error: instruction forward referenced with type 'label'
+%32 = call i32 @printf(i8* getelementptr inbounds ([43 x i8], [43 x i8]* @.str, i64 0, i64 0), i8* %31)
+^
+15:41:07  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_w9xuetaw.ll:22:22: error: '%16' defined with type 'i64*' but expected 'i32*'
+%17 = load i32, i32* %16, align 8
+                     ^
+15:41:07  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_p0a0cksr.ll:28:19: error: '%22' defined with type 'i32*' but expected 'i64*'
+store i64 0, i64* %22, align 8
+                  ^
+15:41:07  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_mi103z29.ll:32:10: error: '%26' defined with type 'i32' but expected 'i8'
+store i8 %26, i8* %5, align 1
+         ^
+15:41:07  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_xoktaih8.ll:25:19: error: '%7' defined with type '%struct.struct0*' but expected 'i32*'
+store i32 0, i32* %7, align 4
+                  ^
+15:41:07  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_apv4iglu.ll:36:1: error: instruction forward referenced with type 'label'
+%32 = load %struct.struct0*, %struct.struct0** %4, align 8
+^
+15:41:13  INFO        Checked 900 / 3719  (syntax=672  compile=672  link=143  func=133/143)
+15:41:21  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_55t1dc_8.ll:20:1: error: instruction forward referenced with type 'label'
+%17 = getelementptr inbounds %struct.struct0, %struct.struct0* %16, i32 0, i32 2
+^
+15:41:21  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: assembly parsed, but does not verify as correct!
+Only PHI nodes may reference their own value!
+  %25 = sub nsw i64 %24, %25
+15:41:23  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_j8mtjisa.ll:45:1: error: instruction forward referenced with type 'label'
+%33 = getelementptr inbounds %struct.struct0, %struct.struct0* %32, i32 0, i32 2
+^
+15:41:23  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_kqev4xpf.ll:29:1: error: instruction forward referenced with type 'label'
+%23 = getelementptr inbounds %struct.struct1, %struct.struct1* %22, i32 0, i32 0
+^
+15:41:23  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_runqbkgp.ll:32:1: error: instruction forward referenced with type 'label'
+%24 = load %struct.struct0*, %struct.struct0** %4, align 8
+^
+15:41:24  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_p0dl3y1v.ll:41:25: error: '%2' defined with type 'float**' but expected 'float*'
+store float %26, float* %2, align 4
+                        ^
+15:41:24  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_agvb0lc3.ll:34:1: error: instruction forward referenced with type 'label'
+%25 = getelementptr inbounds %struct.struct0, %struct.struct0* %24, i32 0, i32 0
+^
+15:41:25  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_47ekxsj5.ll:21:1: error: instruction forward referenced with type 'label'
+%18 = getelementptr inbounds %struct.struct0, %struct.struct0* %17, i32 0, i32 1
+^
+15:41:33  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_x60ylh18.ll:39:1: error: instruction forward referenced with type 'label'
+%33 = load %struct.struct0*, %struct.struct0** %2, align 8
+^
+15:41:33  INFO        Checked 950 / 3719  (syntax=710  compile=710  link=148  func=137/148)
+15:41:34  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_vgl1rpch.ll:44:1: error: instruction forward referenced with type 'label'
+%36 = getelementptr inbounds %struct.struct0, %struct.struct0* %35, i32 0, i32 0
+^
+15:41:35  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_u664e1o8.ll:42:1: error: instruction forward referenced with type 'label'
+%33 = add nsw i64 %29, %32
+^
+15:41:44  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_y170ga8f.ll:53:1: error: instruction forward referenced with type 'label'
+%45 = ashr i32 %44, 2
+^
+15:41:45  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_wg065f8a.ll:32:1: error: instruction forward referenced with type 'label'
+%24 = add i64 %23, -1
+^
+15:41:52  INFO        Checked 1000 / 3719  (syntax=746  compile=746  link=152  func=141/152)
+15:41:53  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_782zp1g5.ll:25:1: error: instruction forward referenced with type 'label'
+%21 = load i32, i32* %20, align 4
+^
+15:41:53  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_1lss_zj4.ll:35:1: error: instruction forward referenced with type 'label'
+%27 = load %struct.struct0*, %struct.struct0** %4, align 8
+^
+15:41:57  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_535286q5.ll:9:19: error: constant expression type mismatch: got type 'i32*' but expected 'i8*'
+%6 = load i8, i8* getelementptr inbounds (%struct.struct0, %struct.struct0* @DataBus, i32 0, i32 0), align 1
+                  ^
+15:41:58  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_tbl4wo4l.ll:46:1: error: instruction forward referenced with type 'label'
+%33 = sext i8 %32 to i32
+^
+15:41:58  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_5g5oxxec.ll:30:1: error: instruction forward referenced with type 'label'
+%24 = icmp ne i64 %23, 0
+^
+15:42:15  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_byttjecs.ll:57:19: error: '%4' defined with type '%struct.struct0**' but expected 'i32*'
+store i32 0, i32* %4, align 4
+                  ^
+15:42:15  INFO        Checked 1050 / 3719  (syntax=779  compile=779  link=159  func=147/159)
+15:42:16  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_tv7cavhg.ll:27:1: error: instruction forward referenced with type 'label'
+%22 = load %struct.struct0*, %struct.struct0** %4, align 8
+^
+15:42:16  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_8v5vxz8z.ll:48:10: error: '%36' is not a basic block
+br label %36
+         ^
+15:42:31  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_y7r7fk0r.ll:51:1: error: instruction forward referenced with type 'label'
+%35 = load i32, i32* %7, align 4
+^
+15:42:31  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ilwigqee.ll:23:22: error: '%18' defined with type 'i32*' but expected 'i64*'
+%19 = load i64, i64* %18, align 8
+                     ^
+15:42:32  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_uz23aeoj.ll:47:1: error: instruction forward referenced with type 'label'
+%34 = getelementptr inbounds %struct.struct0, %struct.struct0* %33, i32 0, i32 1
+^
+15:42:32  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_76f17btv.ll:36:1: error: instruction forward referenced with type 'label'
+%27 = phi i64 [ %24, %20 ], [ 0, %25 ]
+^
+15:42:40  INFO        Checked 1100 / 3719  (syntax=815  compile=815  link=167  func=155/167)
+15:42:42  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_d_kkxlcc.ll:17:38: error: '%11' defined with type '%struct.struct2*' but expected 'i32*'
+%12 = call i32 @sysfs_attr_init(i32* %11)
+                                     ^
+15:42:43  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_hw3_pifm.ll:17:29: error: use of undefined value '%29'
+br i1 %12, label %13, label %29
+                            ^
+15:42:43  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_e_yqct2z.ll:44:24: error: '%29' defined with type 'i32' but expected '%struct.struct0*'
+store %struct.struct0* %29, %struct.struct0** %2, align 8
+                       ^
+15:42:44  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_esgwmb7h.ll:22:1: error: instruction forward referenced with type 'label'
+%19 = getelementptr inbounds %struct.struct0, %struct.struct0* %18, i32 0, i32 0
+^
+15:42:59  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_285vh2x8.ll:21:29: error: use of undefined value '%30'
+br i1 %14, label %15, label %30
+                            ^
+15:43:00  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_dtd1khmg.ll:18:33: error: expected '(' in call
+%14 = call i32 @nfs_mark_return _delegation(%struct.struct0* %12, %struct.struct1* %13)
+                                ^
+15:43:01  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_k6mwpd5w.ll:47:1: error: instruction forward referenced with type 'label'
+%37 = load i32, i32* %36, align 4
+^
+15:43:02  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_0e6pjxnt.ll:22:1: error: instruction forward referenced with type 'label'
+%18 = icmp ne i64 %17, 0
+^
+15:43:03  INFO        Checked 1150 / 3719  (syntax=854  compile=854  link=173  func=161/173)
+15:43:19  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_bhkxqcuc.ll:23:1: error: instruction forward referenced with type 'label'
+%19 = getelementptr inbounds %struct.struct0, %struct.struct0* %18, i32 0, i32 0
+^
+15:43:19  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_spf057a8.ll:58:64: error: use of undefined value '%444'
+%45 = getelementptr inbounds %struct.struct0, %struct.struct0* %444, i32 0, i32 3
+                                                               ^
+15:43:21  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_t68_v21y.ll:2:51: error: expected '(' in function argument list
+define dso_local void @set_gdbarch_extract_return _value(%struct.struct0* %0, i32 %1) {
+                                                  ^
+15:43:35  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_g02q_bnt.ll:39:1: error: instruction forward referenced with type 'label'
+%35 = load %struct.struct0*, %struct.struct0** %2, align 8
+^
+15:43:35  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_x_l8ezec.ll:20:21: error: '%14' defined with type '%struct.struct0**' but expected 'i64*'
+store i64 %12, i64* %14, align 8
+                    ^
+15:43:35  INFO        Checked 1200 / 3719  (syntax=892  compile=892  link=185  func=173/185)
+15:43:35  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift__tqx5488.ll:37:1: error: instruction forward referenced with type 'label'
+%31 = and i32 %30, -65
+^
+15:43:36  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_9n5l27iz.ll:41:19: error: '%29' defined with type '%struct.struct0*' but expected 'i8*'
+store i8 %28, i8* %29, align 1
+                  ^
+15:43:37  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ngq5fcwo.ll:36:1: error: instruction forward referenced with type 'label'
+%28 = load i32, i32* %27, align 8
+^
+15:43:38  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_pwjopwcd.ll:7:21: error: constant expression type mismatch: got type 'i32*' but expected 'i64*'
+%2 = load i64, i64* getelementptr inbounds (%struct.struct0, %struct.struct0* @SA1Registers, i32 0, i32 0, i32 0, i32 0), align 8
+                    ^
+15:43:51  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_1qp71hvd.ll:39:1: error: instruction forward referenced with type 'label'
+%32 = load i32*, i32** %6, align 8
+^
+15:43:52  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_pkw2lxlo.ll:42:82: error: expected instruction opcode
+%38 = getelementptr inbounds %struct.struct0, %struct.struct0* %37, i32 0, i32 2 2
+                                                                                 ^
+15:43:52  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_h39b3gdv.ll:12:46: error: invalid getelementptr indices
+%9 = getelementptr inbounds %struct.struct1, %struct.struct1* %8, i32 0, i32 5
+                                             ^
+15:43:53  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_auilgcue.ll:40:1: error: instruction forward referenced with type 'label'
+%33 = load i32, i32* @NULL_USE_OPERAND_P, align 4
+^
+15:43:53  INFO        Checked 1250 / 3719  (syntax=929  compile=929  link=188  func=176/188)
+15:44:06  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_pkl_0j7p.ll:36:1: error: instruction forward referenced with type 'label'
+%28 = getelementptr inbounds %struct.struct0, %struct.struct0* %27, i32 0, i32 0
+^
+15:44:08  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_slw03gaq.ll:27:1: error: instruction forward referenced with type 'label'
+%23 = call i32 @BNX2X_ILT_FREE(i32 %16, i32 %19, i32 %22)
+^
+15:44:09  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_38c5kf95.ll:46:1: error: instruction forward referenced with type 'label'
+%39 = getelementptr inbounds i32, i32* %34, i64 %38
+^
+15:44:16  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_66e2gd81.ll:8:44: error: expected instruction opcode
+%5 = load i8*, i8** @PQerrorMessage_return s, align 8
+                                           ^
+15:44:24  INFO        Checked 1300 / 3719  (syntax=969  compile=969  link=199  func=186/199)
+15:44:25  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_qcgjk2qk.ll:8:24: error: '%5' defined with type 'i32*' but expected '%struct.struct0*'
+store %struct.struct0* %5, %struct.struct0** %3, align 8
+                       ^
+15:44:26  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_1a5wfhv5.ll:22:1: error: instruction forward referenced with type 'label'
+%19 = and i32 %18, %15
+^
+15:44:26  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_yy9wo4iv.ll:50:21: error: '%39' defined with type 'label' but expected 'i64*'
+store i64 %37, i64* %39, align 8
+                    ^
+15:44:26  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_9tb3r312.ll:41:1: error: instruction forward referenced with type 'label'
+%32 = load %struct.struct0*, %struct.struct0** %3, align 8
+^
+15:44:36  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_npaz8cxp.ll:29:1: error: instruction forward referenced with type 'label'
+%22 = load i32, i32* @SANE_FALSE, align 4
+^
+15:44:37  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_wzdf_s9i.ll:23:1: error: instruction forward referenced with type 'label'
+%17 = getelementptr inbounds %struct.struct1, %struct.struct1* %16, i32 0, i32 1
+^
+15:44:39  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_roeydkvj.ll:37:1: error: instruction forward referenced with type 'label'
+%30 = load i32, i32* @DLM_LKSTS_GRANTED, align 4
+^
+15:44:39  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_8jow1bgi.ll:40:1: error: instruction forward referenced with type 'label'
+%32 = load i64, i64* %31, align 8
+^
+15:44:39  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ifghj9xp.ll:2:77: error: expected '('
+define dso_local void @decode_waypoint_packet(%struct.struct0* noalias sret %0, i8** %1) {
+                                                                            ^
+15:44:44  INFO        Checked 1350 / 3719  (syntax=1003  compile=1003  link=204  func=191/204)
+15:44:51  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_rejuadm2.ll:49:21: error: '%3' defined with type 'label' but expected 'i32*'
+store i32 %37, i32* %3, align 4
+                    ^
+15:44:53  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_jqw2fr8l.ll:19:1: error: instruction forward referenced with type 'label'
+%13 = load %struct.struct0*, %struct.struct0** %2, align 8
+^
+15:44:53  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_cim2b_xi.ll:30:1: error: instruction forward referenced with type 'label'
+%26 = load %struct.struct0*, %struct.struct0** %2, align 8
+^
+15:44:53  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift__hs4lbfc.ll:45:1: error: instruction forward referenced with type 'label'
+%36 = add nsw i32 %31, %35
+^
+15:45:05  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_t6tkxmdi.ll:34:1: error: instruction forward referenced with type 'label'
+%27 = add nsw i32 %26, 1
+^
+15:45:10  INFO        Checked 1400 / 3719  (syntax=1044  compile=1044  link=212  func=197/212)
+15:45:11  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_144kess4.ll:27:1: error: instruction forward referenced with type 'label'
+%20 = add nsw i32 %19, 1
+^
+15:45:11  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_evkif24b.ll:49:48: error: '%2' defined with type '%struct.struct0*' but expected '%struct.struct0**'
+%42 = load %struct.struct0*, %struct.struct0** %2, align 8
+                                               ^
+15:45:24  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_3z9836j4.ll:18:22: error: '%14' defined with type 'i64*' but expected 'i32*'
+%15 = load i32, i32* %14, align 4
+                     ^
+15:45:24  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_fggjtqna.ll:18:1: error: instruction forward referenced with type 'label'
+%12 = load i32, i32* @PLC_ANSWER_ERROR_OFR_SP, align 4
+^
+15:45:25  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_0a040rx9.ll:2:64: error: expected '('
+define dso_local void @scanPoint(%struct.struct0* noalias sret %0) {
+                                                               ^
+15:45:26  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_n1niitj8.ll:52:1: error: instruction forward referenced with type 'label'
+%35 = load i32, i32* %7, align 4
+^
+15:45:35  INFO        Checked 1450 / 3719  (syntax=1084  compile=1084  link=219  func=204/219)
+15:45:40  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_av9uulx6.ll:24:22: error: '%19' defined with type 'i32*' but expected 'i64*'
+%20 = load i64, i64* %19, align 8
+                     ^
+15:45:40  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ue9oglvr.ll:50:1: error: instruction forward referenced with type 'label'
+%35 = load %struct.struct0*, %struct.struct0** %2, align 8
+^
+15:45:41  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_vtykc2i8.ll:44:24: error: '%3' defined with type '%struct.struct1**' but expected 'i64'
+%38 = sub nsw i64 %37, %3
+                       ^
+15:45:41  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_65iuco3c.ll:56:1: error: instruction forward referenced with type 'label'
+%42 = load %struct.struct0*, %struct.struct0** %2, align 8
+^
+15:45:41  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_044gpx91.ll:50:1: error: instruction forward referenced with type 'label'
+%39 = load %struct.struct0*, %struct.struct0** %4, align 8
+^
+15:45:41  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_kmqsv56u.ll:26:1: error: instruction forward referenced with type 'label'
+%20 = call i32 @fb_writel(i64 %18, i32 %19)
+^
+15:45:43  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_qjhln_6o.ll:1:2: error: expected top-level entity
+ dso_local i32 @SDP_SetTraceLevel(i32 %0) {
+ ^
+15:45:51  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift__8afizt2.ll:15:1: error: instruction forward referenced with type 'label'
+%12 = getelementptr inbounds i64, i64* %11, i64 19
+^
+15:45:51  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_kkkpzj7a.ll:23:19: error: '%16' defined with type 'i32*' but expected 'i64*'
+store i64 0, i64* %16, align 8
+                  ^
+15:45:53  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift__1f06pbo.ll:20:52: error: expected type
+%14 = call i32 @dynamiclight_add(i32 %13, i32 500, double0x400921FB54442D18)
+                                                   ^
+15:45:53  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_z980j_l0.ll:35:1: error: instruction forward referenced with type 'label'
+%25 = getelementptr inbounds %struct.struct1, %struct.struct1* %24, i32 0, i32 0
+^
+15:45:55  INFO        Checked 1500 / 3719  (syntax=1119  compile=1119  link=224  func=208/224)
+15:45:57  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_3l1nv0en.ll:40:1: error: instruction forward referenced with type 'label'
+%34 = load i32, i32* %6, align 4
+^
+15:46:03  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_nixvq0u1.ll:28:1: error: instruction forward referenced with type 'label'
+%23 = getelementptr inbounds %struct.struct0, %struct.struct0* %22, i32 0, i32 0
+^
+15:46:11  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_8xg473m7.ll:42:1: error: instruction forward referenced with type 'label'
+%35 = call i32 @process_transfer(i32* %27, i32* %28, i32 %31, i32* %33, i32* %34)
+^
+15:46:16  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_df9hxm35.ll:1:2: error: expected top-level entity
+ dso_local void @xtensa_and_op(i32* %0, i32* %1, i32 %2, i32* %3) {
+ ^
+15:46:18  INFO        Checked 1550 / 3719  (syntax=1158  compile=1158  link=231  func=212/231)
+15:46:19  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ougf9aws.ll:24:1: error: instruction forward referenced with type 'label'
+%19 = getelementptr inbounds %struct.struct0, %struct.struct0* %18, i32 0, i32 1
+^
+15:46:23  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_m5yu3dy4.ll:47:1: error: instruction forward referenced with type 'label'
+%32 = load %struct.struct1*, %struct.struct1** %6, align 8
+^
+15:46:23  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_tk41hlu4.ll:22:22: error: '%3' defined with type 'i32**' but expected 'i32*'
+%17 = load i32, i32* %3, align 4
+                     ^
+15:46:23  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_fl52gegt.ll:1:1: error: expected top-level entity
+<ir> define dso_local zeroext i8 @crypto_secretstream_xchacha20poly1305_tag_final() {
+^
+15:46:35  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_xnfdy379.ll:23:1: error: instruction forward referenced with type 'label'
+%19 = getelementptr inbounds %struct.struct0, %struct.struct0* %18, i32 0, i32 0
+^
+15:46:35  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_hf7i3ova.ll:20:16: error: expected value token
+%18 = call i32 @ inbounds(i32 %17)
+               ^
+15:46:36  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_wtqi2p1i.ll:13:47: error: invalid getelementptr indices
+%10 = getelementptr inbounds %struct.struct1, %struct.struct1* %9, i32 0, i32 7
+                                              ^
+15:46:36  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_hxwvfywi.ll:34:1: error: instruction forward referenced with type 'label'
+%25 = call %struct.struct0* @TubeRecvAsync(i32 %24)
+^
+15:46:37  INFO        Checked 1600 / 3719  (syntax=1196  compile=1196  link=236  func=217/236)
+15:46:41  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_tkriupe0.ll:1:1: error: expected top-level entity
+<ir> define dso_local void @stbi_ldr_to_hdr_gamma(float %0) {
+^
+15:46:52  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_6rzgwztj.ll:35:1: error: instruction forward referenced with type 'label'
+%27 = or i32 %26, %23
+^
+15:46:53  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_9kn8wje5.ll:51:1: error: instruction forward referenced with type 'label'
+%35 = call i32 @mp_clear(%struct.struct0* %6)
+^
+15:47:06  INFO        Checked 1650 / 3719  (syntax=1237  compile=1237  link=246  func=227/246)
+15:47:07  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift__00x6zs0.ll:53:21: error: '%40' defined with type '%struct.struct0*' but expected 'i32*'
+store i32 %39, i32* %40, align 4
+                    ^
+15:47:08  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_0_jsbarq.ll:51:1: error: instruction forward referenced with type 'label'
+%40 = load i32, i32* %10, align 4
+^
+15:47:08  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_e8pbh1un.ll:33:1: error: instruction forward referenced with type 'label'
+%28 = or i32 %27, %21
+^
+15:47:08  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_2j6jy0d0.ll:21:1: error: instruction forward referenced with type 'label'
+%17 = icmp ne i64 %16, 0
+^
+15:47:08  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_devizvet.ll:43:1: error: instruction forward referenced with type 'label'
+%34 = getelementptr inbounds i64, i64* %31, i64 %33
+^
+15:47:09  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_s8pedhtp.ll:23:1: error: instruction forward referenced with type 'label'
+%19 = zext i8 %18 to i32
+^
+15:47:09  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_wtm54c3z.ll:45:1: error: instruction forward referenced with type 'label'
+%37 = load %struct.struct0*, %struct.struct0** %2, align 8
+^
+15:47:18  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_h8w0wkxw.ll:25:1: error: instruction forward referenced with type 'label'
+%22 = getelementptr inbounds %struct.struct0, %struct.struct0* %21, i32 0, i32 2
+^
+15:47:20  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ha27o3i0.ll:21:1: error: instruction forward referenced with type 'label'
+%18 = icmp sle i64 %14, %17
+^
+15:47:21  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_3hgynrnz.ll:49:1: error: instruction forward referenced with type 'label'
+%37 = or i32 %36, %34
+^
+15:47:21  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_7sg2yhnc.ll:42:1: error: instruction forward referenced with type 'label'
+%33 = load i32, i32* %32, align 4
+^
+15:47:21  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_jtu1f_k2.ll:30:22: error: '%21' defined with type 'i32*' but expected 'i64*'
+%22 = load i64, i64* %21, align 8
+                     ^
+15:47:21  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_qt5ftppb.ll:43:1: error: instruction forward referenced with type 'label'
+%30 = or i32 %29, %26
+^
+15:47:27  INFO        Checked 1700 / 3719  (syntax=1272  compile=1272  link=252  func=233/252)
+15:47:37  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_3vazqrq1.ll:30:73: error: '%2' defined with type 'label' but expected '%struct.struct0*'
+%23 = call i32 @skin_box_to_rect(%struct.struct0* %22, %struct.struct0* %2)
+                                                                        ^
+15:47:38  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ev447r03.ll:37:1: error: instruction forward referenced with type 'label'
+%30 = getelementptr inbounds i64, i64* %29, i64 3
+^
+15:47:38  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_9b0pmhum.ll:39:1: error: instruction forward referenced with type 'label'
+%31 = load i32, i32* %30, align 8
+^
+15:47:39  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_lk90tljv.ll:40:1: error: instruction forward referenced with type 'label'
+%36 = or i32 %35, %32
+^
+15:47:54  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_5g60wt4_.ll:42:1: error: instruction forward referenced with type 'label'
+%35 = load %struct.struct0*, %struct.struct0** %3, align 8
+^
+15:47:54  INFO        Checked 1750 / 3719  (syntax=1314  compile=1314  link=260  func=241/260)
+15:47:55  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_2uuvqzbb.ll:51:1: error: instruction forward referenced with type 'label'
+%39 = getelementptr inbounds %struct.struct0, %struct.struct0* %38, i32 0, i32 0
+^
+15:47:56  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_fg35vd3v.ll:51:1: error: instruction forward referenced with type 'label'
+%32 = load i32*, i32** %5, align 8
+^
+15:47:56  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_e8phv29b.ll:40:1: error: instruction forward referenced with type 'label'
+%33 = icmp slt i64 %32, 0
+^
+15:47:57  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_1wsroufh.ll:25:1: error: instruction forward referenced with type 'label'
+%19 = and i32 %18, -2
+^
+15:48:02  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_fa0pn0fp.ll:33:1: error: instruction forward referenced with type 'label'
+%25 = phi i1 [ false, %10 ], [ %23, %19 ]
+^
+15:48:05  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_z4qe03l3.ll:44:1: error: instruction forward referenced with type 'label'
+%35 = load %struct.struct1*, %struct.struct1** %6, align 8
+^
+15:48:05  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_r6qweuzt.ll:28:11: error: '%22' defined with type 'i32' but expected 'i64'
+store i64 %22, i64* %24, align 8
+          ^
+15:48:05  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_3k9l7yid.ll:51:1: error: instruction forward referenced with type 'label'
+%33 = load %struct.struct0*, %struct.struct0** %3, align 8
+^
+15:48:12  INFO        Checked 1800 / 3719  (syntax=1347  compile=1347  link=264  func=245/264)
+15:48:18  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_0czdo9vb.ll:26:1: error: instruction forward referenced with type 'label'
+%14 = getelementptr inbounds %struct.struct0, %struct.struct0* %13, i32 0, i32 0
+^
+15:48:19  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_uhd9eruu.ll:18:1: error: instruction forward referenced with type 'label'
+%12 = fneg double %11
+^
+15:48:19  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_eqs6s0yo.ll:32:1: error: instruction forward referenced with type 'label'
+%27 = getelementptr inbounds %struct.struct0, %struct.struct0* %26, i32 0, i32 3
+^
+15:48:21  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_vru0s_oc.ll:20:21: error: '%16' defined with type 'i64*' but expected 'i32*'
+store i32 %14, i32* %16, align 4
+                    ^
+15:48:42  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_hpcz9v91.ll:29:21: error: '%21' defined with type 'i64*' but expected 'i32*'
+store i32 %19, i32* %21, align 8
+                    ^
+15:48:42  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_3s627rix.ll:38:1: error: instruction forward referenced with type 'label'
+%31 = load i32, i32* %30, align 8
+^
+15:48:42  INFO        Checked 1850 / 3719  (syntax=1388  compile=1388  link=275  func=254/275)
+15:48:42  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_n4zkuj_p.ll:31:1: error: instruction forward referenced with type 'label'
+%26 = getelementptr inbounds %struct.struct0, %struct.struct0* %25, i32 0, i32 2
+^
+15:48:43  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_854nzdf7.ll:40:22: error: '%29' defined with type 'i32*' but expected 'i64*'
+%30 = load i64, i64* %29, align 8
+                     ^
+15:48:43  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_d7z_h8qw.ll:41:24: error: '%33' defined with type 'i32*' but expected 'i32**'
+%34 = load i32*, i32** %33, align 8
+                       ^
+15:48:55  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ip9si8z0.ll:40:1: error: instruction forward referenced with type 'label'
+%31 = load i32*, i32** %8, align 8
+^
+15:48:55  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_cy7sm9mw.ll:18:18: error: use of undefined value '%32'
+br i1 %13, label %32, label %14
+                 ^
+15:48:56  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_sjmzt0dc.ll:34:1: error: instruction forward referenced with type 'label'
+%27 = getelementptr inbounds %struct.struct0, %struct.struct0* %26, i32 0, i32 3
+^
+15:49:05  INFO        Checked 1900 / 3719  (syntax=1428  compile=1428  link=282  func=260/282)
+15:49:09  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_4wfcrklo.ll:15:29: error: use of undefined value '%27'
+br i1 %10, label %11, label %27
+                            ^
+15:49:10  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_0pa0ve_k.ll:42:1: error: instruction forward referenced with type 'label'
+%34 = call i32 @pmd_ssgeff_tick(i32* %32, %struct.struct0* %33)
+^
+15:49:10  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_f19knkgl.ll:17:22: error: constant expression type mismatch: got type 'i64*' but expected 'i32*'
+%11 = load i32, i32* getelementptr inbounds (%struct.struct1, %struct.struct1* @cls, i32 0, i32 0), align 8
+                     ^
+15:49:10  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_c9del51s.ll:15:1: error: instruction forward referenced with type 'label'
+%12 = getelementptr inbounds i32, i32* %10, i64 %11
+^
+15:49:30  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_vs7qqvdu.ll:39:1: error: instruction forward referenced with type 'label'
+%31 = load i32, i32* @BIT_RXAGC, align 4
+^
+15:49:30  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_4adpa4mr.ll:46:1: error: instruction forward referenced with type 'label'
+%35 = load i64, i64* %10, align 8
+^
+15:49:30  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_p72hnqc_.ll:54:43: error: '%41' defined with type 'i32*' but expected 'i8*'
+%43 = call i32 @sqlite3_exec(i32 %42, i8* %41, i32 0, i32 0, i32 0)
+                                          ^
+15:49:30  INFO        Checked 1950 / 3719  (syntax=1464  compile=1464  link=290  func=268/290)
+15:49:32  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_7qn9318k.ll:49:18: error: '%31' is not a basic block
+br i1 %40, label %31, label %41
+                 ^
+15:49:51  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_mlr7pwlk.ll:33:1: error: instruction forward referenced with type 'label'
+%24 = getelementptr inbounds %struct.struct0, %struct.struct0* %23, i32 0, i32 0
+^
+15:49:51  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_311s00bv.ll:38:1: error: instruction forward referenced with type 'label'
+%30 = getelementptr inbounds %struct.struct0, %struct.struct0* %29, i32 0, i32 0
+^
+15:49:51  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_jf6v_isg.ll:31:1: error: instruction forward referenced with type 'label'
+%22 = getelementptr inbounds i32, i32* %21, i32 1
+^
+15:50:02  INFO        Checked 2000 / 3719  (syntax=1508  compile=1508  link=301  func=277/301)
+15:50:05  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ugeygtxq.ll:44:1: error: instruction forward referenced with type 'label'
+%32 = getelementptr inbounds %struct.struct0, %struct.struct0* %31, i32 0, i32 1
+^
+15:50:08  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ckdg_z24.ll:45:82: error: expected instruction opcode
+%37 = getelementptr inbounds %struct.struct0, %struct.struct0* %36, i32 0, i32 2 2
+                                                                                 ^
+15:50:25  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_g7h4fgzl.ll:38:1: error: instruction forward referenced with type 'label'
+%31 = icmp sle i64 %27, %30
+^
+15:50:27  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_5yc2lzb0.ll:34:1: error: instruction forward referenced with type 'label'
+%26 = getelementptr inbounds i32, i32* %25, i64 1
+^
+15:50:32  INFO        Checked 2050 / 3719  (syntax=1547  compile=1547  link=312  func=285/312)
+15:50:35  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_9v0j9ya2.ll:19:18: error: '%13' defined with type 'i16*' but expected 'i8*'
+store i8 %9, i8* %13, align 1
+                 ^
+15:50:35  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_opx_h8e1.ll:25:17: error: '%11' defined with type 'float' but expected 'i32'
+%20 = phi i32 [ %11, %7 ], [ %18, %12 ]
+                ^
+15:50:40  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_oy9jk4gu.ll:18:20: error: '%13' defined with type 'i64*' but expected 'i32*'
+store i32 %7, i32* %13, align 4
+                   ^
+15:50:41  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ns7emnc8.ll:52:1: error: label expected to be numbered '41'
+39: ; preds = %29
+^
+15:50:41  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_hqvqge9d.ll:46:1: error: instruction forward referenced with type 'label'
+%36 = and i32 %35, %32
+^
+15:50:53  INFO        Checked 2100 / 3719  (syntax=1586  compile=1586  link=317  func=290/317)
+15:50:53  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_i2jxkrdr.ll:12:46: error: invalid getelementptr indices
+%9 = getelementptr inbounds %struct.struct1, %struct.struct1* %8, i32 0, i32 4
+                                             ^
+15:50:54  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_3vkcr96b.ll:47:11: error: '%4' defined with type '%struct.struct0**' but expected 'i32'
+store i32 %4, i32* %40, align 4
+          ^
+15:50:55  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_v_roa18p.ll:13:20: error: invalid getelementptr indices
+store i32 %5, i32* getelementptr inbounds (%struct.struct0, %struct.struct0* @SA1Registers, i32 0, i32 0, i32 0, i32 1), align 4
+                   ^
+15:50:57  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_v_vvqrvy.ll:40:1: error: instruction forward referenced with type 'label'
+%33 = sext i32 %32 to i64
+^
+15:50:57  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_9dhus73i.ll:50:21: error: '%35' defined with type '%struct.struct0*' but expected 'i32*'
+store i32 %38, i32* %35, align 4
+                    ^
+15:51:11  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_s4z6oqma.ll:34:1: error: instruction forward referenced with type 'label'
+%27 = load i32, i32* %3, align 4
+^
+15:51:13  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_yk8au1ly.ll:44:11: error: '%29' defined with type 'i8' but expected 'i32'
+store i32 %29, i32* %1, align 4
+          ^
+15:51:18  INFO        Checked 2150 / 3719  (syntax=1624  compile=1624  link=325  func=296/325)
+15:51:23  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_qrlj0hj_.ll:39:1: error: instruction forward referenced with type 'label'
+%34 = call i32 @scale_stat(i32* %33)
+^
+15:51:23  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_r87bd2kd.ll:44:1: error: instruction forward referenced with type 'label'
+%36 = load i32*, i32** %8, align 8
+^
+15:51:23  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_lvkngdji.ll:36:17: error: '%21' defined with type 'float' but expected 'i64'
+%31 = phi i64 [ %21, %13 ], [ %29, %22 ]
+                ^
+15:51:25  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_0b9t4srb.ll:45:10: error: '%33' is not a basic block
+br label %33
+         ^
+15:51:25  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_amj37icl.ll:37:1: error: instruction forward referenced with type 'label'
+%28 = fdiv float %26, %27
+^
+15:51:25  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_bi7kdkb9.ll:72:64: error: '%4' defined with type '%struct.struct0**' but expected '%struct.struct0*'
+%47 = getelementptr inbounds %struct.struct0, %struct.struct0* %4, i32 0, i32 0
+                                                               ^
+15:51:26  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_t78subvd.ll:45:1: error: instruction forward referenced with type 'label'
+%32 = getelementptr inbounds %struct.struct0, %struct.struct0* %31, i32 0, i32 1
+^
+15:51:26  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_rxknfyjg.ll:39:1: error: instruction forward referenced with type 'label'
+%33 = getelementptr inbounds %struct.struct0, %struct.struct0* %32, i32 0, i32 0
+^
+15:51:36  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_v3jdsm1o.ll:43:24: error: '%2' defined with type 'label' but expected '%struct.struct0*'
+store %struct.struct0* %2, %struct.struct0** %3, align 8
+                       ^
+15:51:37  INFO        Checked 2200 / 3719  (syntax=1656  compile=1656  link=330  func=300/330)
+15:51:38  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_qry0eyxa.ll:8:27: error: use of undefined value '%22'
+br i1 %3, label %4, label %22
+                          ^
+15:51:39  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_25ii3ish.ll:59:1: error: instruction forward referenced with type 'label'
+%42 = load i32, i32* %4, align 4
+^
+15:51:48  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_85vjc5hw.ll:9:46: error: invalid getelementptr indices
+%7 = getelementptr inbounds %struct.struct0, %struct.struct0* %6, i32 0, i32 11
+                                             ^
+15:51:54  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_i5_vc6r6.ll:43:1: error: instruction forward referenced with type 'label'
+%35 = load i32, i32* %34, align 4
+^
+15:52:01  INFO        Checked 2250 / 3719  (syntax=1694  compile=1694  link=337  func=305/337)
+15:52:01  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_lg50bjv3.ll:25:31: error: '%17' defined with type 'i64*' but expected 'i64'
+%19 = phi i64 [ %14, %11 ], [ %17, %15 ]
+                              ^
+15:52:08  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_trb5hnur.ll:30:1: error: instruction forward referenced with type 'label'
+%19 = getelementptr inbounds %struct.struct1, %struct.struct1* %18, i32 0, i32 1
+^
+15:52:10  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_1rl72op1.ll:49:1: error: instruction forward referenced with type 'label'
+%43 = load i32*, i32** %25, align 8
+^
+15:52:10  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_wtgkubvj.ll:58:82: error: expected instruction opcode
+%42 = getelementptr inbounds %struct.struct0, %struct.struct0* %41, i32 0, i32 2 2
+                                                                                 ^
+15:52:10  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_7g022_tu.ll:33:1: error: instruction forward referenced with type 'label'
+%25 = getelementptr inbounds %struct.struct0, %struct.struct0* %24, i32 0, i32 0
+^
+15:52:27  INFO        Checked 2300 / 3719  (syntax=1738  compile=1738  link=345  func=313/345)
+15:52:28  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_lwe9k72o.ll:22:1: error: instruction forward referenced with type 'label'
+%15 = select i1 %13, i32 72, i32 32
+^
+15:52:38  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_2tibmoiw.ll:9:21: error: invalid getelementptr indices
+%4 = load i32, i32* getelementptr inbounds (%struct.struct0, %struct.struct0* @SA1Registers, i32 0, i32 1, i32 0, i32 0), align 4
+                    ^
+15:52:38  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_wswznzbo.ll:7:29: error: '%4' defined with type 'double*' but expected 'i32*'
+%5 = call i32 @PIDinit(i32* %4)
+                            ^
+15:52:39  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_p040spho.ll:48:47: error: '%29' defined with type 'i32' but expected 'i32*'
+%43 = call i32 @mac_real_vec_n(i32* %34, i32* %29, i32* %39, i32 %40, i32 %41, i32 %42)
+                                              ^
+15:52:40  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_q_xc563f.ll:43:1: error: instruction forward referenced with type 'label'
+%35 = load i32, i32* %34, align 4
+^
+15:52:52  INFO        Checked 2350 / 3719  (syntax=1775  compile=1775  link=353  func=320/353)
+15:52:54  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_8ohgap5q.ll:39:1: error: instruction forward referenced with type 'label'
+%30 = getelementptr inbounds %struct.struct0, %struct.struct0* %29, i32 0, i32 0
+^
+15:52:56  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_5i5a3vq3.ll:45:1: error: instruction forward referenced with type 'label'
+%39 = trunc i64 %38 to i32
+^
+15:52:56  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_6pcaqbpl.ll:14:20: error: invalid getelementptr indices
+store i32 %5, i32* getelementptr inbounds (%struct.struct0, %struct.struct0* @SA1Registers, i32 0, i32 1, i32 0, i32 0), align 4
+                   ^
+15:52:57  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_w100lml8.ll:55:24: error: use of undefined value '%49'
+%41 = add nsw i64 %40, %49
+                       ^
+15:53:00  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_bhywjh2a.ll:23:24: error: '%5' defined with type 'i32*' but expected 'i32**'
+%19 = load i32*, i32** %5, align 8
+                       ^
+15:53:02  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_sw9len64.ll:38:1: error: instruction forward referenced with type 'label'
+%33 = load %struct.struct0*, %struct.struct0** %2, align 8
+^
+15:53:05  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_oza780ou.ll:12:35: error: '%9' defined with type 'i64*' but expected 'i32*'
+%10 = call i32 @acevals_init(i32* %9, i32 0)
+                                  ^
+15:53:05  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_rq4hfoqz.ll:25:1: error: instruction forward referenced with type 'label'
+%22 = load %struct.struct0*, %struct.struct0** %4, align 8
+^
+15:53:05  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ssqoh440.ll:18:1: error: instruction forward referenced with type 'label'
+%14 = getelementptr inbounds %struct.struct0, %struct.struct0* %13, i32 0, i32 0
+^
+15:53:06  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_fe08ukmh.ll:30:1: error: instruction forward referenced with type 'label'
+%23 = call i32 @_update_ecm_packet(%struct.struct1* %21, i32 %22)
+^
+15:53:06  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_mdu4_lo1.ll:44:1: error: instruction forward referenced with type 'label'
+%33 = load i64, i64* %32, align 8
+^
+15:53:06  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_jqjjpsig.ll:14:26: error: '%12' defined with type '%struct.struct0**' but expected 'float**'
+store float* %5, float** %12, align 8
+                         ^
+15:53:06  INFO        Checked 2400 / 3719  (syntax=1809  compile=1809  link=354  func=320/354)
+15:53:17  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_3_tmgqar.ll:13:11: error: '%9' defined with type 'i64' but expected 'i32'
+store i32 %9, i32* %3, align 4
+          ^
+15:53:18  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_vfwhn_dp.ll:31:1: error: instruction forward referenced with type 'label'
+%26 = getelementptr inbounds %struct.struct1, %struct.struct1* %25, i32 0, i32 1
+^
+15:53:20  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_pnq5blf_.ll:26:1: error: instruction forward referenced with type 'label'
+%20 = load i64*, i64** %5, align 8
+^
+15:53:20  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_pfvgl967.ll:40:26: error: '%3' defined with type 'label' but expected 'float*'
+%38 = load float, float* %3, align 4
+                         ^
+15:53:32  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_cz6vacs1.ll:38:1: error: instruction forward referenced with type 'label'
+%33 = getelementptr inbounds %struct.struct0, %struct.struct0* %32, i32 0, i32 2
+^
+15:53:32  INFO        Checked 2450 / 3719  (syntax=1850  compile=1850  link=362  func=328/362)
+15:53:32  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_0wch9wpw.ll:36:1: error: instruction forward referenced with type 'label'
+%28 = or i32 %27, %24
+^
+15:53:33  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_lfxn9alc.ll:38:1: error: instruction forward referenced with type 'label'
+%30 = sub nsw i64 %26, %29
+^
+15:53:33  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_y1jhe2u6.ll:44:1: error: instruction forward referenced with type 'label'
+%32 = load i32, i32* %3, align 4
+^
+15:53:33  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_nhaxsome.ll:47:11: error: '%31' defined with type '%struct.struct0*' but expected 'i32'
+store i32 %31, i32* %32, align 4
+          ^
+15:53:34  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_pvdc6s6h.ll:22:1: error: instruction forward referenced with type 'label'
+%17 = icmp eq i32 %16, 9
+^
+15:53:34  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_mazhp_eo.ll:45:1: error: instruction forward referenced with type 'label'
+%36 = call i32 @dTrace(i8* getelementptr inbounds ([33 x i8], [33 x i8]* @.str.1, i64 0, i64 0), i32 %34, i32 %35)
+^
+15:53:34  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_phahv2kx.ll:51:1: error: instruction forward referenced with type 'label'
+%37 = getelementptr inbounds i8, i8* %36, i32 1
+^
+15:53:35  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_jc03r2ap.ll:29:19: error: constant expression type mismatch: got type 'i32*' but expected 'i64*'
+store i64 0, i64* getelementptr inbounds (%struct.struct0, %struct.struct0* @m68ki_cpu, i32 0, i32 4), align 8
+                  ^
+15:53:48  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_9yhbq99j.ll:19:1: error: instruction forward referenced with type 'label'
+%12 = call i32 @wait_ms(i32 500)
+^
+15:53:49  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_am6zothm.ll:38:1: error: instruction forward referenced with type 'label'
+%27 = getelementptr inbounds %struct.struct0, %struct.struct0* %26, i32 0, i32 0
+^
+15:53:57  INFO        Checked 2500 / 3719  (syntax=1882  compile=1882  link=370  func=335/370)
+15:54:10  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_630b5s2r.ll:28:1: error: instruction forward referenced with type 'label'
+%23 = getelementptr inbounds %struct.struct0, %struct.struct0* %22, i32 0, i32 0
+^
+15:54:13  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_0086_h0z.ll:42:1: error: instruction forward referenced with type 'label'
+%32 = getelementptr inbounds %struct.struct0, %struct.struct0* %31, i32 0, i32 1
+^
+15:54:22  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_on_ejigb.ll:15:36: error: '%8' defined with type '%struct.struct1*' but expected 'i32*'
+%11 = call i32 @push_objstack(i32* %8, %struct.struct1* %10, i32 4)
+                                   ^
+15:54:23  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_0uh5s1jp.ll:35:1: error: instruction forward referenced with type 'label'
+%30 = and i32 %29, -8
+^
+15:54:23  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_2q6uvtkg.ll:45:1: error: instruction forward referenced with type 'label'
+%33 = load i64, i64* %32, align 8
+^
+15:54:23  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_vz2iu3cf.ll:27:1: error: instruction forward referenced with type 'label'
+%21 = load i64, i64* %5, align 8
+^
+15:54:23  INFO        Checked 2550 / 3719  (syntax=1924  compile=1924  link=378  func=342/378)
+15:54:25  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_meox_rlr.ll:30:1: error: instruction forward referenced with type 'label'
+%24 = getelementptr inbounds %struct.struct0, %struct.struct0* %23, i32 0, i32 0
+^
+15:54:26  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_6z47mhn5.ll:45:41: error: '%37' defined with type 'i32' but expected 'i64'
+%38 = call i64 @lsmRealloc(i32 %36, i64 %37)
+                                        ^
+15:54:26  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_2hqs6rzi.ll:48:1: error: instruction forward referenced with type 'label'
+%38 = call i32 @nn_fsm_raise(i32* %35, %struct.struct0* %36, i32 %37)
+^
+15:54:42  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_kj7rxgx7.ll:37:1: error: instruction forward referenced with type 'label'
+%30 = call i32 @memcpy(i32 %25, i8* %26, i32 %29)
+^
+15:54:43  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_or3kgpib.ll:28:1: error: instruction forward referenced with type 'label'
+%23 = add nsw i32 %22, 1
+^
+15:54:43  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_lwh3s1rf.ll:40:1: error: instruction forward referenced with type 'label'
+%31 = add nsw i32 %30, 12
+^
+15:54:44  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_jnp4_n_p.ll:39:1: error: instruction forward referenced with type 'label'
+%30 = call i32 @ams369fg06_power_off(%struct.struct0* %29)
+^
+15:54:44  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_z40kgvb7.ll:30:1: error: instruction forward referenced with type 'label'
+%24 = getelementptr inbounds %struct.struct0, %struct.struct0* %23, i32 0, i32 0
+^
+15:54:44  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_3aktu0pj.ll:36:1: error: instruction forward referenced with type 'label'
+%30 = trunc i64 %29 to i32
+^
+15:54:44  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_gqd10fcc.ll:47:21: error: '%36' defined with type 'i64*' but expected 'i32*'
+store i32 %39, i32* %36, align 4
+                    ^
+15:54:44  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_lcxblxnk.ll:50:1: error: instruction forward referenced with type 'label'
+%40 = load %struct.struct0*, %struct.struct0** %4, align 8
+^
+15:54:52  INFO        Checked 2600 / 3719  (syntax=1961  compile=1961  link=388  func=350/388)
+15:54:55  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_v64jxnox.ll:25:1: error: instruction forward referenced with type 'label'
+%19 = getelementptr inbounds %struct.struct1, %struct.struct1* %18, i32 0, i32 0
+^
+15:54:58  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_5lj77sfa.ll:19:1: error: instruction forward referenced with type 'label'
+%11 = zext i8 %10 to i32
+^
+15:54:59  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ohpx3hzd.ll:33:21: error: '%26' defined with type '%struct.struct0*' but expected 'i64*'
+store i64 %21, i64* %26, align 8
+                    ^
+15:55:09  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift__i_t8n3k.ll:47:1: error: instruction forward referenced with type 'label'
+%38 = fadd float %32, %37
+^
+15:55:12  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_8jiz2u8j.ll:27:1: error: instruction forward referenced with type 'label'
+%23 = call i32 @on_off_cursor(i64 %19, i32 %22)
+^
+15:55:12  INFO        Checked 2650 / 3719  (syntax=1997  compile=1997  link=392  func=353/392)
+15:55:13  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_q0x8d9db.ll:55:1: error: instruction forward referenced with type 'label'
+%44 = zext i32 %43 to i64
+^
+15:55:13  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_sysmr_73.ll:18:29: error: use of undefined value '%48'
+br i1 %13, label %14, label %48
+                            ^
+15:55:13  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_c4z6qg0u.ll:35:1: error: instruction forward referenced with type 'label'
+%22 = load %struct.struct0*, %struct.struct0** %3, align 8
+^
+15:55:27  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_8a3_thbz.ll:40:1: error: instruction forward referenced with type 'label'
+%30 = getelementptr inbounds %struct.struct0, %struct.struct0* %29, i32 0, i32 1
+^
+15:55:28  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_cqmxixpk.ll:40:1: error: instruction forward referenced with type 'label'
+%35 = call i32 @set_bit(i32 %32, i32* %34)
+^
+15:55:28  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_e_gp9mue.ll:52:83: error: '%41' defined with type '%struct.struct1*' but expected 'i32*'
+%44 = call i32 @mlx4_GEN_QP_wrapper(%struct.struct0* %38, i32 %39, i32* %40, i32* %41, %struct.struct1* %42, i32* %43)
+                                                                                  ^
+15:55:28  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_kez6d43i.ll:22:47: error: invalid getelementptr indices
+%16 = getelementptr inbounds %struct.struct3, %struct.struct3* %15, i32 0, i32 1
+                                              ^
+15:55:28  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_dadz7o1w.ll:38:1: error: instruction forward referenced with type 'label'
+%29 = getelementptr inbounds %struct.struct0, %struct.struct0* %28, i32 0, i32 5
+^
+15:55:29  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_gz1o5o3j.ll:36:1: error: instruction forward referenced with type 'label'
+%27 = load %struct.struct0*, %struct.struct0** %2, align 8
+^
+15:55:33  INFO        Checked 2700 / 3719  (syntax=2034  compile=2034  link=398  func=359/398)
+15:55:33  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_szhbxjhr.ll:25:1: error: instruction forward referenced with type 'label'
+%19 = getelementptr inbounds %struct.struct0, %struct.struct0* %18, i32 1
+^
+15:55:35  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_m5gz59k5.ll:19:17: error: '%9' defined with type 'i64' but expected 'i32'
+%13 = phi i32 [ %9, %3 ], [ %11, %10 ]
+                ^
+15:55:36  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ai5zw1z5.ll:18:1: error: instruction forward referenced with type 'label'
+%15 = trunc i32 %14 to i16
+^
+15:55:39  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_pyajhmc5.ll:39:1: error: instruction forward referenced with type 'label'
+%33 = call i32 @_c_log_stderr(i8* getelementptr inbounds ([39 x i8], [39 x i8]* @.str, i64 0, i64 0), i32 %30, i32 %32)
+^
+15:55:52  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_phe4n94i.ll:1:1: error: expected top-level entity
+<ir> define dso_local void @m68k_op_btst_8_r_i() {
+^
+15:56:01  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_g3qso51d.ll:40:1: error: instruction forward referenced with type 'label'
+%33 = load i64, i64* %32, align 8
+^
+15:56:01  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_wqc01y55.ll:24:1: error: instruction forward referenced with type 'label'
+%19 = load i64, i64* %18, align 8
+^
+15:56:01  INFO        Checked 2750 / 3719  (syntax=2071  compile=2071  link=408  func=368/408)
+15:56:02  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_iaubs28c.ll:12:1: error: instruction forward referenced with type 'label'
+%9 = icmp ne i64 %8, 0
+^
+15:56:12  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_y6nstrb2.ll:38:1: error: instruction forward referenced with type 'label'
+%30 = getelementptr inbounds %struct.struct1, %struct.struct1* %29, i32 0, i32 0
+^
+15:56:14  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_dy4g5awr.ll:44:11: error: '%35' defined with type 'label' but expected 'i32'
+store i32 %35, i32* %3, align 4
+          ^
+15:56:15  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_1e4lomgc.ll:21:22: error: constant expression type mismatch: got type 'i32*' but expected 'i64*'
+%15 = load i64, i64* getelementptr inbounds (%struct.struct1, %struct.struct1* @level, i32 0, i32 0), align 8
+                     ^
+15:56:16  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_m_oysg74.ll:33:24: error: '%23' defined with type 'i64' but expected 'i32'
+%27 = add nsw i32 %26, %23
+                       ^
+15:56:16  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_lh9fulyv.ll:45:50: error: '%24' defined with type '%struct.struct1*' but expected '%struct.struct0*'
+%37 = call i32 @tailstack_clear(%struct.struct0* %24, i32 %36)
+                                                 ^
+15:56:16  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_udokj6s7.ll:33:1: error: instruction forward referenced with type 'label'
+%30 = and i32 %29, %26
+^
+15:56:16  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_aiwsfdxm.ll:25:22: error: '%12' defined with type 'i32**' but expected 'i32*'
+%22 = load i32, i32* %12, align 4
+                     ^
+15:56:16  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift__3l0iofq.ll:52:1: error: instruction forward referenced with type 'label'
+%39 = load i64, i64* %3, align 8
+^
+15:56:16  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_5knmr4j6.ll:45:1: error: instruction forward referenced with type 'label'
+%35 = load i32, i32* %34, align 4
+^
+15:56:21  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_zdm2q6do.ll:5:71: error: '%1' defined with type '%struct.struct0*' but expected 'i64'
+%2 = getelementptr inbounds %struct.struct0, %struct.struct0* %1, i64 %1
+                                                                      ^
+15:56:23  INFO        Checked 2800 / 3719  (syntax=2108  compile=2108  link=414  func=373/414)
+15:56:27  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_v8igwxc1.ll:27:1: error: instruction forward referenced with type 'label'
+%21 = getelementptr inbounds %struct.struct0, %struct.struct0* %20, i32 0, i32 0
+^
+15:56:27  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_132gsi6c.ll:43:29: error: '%31' is not a basic block
+br i1 %34, label %35, label %31
+                            ^
+15:56:27  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_w7v5p1ai.ll:21:1: error: instruction forward referenced with type 'label'
+%17 = load %struct.struct0*, %struct.struct0** %2, align 8
+^
+15:56:27  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_5blzyi_c.ll:26:19: error: '%18' defined with type '%struct.struct0*' but expected 'i8*'
+%20 = icmp eq i8* %18, %19
+                  ^
+15:56:29  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_odnxfgkq.ll:51:11: error: '%38' defined with type '%struct.struct0*' but expected 'i32'
+store i32 %38, i32* %5, align 4
+          ^
+15:56:48  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_slrav992.ll:23:1: error: instruction forward referenced with type 'label'
+%20 = getelementptr inbounds %struct.struct0, %struct.struct0* %19, i32 0, i32 2
+^
+15:56:49  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_v48u_6x_.ll:45:1: error: instruction forward referenced with type 'label'
+%38 = getelementptr inbounds %struct.struct0, %struct.struct0* %37, i32 0, i32 1
+^
+15:56:49  INFO        Checked 2850 / 3719  (syntax=2145  compile=2145  link=424  func=380/424)
+15:56:59  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_8ew0pfcs.ll:39:1: error: instruction forward referenced with type 'label'
+%31 = add nsw i32 %30, -1
+^
+15:57:02  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift__cnsoy9z.ll:42:1: error: instruction forward referenced with type 'label'
+%34 = getelementptr inbounds %struct.struct0, %struct.struct0* %33, i32 0, i32 3
+^
+15:57:03  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ai1ymyf4.ll:30:26: error: '%9' defined with type 'i32*' but expected 'float*'
+%27 = load float, float* %9, align 4
+                         ^
+15:57:03  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_rjy_36h0.ll:20:19: error: '%14' defined with type 'i32' but expected 'i64'
+%16 = icmp eq i64 %14, %15
+                  ^
+15:57:03  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_e8vvu519.ll:49:1: error: instruction forward referenced with type 'label'
+%39 = load i32, i32* %6, align 4
+^
+15:57:13  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_tmao5o4m.ll:41:31: error: '%29' defined with type '%struct.struct0*' but expected 'i32'
+%31 = phi i32 [ %27, %26 ], [ %29, %28 ]
+                              ^
+15:57:15  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_hguqyzit.ll:14:21: error: '%9' defined with type 'double**' but expected 'i32*'
+store i32 %11, i32* %9, align 4
+                    ^
+15:57:15  INFO        Checked 2900 / 3719  (syntax=2183  compile=2183  link=432  func=386/432)
+15:57:15  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_7415c86j.ll:40:22: error: '%32' defined with type '%struct.struct0*' but expected 'i32*'
+%33 = load i32, i32* %32, align 4
+                     ^
+15:57:16  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_s46mon87.ll:32:21: error: '%26' defined with type '%struct.struct0*' but expected 'i16*'
+store i16 %22, i16* %26, align 2
+                    ^
+15:57:16  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_nyaixpi3.ll:17:19: error: '%11' defined with type 'float*' but expected 'i32*'
+store i32 3, i32* %11, align 4
+                  ^
+15:57:17  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_qbz8zm_b.ll:30:1: error: instruction forward referenced with type 'label'
+%24 = getelementptr inbounds %struct.struct0, %struct.struct0* %23, i32 0, i32 0
+^
+15:57:18  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_nkivkasq.ll:17:21: error: '%1' defined with type 'i32' but expected 'i64*'
+store i64 %14, i64* %1, align 8
+                    ^
+15:57:33  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ood4budj.ll:25:21: error: '%17' defined with type 'i64*' but expected 'i32*'
+store i32 %15, i32* %17, align 8
+                    ^
+15:57:35  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_av5sd7rz.ll:48:1: error: instruction forward referenced with type 'label'
+%38 = getelementptr inbounds %struct.struct0, %struct.struct0* %37, i32 0, i32 1
+^
+15:57:41  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_hn3l_4ub.ll:6:20: error: constant expression type mismatch: got type 'i64*' but expected 'i16*'
+store i16 %3, i16* getelementptr inbounds (%struct.struct0, %struct.struct0* @gu2_src_pitch, i32 0, i32 0), align 2
+                   ^
+15:57:43  INFO        Checked 2950 / 3719  (syntax=2223  compile=2223  link=441  func=395/441)
+15:57:50  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_svj8b_e3.ll:21:64: error: '%15' defined with type '%struct.struct0 = type { float* }' but expected '%struct.struct0*'
+%16 = getelementptr inbounds %struct.struct0, %struct.struct0* %15, i64 10
+                                                               ^
+15:57:50  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_1dri9t55.ll:36:1: error: instruction forward referenced with type 'label'
+%32 = sub nsw i64 %28, %31
+^
+15:58:03  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_bs6my3ij.ll:19:23: error: '%1' defined with type '%struct.struct0**' but expected 'i32**'
+store i32* %12, i32** %1, align 8
+                      ^
+15:58:03  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_xl_hmmxm.ll:12:20: error: '%5' defined with type 'i64*' but expected 'i32*'
+store i32 %8, i32* %5, align 8
+                   ^
+15:58:05  INFO        Checked 3000 / 3719  (syntax=2263  compile=2263  link=447  func=400/447)
+15:58:05  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_7em1988i.ll:44:1: error: instruction forward referenced with type 'label'
+%39 = getelementptr inbounds %struct.struct0, %struct.struct0* %38, i32 0, i32 3
+^
+15:58:07  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_yb74btna.ll:41:34: error: '%32' defined with type '%struct.struct0*' but expected 'i32*'
+%33 = call i32 @spin_unlock(i32* %32)
+                                 ^
+15:58:20  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_f4zp0hkx.ll:29:23: error: '%4' defined with type 'i16**' but expected 'i32**'
+store i32* %18, i32** %4, align 8
+                      ^
+15:58:21  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_sx4pbcip.ll:17:24: error: expected '(' in call
+%13 = call i32 @return _ACPI_STATUS(i32 %12)
+                       ^
+15:58:21  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_m9ax5mvw.ll:22:26: error: '%18' defined with type '%struct.struct0*' but expected 'float**'
+store float* %8, float** %18, align 8
+                         ^
+15:58:21  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_qnl_c83y.ll:38:1: error: instruction forward referenced with type 'label'
+%31 = getelementptr inbounds %struct.struct0, %struct.struct0* %30, i32 0, i32 1
+^
+15:58:21  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_lglb7k9d.ll:37:1: error: instruction forward referenced with type 'label'
+%29 = load i32, i32* getelementptr inbounds (%struct.struct0, %struct.struct0* @g, i32 0, i32 0), align 8
+^
+15:58:31  INFO        Checked 3050 / 3719  (syntax=2299  compile=2299  link=455  func=408/455)
+15:58:35  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_z0vg8zhj.ll:42:1: error: instruction forward referenced with type 'label'
+%32 = add nsw i32 %31, 1
+^
+15:58:36  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_upx_otkw.ll:43:1: error: instruction forward referenced with type 'label'
+%33 = load i64, i64* %4, align 8
+^
+15:58:36  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_wntydqo2.ll:23:1: error: instruction forward referenced with type 'label'
+%19 = icmp sge i32 %15, %18
+^
+15:58:37  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_6mpzyvup.ll:41:1: error: instruction forward referenced with type 'label'
+%33 = load i8, i8* %6, align 1
+^
+15:58:56  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_el06tlal.ll:42:1: error: instruction forward referenced with type 'label'
+%32 = load i32*, i32** %9, align 8
+^
+15:58:57  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_0lgezerd.ll:39:1: error: instruction forward referenced with type 'label'
+%33 = add nsw i32 %32, 1
+^
+15:58:57  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_4rjaibmi.ll:13:21: error: '%8' defined with type 'i64*' but expected 'i32*'
+%9 = load i32, i32* %8, align 8
+                    ^
+15:58:57  INFO        Checked 3100 / 3719  (syntax=2334  compile=2334  link=464  func=417/464)
+15:58:57  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ccftks8n.ll:33:43: error: '%20' defined with type 'i64' but expected 'i32'
+%28 = call i32 @TIFFErrorExt(i32 %17, i32 %20, i8* getelementptr inbounds ([45 x i8], [45 x i8]* @.str, i64 0, i64 0), i32 %26, i64 %27)
+                                          ^
+15:59:09  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_woe7w5oo.ll:30:1: error: instruction forward referenced with type 'label'
+%23 = add nsw i32 %22, 1
+^
+15:59:12  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_gjcow4ew.ll:24:1: error: instruction forward referenced with type 'label'
+%18 = call i32 @G_FreeEntity(%struct.struct1* %17)
+^
+15:59:12  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_j3_p1y43.ll:36:1: error: instruction forward referenced with type 'label'
+%29 = load i32, i32* %7, align 4
+^
+15:59:12  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_se4o79p9.ll:39:10: error: '%9' is not a basic block
+br label %9
+         ^
+15:59:28  INFO        Checked 3150 / 3719  (syntax=2374  compile=2374  link=476  func=427/476)
+15:59:32  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_9k8a3jt6.ll:16:1: error: instruction forward referenced with type 'label'
+%13 = trunc i64 %12 to i32
+^
+15:59:33  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_9kff3awu.ll:28:1: error: instruction forward referenced with type 'label'
+%21 = add nsw i64 %20, 1
+^
+15:59:34  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_0givv0by.ll:39:1: error: instruction forward referenced with type 'label'
+%31 = add i64 %30, 1
+^
+15:59:34  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_7_ej4znu.ll:39:29: error: '%30' is not a basic block
+br i1 %33, label %34, label %30
+                            ^
+15:59:34  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_cjefpfum.ll:28:36: error: expected type
+%24 = call double @pow(double %23, double0x3FD5555555555555)
+                                   ^
+15:59:41  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_2bkzhws4.ll:25:47: error: invalid getelementptr indices
+%17 = getelementptr inbounds %struct.struct0, %struct.struct0* %16, i32 0, i32 6
+                                              ^
+15:59:43  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_haf602w_.ll:13:27: error: use of undefined value '%26'
+br i1 %8, label %9, label %26
+                          ^
+15:59:46  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_v1dm8hd6.ll:43:19: error: '%37' defined with type 'i64*' but expected 'i8*'
+store i8 %32, i8* %37, align 1
+                  ^
+15:59:48  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_cgx15ym8.ll:57:1: error: label expected to be numbered '44'
+43: ; preds = %42, %3
+^
+15:59:48  INFO        Checked 3200 / 3719  (syntax=2411  compile=2411  link=480  func=430/480)
+15:59:55  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_bjpgxr5p.ll:20:1: error: instruction forward referenced with type 'label'
+%16 = getelementptr inbounds %struct.struct0, %struct.struct0* %15, i32 0, i32 0
+^
+15:59:59  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_n9ue1s31.ll:27:1: error: instruction forward referenced with type 'label'
+%22 = load i8*, i8** %5, align 8
+^
+15:59:59  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_s5w4s74w.ll:50:1: error: instruction forward referenced with type 'label'
+%39 = load %struct.struct0*, %struct.struct0** %4, align 8
+^
+16:00:00  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_vuluvr8y.ll:38:1: error: instruction forward referenced with type 'label'
+%29 = call i32 @mpr_sub(i32* %26, i32* %27, i32* %28)
+^
+16:00:11  INFO        Checked 3250 / 3719  (syntax=2452  compile=2452  link=487  func=436/487)
+16:00:11  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_iv55nw0q.ll:16:1: error: instruction forward referenced with type 'label'
+%12 = icmp ne %struct.struct0* %11, null
+^
+16:00:16  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_e0nc0w22.ll:34:21: error: '%28' defined with type 'i16*' but expected 'i32*'
+store i32 %26, i32* %28, align 4
+                    ^
+16:00:17  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_er_m3yci.ll:56:1: error: instruction forward referenced with type 'label'
+%45 = call i32 @sh_cmt_register_clocksource(%struct.struct0* %42, i64 %43, i64 %44)
+^
+16:00:17  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_4_oqv2u4.ll:45:1: error: instruction forward referenced with type 'label'
+%35 = trunc i64 %34 to i32
+^
+16:00:17  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_m4adxvxa.ll:47:1: error: instruction forward referenced with type 'label'
+%39 = call i64 @tcp_rack_sent_after(i32 %31, i32 %34, i64 %35, i64 %38)
+^
+16:00:38  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ftccct0e.ll:48:1: error: instruction forward referenced with type 'label'
+%39 = sub nsw i64 %38, %35
+^
+16:00:39  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_rs39rmb6.ll:29:1: error: instruction forward referenced with type 'label'
+%23 = and i32 %22, 63
+^
+16:00:40  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_vgi05sds.ll:33:1: error: instruction forward referenced with type 'label'
+%28 = call i32 @fz_concat(i32 %17, i32 %27)
+^
+16:00:48  INFO        Checked 3300 / 3719  (syntax=2489  compile=2489  link=502  func=448/502)
+16:00:50  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_pe3ou6ia.ll:20:29: error: use of undefined value '%16'
+br i1 %13, label %14, label %16
+                            ^
+16:00:52  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_67byjyy6.ll:45:1: error: instruction forward referenced with type 'label'
+%36 = load %struct.struct0*, %struct.struct0** %5, align 8
+^
+16:00:53  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_vxinha6h.ll:9:21: error: '%6' defined with type 'i32*' but expected 'i64*'
+%7 = load i64, i64* %6, align 8
+                    ^
+16:00:54  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_r10d0770.ll:28:11: error: '%18' defined with type 'label' but expected 'i32'
+store i32 %18, i32* %2, align 4
+          ^
+16:00:54  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_zeab2eda.ll:50:1: error: instruction forward referenced with type 'label'
+%38 = call i32 @memcpy(i32* %35, i32 %36, i64 %37)
+^
+16:00:54  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_1ug89e_n.ll:47:1: error: instruction forward referenced with type 'label'
+%32 = call i32 @printf(i8* getelementptr inbounds ([37 x i8], [37 x i8]* @.str, i64 0, i64 0), i32 %31)
+^
+16:00:54  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_c001myxb.ll:44:66: error: '%33' defined with type 'i32' but expected 'i32*'
+%39 = call i64 @BBox_Conic_Check(i32 %31, i32 %33, i32 %36, i32* %33, i32* %38)
+                                                                 ^
+16:00:54  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_5htdonsp.ll:48:1: error: instruction forward referenced with type 'label'
+%43 = add i64 %42, %39
+^
+16:00:55  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_epgfkosm.ll:40:1: error: instruction forward referenced with type 'label'
+%34 = call i32 @kill(i32 %32, i32 %33)
+^
+16:01:08  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_64h2otgh.ll:14:26: error: '%8' defined with type 'double**' but expected 'double*'
+store double %4, double* %8, align 8
+                         ^
+16:01:08  INFO        Checked 3350 / 3719  (syntax=2521  compile=2521  link=508  func=454/508)
+16:01:08  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_aiqz3yhj.ll:24:1: error: instruction forward referenced with type 'label'
+%15 = add nsw i32 %14, 1
+^
+16:01:10  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_3v8kskl0.ll:37:21: error: '%12' defined with type 'i32*' but expected 'i16*'
+store i16 %29, i16* %12, align 2
+                    ^
+16:01:12  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_aq1zgoli.ll:59:38: error: '%41' defined with type '%struct.struct0*' but expected 'i64'
+%44 = call i32 @memmove(i8* %34, i64 %41, i64 %44)
+                                     ^
+16:01:26  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_v9hvc5fd.ll:38:1: error: instruction forward referenced with type 'label'
+%30 = add nsw i32 %29, 1
+^
+16:01:27  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_l764breq.ll:11:10: error: use of undefined value '%43'
+br label %43
+         ^
+16:01:30  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift__r2euei6.ll:19:22: error: constant expression type mismatch: got type 'i64**' but expected 'i64*'
+%13 = load i64, i64* getelementptr inbounds (%struct.struct0, %struct.struct0* @GSU, i32 0, i32 1), align 8
+                     ^
+16:01:37  INFO        Checked 3400 / 3719  (syntax=2555  compile=2555  link=518  func=460/518)
+16:01:40  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_n9jtgfcc.ll:7:7: error: expected type
+store float0x3F847AE140000000, float* getelementptr inbounds (%struct.struct0, %struct.struct0* @Cut2, i32 0, i32 0), align 4
+      ^
+16:01:41  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_vwwi_dwj.ll:45:1: error: instruction forward referenced with type 'label'
+%35 = load i32, i32* %34, align 8
+^
+16:01:42  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_tc9bax76.ll:42:1: error: instruction forward referenced with type 'label'
+%32 = load i32, i32* %31, align 8
+^
+16:01:43  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_am2ahe1q.ll:33:1: error: instruction forward referenced with type 'label'
+%26 = add nsw i32 %25, -1
+^
+16:01:44  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_clv_m0tw.ll:39:22: error: '%27' defined with type 'i64*' but expected 'i32*'
+%28 = load i32, i32* %27, align 8
+                     ^
+16:01:44  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_mxfeoeml.ll:49:49: error: '%3' defined with type 'i32**' but expected 'i32*'
+%38 = call i32 @trap_R_AddRefEntityToScene(i32* %3)
+                                                ^
+16:01:55  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_c5n8x2e4.ll:32:1: error: instruction forward referenced with type 'label'
+%27 = getelementptr inbounds %struct.struct0, %struct.struct0* %26, i32 0, i32 2
+^
+16:02:01  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_6xuijgdd.ll:27:1: error: instruction forward referenced with type 'i32*'
+%25 = call i32 @trap_DeepmindCallback(i32 %15, i64 %17, i64 %19, i32* %20, i32* %21, i32* %22, i32* %23, i32* %24, i32* %25, i32 0, i32 0, i32 0, i32 0)
+^
+16:02:01  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_jc41o4_r.ll:28:19: error: '%18' defined with type 'i32*' but expected 'i64*'
+store i64 0, i64* %18, align 8
+                  ^
+16:02:01  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_pswz8bg8.ll:63:9: error: '%40' defined with type '%struct.struct0*' but expected 'i32'
+ret i32 %40
+        ^
+16:02:02  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_gunu6vzd.ll:34:1: error: instruction forward referenced with type 'label'
+%30 = and i32 %29, 7
+^
+16:02:02  INFO        Checked 3450 / 3719  (syntax=2586  compile=2586  link=526  func=467/526)
+16:02:02  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_3cc_dxc9.ll:34:1: error: instruction forward referenced with type 'label'
+%27 = call i32 @brcmf_notify_escan_complete(%struct.struct0* %23, i32 %26, i32 1, i32 1)
+^
+16:02:03  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_hy1z8f26.ll:35:1: error: instruction forward referenced with type 'label'
+%29 = getelementptr inbounds %struct.struct0, %struct.struct0* %28, i32 0, i32 1
+^
+16:02:25  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_hbxyk5xr.ll:40:1: error: instruction forward referenced with type 'label'
+%32 = getelementptr inbounds %struct.struct0, %struct.struct0* %31, i32 0, i32 0
+^
+16:02:26  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_nn838252.ll:37:1: error: instruction forward referenced with type 'label'
+%32 = call i32 @terminate(i8* getelementptr inbounds ([39 x i8], [39 x i8]* @.str, i64 0, i64 0), i32 %27, i32 %31)
+^
+16:02:36  INFO        Checked 3500 / 3719  (syntax=2629  compile=2629  link=539  func=478/539)
+16:02:42  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_2ov_htyb.ll:47:19: error: element count must have integer type
+%44 = alloca i32, i32* %43, align 4
+                  ^
+16:02:42  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_s1_cptx7.ll:28:1: error: instruction forward referenced with type 'label'
+%20 = load i32, i32* %3, align 4
+^
+16:02:43  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_rig6m87g.ll:37:1: error: instruction forward referenced with type 'label'
+%30 = load %struct.struct0*, %struct.struct0** %6, align 8
+^
+16:02:44  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_an0cnkk7.ll:33:1: error: instruction forward referenced with type 'label'
+%29 = call i32 @kref_put(i32* %27, i32 %28)
+^
+16:02:59  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_whx3ulwn.ll:29:1: error: instruction forward referenced with type 'label'
+%24 = ashr i32 %22, %23
+^
+16:03:01  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_jc5i6wci.ll:48:1: error: instruction forward referenced with type 'label'
+%37 = and i32 %36, 1
+^
+16:03:01  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_x4lui2gd.ll:27:29: error: use of undefined value '%28'
+br i1 %21, label %22, label %28
+                            ^
+16:03:01  INFO        Checked 3550 / 3719  (syntax=2667  compile=2667  link=546  func=485/546)
+16:03:01  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_2ietdtko.ll:35:24: error: '%2' defined with type '%struct.struct0*' but expected 'i32**'
+%31 = load i32*, i32** %2, align 8
+                       ^
+16:03:01  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_bf3emx1i.ll:28:22: error: '%16' defined with type 'i32*' but expected 'i64*'
+%17 = load i64, i64* %16, align 8
+                     ^
+16:03:16  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_5z1wrt39.ll:16:20: error: '%12' defined with type 'i32**' but expected 'i32*'
+store i32 %8, i32* %12, align 4
+                   ^
+16:03:22  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_175b36wl.ll:41:1: error: instruction forward referenced with type 'label'
+%32 = getelementptr inbounds %struct.struct1, %struct.struct1* %31, i32 0, i32 0
+^
+16:03:22  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_465o9e0_.ll:27:1: error: instruction forward referenced with type 'label'
+%22 = icmp eq i8* %21, null
+^
+16:03:24  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_m49pd7ey.ll:53:10: error: use of undefined value '%44'
+br label %44
+         ^
+16:03:24  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_tt2fraxb.ll:45:11: error: '%37' defined with type 'double' but expected 'i32'
+store i32 %37, i32* %3, align 4
+          ^
+16:03:40  INFO        Checked 3600 / 3719  (syntax=2707  compile=2707  link=561  func=500/561)
+16:03:43  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_4vr8lisn.ll:51:1: error: instruction forward referenced with type 'label'
+%35 = load i32, i32* %7, align 4
+^
+16:03:43  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_uarpc0u5.ll:31:1: error: instruction forward referenced with type 'label'
+%25 = call i32 @pcm_frames_to_bytes(%struct.struct0* %21, i64 %24)
+^
+16:03:44  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_10wb9eei.ll:43:1: error: instruction forward referenced with type 'label'
+%32 = load %struct.struct0*, %struct.struct0** %2, align 8
+^
+16:03:56  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_sp66aemu.ll:29:1: error: instruction forward referenced with type 'label'
+%22 = phi i1 [ true, %11 ], [ true, %6 ], [ %20, %16 ]
+^
+16:03:56  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_24ghwu2j.ll:27:24: error: '%8' defined with type '%struct.struct0**' but expected 'i64**'
+%22 = load i64*, i64** %8, align 8
+                       ^
+16:03:56  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_fghvvw0y.ll:46:29: error: '%31' is not a basic block
+br i1 %35, label %36, label %31
+                            ^
+16:03:57  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_ydk53hwt.ll:25:23: error: '%16' defined with type 'i64' but expected 'double'
+%20 = icmp ult double %16, %19
+                      ^
+16:03:57  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_du2hazm1.ll:37:1: error: instruction forward referenced with type 'label'
+%27 = load i32, i32* %1, align 4
+^
+16:03:58  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_cobdk2jg.ll:39:1: error: instruction forward referenced with type 'label'
+%33 = call i32 @coil_act_sort_selected(%struct.struct0* %32)
+^
+16:03:59  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_9jh3_134.ll:46:117: error: expected '(' in constantexpr
+%33 = phi i8* [ getelementptr inbounds ([1 x i8], [1 x i8]* @.str.2, i64 0, i64 0), %30 ], [ getelementptr inbounds x i8], [1 x i8]* @.str.1, i64 0, i64 0), %22 ]
+                                                                                                                    ^
+16:04:00  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_g5g31vbf.ll:48:1: error: instruction forward referenced with type 'i8'
+%41 = call i32 @two_bytes_to_signed_int(i8 signext %40, i8 signext %41)
+^
+16:04:02  INFO        Checked 3650 / 3719  (syntax=2737  compile=2737  link=567  func=505/567)
+16:04:07  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_2toz4i5y.ll:35:1: error: instruction forward referenced with type 'label'
+%29 = getelementptr inbounds %struct.struct0, %struct.struct0* %28, i32 0, i32 0
+^
+16:04:09  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_s7paokwj.ll:21:22: error: '%5' defined with type 'i64**' but expected 'i64*'
+%15 = load i64, i64* %5, align 8
+                     ^
+16:04:10  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_pexh6v35.ll:23:19: error: '%20' defined with type 'float' but expected 'double'
+%21 = fadd double %20, %17
+                  ^
+16:04:12  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_63yj7p7x.ll:49:1: error: instruction forward referenced with type 'label'
+%39 = load %struct.struct0*, %struct.struct0** @p_bmp180, align 8
+^
+16:04:21  INFO        Checked 3700 / 3719  (syntax=2774  compile=2774  link=571  func=508/571)
+16:04:22  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_l5kja_j0.ll:36:1: error: instruction forward referenced with type 'label'
+%29 = load i64*, i64** %6, align 8
+^
+16:04:24  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_n9wq9799.ll:16:1: error: instruction forward referenced with type 'label'
+%12 = add nsw i64 %11, %10
+^
+16:04:24  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_24wngf8e.ll:45:1: error: instruction forward referenced with type 'label'
+%33 = add nsw i32 %32, 1
+^
+16:04:25  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_i83dj_gq.ll:26:11: error: '%16' defined with type 'label' but expected 'i32'
+store i32 %16, i32* %1, align 4
+          ^
+16:04:25  WARNING   llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159604/forklift_7v289n11.ll:45:1: error: instruction forward referenced with type 'label'
+%40 = load double*, double** %8, align 8
+^
+16:04:25  INFO      ============================================================
+16:04:25  INFO      COMPILABILITY / FUNCTIONAL RESULTS
+16:04:25  INFO      ============================================================
+16:04:25  INFO        Total predictions              3719
+16:04:25  INFO        Syntax valid (llvm-as)         2785 / 3719  (74.9%)
+16:04:25  INFO        Compiles (clang -c)            2785 / 3719  (74.9%)
+16:04:25  INFO        Links (with wrapper)           571 / 3719  (15.3%)
+16:04:25  INFO        Functional pass (all IO)       508 / 571  (89.0%)
+16:04:25  INFO        IO tests passed                2551 / 2855  (89.3%)
+16:04:25  INFO      ============================================================
+16:04:25  INFO      Results saved to results/eval_test_synth_checkpoints_arm_ir_ir_v4_step_80000.json
+16:04:25  INFO      Predictions saved to results/preds_test_synth_checkpoints_arm_ir_ir_v4_step_80000.jsonl

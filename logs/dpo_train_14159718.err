@@ -1,0 +1,967 @@
+2026-04-22 13:47:50 [INFO] __main__: Device: cuda
+2026-04-22 13:47:50 [INFO] __main__: Loading policy model from checkpoints/arm_ir_ir_v4/step_80000
+2026-04-22 13:47:51 [INFO] __main__: Loading reference model from checkpoints/arm_ir_ir_v4/step_80000
+2026-04-22 13:47:51 [INFO] __main__: Policy parameters: 197059584 (197.1M trainable)
+2026-04-22 13:47:52 [INFO] __main__: DPODataset: loaded 5000 samples from dpo_pairs/
+2026-04-22 13:48:00 [INFO] __main__: TensorBoard logging to runs/dpo
+2026-04-22 13:48:00 [INFO] __main__: Starting DPO training: max_steps=900  eff_batch=16  lr=5.00e-07  β=0.10
+2026-04-22 13:48:00 [INFO] __main__: Starting epoch 1 at step 0
+2026-04-22 13:48:35 [INFO] __main__: step=25  loss=2.1654  margin=0.0111  rew_c=0.022  rew_r=0.011  lr=1.39e-07  s/s=0.72
+2026-04-22 13:48:52 [INFO] __main__: step=50  loss=2.1619  margin=0.0675  rew_c=0.142  rew_r=0.075  lr=2.78e-07  s/s=0.97
+2026-04-22 13:49:11 [INFO] __main__: step=75  loss=2.1537  margin=0.1995  rew_c=0.377  rew_r=0.177  lr=4.17e-07  s/s=1.06
+2026-04-22 13:49:28 [INFO] __main__: step=100  loss=2.1438  margin=0.3584  rew_c=0.515  rew_r=0.156  lr=5.00e-07  s/s=1.14
+2026-04-22 13:49:44 [INFO] __main__: step=125  loss=2.1284  margin=0.6097  rew_c=0.607  rew_r=-0.003  lr=4.98e-07  s/s=1.20
+2026-04-22 13:49:59 [INFO] __main__: step=150  loss=2.1126  margin=0.8686  rew_c=0.449  rew_r=-0.420  lr=4.93e-07  s/s=1.26
+2026-04-22 13:49:59 [INFO] __main__: Running evaluation at step 150 …
+2026-04-22 13:50:26 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_vx9gfuqe.ll:2:31: error: expected '(' in function argument list
+define dso_local i32 @sleepeol>(i32 %0) {
+                              ^
+2026-04-22 13:50:53 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_sind0_t2.ll:7:20: error: expected '(' after constantexpr cast
+store i32* bitcast %0 (%struct.struct0* @eol to i32*), i32** %4, align 9
+                   ^
+2026-04-22 13:50:53 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_40ni3ljw.ll:7:1: error: expected top-level entity
+}
+^
+2026-04-22 13:51:20 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_4f9icyiz.ll:4:168: error: expected value token
+%2 = call i32 (i8*, ...) @printf(i8* getelementptr inbounds ([13 x i8], [13 x double]* @.str, i64 0, i64 add nsw (i64 ptrtoint (i32* getelementptr (i32, i32* null, i32) to i64), i64 sub (i64 sext (i32 ptrtoint (%struct.struct0* @.str.1 to i32), i32 trunc (i64 sub store (i64 sdiv (i64 mul i64 zext (i32 shl (i64)* @__const.main.data to i8*) to ...)*)(i8* getelementptr load (i64, i64* @___const.main(i64 o to i16*), i8** @geol to ir (i64 trunc (i6 false, i64 sdiv exact (i32 sub (i32 add (i32)], [32 x i32]* @__nesc_unnamedoto i8*)*), i332* @__exit(i32 (...)* to itofp (i64 add (i64], [33 x i64]*), [34 x i6]* (...), i32** @geol, align 8
+                                                                                                                                                                       ^
+2026-04-22 13:51:20 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_298gd3i6.ll:5:24: error: alignment is not a power of two
+%6 = alloca i8*, align 7
+                       ^
+2026-04-22 13:51:35 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_1acli32z.ll:5:11: error: '%1' defined with type 'label' but expected 'i32'
+store i32 %1, i32* %3, align 4
+          ^
+2026-04-22 13:51:41 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_z0qhguro.ll:5:45: error: '%4' defined with type 'i64*' but expected 'i8*'
+call void @llvm.memset.p0i8.i64(i8* align 8 %4, i8 0, align 8 bitcast (%struct.struct0* @__const.NVIC_SetPriority_<{ i64, ...) x86_fp809712, i8 -1, [8 x i8] }>* @.str to i8), i32 16, i16, [10 x8]* @.str.1, align 1
+                                            ^
+2026-04-22 13:51:45 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_9woees6t.ll:7:1: error: expected top-level entity
+}
+^
+2026-04-22 13:51:58 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_iv8r_wpb.ll:9:16: error: '%4' defined with type 'i64*' but expected 'i64'
+%7 = phi i64 [ %4, %5 ], [ 0, %2 ]
+               ^
+2026-04-22 13:52:13 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_nwl5f0ep.ll:5:55: error: expected type
+store i8* getelementptr inbounds ([7 x i8], [7 x [7 x nsw i8]* @.str, i64 0, i32 0), i8** %3, align 8
+                                                      ^
+2026-04-22 13:52:26 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_dck_vckw.ll:7:31: error: expected ',' after store operand
+store %struct.struct9 %struct0* %0, %union.sockaddr_op* %4, align 4
+                              ^
+2026-04-22 13:52:40 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_5m68385o.ll:4:11: error: '%1' defined with type 'label' but expected 'i32'
+store i32 %1, i32* getelementptr inbounds (%struct.struct0, %struct.struct0* @eol_neol, i64 0, i32 0), align 4
+          ^
+2026-04-22 13:52:41 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_ct8v752b.ll:8:67: error: '%2' defined with type '%struct.struct0*' but expected '%struct.structinput*'
+%5 = getelementptr inbounds %struct.struct1, %struct.structinput* %2, i32 0, i32* 0, i64 0
+                                                                  ^
+2026-04-22 13:53:07 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_9lch_u16.ll:9:18: error: '%7' defined with type 'double**' but expected 'i8*'
+store i8 %3, i8* %7, align 1
+                 ^
+2026-04-22 13:53:07 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_88kyc1qy.ll:7:53: error: constant expression type mismatch: got type 'i32*' but expected '%union.eol*'
+%5 = getelementptr inbounds %union.eol, %union.eol* inttoptr (i64 129 to i32*), i64 0, i32 0
+                                                    ^
+2026-04-22 13:53:32 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_qi5hf6og.ll:6:23: error: '%0' defined with type '%struct.struct0*' but expected '%struct.struct1 = type opaque'
+store %struct.struct1 %0, %struct.struct add nsw i32 0, i32 %2
+                      ^
+2026-04-22 13:53:32 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_m4t_nrfd.ll:4:29: error: expected instruction opcode
+%4 = alloca %struct.struct0*)*, align 8
+                            ^
+2026-04-22 13:53:46 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_npirdzxo.ll:7:65: error: expected '(' in call
+%5 = call i8* (i8*, ...) bitcast (i8* (...)* @eol to i8* (...)*), i8** %2)
+                                                                ^
+2026-04-22 13:54:01 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_xmy4gzcf.ll:5:28: error: expected instruction opcode
+%3 = load i8*, i8** @stack1: teol>, align 8
+                           ^
+2026-04-22 13:54:15 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_osxube6n.ll:9:11: error: invalid type for inline asm constraint string
+call void asm sideeffect "eol    %eol ", "~{dirflag},~{fpsr},~{flags}"(i8* %6)
+          ^
+2026-04-22 13:54:29 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_d3r5pb5d.ll:5:26: error: expected instruction opcode
+%6 = alloca i64, align 8 8
+                         ^
+2026-04-22 13:54:56 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_rz_l6ioe.ll:6:46: error: '%4' defined with type 'i8**' but expected 'i8*'
+call void @llvm.memcpy.p0i8.i64(i8* align 16 %4, i8* align 8 bitcast (%struct.struct0** @__const.conf_write_heading.argv to i8*), i64 8, i1 false)
+                                             ^
+2026-04-22 13:54:56 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_wljxe4q4.ll:4:21: error: invalid getelementptr indices
+%2 = load i32, i32* getelementptr inbounds (%struct.struct0, %struct.struct0* @INDEXED_PAGE_0, i32 0, i64 0), align 4
+                    ^
+2026-04-22 13:55:22 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_3gw75l94.ll:6:22: error: expected value token
+store %struct.struct call i64 @eoleol(i64 3211)
+                     ^
+2026-04-22 13:55:22 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_qv34gdip.ll:5:11: error: '%1' defined with type 'label' but expected 'i32'
+store i32 %1, i32* %3, align 4
+          ^
+2026-04-22 13:55:48 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_ebrjb1_2.ll:7:1: error: expected top-level entity
+}
+^
+2026-04-22 13:55:48 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_2hbpiln1.ll:5:11: error: '%1' defined with type 'label' but expected 'i32'
+store i32 %1, i32* %3, align 4
+          ^
+2026-04-22 13:56:02 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_gs_bo55q.ll:9:32: error: expected 'x' after element count
+%8 = getelementptr inbounds [3 bitcast x i8*]* %5 to i8*
+                               ^
+2026-04-22 13:56:28 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_2ex5pb2r.ll:9:10: error: '%6' defined with type 'i8*' but expected 'i8'
+store i8 %6, i8* %4, align 1
+         ^
+2026-04-22 13:56:28 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_lv5l0tiz.ll:7:45: error: '%6' defined with type '[2 x i32]*' but expected 'i8*'
+call void @llvm.memset.p0i8.i64(i8* align 4 %6, i8 0, i64 4, i1 false)
+                                            ^
+2026-04-22 13:56:35 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_rstg143j.ll:11:49: error: expected 'to' in constantexpr cast
+call void (i8*, ...) bitcast (void ()* @transeol> to void (i8*)*), i8* getelementptr inbounds ([0 x i8], [0 x no i8]* @.str, i64 0, i64 sub nsw (i8* inttoptr (i64 4 to i8*), i32 trunc (i64 sdiv (i8* sext (i32 ptrtoint (i32* getelementptr (i32, i32* @extra to i32) to i64), i64 mul nuw (i64 sub i64 ptrtoint ([3 x i8*]* @extratransinstrs_bsizes to ...)*)(i8* %3, i64 add (i64, i64) ttrtoint (i64* @extratransacts_keys to slt (i8*), void (i8*)** @extratransinstrlist to i1 false), i8 signext 0, i8* null), i8 0), i8", i8), i8, i8, label %9, label %10
+                                                ^
+2026-04-22 13:56:44 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_d4h0l67q.ll:8:24: error: expected value token
+store %union.anon <{ i8, [2048 x i8] }>, <{ [2097], [2057 x i3] }>* @.str, i32 0, i32* %3, i32** %6)
+                       ^
+2026-04-22 13:56:58 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_7i4c8avf.ll:6:22: error: expected value token
+store %struct.struct call %struct0* @eoleol %0)
+                     ^
+2026-04-22 13:57:25 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_iv9vnex7.ll:6:1: error: expected instruction opcode
+slt (i32*, i8**, ...)* %3, align 16
+^
+2026-04-22 13:57:25 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_8zfr11py.ll:7:17: error: expected '(' after constantexpr cast
+store i32 trunc %0 to i32
+                ^
+2026-04-22 13:57:51 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_ymwfji3k.ll:7:11: error: '%4' defined with type 'i8**' but expected 'i8*'
+store i8* %4, i8** %5, align 8
+          ^
+2026-04-22 13:57:51 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_yvjycdxb.ll:5:11: error: '%1' defined with type 'label' but expected 'i64'
+store i64 %1, i64* %3, align 8
+          ^
+2026-04-22 13:58:06 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_315lq2ar.ll:8:148: error: expected 'to' in constantexpr cast
+%6 = load i32, i32* getelementptr inbounds (%struct.struct0, %struct.struct0* @control_word, i32 0, i32 sext (i32 ptrtoint ([3 x i8]* @.str to i32), i32 trunc (i64 sub (i64 ptrtoint (i32* @end to i64), i64 9) to i16), i16* %4, align 2
+                                                                                                                                                   ^
+2026-04-22 13:58:21 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_tld5a0jv.ll:10:29: error: explicit pointee type doesn't match operand's pointee type ({ i64, i32, i32* } vs <{ i8, i8, [10 x i8] }>)
+%9 = getelementptr inbounds { i64, i32, i32* }, <{ i8, i8, [10 x i8] }>* @__const.send_kbd_command.buf to i8* i64 0, i64 32), i64* %5, align 8
+                            ^
+2026-04-22 13:58:35 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_uo24eygt.ll:8:9: error: '%5' defined with type '[4 x i8]*' but expected 'i8*'
+ret i8* %5
+        ^
+2026-04-22 13:58:48 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_0358qzbr.ll:6:3: error: expected metadata or 'addrspace'
+, align %9 = alloca x86_fp80*, align 88
+  ^
+2026-04-22 13:58:54 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_dnmw0fek.ll:8:29: error: load operand must be a pointer to a first class type
+%5 = load %struct.struct0*, %struct.struct%struct0** @dst, i32 0, align 8
+                            ^
+2026-04-22 13:59:08 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_brxb_w5f.ll:15:61: error: expected type
+store i8 0, i8* getelementptr inbounds ([1 x i8], [1 x [1 x trunc (i64 to i32*), i32 0, i64 0), align 1
+                                                            ^
+2026-04-22 13:59:14 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_qlt4whyz.ll:9:64: error: expected '(' in binary constantexpr
+%8 = getelementptr inbounds %struct.struct9, %struct.struct mul* %3, i64 1
+                                                               ^
+2026-04-22 13:59:40 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_68phhbq4.ll:9:1: error: expected top-level entity
+}
+^
+2026-04-22 13:59:40 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_g_kmjvql.ll:3:81: error: expected type
+%1 = call i32 @workdir_iterator_test(i8* getelementptr inbounds ([8 x i8], [8 x nsw i8]* @.str, i64 0, i64* 0), %struct.struct0* @.str.1, i32* bitcast ([23 x i8*]* @.str.2 to i32*), i32 trunc (i64 sub (i64 ptrtoint ([235 x i8*] @.str.3 to i64), i64 sext (i32 ptrtoint (i32* getelementptr (%struct.struct0, i32 add nsw (i32, i32 sext (i64)* @endeol toi32)), i8* null) to i8*), i8** null), align 8
+                                                                                ^
+2026-04-22 14:00:07 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_ie49ptqu.ll:5:79: error: expected comma in binary constantexpr
+store i32 trunc (i64 sub (i64 ptrtoint (%struct.struct0* @warn_format to i64) to i32), i32 (i8*, ...) @ select (i32 1, i8* getelementptr inbounds ([1 x i8], [1 x8]* @.str, i64 0, i64 shl), i8* bitcast (i32* @_lo1 to i8*), i8** @warn_format_9, i64 mul nuw (i64 sdiv exact (i64 mul nsw (i64 sext (i64 udiv (i64 add (i64], i64 sdiv (i64, i64 sub <i64 and (i64), i64 add <i64 sub i64 or (i64 shl (i64]], <i64 sdiv x i64>, i64...)*)(i64 o3), i8*)* @warn_format, i8* null, i64 undef)
+                                                                              ^
+2026-04-22 14:00:07 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_tgiydttx.ll:4:25: error: alignment is not a power of two
+%5 = alloca i32*, align 7
+                        ^
+2026-04-22 14:00:09 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_3ojmmnbw.ll:4:11: error: '%1' defined with type 'label' but expected 'i32'
+store i32 %1, i32* %2, align 4 4
+          ^
+2026-04-22 14:00:22 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_bl0h6vc6.ll:2:36: error: expected '(' in function argument list
+define dso_local i32 @fullscreeneol>() {
+                                   ^
+2026-04-22 14:00:22 [INFO] __main__: EVAL step=150  reward_acc=92.0%  syntax_valid=0.0%
+2026-04-22 14:00:30 [INFO] __main__: Saved checkpoint at step 150 → checkpoints/dpo/step_150
+2026-04-22 14:00:44 [INFO] __main__: step=175  loss=2.0881  margin=1.2779  rew_c=0.051  rew_r=-1.227  lr=4.87e-07  s/s=0.23
+2026-04-22 14:00:57 [INFO] __main__: step=200  loss=2.0482  margin=1.9536  rew_c=-0.207  rew_r=-2.160  lr=4.78e-07  s/s=0.26
+2026-04-22 14:01:11 [INFO] __main__: step=225  loss=1.9926  margin=2.9216  rew_c=-0.560  rew_r=-3.482  lr=4.67e-07  s/s=0.28
+2026-04-22 14:01:25 [INFO] __main__: step=250  loss=1.9275  margin=4.1027  rew_c=-0.734  rew_r=-4.837  lr=4.53e-07  s/s=0.31
+2026-04-22 14:01:36 [INFO] __main__: Starting epoch 2 at step 271
+2026-04-22 14:01:38 [INFO] __main__: step=275  loss=1.8527  margin=5.5267  rew_c=-1.086  rew_r=-6.612  lr=4.38e-07  s/s=0.34
+2026-04-22 14:01:52 [INFO] __main__: step=300  loss=1.7861  margin=6.9012  rew_c=-1.377  rew_r=-8.278  lr=4.22e-07  s/s=0.36
+2026-04-22 14:01:52 [INFO] __main__: Running evaluation at step 300 …
+2026-04-22 14:02:04 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_5pefyiar.ll:5:22: error: expected value token
+store %struct.struct call %struct0* @eoleol x(%struct.structk* %0)
+                     ^
+2026-04-22 14:02:09 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_owm0o4gv.ll:5:32: error: expected instruction opcode
+%5 = alloca x86_fp80*, align 8 8
+                               ^
+2026-04-22 14:02:09 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift__7ldf_nh.ll:8:10: error: expected 'x' after element count
+store [6 xi8]* %3, [6 x8]** %4, align 8
+         ^
+2026-04-22 14:02:23 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_gyqpc03p.ll:8:30: error: expected '(' in binary constantexpr
+store %struct.struct mul nsw i32 %0, i32* %5, align 4
+                             ^
+2026-04-22 14:02:33 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift__ynz963r.ll:5:30: error: expected '(' in binary constantexpr
+store %struct.struct mul nsw i32 %3, i32* %4, align 4
+                             ^
+2026-04-22 14:02:33 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_1gt8__7h.ll:6:20: error: expected '(' in constantexpr
+store i32*  select x i8], [6 x i32]* @.str, i8* to i8*
+                   ^
+2026-04-22 14:02:47 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_0g8acar1.ll:11:7: error: stored value and pointer type do not match
+store i32 %8, i32** @eol_0, align 8
+      ^
+2026-04-22 14:02:57 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_eaapvkzm.ll:1:1: error: expected top-level entity
+<ir> define dso_local i32 @getCoolingScheduleId(i8* %0) { %2 = alloca i32, align 4 %3 = alloca i8*, align 8      %4 = alloca <i8 x i8>, align 8
+^
+2026-04-22 14:03:04 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_qbobcnnj.ll:10:33: error: expected '(' in call
+call void @llvm.memcpy.p0i8.p0i8* %8.i64(i8* align 4 %9, i8* align 1 getelementptr inbounds ([6 x double], [6 x float]* @__const.do_shut.eol, i32 0, i32* @eol_105, i64 0), i8* bitcast (i32 (i8*, ...)* @send_to_user to i8*), i32 trunc (i64 sub (i64 ptrtoint (i32* inttoptr x i64]* @.str to i64), i64* to i32), i8*)*
+                                ^
+2026-04-22 14:03:04 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_4as3k8f0.ll:11:38: error: expected end of sequential type
+%8 = getelementptr inbounds [14 x i86_fpr0, %7
+                                     ^
+2026-04-22 14:03:25 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_fjj2l4ha.ll:5:45: error: expected type
+%3 = getelementptr inbounds [87 x i8], [8 x store i8* %3, i8** %2, align 8
+                                            ^
+2026-04-22 14:03:25 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_k4sdpgzk.ll:9:46: error: expected value token
+store i8* %6, i8** bitcast (%struct.struct0* @*)** to i8*), align 8
+                                             ^
+2026-04-22 14:03:29 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_6u7qsbd4.ll:4:91: error: invalid cast opcode for cast from 'i32 (i32)*' to 'i32'
+%2 = load i32, i32* getelementptr inbounds (%struct.struct0, %struct.struct0* @_nres, i32 trunc (i32 (i32)* @eol to i32), i32 0), align 4
+                                                                                          ^
+2026-04-22 14:03:31 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_fs1zx1er.ll:1:1: error: expected top-level entity
+<ir> define dso_local i32 @iso10126_len(i8* %0) {  %2 = alloca i32, align 4      %3 = alloca i8*, align 8     8   = alloca i64, align 8 1 = alloca [10 x i8], align 1
+^
+2026-04-22 14:03:38 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_qxobzd3b.ll:4:33: error: expected end of sequential type
+%2 = alloca [3 x %struct.struct call i32 (...) @eoleol()
+                                ^
+2026-04-22 14:03:47 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_1shlhplb.ll:3:85: error: expected ')' in constantexpr
+%1 = load i64, i64* getelementptr inbounds (%struct.struct0, %struct.struct0* @eol_ sub nsw i32 0, i32 1), align 8
+                                                                                    ^
+2026-04-22 14:03:47 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_4pevgz34.ll:2:28: error: expected '(' in function argument list
+define dso_local i8* @utoa_<eol(i32 %0, i8* %1, i32 %2) {
+                           ^
+2026-04-22 14:04:02 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_payqpy8d.ll:6:24: error: '%0' defined with type '%struct.struct0*' but expected '%struct.struct9*'
+store %struct.struct9* %0, %struct.struct mul nsw i32 1, i32* %3, align 4
+                       ^
+2026-04-22 14:04:29 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_74a1kqv5.ll:8:34: error: expected '(' in binary constantexpr
+%5 = call %struct.struct mul nsw i32 %4, -1
+                                 ^
+2026-04-22 14:04:29 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_6r4aa2fa.ll:1:1: error: expected top-level entity
+<ir> define dso_local void @error(i32 %0) { %2 = alloca i32, align 4      %3 = alloca i8, align 1 = alloca i64, align 8
+^
+2026-04-22 14:04:35 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_bitrxjqp.ll:2:18: error: expected '=' after name
+%struct.structFB x i8] = type { double }
+                 ^
+2026-04-22 14:04:35 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_i7s0as4l.ll:1:1: error: expected top-level entity
+<ir> define dso_local i32 @TOS_MsgLength(i32 %0) { %2 = alloca i32, align 4      %3 = alloca i64, align 8
+^
+2026-04-22 14:04:36 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_de92ehil.ll:5:10: error: expected instruction opcode
+ret i32 0* %0
+         ^
+2026-04-22 14:04:50 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_60hgp_pa.ll:8:21: error: expected value token
+%5 = load i8*, i8** @ void, align 8
+                    ^
+2026-04-22 14:04:57 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_qr639fxw.ll:7:22: error: expected value token
+store %struct.struct call %struct0* @eoleol(i8* getelementptr inbounds ([7 x [7 x nsw i8], [7 x double]* @.str, i64 0, i64* 0), i8* bitcast ([7 tx i8]* @.]]* to i8*), i32 5)
+                     ^
+2026-04-22 14:05:11 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_d9zq4zkm.ll:2:1: error: expected top-level entity
+ret i32 }
+^
+2026-04-22 14:05:11 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_1wbto48z.ll:7:40: error: expected number in address space
+%5 = getelementptr inbounds [6 x i8], [q i8]* %4, i64 0, i64 sub nsw (i32 0, i32 19), i8* getelementptr inbounds ([0 x i32], [0 x ]* @__const.aa_kyDe_doochar.eol, i32 bitcast x (i32]* @.eol to to i32), i64, i1 false)
+                                       ^
+2026-04-22 14:05:17 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_5yctska2.ll:1:1: error: expected top-level entity
+<ir> define dso_local i8* @playback_func(i8* %0) { %2 = alloca i8*, align 8      %3 = alloca i64, align 8 1 = alloca i32, align 4 %4 = alloca i16, align 2 2 x i8], align 16
+^
+2026-04-22 14:05:17 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_yrepq5dw.ll:2:89: error: expected '=' after instruction name
+define dso_local void @op_f_to_sb(%struct.struct0* %0, i32 %1) { %struct.struct0.struct0* } %3 = type {struct.struct0*, %struct.struct1 } %4 = type {.struct0*, align 8
+                                                                                        ^
+2026-04-22 14:05:41 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_oraermie.ll:5:3: error: expected metadata or 'addrspace'
+, label %5
+  ^
+2026-04-22 14:05:41 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_r85ukw2n.ll:3:123: error: expected value token
+%1 = load i32, i32* getelementptr inbounds (%struct.struct0, %struct.struct0* @upse_r3000_cpu_regs, i32 0, i32 trunc (i64 subp0i64 0, i64 ptrtoint (i32* inttoptr (i64 2147483640 to i64*) to i32), i64* @peol>), align 4
+                                                                                                                          ^
+2026-04-22 14:05:52 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_ywoi7syc.ll:7:11: error: expected value token
+store i32 x i8], [10 x i8>* %2, align 16
+          ^
+2026-04-22 14:05:52 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_7whwq9l1.ll:5:10: error: expected type
+ret i32 <ix i8>* @eol_eol_oeol, align 8
+         ^
+2026-04-22 14:06:02 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_isxolaxv.ll:5:17: error: '%0' defined with type 'i8*' but expected 'x86_fp80*'
+store x86_fp80* %0, i8** %3, align 8
+                ^
+2026-04-22 14:06:02 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift__2_n_kv5.ll:2:101: error: expected '=' after instruction name
+define dso_local i32 @posix_spawnattr_set_max_addr_np(%struct.struct0* %0, i32 %1) { %struct.struct0** } { } = alloca i32, align 4
+                                                                                                    ^
+2026-04-22 14:06:10 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_22lqz1e3.ll:2:80: error: expected ')' at end of argument list
+define dso_local i32 @get_pmask_pixel(%struct.struct0* noalias %0, i8* %1, i32 undef3) {
+                                                                               ^
+2026-04-22 14:06:25 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_ywwe29j0.ll:2:75: error: expected ')' at end of argument list
+define dso_local void @eol_linear_index_to_3d_indices(i32 %0, i32 %1, i32 undef, i32* %2, %struct.struct0* noalias %3, i32** %4) {
+                                                                          ^
+2026-04-22 14:06:25 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_hwm4dqvn.ll:8:60: error: expected comma after getelementptr's type
+%7 = load i8*, i8** getelementptr inbounds (%struct.struct0], [3 x i8]* @.str, i32 0, i32* @eol_NO_eol, i32 bitcast (i8* x i32]* @__const.string_hash_func.eol to i8*), i64 16, i1 false)
+                                                           ^
+2026-04-22 14:06:26 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_s46zse6x.ll:5:30: error: expected '(' in binary constantexpr
+store %struct.struct mul nsw i32 1, i32* %3, align 4
+                             ^
+2026-04-22 14:06:31 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_zoc1s2u9.ll:7:3: error: expected metadata or 'addrspace'
+, %7 = alloca [2 x i8*]*, align 8
+  ^
+2026-04-22 14:06:38 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_m2l0li94.ll:2:16: error: expected '=' after name
+%struct.struct icmp eq }
+               ^
+2026-04-22 14:06:38 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_96_l5g7o.ll:4:42: error: expected '('
+%4 = call i32 @eol(%struct.struct1* sret %3)
+                                         ^
+2026-04-22 14:06:42 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_gnbdmlvp.ll:5:13: error: expected type
+%8 = alloca i nsw i32**, align 8
+            ^
+2026-04-22 14:06:57 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_b8ypvshb.ll:4:84: error: expected ')' in constantexpr
+%2 = load i32, i32* getelementptr inbounds (%struct.struct0, %struct.struct0* @eol_<{ x i8], i8] }, [8 x i8]]* @__const.main.eol, i32 0, i32 ret i32 %1
+                                                                                   ^
+2026-04-22 14:06:57 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_m3sex7zi.ll:3:79: error: expected value token
+%1 = load i32, i32* getelementptr inbounds (%struct.struct0, %struct.struct0* @<eol, i32 0, i32 shl (i32*, i32)*, align 4
+                                                                              ^
+2026-04-22 14:07:10 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_2mp0ugff.ll:3:122: error: expected value token
+%1 = load i32, i32* getelementptr inbounds (%struct.struct0, %struct.struct0* @gr_dpcs_bundle_Cb_, i32 0, i32 trunc (i32 x i32 to i32), i64 9)
+                                                                                                                         ^
+2026-04-22 14:07:18 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_76k0vzx0.ll:2:75: error: invalid type for function argument
+define dso_local i32 @csv_row_fread(%struct.struct0* %0, i8* %1, i32* %2, i32 (i8*, i32, i8*, ...) {
+                                                                          ^
+2026-04-22 14:07:31 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_epfht29v.ll:2:1: error: expected top-level entity
+br i1 %struct.struct3, i32* }
+^
+2026-04-22 14:07:31 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_ys44hgnm.ll:1:1: error: expected top-level entity
+<ir> define dso_local i32 @gg_fix16(i32 %0) { %2 = alloca i32, align 4      %3 = alloca i8, align 1
+^
+2026-04-22 14:07:31 [INFO] __main__: EVAL step=300  reward_acc=88.5%  syntax_valid=2.0%
+2026-04-22 14:07:38 [INFO] __main__: Saved checkpoint at step 300 → checkpoints/dpo/step_300
+2026-04-22 14:07:51 [INFO] __main__: step=325  loss=1.6964  margin=8.8046  rew_c=-1.709  rew_r=-10.513  lr=4.03e-07  s/s=0.27
+2026-04-22 14:08:05 [INFO] __main__: step=350  loss=1.6812  margin=9.2927  rew_c=-2.888  rew_r=-12.181  lr=3.83e-07  s/s=0.29
+2026-04-22 14:08:19 [INFO] __main__: step=375  loss=1.5215  margin=12.8711  rew_c=-2.807  rew_r=-15.678  lr=3.62e-07  s/s=0.31
+2026-04-22 14:08:32 [INFO] __main__: step=400  loss=1.5782  margin=12.2665  rew_c=-5.236  rew_r=-17.503  lr=3.40e-07  s/s=0.32
+2026-04-22 14:08:46 [INFO] __main__: step=425  loss=1.4631  margin=15.4003  rew_c=-6.056  rew_r=-21.456  lr=3.17e-07  s/s=0.34
+2026-04-22 14:09:00 [INFO] __main__: step=450  loss=1.3099  margin=19.8688  rew_c=-6.008  rew_r=-25.877  lr=2.93e-07  s/s=0.36
+2026-04-22 14:09:00 [INFO] __main__: Running evaluation at step 450 …
+2026-04-22 14:09:24 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_qv_7onya.ll:6:20: error: '%1' defined with type 'label' but expected 'i8**'
+store i8* %4, i8** %1, align 8
+                   ^
+2026-04-22 14:09:38 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_pqiavg23.ll:1:1: error: expected top-level entity
+<ir> define dso_local i32 @__netdata_mutex_unlock(i32* %0) {    <ix i>, i32 x i8>* %2, align 8
+^
+2026-04-22 14:09:45 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_v6p_fo4i.ll:5:14: error: expected number in address space
+%5 = alloca <%struct.struct x i8>, align 16, align x86_fp80, align x8>, align 8
+             ^
+2026-04-22 14:09:45 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_pwnoaykh.ll:6:96: error: integer constant must have integer type
+%5 = call i8* @eoleol(i8* getelementptr inbounds ([17 x i8], [17 x double]* @.str, i64 0, i64* 0, i32 0), i32* %2, i8** getelementptr inbounds x i8, i8* x i8* i8* (i8], x i32], [10 x i3]* @jeol>, align 1
+                                                                                               ^
+2026-04-22 14:10:04 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_gpn4gvk9.ll:8:1: error: expected instruction opcode
+5: ; preds = %0
+^
+2026-04-22 14:10:04 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_23v5uqxn.ll:9:19: error: '%3' defined with type 'i32*' but expected 'i3*'
+store i32 %5, i3* %3, align 4
+                  ^
+2026-04-22 14:10:10 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_k_9vzwv0.ll:7:28: error: expected '(' after constantexpr cast
+store i8* %5, i8** bitcast x i8]* @.str to i8*
+                           ^
+2026-04-22 14:10:10 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift__3ygp118.ll:1:26: error: invalid element type for struct
+%struct.struct0 = type { i32 (%struct.struct0*, i32) }
+                         ^
+2026-04-22 14:10:18 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_xt7o9rus.ll:4:36: error: expected integer
+%6 = alloca %struct.struct1, align }
+                                   ^
+2026-04-22 14:10:27 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift__kklx55m.ll:5:1: error: expected instruction opcode
+x i8], align 1
+^
+2026-04-22 14:10:27 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_tppw8lw0.ll:5:17: error: expected '(' in call
+call void @cpeol>(%struct.structk* }, align 8
+                ^
+2026-04-22 14:10:33 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_3b9gyxgm.ll:6:10: error: expected value token
+store i32, i32* %4, align 4
+         ^
+2026-04-22 14:10:33 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_o8jaziwq.ll:6:11: error: expected value token
+store i64 x, i64* %3, align 8
+          ^
+2026-04-22 14:10:40 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_x1qigoih.ll:1:1: error: expected top-level entity
+<ix> define dso_local void @msg_error_unknown_op() {
+^
+2026-04-22 14:10:40 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_5afejyx1.ll:5:1: error: expected instruction opcode
+x i8], align 1
+^
+2026-04-22 14:10:46 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_px3snszn.ll:3:1: error: expected instruction opcode
+= alloca i32, align 4
+^
+2026-04-22 14:10:53 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_2uvnh2jz.ll:2:72: error: expected type
+define dso_local void @sdl2_poke_set_aspect_ratio(%struct.struct0* %0, i i32 %1) { ieol, i64 } @eoleol> {
+                                                                       ^
+2026-04-22 14:10:53 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_b4vt7t_a.ll:5:14: error: expected number in address space
+%4 = alloca <i8>, align 8
+             ^
+2026-04-22 14:11:03 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_57ut9ahx.ll:7:7: error: expected type
+store x8], [3 x i8]* %4, align 1
+      ^
+2026-04-22 14:11:03 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_21sx0kq0.ll:1:1: error: expected top-level entity
+<ir> define dso_local void @err_exit(i32 %0) {
+^
+2026-04-22 14:11:05 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_u1exorxn.ll:1:1: error: expected top-level entity
+<ix> define dso_local i32 @U_EMRINVERTRGN_swap(i8* %0, i32 %1) {
+^
+2026-04-22 14:11:13 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_qsobuz4w.ll:6:7: error: expected type
+store x i8], [3 x8]* %4, align 1
+      ^
+2026-04-22 14:11:13 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_nafx89e_.ll:1:1: error: expected top-level entity
+<ixi> define dso_local i32 @snd_pcm_format_unsigned(i32 %0) {
+^
+2026-04-22 14:11:15 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_kq5qhxgp.ll:1:1: error: expected top-level entity
+<ic> define dso_local i32 @wceex_ctime(i8* %0) {
+^
+2026-04-22 14:11:24 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_0kgrmkop.ll:4:27: error: expected instruction opcode
+%2 = load i32, i32* @GLeol>, align 4
+                          ^
+2026-04-22 14:11:31 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_s0izztyj.ll:1:1: error: expected top-level entity
+<ix> define dso_local void @firsteol() {
+^
+2026-04-22 14:11:31 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_3ovodtuw.ll:5:1: error: expected instruction opcode
+x i86_fp80, align 12
+^
+2026-04-22 14:11:35 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_yx2phrtn.ll:1:1: error: expected top-level entity
+<ir> define dso_local i32 @mavlink_msg_extended_message_get_target_system(i8* %0) {
+^
+2026-04-22 14:11:38 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_x0z_w8z6.ll:4:13: error: expected type
+%3 = alloca i, align i32 }
+            ^
+2026-04-22 14:11:41 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_moc277f8.ll:5:24: error: expected value token
+store %struct.struct9* x i8], [69x i8]* @<%struct.struct, i8*, i8* x8>, align 8
+                       ^
+2026-04-22 14:11:47 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_itpcabyb.ll:2:35: error: expected instruction opcode
+define dso_local i32 @Peoleol() { i8*, align 8
+                                  ^
+2026-04-22 14:11:47 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_xdmykgrm.ll:3:1: error: expected instruction opcode
+x
+^
+2026-04-22 14:11:52 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_h6yius6o.ll:1:1: error: expected top-level entity
+<ir> define dso_local i32 @maineol() {   <ix i8>, <i8 x i8>* %0, align 16 x i8], align 1
+^
+2026-04-22 14:11:52 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_znf5ityr.ll:1:1: error: expected top-level entity
+<ir> define dso_local i32 @jl_malloc(i32 %0) {
+^
+2026-04-22 14:11:54 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_bbgtxzvq.ll:1:1: error: expected top-level entity
+<ir> define dso_local void @LPA_freeMem(i32* %0) {
+^
+2026-04-22 14:11:59 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_frvzmp6h.ll:3:38: error: expected instruction opcode
+%4 = alloca %struct.struct1, align 1 x i86_fp, align 16
+                                     ^
+2026-04-22 14:12:03 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_t3chiq4a.ll:4:13: error: expected type
+%6 = alloca x i8*, align 8
+            ^
+2026-04-22 14:12:03 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_xz0b6s5y.ll:7:44: error: expected '(' in constantexpr
+%4 = load i32, i32* getelementptr inbounds x, i8], [2 x i8]* @.str, align i32
+                                           ^
+2026-04-22 14:12:08 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_krzr0hm5.ll:1:1: error: expected top-level entity
+<ir> define dso_local void @newer(i32 %0, i8* %1) {   %3 = alloca i32, align 4      %4 = alloca i8*, align 8      store i32 x i8], [5 x i8]]* %2, align 8
+^
+2026-04-22 14:12:12 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_duq4abiq.ll:1:1: error: expected top-level entity
+<ir> define dso_local i32 @z_piracy(i32 %0) {
+^
+2026-04-22 14:12:12 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_1e4gdk3g.ll:1:1: error: expected top-level entity
+<ir> define dso_local void @SPIM_Start() {  %struct.struct0 } { x i86_fp, align 16
+^
+2026-04-22 14:12:14 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_iyn2yipb.ll:1:1: error: expected top-level entity
+<ir> define dso_local void @db_init_test(i32 %0) {
+^
+2026-04-22 14:12:18 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_lxhi4da3.ll:6:1: error: expected instruction opcode
+x i86_fp80, align x
+^
+2026-04-22 14:12:21 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_ywad3djr.ll:1:1: error: expected top-level entity
+<ir> define dso_local void @printeol() {
+^
+2026-04-22 14:12:21 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_mh0p5j9q.ll:6:11: error: '%4' defined with type 'i32*' but expected 'i8*'
+store i8* %4, i8** %3, align 8
+          ^
+2026-04-22 14:12:25 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_y7siic3h.ll:1:1: error: expected top-level entity
+<ir> define dso_local void @IPV4_Init() { %struct.struct0* } {
+^
+2026-04-22 14:12:25 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_zd9n07ww.ll:3:16: error: expected '=' after instruction name
+%struct.struct0* = call i64, i64 }, @<%struct.structsx, x, i32>, x86_fp, x8580000, x99_fp80, align x
+               ^
+2026-04-22 14:12:32 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_r78puztp.ll:1:1: error: expected top-level entity
+<ir> define dso_local void @fprint_double(i32* %0, i32 <ix i8> %1) {
+^
+2026-04-22 14:12:34 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_ryazsv1v.ll:4:70: error: '%2' defined with type '%struct.struct0*' but expected '%struct.structk*'
+%3 = getelementptr inbounds %struct.struct.struct0, %struct.structk* %2, i32 0* %1, i64 047
+                                                                     ^
+2026-04-22 14:12:37 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_davljesz.ll:2:8: error: expected type
+define dso_addr i32 @eoleol xeol x(%struct.struct0* %0) {
+       ^
+2026-04-22 14:12:37 [INFO] __main__: EVAL step=450  reward_acc=90.5%  syntax_valid=0.0%
+2026-04-22 14:12:41 [INFO] __main__: Saved checkpoint at step 450 → checkpoints/dpo/step_450
+2026-04-22 14:12:55 [INFO] __main__: step=475  loss=1.2086  margin=23.5300  rew_c=-8.058  rew_r=-31.588  lr=2.69e-07  s/s=0.32
+2026-04-22 14:13:08 [INFO] __main__: step=500  loss=1.0465  margin=29.3366  rew_c=-7.485  rew_r=-36.822  lr=2.45e-07  s/s=0.33
+2026-04-22 14:13:22 [INFO] __main__: step=525  loss=1.1426  margin=27.5112  rew_c=-9.908  rew_r=-37.419  lr=2.21e-07  s/s=0.34
+2026-04-22 14:13:30 [INFO] __main__: Starting epoch 3 at step 539
+2026-04-22 14:13:36 [INFO] __main__: step=550  loss=0.9993  margin=32.0663  rew_c=-9.313  rew_r=-41.379  lr=1.97e-07  s/s=0.36
+2026-04-22 14:13:50 [INFO] __main__: step=575  loss=1.1528  margin=28.1944  rew_c=-12.019  rew_r=-40.214  lr=1.74e-07  s/s=0.37
+2026-04-22 14:14:04 [INFO] __main__: step=600  loss=0.9635  margin=34.4868  rew_c=-9.809  rew_r=-44.296  lr=1.51e-07  s/s=0.38
+2026-04-22 14:14:04 [INFO] __main__: Running evaluation at step 600 …
+2026-04-22 14:14:20 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_7zh6v4e1.ll:1:1: error: expected top-level entity
+<i> define dso_local i32 @get_asset_data(i8* %0) {
+^
+2026-04-22 14:14:20 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_znmup6dj.ll:2:27: error: expected '(' in function argument list
+define dso_local i32 @jeol, x
+                          ^
+2026-04-22 14:14:24 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_wg818pta.ll:1:1: error: expected top-level entity
+<ist x i>, i32 }
+^
+2026-04-22 14:14:25 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_bzw6axfl.ll:2:37: error: expected ')' at end of argument list
+define dso_local i32* @new_node(i32 xeol>, align 8
+                                    ^
+2026-04-22 14:14:28 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_1k08zz8j.ll:1:1: error: expected top-level entity
+<ir> define dso_local i32 @fp_factor(i8* %0, i32 %1) {
+^
+2026-04-22 14:14:31 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_85fhfiw6.ll:1:1: error: expected top-level entity
+<ix> define dso_local i32 @gve_needs_rss(i32 %0) {
+^
+2026-04-22 14:14:33 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_p6dpxo2u.ll:2:22: error: expected function name
+define dso_local i32 @
+                     ^
+2026-04-22 14:14:38 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_yi86q2s0.ll:3:13: error: expected type
+%2 = alloca i, align i64, align 8
+            ^
+2026-04-22 14:14:44 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_s0tm4r0f.ll:2:43: error: expected '(' in function argument list
+define dso_local i32 @kfd_get_dbgmgr_mutex, i8** %struct.struct0, align 8
+                                          ^
+2026-04-22 14:14:44 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_espj25vb.ll:2:27: error: expected '(' in function argument list
+define dso_local i32 @jeol>(%struct.struct0* %0) {
+                          ^
+2026-04-22 14:14:47 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_rn5qrcn7.ll:1:1: error: expected top-level entity
+<i> define dso_local void @MAC_FILL(i32* %0, i32 %1) {
+^
+2026-04-22 14:14:53 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_ce6380nv.ll:4:57: error: expected type
+%2 = call i32 @log_msg(i8* getelementptr inbounds ([5 x i, i8* x i8], [5 x, i8]* @.str, i64, i64 0), i8 signext 34, i34)
+                                                        ^
+2026-04-22 14:14:57 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_6i7fflco.ll:1:1: error: expected top-level entity
+<ic> define dso_local void @eoleol(<ic x i> } x x, i32 x, align x86_fp, align x
+^
+2026-04-22 14:15:04 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_aj_ugooy.ll:1:1: error: expected top-level entity
+<ic> define dso_local void @call_new_line_cb(i8* %0, i32 x i8> }, align 1
+^
+2026-04-22 14:15:04 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_dosn9d9w.ll:2:8: error: expected type
+define dso_addr i32 @eoleol xeol x ist = type i32, i8** }
+       ^
+2026-04-22 14:15:08 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_091lw8mq.ll:3:14: error: expected number in address space
+%1 = alloca <%struct.struct0, x i8>,, align 8
+             ^
+2026-04-22 14:15:15 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_bg1h5_8c.ll:3:1: error: expected instruction opcode
+, x,, align 1
+^
+2026-04-22 14:15:18 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_t0ae_sgv.ll:2:8: error: expected type
+define dso_<eol x i> } @peol> x = external dso_local, align 1
+       ^
+2026-04-22 14:15:31 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_hyz3htv0.ll:2:18: error: expected type
+define dso_local i i i32 @exynos4210_bus_receive(%struct.struct0* %0) {
+                 ^
+2026-04-22 14:15:31 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_efcpq_sq.ll:3:13: error: expected type
+%1 = alloca x i, align x
+            ^
+2026-04-22 14:15:35 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_wfaukc0c.ll:1:1: error: expected top-level entity
+<ir> define dso_local void @log_message_critical_system_failure(i8* %0) {
+^
+2026-04-22 14:15:39 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_o42syv75.ll:2:68: error: expected ')' at end of argument list
+define dso_local i64 @eolppc64_spechelper(%struct.struct0* %0, i64 } @
+                                                                   ^
+2026-04-22 14:15:46 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_w59h_5zl.ll:3:132: error: expected comma in binary constantexpr
+%struct.struct1 = call i32 @eol(i8* getelementptr inbounds (%struct.struct0, %struct.struct0* @end_mutex, i32 0, i32 add nsw (i32 1), align 8
+                                                                                                                                   ^
+2026-04-22 14:15:46 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_ypefs61g.ll:1:1: error: expected top-level entity
+<ir> define dso_local void @imprime_direcciones_memoria_impares(i32* %0, i32 %1)      { <ix x i>, align x x i32>, align 8
+^
+2026-04-22 14:15:50 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift__by0t96v.ll:1:26: error: expected type
+%struct.struct0 = type { i i }
+                         ^
+2026-04-22 14:15:53 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_obpdvxge.ll:1:1: error: expected top-level entity
+<ir> define dso_local void @ack_bad_irq(i32 x i8>, align 1
+^
+2026-04-22 14:15:53 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_sx7fqt03.ll:1:1: error: expected top-level entity
+<ix> define dso_local i32 @eslib_logmsg(i8* %0, i8* %1) {
+^
+2026-04-22 14:16:00 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_xomaltic.ll:6:34: error: expected '(' in constantexpr
+store i8* getelementptr inbounds x, i8], [6 x i8]* @.str, i6, i64 0, i64* 0, i8]
+                                 ^
+2026-04-22 14:16:00 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_uys85392.ll:2:8: error: expected type
+define dso_<eol x i> } @QUeol>(%struct.struct0* %0, i32 %1) {
+       ^
+2026-04-22 14:16:03 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_q3otiidm.ll:2:50: error: expected type
+define dso_local i32 @minipack_unpack_neg_fixnum(i **      1047, i8** }>, align 8
+                                                 ^
+2026-04-22 14:16:11 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_sce_p1j5.ll:2:1: error: expected top-level entity
+br label %struct.struct2  label  label ; preds = %struct.struct0
+^
+2026-04-22 14:16:11 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_j72rp4jn.ll:4:13: error: expected type
+%2 = alloca i, align 1
+            ^
+2026-04-22 14:16:25 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_mmfnop83.ll:2:8: error: expected type
+define dso_addr i32 @eoleol xeol x(%struct.struct0* %0) {
+       ^
+2026-04-22 14:16:30 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_sfo8c02o.ll:1:1: error: expected top-level entity
+<ix>, i32 }
+^
+2026-04-22 14:16:30 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_6ae2t3g3.ll:2:70: error: expected ')' at end of argument list
+define dso_local i8* @VIRTUAL_string_search__String__split_with(i8** getelementptr inbounds x, i8, i8* x, align i8
+                                                                     ^
+2026-04-22 14:16:33 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_uy59qkvc.ll:1:1: error: expected top-level entity
+<icp>, i32 }
+^
+2026-04-22 14:16:35 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_p3qdaz78.ll:1:1: error: expected top-level entity
+<ix>, i32 }
+^
+2026-04-22 14:16:43 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_2aql6o3n.ll:2:87: error: expected instruction opcode
+define dso_local i32 @broadsheet_spiflash_erase_sector(%struct.struct0* %0, i32 %1) { <%struct.struct x >>, align %3) { %struct.struct.struct0 } = alloca %struct.struct0, align 4
+                                                                                      ^
+2026-04-22 14:16:50 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_lq8s6s5x.ll:2:44: error: expected ')' at end of argument list
+define dso_local i32 @maineol(i32 %0, i8** no ), align 8
+                                           ^
+2026-04-22 14:16:53 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_w9yp5uwh.ll:1:26: error: expected type
+%struct.struct0 = type { i i6 }
+                         ^
+2026-04-22 14:17:01 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_sg0hhm5f.ll:2:18: error: expected 'type' after name
+%struct.struct3 =struct.struct4 teol }
+                 ^
+2026-04-22 14:17:01 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_gngc2uv9.ll:2:39: error: expected type
+define dso_local i32 @srq_sig_enabled(, i8** , align 1
+                                      ^
+2026-04-22 14:17:05 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_netignwv.ll:1:1: error: expected top-level entity
+<ir> define dso_local void @glTexGenisteol(i32 %0, i32 %1, i8 signext %2) {
+^
+2026-04-22 14:17:08 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_xy_6sp2v.ll:1:1: error: expected top-level entity
+<ir> define dso_local i32 @get_available_bus() {
+^
+2026-04-22 14:17:14 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_gfr3dida.ll:2:27: error: expected '(' in function argument list
+define dso_local i32 @jeol>(%struct.struct0* %0, i8 signext %1, i8* %2, i8* null, i8** %3, x86_fp80* %4, x8575) {
+                          ^
+2026-04-22 14:17:17 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_59gh63k5.ll:1:1: error: expected top-level entity
+<ix>, i32 }
+^
+2026-04-22 14:17:24 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_69vgg02f.ll:1:1: error: expected top-level entity
+<ir> define dso_local i32 @maineol() {
+^
+2026-04-22 14:17:24 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_j3ze4u0k.ll:3:38: error: expected instruction opcode
+%3 = alloca %struct.struct1, align 1 x i8], align 1
+                                     ^
+2026-04-22 14:17:30 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_onbq2uiv.ll:2:103: error: function body requires at least one basic block
+define dso_local void @ui_out_field_fmt_int(%struct.struct0* %0, i32 %1, i8* %2, i32* %3, i32** %4) { } %struct.struct = alloca %struct.struct0, align <%struct.struct xeol>, align %struct.structsteol }>, align 8 %struct.struct1 }>, { %struct.struct.struct0*, i8*, align 8
+                                                                                                      ^
+2026-04-22 14:17:34 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_0ju9vdqm.ll:2:22: error: expected function name
+define dso_local i32 @
+                     ^
+2026-04-22 14:17:34 [INFO] __main__: EVAL step=600  reward_acc=87.1%  syntax_valid=0.0%
+2026-04-22 14:17:42 [INFO] __main__: Saved checkpoint at step 600 → checkpoints/dpo/step_600
+2026-04-22 14:17:42 [INFO] __main__: Pruned old checkpoint: checkpoints/dpo/step_150
+2026-04-22 14:17:58 [INFO] __main__: step=625  loss=1.0040  margin=33.3403  rew_c=-10.905  rew_r=-44.246  lr=1.29e-07  s/s=0.35
+2026-04-22 14:18:12 [INFO] __main__: step=650  loss=1.0625  margin=32.8321  rew_c=-11.116  rew_r=-43.949  lr=1.09e-07  s/s=0.36
+2026-04-22 14:18:26 [INFO] __main__: step=675  loss=0.9725  margin=35.3366  rew_c=-10.042  rew_r=-45.379  lr=8.93e-08  s/s=0.37
+2026-04-22 14:18:39 [INFO] __main__: step=700  loss=0.9409  margin=35.7360  rew_c=-11.311  rew_r=-47.047  lr=7.15e-08  s/s=0.38
+2026-04-22 14:18:53 [INFO] __main__: step=725  loss=1.0292  margin=34.9795  rew_c=-12.686  rew_r=-47.666  lr=5.54e-08  s/s=0.39
+2026-04-22 14:19:08 [INFO] __main__: step=750  loss=0.9851  margin=36.0791  rew_c=-11.289  rew_r=-47.368  lr=4.11e-08  s/s=0.40
+2026-04-22 14:19:08 [INFO] __main__: Running evaluation at step 750 …
+2026-04-22 14:19:20 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_46r21cxt.ll:2:27: error: expected '(' in function argument list
+define dso_local i32 @jeol>(%struct.struct0* } @eol>(, i32 x), align x
+                          ^
+2026-04-22 14:19:24 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_rvjf5ckt.ll:3:14: error: expected number in address space
+%1 = alloca <%struct.struct0, align x i>, align 1
+             ^
+2026-04-22 14:19:29 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_4wb10vx7.ll:1:1: error: expected top-level entity
+<i> define dso_local void @pcibx_cmd_aux33(i32* %0, i32 x i8>, align 1
+^
+2026-04-22 14:19:29 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_yxfh2g__.ll:2:40: error: expected '{' in function body
+define dso_local i32 @comm_this_node() , i8** , align 
+                                       ^
+2026-04-22 14:19:35 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_sa5dcz7k.ll:2:27: error: expected '(' in function argument list
+define dso_local i32 @jeol>(%struct.struct0* %0) {
+                          ^
+2026-04-22 14:19:36 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_134v2rpj.ll:3:13: error: expected type
+%3 = alloca i, align 16, align 16
+            ^
+2026-04-22 14:19:40 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_s5tdf59a.ll:1:1: error: expected top-level entity
+<ir> define dso_local void @test_passed() {
+^
+2026-04-22 14:19:40 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift__vyec2na.ll:2:29: error: expected '(' in function argument list
+define dso_local void @eolpm, i8** }, align 8
+                            ^
+2026-04-22 14:19:43 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_1f8rise5.ll:3:5: error: expected instruction opcode
+%1 =, align 1
+    ^
+2026-04-22 14:19:47 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_9qtgjjfw.ll:2:34: error: expected ')' at end of argument list
+define dso_local i32 @eoleol(i32 0) {
+                                 ^
+2026-04-22 14:19:51 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_7ozvpqdf.ll:4:13: error: expected type
+%2 = alloca i, align 1
+            ^
+2026-04-22 14:19:54 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_vcsu1unn.ll:3:13: error: expected type
+%3 = alloca x, align 1
+            ^
+2026-04-22 14:20:00 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_thdrxcws.ll:3:1: error: instruction expected to be numbered '%2'
+%3 = alloca %struct.struct0, align 8
+^
+2026-04-22 14:20:00 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_8o5liv9i.ll:2:58: error: expected ')' at end of argument list
+define dso_local void @syscall_linkpeol(%struct.struct0* no i32 } %0, i32 xeol>, align 8
+                                                         ^
+2026-04-22 14:20:03 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift__aubar4q.ll:2:30: error: expected '(' in function argument list
+define dso_local i32 @eolpeol> } @
+                             ^
+2026-04-22 14:20:07 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_fks9q8fu.ll:1:1: error: expected top-level entity
+<ir> define dso_local void @defval_strings(i8* %0, i8* %1) {
+^
+2026-04-22 14:20:07 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_mmv1qbtv.ll:1:1: error: expected top-level entity
+<ixi>, i32 }
+^
+2026-04-22 14:20:14 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_7a1x8jqg.ll:2:37: error: expected type
+define dso_local i32 @md_free_stuff(, i8), align 
+                                    ^
+2026-04-22 14:20:14 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_ewgqw_bf.ll:1:1: error: expected top-level entity
+<ir> define dso_local i32 @maineol() {
+^
+2026-04-22 14:20:28 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_pe5y_k6_.ll:2:30: error: expected '(' in function argument list
+define dso_local void @Enceol> (%struct.struct0* %0, i32 %1) { xeol>, align 16 x i8], align 16
+                             ^
+2026-04-22 14:20:35 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift__lnpmtx4.ll:2:18: error: expected type
+define dso_local i @default_attributes(%struct.struct0* n, i8 signext %0, i), align {
+                 ^
+2026-04-22 14:20:35 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_fmrkvc1p.ll:2:8: error: expected type
+define dso_addr i32 @eoleol xeol> }
+       ^
+2026-04-22 14:20:49 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_vaws5spg.ll:3:1: error: expected '=' after instruction id
+%5 = x i8>, align 16 %6 = alloca x86_fp, align 16* %4, align 8
+^
+2026-04-22 14:20:55 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_jaq1xflp.ll:2:8: error: expected type
+define dso_<eol x i8> } x i>, align 1
+       ^
+2026-04-22 14:20:55 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_2mq_9nw0.ll:1:1: error: expected top-level entity
+<ixi>, i32 }
+^
+2026-04-22 14:21:01 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_7ua8h0i9.ll:2:50: error: expected type
+define dso_local i32 @minipack_unpack_neg_fixnum(i **      1047, i8** }, align 1
+                                                 ^
+2026-04-22 14:21:02 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_2bj472de.ll:1:1: error: expected top-level entity
+<i> define dso_local i32 @_insert_to(i32* %0, i32 x i8>, align 1
+^
+2026-04-22 14:21:07 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_mcjx7j_d.ll:1:1: error: expected top-level entity
+<i> define dso_local void @Rename_RST_NARR() {, x i32], align 4
+^
+2026-04-22 14:21:07 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_tnz97zos.ll:2:27: error: expected '(' in function argument list
+define dso_local i32 @jeol>(%struct.struct0* %0) {
+                          ^
+2026-04-22 14:21:13 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_ft5bsi2u.ll:6:7: error: expected type
+store x i32], [3 x i8]* %3, align 1
+      ^
+2026-04-22 14:21:24 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_8igz6h68.ll:2:97: error: expected '=' after instruction name
+define dso_local i64 @cparser_glue_emp_bonus_factor_scale(%struct.struct0* %0) { %struct.struct } = alloca %struct.struct0, align 8
+                                                                                                ^
+2026-04-22 14:21:24 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_hxblwfu_.ll:2:30: error: expected '(' in function argument list
+define dso_local void @eoleol>() {
+                             ^
+2026-04-22 14:21:27 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_oj83dcry.ll:1:1: error: expected top-level entity
+<ir> define dso_local void @glVertexP2ui(i32 x, i, i32 x), align x
+^
+2026-04-22 14:21:31 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_megy22kq.ll:2:30: error: expected '(' in function argument list
+define dso_local void @Uneol sub xeol>, <%struct.struct0* x i>, align 2
+                             ^
+2026-04-22 14:21:31 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_00jtz004.ll:1:1: error: expected top-level entity
+<ir> define dso_local i32 @r600_is_internal_thermal_sensor(i32 %0) {, i32 x i8], align 1 x i86], align 1
+^
+2026-04-22 14:21:38 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_f2lqotws.ll:2:62: error: function body requires at least one basic block
+define dso_local void @mrl_list_free(%struct.struct0** %0) { }
+                                                             ^
+2026-04-22 14:21:42 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_8d7aiv27.ll:1:1: error: expected top-level entity
+<ix> define dso_local void @YwcI__Y3p7(i32* n, i, i32 x), align x
+^
+2026-04-22 14:21:47 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_5_1cdg48.ll:4:19: error: expected string constant
+%3 = call i8* asm s @
+                  ^
+2026-04-22 14:21:47 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_kcl0ddh0.ll:3:13: error: expected type
+%5 = alloca x, align i32, align 1
+            ^
+2026-04-22 14:21:52 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_asc61nqq.ll:1:1: error: expected top-level entity
+<ix> define dso_local i32 @cutils_cdar_DynamicArray_signed_char_pop_default3(i32* %0, i64 1, i8 signext x), align x
+^
+2026-04-22 14:21:52 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift__b_x00_9.ll:3:13: error: expected type
+%2 = alloca i, align i32* %1, align i8q i8 signext }
+            ^
+2026-04-22 14:21:55 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_7nib6sth.ll:1:1: error: expected top-level entity
+<ix>, i32 }
+^
+2026-04-22 14:21:57 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_qe_0dtz5.ll:1:1: error: expected top-level entity
+<ir> define dso_local i32 @maineol() {, x i, x, align x
+^
+2026-04-22 14:22:07 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_x0xzyycb.ll:1:1: error: expected top-level entity
+<ist xi>, i32 }
+^
+2026-04-22 14:22:07 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_4965nfdf.ll:3:13: error: expected type
+%3 = alloca i, align i32, align 4
+            ^
+2026-04-22 14:22:11 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_f8n8v6ab.ll:2:41: error: expected ')' at end of argument list
+define dso_local i32 @filleolYOfput(i32 0, i32 %struct.struct0* %1) {
+                                        ^
+2026-04-22 14:22:13 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_c6ll8c7u.ll:2:47: error: expected instruction opcode
+define dso_local void @pmu_adc_read_latest() {, i8, align 1
+                                              ^
+2026-04-22 14:22:20 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_9p8ncvij.ll:1:1: error: expected top-level entity
+<ixi>, i32 }
+^
+2026-04-22 14:22:20 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_6g5ztwu1.ll:2:41: error: expected '{' in function body
+define dso_local i32 @nrf52_errata_74() , , , %struct.struct0* %struct., align 4
+                                        ^
+2026-04-22 14:22:23 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_hbhuqhf0.ll:2:49: error: expected ')' at end of argument list
+define dso_local signext i8 @USBLPMIntStatus(i8 0, i81
+                                                ^
+2026-04-22 14:22:23 [INFO] __main__: EVAL step=750  reward_acc=89.0%  syntax_valid=0.0%
+2026-04-22 14:22:29 [INFO] __main__: Saved checkpoint at step 750 → checkpoints/dpo/step_750
+2026-04-22 14:22:29 [INFO] __main__: Pruned old checkpoint: checkpoints/dpo/step_300
+2026-04-22 14:22:43 [INFO] __main__: step=775  loss=1.0067  margin=35.1985  rew_c=-11.591  rew_r=-46.789  lr=2.88e-08  s/s=0.37
+2026-04-22 14:22:57 [INFO] __main__: step=800  loss=0.8932  margin=37.5471  rew_c=-8.386  rew_r=-45.933  lr=1.86e-08  s/s=0.38
+2026-04-22 14:23:02 [INFO] __main__: Starting epoch 4 at step 808
+2026-04-22 14:23:11 [INFO] __main__: step=825  loss=0.9255  margin=36.9553  rew_c=-10.684  rew_r=-47.639  lr=1.05e-08  s/s=0.39
+2026-04-22 14:23:25 [INFO] __main__: step=850  loss=1.0273  margin=34.3637  rew_c=-12.911  rew_r=-47.275  lr=4.69e-09  s/s=0.40
+2026-04-22 14:23:39 [INFO] __main__: step=875  loss=1.0280  margin=33.9128  rew_c=-11.953  rew_r=-45.865  lr=1.17e-09  s/s=0.41
+2026-04-22 14:23:53 [INFO] __main__: step=900  loss=0.9666  margin=36.3938  rew_c=-11.593  rew_r=-47.987  lr=0.00e+00  s/s=0.42
+2026-04-22 14:23:53 [INFO] __main__: Running evaluation at step 900 …
+2026-04-22 14:24:06 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_xr_5m6uc.ll:1:1: error: expected top-level entity
+<ir> define dso_local void @SumClr() {, x i8], align 1
+^
+2026-04-22 14:24:06 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_1_ft25xw.ll:1:26: error: expected type
+%struct.struct0 = type { i i32 }
+                         ^
+2026-04-22 14:24:23 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_9r9w8ajs.ll:2:8: error: expected type
+define dso_addr i32 @eoleol xeol> <ipeol> x i32> } @Enceol>(%struct.struct0* %0, i32 %1, i8* %2) {
+       ^
+2026-04-22 14:24:23 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_y775mu4r.ll:3:1: error: instruction expected to be numbered '%2'
+%3 = alloca %struct.struct0, align 1 i8*, align i8** }, align @<%struct.struct>, align ** x i8>, align 5, align x
+^
+2026-04-22 14:24:27 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_18eztye3.ll:1:1: error: expected top-level entity
+<ix> define dso_local void @picolcd_fb_refresh(<ix x> x, i, x, align x
+^
+2026-04-22 14:24:27 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_ibdpbia3.ll:1:1: error: expected top-level entity
+<ir> define dso_local i8* @smalloc_strdup(i8 signext %0) {, x i86, align x
+^
+2026-04-22 14:24:35 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_5h7ols4t.ll:2:62: error: expected instruction opcode
+define dso_local void @eoleol(%struct.struct0* %0, i32 %1) { i, align i32* } @
+                                                             ^
+2026-04-22 14:24:35 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_y0yv_h6v.ll:2:57: error: expected ')' at end of argument list
+define dso_local i32 @dsr_pkt_tailroom(%struct.struct0* n %0) {
+                                                        ^
+2026-04-22 14:24:58 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_l83vrznw.ll:2:35: error: expected '{' in function body
+define dso_local i32 @DACCheckOn(), i, i, x
+                                  ^
+2026-04-22 14:24:58 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_4q36oqsx.ll:2:27: error: expected '(' in function argument list
+define dso_local i32 @jeol>(%struct.struct0* %0) {
+                          ^
+2026-04-22 14:25:00 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_7cmz52il.ll:1:1: error: expected top-level entity
+<ir> define dso_local void @glVertexP2ui(i32 x, i, i32 x), align x
+^
+2026-04-22 14:25:06 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_6n55beyp.ll:1:1: error: expected top-level entity
+<ixi>, i32 }
+^
+2026-04-22 14:25:06 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_wxynt4oo.ll:1:1: error: expected top-level entity
+< x7>, i32 }
+^
+2026-04-22 14:25:31 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_1lw49t22.ll:2:22: error: expected function name
+define dso_local i8* @
+                     ^
+2026-04-22 14:25:31 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift__eh3tk6l.ll:2:8: error: expected type
+define dso_<eol x i8> @
+       ^
+2026-04-22 14:25:36 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_7f7dwc51.ll:1:2: error: expected top-level entity
+ dso_struct.struct0 = type { i32 }
+ ^
+2026-04-22 14:25:37 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_e9o7lc2i.ll:1:1: error: expected top-level entity
+<i> define dso_local i32 @read_u32l(i32* %0, i32 x i8>, align 1
+^
+2026-04-22 14:25:46 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_v0igvlyk.ll:2:36: error: expected '(' in function argument list
+define dso_local i32 @log_getlevel <%struct.struct0* xeol> %0, i8* %1) {
+                                   ^
+2026-04-22 14:25:46 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_hrljdy5w.ll:3:13: error: expected type
+%3 = alloca i, align i32, align 4
+            ^
+2026-04-22 14:25:49 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_3hlfhdc3.ll:1:1: error: expected top-level entity
+<ixi>, i32 }
+^
+2026-04-22 14:25:51 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_6hufnei8.ll:2:22: error: expected function name
+define dso_local i32 @
+                     ^
+2026-04-22 14:25:58 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_a23d9lui.ll:2:8: error: expected type
+define dso_addr i32 @eoleol xeol x i8], i8* %0, i8** } @jeol, align 1
+       ^
+2026-04-22 14:25:58 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_ul3377f0.ll:2:51: error: expected '{' in function body
+define dso_local void @http_quick_poll_required() , , i, i, x
+                                                  ^
+2026-04-22 14:26:04 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_gyxru7z6.ll:2:31: error: expected '(' in function argument list
+define dso_local i32 @add_eol x(%struct.struct0* %0, i32 %1, i32* %2) { i } %struct.struct0** @eol> %4, align 8
+                              ^
+2026-04-22 14:26:09 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_lz3726z0.ll:7:18: error: expected value token
+%5 = load i6, i64, align 8
+                 ^
+2026-04-22 14:26:20 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_91ic6ecg.ll:2:36: error: expected type
+define dso_local i32 @eslib_logmsg(0* 1 x i>, align 1
+                                   ^
+2026-04-22 14:26:20 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_gmokuwg8.ll:2:71: error: expected instruction opcode
+define dso_local void @ip_vs_lblc_hash(%struct.struct0* %0, i32 %1) { xeol>, align 16 x i32], align 16
+                                                                      ^
+2026-04-22 14:26:23 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_yzx0p1qf.ll:2:38: error: expected number in address space
+define dso_local i32 @idris2_isNull(<ix x>, align x, align x
+                                     ^
+2026-04-22 14:26:27 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_v2cqta5d.ll:1:1: error: expected top-level entity
+<ir> define dso_local i32 @smtp_destroy_session(i32* %0) {, i32 x i8], align 1
+^
+2026-04-22 14:26:35 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_jrsfnjte.ll:6:11: error: expected value token
+store i32 x i32>, i32 }, align @jeol>, align 1
+          ^
+2026-04-22 14:26:36 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_8f9r0yxb.ll:2:42: error: expected instruction opcode
+define dso_local i32 @CLK_GetLXTFreq() { x i8], align 1
+                                         ^
+2026-04-22 14:26:39 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_ix0cyjh2.ll:1:1: error: expected top-level entity
+<ir> define dso_local i8* @jeol>(i8* %0, i32 %1, i3) {
+^
+2026-04-22 14:26:44 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_px_nhbpb.ll:1:1: error: expected top-level entity
+<ix>, i32 }
+^
+2026-04-22 14:26:44 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_whbm934g.ll:2:44: error: expected ')' at end of argument list
+define dso_local void @llc_remove_pack(i32 0) {
+                                           ^
+2026-04-22 14:26:47 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_fisl44i7.ll:2:29: error: expected '(' in function argument list
+define dso_local i8* @eoleol> <%struct.struct0* x >, align 8
+                            ^
+2026-04-22 14:26:55 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_8mq234yr.ll:2:27: error: expected '(' in function argument list
+define dso_local i32 @jeol>() {
+                          ^
+2026-04-22 14:26:55 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_e4_o84rw.ll:2:43: error: expected type
+define dso_local i32 @LedsP__Leds__led2On(, i, i, x
+                                          ^
+2026-04-22 14:27:09 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_b7pyg4ph.ll:6:34: error: expected '(' in constantexpr
+store i8* getelementptr inbounds x, i8], [5 x i8]* @.str, i6, i8** %4, align i8
+                                 ^
+2026-04-22 14:27:13 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_tfzyfmyc.ll:4:13: error: expected type
+%3 = alloca i, align i1
+            ^
+2026-04-22 14:27:13 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_2z5oinv1.ll:2:31: error: expected '(' in function argument list
+define dso_local void @Taskeol>() {
+                              ^
+2026-04-22 14:27:23 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_27lqy8_1.ll:1:1: error: expected top-level entity
+<ixi>, i32 }
+^
+2026-04-22 14:27:23 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_ox2grqgn.ll:1:1: error: expected top-level entity
+<i> define dso_local i32 @f21(i32* %0) {, i, i32 }, align 4
+^
+2026-04-22 14:27:25 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_0xg2xyfm.ll:1:1: error: expected top-level entity
+<ir> define dso_local i8* @r372side_effect_free(i8* %0, i8* %1) , i8** getelementptr inbound, i, i32 x, i32* x, align i8
+^
+2026-04-22 14:27:30 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_u03ufbyz.ll:1:1: error: expected top-level entity
+< xps x, i64 }, x
+^
+2026-04-22 14:27:30 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_zam29fz1.ll:2:40: error: expected type
+define dso_local i32 @cache_get_nohash(, i8** , align x
+                                       ^
+2026-04-22 14:27:37 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_dk2cnbrx.ll:1:1: error: expected top-level entity
+<ixi>, i32 }
+^
+2026-04-22 14:27:37 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_c3tna69b.ll:1:1: error: expected top-level entity
+<ixi>, i32 }
+^
+2026-04-22 14:27:43 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_en763dv7.ll:1:1: error: expected top-level entity
+<i> define dso_local i32 @mstring_grate>(i32* %0, i32 x i8>, align 1
+^
+2026-04-22 14:27:43 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_3win9_yt.ll:2:22: error: expected function name
+define dso_local i32 @<eol, x*>, align 8
+                     ^
+2026-04-22 14:27:48 [WARNING] forklift.ir_checker: llvm-as failed with unparseable or unfixable error: llvm-as: /tmp/slurm.14159718/forklift_c8th9lff.ll:2:30: error: expected '(' in function argument list
+define dso_local i32 @eoleol sub xeol> <%struct.peol> x x i3> }>, %struct.struct0* %0, i32 %1, i32* %2, i32** }>, align 8
+                             ^
+2026-04-22 14:27:48 [INFO] __main__: EVAL step=900  reward_acc=96.0%  syntax_valid=0.0%
+2026-04-22 14:27:53 [INFO] __main__: Saved checkpoint at step 900 → checkpoints/dpo/step_900
+2026-04-22 14:27:54 [INFO] __main__: Pruned old checkpoint: checkpoints/dpo/step_450
+2026-04-22 14:27:54 [INFO] __main__: DPO training complete at step 900
+2026-04-22 14:28:00 [INFO] __main__: Saved checkpoint at step 900 → checkpoints/dpo/step_900
