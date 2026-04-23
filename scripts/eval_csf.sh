@@ -52,7 +52,7 @@ mkdir -p logs results
 # ── Default config ───────────────────────────────────────────
 MODEL="${MODEL:-checkpoints/arm_ir_ir_v4/step_80000}"
 PAIR="${PAIR:-arm_ir-ir}"
-SPLIT="${SPLIT:-test_synth}"
+SPLIT="${SPLIT:-test_real}"
 ASM_KEY="${ASM_KEY:-angha}"
 
 BATCH_SIZE="${BATCH_SIZE:-8}"
