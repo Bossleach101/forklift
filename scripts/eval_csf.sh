@@ -50,9 +50,9 @@ export EXEBENCH_CLIB_DIR="$HOME/scratch/exebench/exebench"
 mkdir -p logs results
 
 # ── Default config ───────────────────────────────────────────
-MODEL="${MODEL:-checkpoints/arm_ir_ir_v4/step_80000}"
+MODEL="${MODEL:-checkpoints/dpo/step_200}"
 PAIR="${PAIR:-arm_ir-ir}"
-SPLIT="${SPLIT:-test_real}"
+SPLIT="${SPLIT:-test_synth}"
 ASM_KEY="${ASM_KEY:-angha}"
 
 BATCH_SIZE="${BATCH_SIZE:-8}"

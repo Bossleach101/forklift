@@ -60,7 +60,7 @@ mkdir -p logs
 
 # ── Model to fine-tune from ─────────────────────────────────
 # Start from the v4 arm-ir-ir checkpoint (clean lifting model).
-MODEL_PATH="${MODEL_PATH:-leachl/forklift-arm-ir-ir_v4}"
+MODEL_PATH="${MODEL_PATH:-checkpoints/arm_ir_ir_v4/step_80000}"
 
 # ── Launch deobfuscation training ────────────────────────────
 python -m neurel_deob.training.finetune \
