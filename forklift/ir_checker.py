@@ -234,21 +234,37 @@ def _inject_missing_declares(ir_text: str, max_retries: int = 15) -> str:
             new_decl = f"declare void {sym}(...)" # default to function
             
             if source_line:
-                # Find the token immediately preceding the symbol
-                # We specifically exclude parentheses to avoid capturing function names or casting blocks
-                m_tok = _re.search(r"([a-zA-Z0-9_%.\[\]\{\}\*]+)\s+" + _re.escape(sym), source_line)
-                if m_tok:
-                    ty = m_tok.group(1).strip()
-                    is_func = bool(_re.search(rf"(?:call|invoke)\s+.+\s+{_re.escape(sym)}\(", source_line))
-                    
-                    if is_func:
-                        # Fallback to void, and let the next iteration's "defined with type... but expected..." fix it if needed
-                        new_decl = f"declare void {sym}(...)"
-                    elif ty.endswith('*'):
-                        base_ty = ty[:-1]
-                        new_decl = f"{sym} = external global {base_ty}"
-                    else:
+                is_func = bool(_re.search(rf"(?:call|invoke)\s+.+\s+{_re.escape(sym)}\(", source_line))
+                is_load_store = bool(_re.search(rf"(?:load|store)\s+.+\s+{_re.escape(sym)}", source_line))
+
+                if is_func:
+                    # Fallback to void, and let the next iteration's "defined with type... but expected..." fix it if needed
+                    new_decl = f"declare void {sym}(...)"
+                elif is_load_store:
+                    # It's a global variable. We don't know the type yet, so we'll let the next pass fix it.
+                    # We can make a reasonable guess though.
+                    m_type = _re.search(r"(?:load|store)\s+([a-zA-Z0-9_*\[\] ]+?),", source_line)
+                    if m_type:
+                        ty = m_type.group(1).strip()
+                        # if it's a pointer type, we want the base type
+                        if ty.endswith('*'):
+                            ty = ty[:-1].strip()
                         new_decl = f"{sym} = external global {ty}"
+                    else:
+                        # Can't determine type, let the next pass handle it.
+                        # Add a placeholder that will fail with a type mismatch.
+                        new_decl = f"{sym} = external global i32"
+                else:
+                    # Find the token immediately preceding the symbol
+                    # We specifically exclude parentheses to avoid capturing function names or casting blocks
+                    m_tok = _re.search(r"([a-zA-Z0-9_%.\[\]\{\}\*]+)\s+" + _re.escape(sym), source_line)
+                    if m_tok:
+                        ty = m_tok.group(1).strip()
+                        if ty.endswith('*'):
+                            base_ty = ty[:-1]
+                            new_decl = f"{sym} = external global {base_ty}"
+                        else:
+                            new_decl = f"{sym} = external global {ty}"
 
             patched = remove_decls(patched, sym)
             patched = f"{new_decl}\n" + patched
