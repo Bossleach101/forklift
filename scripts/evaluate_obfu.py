@@ -237,11 +237,11 @@ def run_evaluation(args) -> dict:
             continue
 
         # Preprocess IR reference (same as training)
-        if args.strip_ir:
-            target_text = strip_ir_noise(target_text)
-            if not target_text.strip():
-                skipped += 1
-                continue
+        # if args.strip_ir:
+        #     target_text = strip_ir_noise(target_text)
+        #     if not target_text.strip():
+        #         skipped += 1
+        #         continue
 
         if args.normalize_structs:
             target_text = normalize_structs(target_text)
