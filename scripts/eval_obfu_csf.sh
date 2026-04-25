@@ -50,7 +50,7 @@ mkdir -p logs results
 # ── Default config ───────────────────────────────────────────
 MODEL="${MODEL:-checkpoints/arm_deob/step_50000}"
 PAIR="${PAIR:-arm_ir-ir}"
-SPLIT="${SPLIT:-test_flatten}"
+SPLIT="${SPLIT:-test_combined}"
 BATCH_SIZE="${BATCH_SIZE:-8}"
 
 # ── Run evaluation ───────────────────────────────────────────
