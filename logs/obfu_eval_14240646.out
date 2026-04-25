@@ -1,0 +1,10 @@
+================================================
+Job ID:    14240646
+Node:      node878.csf3.man.alces.network
+GPU:       NVIDIA L40S
+Date:      Fri 24 Apr 16:23:14 BST 2026
+================================================
+Using local LLVM installation: /mnt/iusers01/fse-ugpgt01/compsci01/n28265ll/scratch/forklift/tools/clang+llvm-14.0.0-x86_64-linux-gnu-ubuntu-18.04/bin
+Evaluating model: checkpoints/arm_ir_ir_v4/step_50000
+Pair: arm_ir-ir  Split: test  Batch size: 8
+

@@ -1,0 +1,60 @@
+{
+  "model": "checkpoints/arm_deob/step_50000",
+  "dataset": "leachl/obfuscated-exebench",
+  "pair": "arm_ir-ir",
+  "split": "test_encode_arithmetic",
+  "technique_filter": "all",
+  "num_evaluated": 3571,
+  "num_skipped": 337,
+  "total_rows_seen": 3908,
+  "bleu": 75.63,
+  "ned": 0.2187,
+  "exact_match_pct": 22.21,
+  "per_technique": {
+    "EncodeArithmetic": {
+      "count": 3571,
+      "bleu": 75.63,
+      "ned": 0.2187,
+      "exact_match_pct": 22.21
+    }
+  },
+  "beam": 3,
+  "repetition_penalty": 1.0,
+  "no_repeat_ngram_size": 0,
+  "max_new_tokens": 2048,
+  "batch_size": 8,
+  "elapsed_seconds": 10725.9,
+  "samples_per_second": 0.33,
+  "compilability": {
+    "total": 3571,
+    "syntax_valid": 2301,
+    "syntax_valid_pct": 64.44,
+    "compiles": 2301,
+    "compiles_pct": 64.44,
+    "links": 0,
+    "links_pct": 0.0,
+    "functional_tested": 0,
+    "functional_pass": 0,
+    "functional_pass_pct": 0.0,
+    "io_pass_total": 0,
+    "io_tested_total": 0,
+    "io_pass_pct": 0.0
+  },
+  "compilability_per_technique": {
+    "EncodeArithmetic": {
+      "total": 3571,
+      "syntax_valid": 2301,
+      "syntax_valid_pct": 64.44,
+      "compiles": 2301,
+      "compiles_pct": 64.44,
+      "links": 0,
+      "links_pct": 0.0,
+      "functional_tested": 0,
+      "functional_pass": 0,
+      "functional_pass_pct": 0.0,
+      "io_pass_total": 0,
+      "io_tested_total": 0,
+      "io_pass_pct": 0.0
+    }
+  }
+}

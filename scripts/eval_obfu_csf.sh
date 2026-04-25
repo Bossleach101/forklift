@@ -48,7 +48,7 @@ export PATH="$HOME/scratch/forklift/tools/clang+llvm-14.0.0-x86_64-linux-gnu-ubu
 mkdir -p logs results
 
 # ── Default config ───────────────────────────────────────────
-MODEL="${MODEL:-leachl/forklift-arm-ir-ir}"
+MODEL="${MODEL:-checkpoints/arm_ir_ir_v4/step_50000}"
 PAIR="${PAIR:-arm_ir-ir}"
 SPLIT="${SPLIT:-test}"
 BATCH_SIZE="${BATCH_SIZE:-8}"
@@ -68,6 +68,7 @@ python scripts/evaluate_obfu.py \
     --max-new-tokens 2048 \
     --batch-size "$BATCH_SIZE" \
     --strip-ir \
+    --check-functional \
     --normalize-structs \
     --output "results/obfu_eval_${SPLIT}_$(echo $MODEL | tr '/' '_').json" \
     --save-predictions "results/obfu_preds_${SPLIT}_$(echo $MODEL | tr '/' '_').jsonl" \
