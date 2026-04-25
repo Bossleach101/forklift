@@ -48,7 +48,7 @@ export PATH="$HOME/scratch/forklift/tools/clang+llvm-14.0.0-x86_64-linux-gnu-ubu
 mkdir -p logs results
 
 # ── Default config ───────────────────────────────────────────
-MODEL="${MODEL:-checkpoints/arm_ir_ir_v4/step_50000}"
+MODEL="${MODEL:-checkpoints/arm_deob/step_50000}"
 PAIR="${PAIR:-arm_ir-ir}"
 SPLIT="${SPLIT:-test_flatten}"
 BATCH_SIZE="${BATCH_SIZE:-8}"

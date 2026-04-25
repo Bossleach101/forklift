@@ -1,0 +1,60 @@
+{
+  "model": "checkpoints/arm_deob/step_50000",
+  "dataset": "leachl/obfuscated-exebench",
+  "pair": "arm_ir-ir",
+  "split": "test_flatten",
+  "technique_filter": "all",
+  "num_evaluated": 3264,
+  "num_skipped": 645,
+  "total_rows_seen": 3909,
+  "bleu": 67.14,
+  "ned": 0.3189,
+  "exact_match_pct": 7.63,
+  "per_technique": {
+    "Flatten": {
+      "count": 3264,
+      "bleu": 67.14,
+      "ned": 0.3189,
+      "exact_match_pct": 7.63
+    }
+  },
+  "beam": 3,
+  "repetition_penalty": 1.0,
+  "no_repeat_ngram_size": 0,
+  "max_new_tokens": 2048,
+  "batch_size": 8,
+  "elapsed_seconds": 8754.6,
+  "samples_per_second": 0.37,
+  "compilability": {
+    "total": 3264,
+    "syntax_valid": 2278,
+    "syntax_valid_pct": 69.79,
+    "compiles": 2278,
+    "compiles_pct": 69.79,
+    "links": 0,
+    "links_pct": 0.0,
+    "functional_tested": 0,
+    "functional_pass": 0,
+    "functional_pass_pct": 0.0,
+    "io_pass_total": 0,
+    "io_tested_total": 0,
+    "io_pass_pct": 0.0
+  },
+  "compilability_per_technique": {
+    "Flatten": {
+      "total": 3264,
+      "syntax_valid": 2278,
+      "syntax_valid_pct": 69.79,
+      "compiles": 2278,
+      "compiles_pct": 69.79,
+      "links": 0,
+      "links_pct": 0.0,
+      "functional_tested": 0,
+      "functional_pass": 0,
+      "functional_pass_pct": 0.0,
+      "io_pass_total": 0,
+      "io_tested_total": 0,
+      "io_pass_pct": 0.0
+    }
+  }
+}

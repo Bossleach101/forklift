@@ -8,3 +8,7 @@ Using local LLVM installation: /mnt/iusers01/fse-ugpgt01/compsci01/n28265ll/scra
 Evaluating model: checkpoints/dpo_v2/step_1000
 Pair: arm_ir-ir  Split: test_synth  ASM key: angha  Batch size: 8
 
+
+================================================
+Evaluation complete at Sat 25 Apr 12:23:31 BST 2026
+================================================
