@@ -1,3 +1,11 @@
+struct rgba {
+    int r;
+    int g;
+    int b;
+    int a;
+};
+
+
 /* BEGIN FUNCTION-DEF rgba_desaturate LOC=UNKNOWN VKEY=4891 */
 void rgba_desaturate(struct rgba *dest , struct rgba *src ) 
 { 
