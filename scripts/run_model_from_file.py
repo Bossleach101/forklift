@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 import sys
 from pathlib import Path
+from forklift.ir_checker import _inject_missing_declares
 
 # Add project root to path so the script works when launched from `scripts/`.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -167,6 +168,7 @@ def main() -> None:
 
     output_text = dp.detokenize(generated[0].detach().cpu().tolist())
     output_text = truncate_ir_output(output_text).strip()
+    output_text = _inject_missing_declares(output_text)
 
     if args.output:
         Path(args.output).write_text(output_text + "\n")

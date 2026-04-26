@@ -382,6 +382,7 @@ def run_evaluation(args) -> dict:
         logger.info(
             "Running Level %d checks on %d predictions...", check_level, len(all_preds),
         )
+        
         comp_stats = CompilabilityStats()
         for idx, (pred, fname, meta) in enumerate(
             zip(all_preds, all_fnames, all_metadata)
